@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import CtaSection from "@/components/CtaSection";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         {/* Added pt-16 so content doesn’t hide under fixed navbar */}
         <main className="flex-1 w-full pt-16">{children}</main>
         <CtaSection />
+        <Analytics />
       </body>
     </html>
   );
