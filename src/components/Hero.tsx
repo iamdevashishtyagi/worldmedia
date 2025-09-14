@@ -13,7 +13,7 @@ export default function Hero() {
       setTextIndex((prev) => (prev + 1) % heroTexts.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [heroTexts.length]);
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
