@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-950/90 backdrop-blur-sm text-white p-4 z-50 shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-900 via-purple-900 to-gray-900/90 backdrop-blur-sm text-white p-4 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-yellow-400">
@@ -49,14 +49,17 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button
+          className="md:hidden text-3xl focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
           ☰
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-800 mt-4 p-4 rounded-lg">
+        <div className="md:hidden bg-gray-900 p-4 rounded-lg shadow-lg">
           <div className="flex flex-col gap-4">
             <Link
               href="/"
