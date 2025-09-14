@@ -54,6 +54,10 @@ export default function CtaSection() {
         >
           Or call us directly: <strong>+1 (555) 123-4567</strong>
         </motion.p>
+                {/* ✨ Developer Attribution */}
+        <motion.div className="mt-10 text-xs md:text-sm opacity-80" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.8, delay: 0.6 }}>
+          <Link href="https://iamdevashishtyagi.github.io/" target="_blank" className="hover:text-yellow-400 transition duration-300" >🚀 <span>Developed with passion by</span> <strong>Devashish Tyagi</strong></Link>
+        </motion.div>
       </motion.div>
     </section>
   );
