@@ -14,7 +14,7 @@ const clientsByIndustry: Record<string, string[]> = {
   Education: ["jnuuniversity.png","mahaveeruniversity.webp","motherhooduniversity.webp"],
   Retail: ["patanjali.svg","reliancejwell.png","tanishqjwellers.svg"],
   Beverages: ["coke.svg","pepsi.png"],
-  Automobile: ["tatamotors.svg","jktyres.jpg"],
+  Automobile: ["tatamotors.png","jktyres.jpg"],
   Technology: ["zeemedia.svg"],
   RealEstate: ["bhutani.png"],
   Jewellery: ["jayantijwellerss.jpg"],
@@ -26,50 +26,15 @@ export default function ClientsSection() {
   return (
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            Our Esteemed Clients
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We take pride in partnering with industry leaders across diverse sectors
-          </p>
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Esteemed Clients</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">We take pride in partnering with industry leaders across diverse sectors</p>
         </motion.div>
-
-        {/* Clients Carousel */}
         <div className="space-y-16">
           {Object.entries(clientsByIndustry).map(([industry, logos]) => (
-            <motion.div
-              key={industry}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="bg-gray-50 rounded-2xl p-8"
-            >
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                {industry}
-              </h2>
-
-              <Swiper
-                spaceBetween={20}
-                slidesPerView={2}
-                loop={true} // Infinite loop
-                autoplay={{ delay: 2000, disableOnInteraction: false }}
-                breakpoints={{
-                  640: { slidesPerView: 3 },
-                  768: { slidesPerView: 4 },
-                  1024: { slidesPerView: 5 },
-                }}
-                modules={[Autoplay, Pagination]}
-                pagination={{ clickable: true }}
-              >
+            <motion.div key={industry} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="bg-gray-50 rounded-2xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{industry}</h2>
+              <Swiper spaceBetween={20} slidesPerView={2} loop={true} autoplay={{ delay: 2000, disableOnInteraction: false }} breakpoints={{ 640: { slidesPerView: 3 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } }} modules={[Autoplay, Pagination]} pagination={{ clickable: true }}>
                 {logos.map((logo, index) => (
                   <SwiperSlide key={index}>
                     <motion.div
