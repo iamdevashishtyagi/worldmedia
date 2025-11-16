@@ -19,7 +19,10 @@ export default function CtaSection() {
           <Link href="/gallery" className="w-1/2 md:w-auto text-center border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-4 md:py-4 md:px-10 rounded-full text-xs md:text-lg transition duration-300">View Our Work</Link>
         </motion.div>
         <motion.p className="text-sm mt-8 flex items-center justify-center gap-2 opacity-90" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.6, delay: 0.4 }}>
-          Or call us directly: <strong className="flex items-center justify-center"><a href="tel:+15551234567" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold block"> +1 (555) 123-4567</a>, <a href="tel:+15559876543" className="text-white transition-all duration-200 hover:scale-105 ml-1 hover:font-semibold block">+1 (555) 987-6543</a></strong>
+          Or call us directly:{" "}
+          <strong className="flex items-center justify-center gap-2">
+            <a href="tel:+919456497636" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold block">+91 94564 96366</a>,<a href="tel:+919897907308" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold block">+91 98979 07308</a>
+          </strong>
         </motion.p>
         <motion.div className="mt-10 text-xs md:text-sm opacity-80" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.8, delay: 0.6 }}>
           <Link href="https://iamdevashishtyagi.github.io/" target="_blank" className="hover:text-yellow-400 transition duration-300" >🚀 <span>Developed by</span> <strong>Devashish Tyagi</strong></Link>
