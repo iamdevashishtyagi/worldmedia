@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 md:mb-8">
           Premier Advertising Solutions in {" "}
-          <span className="text-yellow-400 font-bold">Delhi NCR</span>
+          <span className="text-red-700 font-bold drop-shadow-lg">Delhi NCR</span>
         </p>
         <div className="text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto">
           <span className="text-yellow-400 font-bold text-2xl md:text-3xl">
@@ -64,19 +64,19 @@ export default function Hero() {
           </Link>
         </div>
         
-        {/* Trust indicators */}
-        <div className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-base">
-          <div className="flex items-center gap-2 bg-black/50 px-3 py-1 md:px-4 md:py-2 rounded-full">
-            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-            <span>10+ Years Experience</span>
+        {/* Premium Trust indicators */}
+        <div className="mt-8 md:mt-12 flex flex-wrap justify-center gap-3 md:gap-4 text-xs md:text-sm font-bold">
+          <div className="flex items-center gap-2 bg-black/70 backdrop-blur-sm px-4 py-2 md:px-5 md:py-3 rounded-full border border-yellow-400/30 shadow-lg">
+            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-white">10+ Years Experience</span>
           </div>
-          <div className="flex items-center gap-2 bg-black/50 px-3 py-1 md:px-4 md:py-2 rounded-full">
-            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-            <span>500+ Happy Clients</span>
+          <div className="flex items-center gap-2 bg-black/70 backdrop-blur-sm px-4 py-2 md:px-5 md:py-3 rounded-full border border-yellow-400/30 shadow-lg">
+            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-white">500+ Happy Clients</span>
           </div>
-          <div className="flex items-center gap-2 bg-black/50 px-3 py-1 md:px-4 md:py-2 rounded-full">
-            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-            <span>Across Delhi NCR</span>
+          <div className="flex items-center gap-2 bg-black/70 backdrop-blur-sm px-4 py-2 md:px-5 md:py-3 rounded-full border border-yellow-400/30 shadow-lg">
+            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-white">Across Delhi NCR</span>
           </div>
         </div>
       </div>
