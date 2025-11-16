@@ -18,19 +18,17 @@ export default function Hero() {
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
-      {/* Static Image Background */}
       <div className="absolute z-0 w-full h-full">
         <Image
           src="/images/website/herobg.jpg"
           alt="World Media Advertising Solutions"
           fill
           priority
-          className="object-cover"
+          className="object-cover md:object-cover object-center"
           quality={85}
           sizes="100vw"
         />
       </div>
-
       {/* Lighter Gradient Overlay for better visibility */}
       <div className="absolute z-1 inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
 
