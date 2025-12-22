@@ -6,12 +6,13 @@ import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata = { 
   title: "World Media - Premier Advertising Solutions",
-  description:
-    "World Media offers innovative advertising solutions including hoardings, billboards, vehicle branding, LED displays, and digital marketing services.",
+  description: "World Media offers innovative advertising solutions including hoardings, billboards, vehicle branding, LED displays, and digital marketing services.",
+  verification: {
+    google: "rFYMNWoOZu9iSzbyet9es9-9J44P3zWxQT7vOtVDIw4"
+  }
 };
-
 export default function RootLayout({
   children,
 }: {
