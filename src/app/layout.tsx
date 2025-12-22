@@ -9,9 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = { 
   title: "World Media - Premier Advertising Solutions",
   description: "World Media offers innovative advertising solutions including hoardings, billboards, vehicle branding, LED displays, and digital marketing services.",
-  verification: {
-    google: "rFYMNWoOZu9iSzbyet9es9-9J44P3zWxQT7vOtVDIw4"
-  }
 };
 export default function RootLayout({
   children,
@@ -20,9 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body
-        className={`${inter.className} flex flex-col min-h-screen bg-white`} // added bg-white
-      >
+      <head>
+        <meta name="google-site-verification" content="rFYMNWoOZu9iSzbyet9es9-9J44P3zWxQT7vOtVDIw4" />
+      </head>
+      <body className={`${inter.className} flex flex-col min-h-screen bg-white`}>
         <Navbar />
         {/* Added pt-16 so content doesn’t hide under fixed navbar */}
         <main className="flex-1 w-full pt-16">{children}</main>
