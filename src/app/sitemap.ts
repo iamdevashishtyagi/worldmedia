@@ -1,45 +1,46 @@
 import { MetadataRoute } from 'next'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://worldmedia-3mrb.vercel.app'
-  
-  // Static pages you have/will have
-  const staticPages = [
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://worldmediancr.com'
+
+  const pages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 1,
+      changeFrequency: 'weekly',
+      priority: 1.0,
     },
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      changeFrequency: 'monthly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/gallery`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/clients`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
-      changeFrequency: 'yearly' as const,
-      priority: 0.5,
+      changeFrequency: 'yearly',
+      priority: 0.6,
     },
   ]
 
-  // Fetch dynamic content if you have any
-  const dynamicPages: MetadataRoute.Sitemap = []
-  
-  try {
-    // Example: If you have a blog or news section
-    // const articles = await getArticles()
-    // dynamicPages = articles.map(article => ({
-    //   url: `${baseUrl}/news/${article.slug}`,
-    //   lastModified: article.updatedAt || new Date(),
-    //   changeFrequency: 'daily' as const,
-    //   priority: 0.7,
-    // }))
-  } catch (error) {
-    console.error('Error fetching dynamic content:', error)
-  }
-
-  return [...staticPages, ...dynamicPages]
+  return pages
 }
