@@ -26,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]
 
   // Fetch dynamic content if you have any
-  let dynamicPages: MetadataRoute.Sitemap = []
+  const dynamicPages: MetadataRoute.Sitemap = []
   
   try {
     // Example: If you have a blog or news section
