@@ -19,7 +19,7 @@ const allServices = [
       "High-quality Printing",
       "Professional Installation",
     ],
-    image: "/images/services/Hoarding1.jpg",
+    image: "/images/services/Hoarding1.webp",
   },
   {
     icon: <Truck size={48} className="text-purple-500" />,
@@ -32,7 +32,7 @@ const allServices = [
       "Professional Design",
       "Precision Installation",
     ],
-    image: "/images/services/Hoarding2.jpg",
+    image: "/images/services/Hoarding2.webp",
   },
   {
     icon: <Circle size={48} className="text-cyan-500" />,
@@ -45,7 +45,7 @@ const allServices = [
       "Illuminated Options",
       "Maintenance Services",
     ],
-    image: "/images/services/Hoarding3.jpg",
+    image: "/images/services/Hoarding3.webp",
   },
   {
     icon: <Lightbulb size={48} className="text-yellow-500" />,
@@ -58,7 +58,7 @@ const allServices = [
       "Energy Efficient",
       "Weather Proof",
     ],
-    image: "/images/services/Hoarding4.jpg",
+    image: "/images/services/Hoarding4.webp",
   },
   {
     icon: <Megaphone size={48} className="text-red-500" />,
@@ -71,7 +71,7 @@ const allServices = [
       "SEO Optimization",
       "Analytics & Reporting",
     ],
-    image: "/images/services/Hoarding5.jpg",
+    image: "/images/services/Hoarding5.webp",
   },
   {
     icon: <Megaphone size={48} className="text-red-500" />,
@@ -84,7 +84,7 @@ const allServices = [
       "SEO Optimization",
       "Analytics & Reporting",
     ],
-    image: "/images/services/YoursNextHoarding.jpg",
+    image: "/images/services/YoursNextHoarding.webp",
   }
 ];
 

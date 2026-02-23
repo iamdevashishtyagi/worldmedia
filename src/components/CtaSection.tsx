@@ -21,7 +21,7 @@ export default function CtaSection() {
         <motion.p className="text-sm mt-8 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 opacity-90" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.6, delay: 0.4 }}>
           <span>Or call us directly:</span>
           <strong className="flex flex-wrap justify-center gap-1 sm:gap-2">
-            <a href="tel:+919456497636" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold whitespace-nowrap">+91 94564 96366</a>
+            {/* <a href="tel:+919456497636" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold whitespace-nowrap">+91 94564 96366</a> */}
             <span className="hidden sm:inline">,</span>
             <a href="tel:+919897907308" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold whitespace-nowrap">+91 98979 07308</a>
           </strong>
