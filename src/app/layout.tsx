@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
@@ -6,10 +7,19 @@ import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = { 
-  title: "World Media - Premier Advertising Solutions",
-  description: "World Media offers innovative advertising solutions including hoardings, billboards, vehicle branding, LED displays, and digital marketing services.",
+export const metadata = {
+  metadataBase: new URL("https://worldmediancr.com"),
+  title: {
+    default: "Digital Wall Painting & Advertising in Meerut | World Media NCR",
+    template: "%s | World Media NCR",
+  },
+  description:
+    "Leading advertising company in Meerut offering digital wall painting, hoardings, billboards, and outdoor advertising solutions.",
+  alternates: {
+    canonical: "/",
+  },
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -17,9 +27,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <head>
-        <meta name="google-site-verification" content="rFYMNWoOZu9iSzbyet9es9-9J44P3zWxQT7vOtVDIw4" />
-      </head>
       <body className={`${inter.className} flex flex-col min-h-screen bg-white`}>
         <Navbar />
         {/* Added pt-16 so content doesn’t hide under fixed navbar */}
