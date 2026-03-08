@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function CtaSection() {
@@ -18,10 +19,21 @@ export default function CtaSection() {
           <Link href="/contact" className="w-1/2 md:w-auto text-center bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-4 md:py-4 md:px-10 rounded-full text-xs md:text-lg transition duration-300 shadow-lg hover:shadow-xl">Get Free Consultation</Link>
           <Link href="/gallery" className="w-1/2 md:w-auto text-center border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-4 md:py-4 md:px-10 rounded-full text-xs md:text-lg transition duration-300">View Our Work</Link>
         </motion.div>
+        <motion.div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.6, delay: 0.3 }}>
+          <div className="flex items-center gap-2">
+            <Mail className="w-5 h-5 text-yellow-400" />
+            <span className="font-semibold text-white">Email:</span>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <a href="mailto:worldmediancr@gmail.com" className="text-white transition-all duration-200 hover:text-yellow-400 hover:scale-105 hover:font-semibold text-sm sm:text-base" target="_blank" rel="noopener noreferrer">worldmediancr@gmail.com</a>
+            <span className="hidden sm:inline text-white">|</span>
+            <a href="mailto:shrikanttyagiworldmedia@gmail.com" className="text-white transition-all duration-200 hover:text-yellow-400 hover:scale-105 hover:font-semibold text-sm sm:text-base" target="_blank" rel="noopener noreferrer">shrikanttyagiworldmedia@gmail.com</a>
+          </div>
+        </motion.div>
         <motion.p className="text-sm mt-8 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 opacity-90" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.6, delay: 0.4 }}>
           <span>Or call us directly:</span>
           <strong className="flex flex-wrap justify-center gap-1 sm:gap-2">
-            {/* <a href="tel:+919456497636" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold whitespace-nowrap">+91 94564 96366</a> */}
+            <a href="tel:+919456497636" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold whitespace-nowrap">+91 94564 96366</a>
             <span className="hidden sm:inline">,</span>
             <a href="tel:+919897907308" className="text-white transition-all duration-200 hover:scale-105 hover:font-semibold whitespace-nowrap">+91 98979 07308</a>
           </strong>

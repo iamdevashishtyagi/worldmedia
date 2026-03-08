@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -61,22 +62,26 @@ export default function AboutSection() {
               Learn More About Us
             </Link>
           </motion.div>
-
-          {/* Image */}
           <motion.div
-            className="relative"
+            className="relative h-96 w-full group"
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 80 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ amount: 0.3 }}
           >
-            <div className="bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl h-96 flex items-center justify-center text-white text-center shadow-xl">
-              <div>
-                <div className="text-2xl font-bold mb-2">World Media Team</div>
-                <div className="text-sm opacity-90">
-                  Professional & Creative Advertising Experts
-                </div>
+            <Image
+              src='/images/website/profilepic.webp'
+              alt='[Owner Name] - Founder & CEO of World Media'
+              fill
+              className="object-cover rounded-2xl shadow-xl"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-2xl transition-opacity duration-300 flex items-end">
+              <div className="p-6 text-white">
+                <h3 className="text-2xl font-bold">Shrikant Tyagi</h3>
+                <p className="text-lg">Founder & CEO</p>
               </div>
             </div>
           </motion.div>

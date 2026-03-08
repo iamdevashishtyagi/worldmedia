@@ -18,6 +18,9 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/images/website/logo2.png",
+  },
 };
 
 export default function RootLayout({

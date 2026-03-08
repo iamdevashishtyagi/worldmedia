@@ -109,8 +109,8 @@ export default function ContactSection() {
                   <Mail className="w-6 h-6 text-blue-950 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-600 text-lg mb-1">Email</h3>
-                    <a href="mailto:info@worldmedia.com" className="text-black block transition-all duration-200 hover:text-blue-950 hover:scale-105 hover:font-semibold mb-2" target="_blank" rel="noopener noreferrer">info@worldmedia.com</a>
-                    <a href="mailto:sales@worldmedia.com" className="text-black block transition-all duration-200 hover:text-blue-950 hover:scale-105 hover:font-semibold" target="_blank" rel="noopener noreferrer">sales@worldmedia.com</a>
+                    <a href="mailto:worldmediancr@gmail.com" className="text-black block transition-all duration-200 hover:text-blue-950 hover:scale-105 hover:font-semibold mb-2" target="_blank" rel="noopener noreferrer">worldmediancr@gmail.com</a>
+                    <a href="mailto:shrikanttyagiworldmedia@gmail.com" className="text-black block transition-all duration-200 hover:text-blue-950 hover:scale-105 hover:font-semibold" target="_blank" rel="noopener noreferrer">shrikanttyagiworldmedia@gmail.com</a>
                   </div>
                 </div>
                 
@@ -152,6 +152,7 @@ export default function ContactSection() {
                   <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
                   <select id="service" name="service" value={formData.service} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option value="">Select a service</option>
+                    <option value="digitalwall">Digital Wall Painting</option>
                     <option value="hoardings">Hoardings & Billboards</option>
                     <option value="vehicle">Vehicle Branding</option>
                     <option value="signage">Signages & Unipoles</option>
