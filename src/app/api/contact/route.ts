@@ -55,7 +55,7 @@ ${message}
     `;
 
     await transporter.sendMail({
-      from: `"${name}" <${process.env.SMTP_USER}>`,
+      from: `"${name}" <${email}>`,
       to: process.env.MAIL_TO,
       subject: `Contact form: ${name}${company ? ` — ${company}` : ""}`,
       text: textBody,
