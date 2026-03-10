@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Hero() {
   const [textIndex, setTextIndex] = useState(0);
-  const heroTexts = ["Hoardings", "Billboards", "Vehicle Branding", "LED Displays", "Digital Marketing"];
+  const heroTexts = ["Hoardings", "Digital Wall Painting", "Billboards", "Vehicle Branding", "LED Displays", "Digital Marketing"];
 
   useEffect(() => {
     const interval = setInterval(() => {
