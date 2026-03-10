@@ -16,9 +16,6 @@ export async function POST(req: Request) {
     const body: Body = await req.json();
 
     const { name, email, phone, company, service, message } = body;
-    console.log(body, 'body');
-    
-    // Basic validation
     if (!name || !email || !message) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
@@ -45,7 +42,7 @@ ${message}
 `.trim();
 
     const htmlBody = `
-      <h3>New contact form submission</h3>
+      <h3>World Media Contact Form</h3>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Phone:</strong> ${phone || "-"}</p>
@@ -55,7 +52,7 @@ ${message}
     `;
 
     await transporter.sendMail({
-      from: `"${name}" <${email}>`,
+      from: `"${name}"`,
       to: process.env.MAIL_TO,
       subject: `Contact form: ${name}${company ? ` — ${company}` : ""}`,
       text: textBody,
