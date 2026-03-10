@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Leading advertising company in Meerut offering digital wall painting, hoardings, billboards, and outdoor advertising solutions.",
   alternates: {
-    canonical: "/",
+    canonical: "https://worldmediancr.com",
   },
   icons: {
     icon: "/images/website/logo2.png",
