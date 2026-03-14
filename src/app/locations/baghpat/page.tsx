@@ -245,11 +245,11 @@ export default function BaghpatLocationPage() {
         <h2 className="text-3xl font-bold mb-8 text-gray-900">What Baghpat Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"World Media NCR helped us with hoardings in Baghpat and Baraut for our college admission campaign. Great locations and professional team."</p>
+            <p className="text-gray-700 italic mb-4">&quot;World Media NCR helped us with hoardings in Baghpat and Baraut for our college admission campaign. Great locations and professional team.&quot;</p>
             <p className="font-semibold text-gray-900">– Educational Institute, Baraut</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"We needed wall painting across Baghpat rural areas for a government awareness campaign. They covered 50+ villages efficiently. Highly recommended."</p>
+            <p className="text-gray-700 italic mb-4">&quot;We needed wall painting across Baghpat rural areas for a government awareness campaign. They covered 50+ villages efficiently. Highly recommended.&quot;</p>
             <p className="font-semibold text-gray-900">– NGO Coordinator, Baghpat</p>
           </div>
         </div>

@@ -60,7 +60,7 @@ export default function VehicleBrandingPage() {
             <strong>World Media NCR</strong> offers premium <strong>vehicle branding in Meerut</strong> – one of the most cost-effective mobile advertising solutions. Transform your fleet of cars, trucks, buses, or commercial vehicles into moving billboards that travel across the city.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            With vehicle branding, your advertisement doesn't stay in one place – it moves through high-traffic areas, residential neighborhoods, commercial districts, and highways, reaching thousands of potential customers every day.
+            With vehicle branding, your advertisement doesn&apos;t stay in one place – it moves through high-traffic areas, residential neighborhoods, commercial districts, and highways, reaching thousands of potential customers every day.
           </p>
           <div className="bg-amber-50 p-6 rounded-lg mt-4">
             <h2 className="text-xl font-bold mb-3">Why Choose Vehicle Branding?</h2>
@@ -199,7 +199,7 @@ export default function VehicleBrandingPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
-              <h3 className="text-xl font-semibold mb-3">What's Included:</h3>
+              <h3 className="text-xl font-semibold mb-3">What&apos;s Included:</h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600 font-bold">✓</span>

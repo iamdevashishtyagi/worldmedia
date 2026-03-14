@@ -244,11 +244,11 @@ export default function SaharanpurLocationPage() {
         <h2 className="text-3xl font-bold mb-8 text-gray-900">What Saharanpur Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"We needed hoardings on the Delhi-Dehradun highway for our resort. World Media NCR got us prime locations at Chhutmalpur and Najibabad. Excellent visibility and professional service."</p>
+            <p className="text-gray-700 italic mb-4">&quot;We needed hoardings on the Delhi-Dehradun highway for our resort. World Media NCR got us prime locations at Chhutmalpur and Najibabad. Excellent visibility and professional service.&quot;</p>
             <p className="font-semibold text-gray-900">– Resort Owner, Chhutmalpur</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"For our educational campaign across Saharanpur district, they provided excellent wall painting coverage in rural areas. Very satisfied with their work."</p>
+            <p className="text-gray-700 italic mb-4">&quot;For our educational campaign across Saharanpur district, they provided excellent wall painting coverage in rural areas. Very satisfied with their work.&quot;</p>
             <p className="font-semibold text-gray-900">– NGO Director, Saharanpur</p>
           </div>
         </div>

@@ -147,7 +147,7 @@ export default function HoardingAdvertisingPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Hoarding Advertising Costs in Meerut</h2>
         <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
-          <p className="text-lg mb-6">Our hoarding advertising packages are customized based on your specific requirements. Here's a general pricing guide:</p>
+          <p className="text-lg mb-6">Our hoarding advertising packages are customized based on your specific requirements. Here&apos;s a general pricing guide:</p>
           
           <div className="overflow-x-auto mb-8">
             <table className="min-w-full bg-white border">

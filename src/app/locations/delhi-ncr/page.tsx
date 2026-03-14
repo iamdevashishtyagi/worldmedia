@@ -268,7 +268,7 @@ export default function DelhiNcrLocationPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Delhi NCR</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 mb-4">
-            Delhi NCR is India's largest and most important advertising market, with a population exceeding 46 million. It encompasses Delhi and its satellite cities – Gurgaon, Noida, Ghaziabad, Faridabad – connected by a network of expressways and highways.
+            Delhi NCR is India&apos;s largest and most important advertising market, with a population exceeding 46 million. It encompasses Delhi and its satellite cities – Gurgaon, Noida, Ghaziabad, Faridabad – connected by a network of expressways and highways.
           </p>
           <p className="text-gray-700 mb-4">
             <strong>Key facts about Delhi NCR for advertisers:</strong>
@@ -282,7 +282,7 @@ export default function DelhiNcrLocationPage() {
             <li><strong>Commercial centers:</strong> Multiple malls, commercial districts, and markets</li>
           </ul>
           <p className="text-gray-700">
-            Outdoor advertising in Delhi NCR offers unparalleled reach to India's most affluent and diverse consumer base. Highway hoardings on expressways provide millions of impressions daily, while city locations target specific demographics.
+            Outdoor advertising in Delhi NCR offers unparalleled reach to India&apos;s most affluent and diverse consumer base. Highway hoardings on expressways provide millions of impressions daily, while city locations target specific demographics.
           </p>
         </div>
       </section>

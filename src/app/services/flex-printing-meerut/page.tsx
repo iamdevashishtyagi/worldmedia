@@ -60,7 +60,7 @@ export default function FlexPrintingPage() {
             <strong>World Media NCR</strong> offers high-quality <strong>flex printing in Meerut</strong> for all your outdoor advertising needs. From large-format hoardings to event banners, promotional displays, and retail signage – we deliver crisp, vibrant, and durable prints.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            Using state-of-the-art digital printing technology and premium materials, our flex prints are UV-resistant, weather-proof, and designed to withstand Meerut's diverse climate conditions. Whether you need a single banner or bulk printing for a campaign, we ensure fast turnaround without compromising on quality.
+            Using state-of-the-art digital printing technology and premium materials, our flex prints are UV-resistant, weather-proof, and designed to withstand Meerut&apos;s diverse climate conditions. Whether you need a single banner or bulk printing for a campaign, we ensure fast turnaround without compromising on quality.
           </p>
           <div className="bg-red-50 p-6 rounded-lg mt-4">
             <h2 className="text-xl font-bold mb-3">Why Choose Our Flex Printing?</h2>

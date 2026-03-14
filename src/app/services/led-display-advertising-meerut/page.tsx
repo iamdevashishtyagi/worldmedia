@@ -245,7 +245,7 @@ export default function LEDDisplayPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
-              <h3 className="text-xl font-semibold mb-3">What's Included:</h3>
+              <h3 className="text-xl font-semibold mb-3">What&apos;s Included:</h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-800 font-bold">✓</span>

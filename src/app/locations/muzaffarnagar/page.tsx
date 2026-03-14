@@ -243,11 +243,11 @@ export default function MuzaffarnagarLocationPage() {
         <h2 className="text-3xl font-bold mb-8 text-gray-900">What Muzaffarnagar Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"World Media NCR has been our advertising partner for multiple election campaigns in Muzaffarnagar. Their hoarding locations are strategic and their team delivers on time."</p>
+            <p className="text-gray-700 italic mb-4">&quot;World Media NCR has been our advertising partner for multiple election campaigns in Muzaffarnagar. Their hoarding locations are strategic and their team delivers on time.&quot;</p>
             <p className="font-semibold text-gray-900">– Political Leader, Muzaffarnagar</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"We needed wall painting across rural Muzaffarnagar for our product launch. They covered 50+ villages efficiently and the quality was excellent."</p>
+            <p className="text-gray-700 italic mb-4">&quot;We needed wall painting across rural Muzaffarnagar for our product launch. They covered 50+ villages efficiently and the quality was excellent.&quot;</p>
             <p className="font-semibold text-gray-900">– FMCG Distributor, Muzaffarnagar</p>
           </div>
         </div>

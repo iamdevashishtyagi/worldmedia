@@ -150,7 +150,7 @@ export default function DigitalWallPaintingPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Digital Wall Painting Costs in Meerut</h2>
         <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
-          <p className="text-lg mb-6">Wall painting costs vary based on several factors. Here's a general guide:</p>
+          <p className="text-lg mb-6">Wall painting costs vary based on several factors. Here&apos;s a general guide:</p>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-semibold mb-4">Factors Affecting Cost:</h3>

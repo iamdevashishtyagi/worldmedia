@@ -234,7 +234,7 @@ export default function DelhiLocationPage() {
             <li><strong>Media capital:</strong> Headquarters of major media houses</li>
           </ul>
           <p className="text-gray-700">
-            Outdoor advertising in Delhi reaches India's most influential and affluent audience. From policymakers and business leaders to tourists and the general public, your message gets seen by the right people.
+            Outdoor advertising in Delhi reaches India&apos;s most influential and affluent audience. From policymakers and business leaders to tourists and the general public, your message gets seen by the right people.
           </p>
         </div>
       </section>
@@ -252,7 +252,7 @@ export default function DelhiLocationPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-600 font-bold">•</span>
-                <span><strong>NDMC</strong> – New Delhi Municipal Council (Lutyens' Delhi)</span>
+                <span><strong>NDMC</strong> – New Delhi Municipal Council (Lutyens&apos; Delhi)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-600 font-bold">•</span>

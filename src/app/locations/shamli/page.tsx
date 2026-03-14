@@ -244,11 +244,11 @@ export default function ShamliLocationPage() {
         <h2 className="text-3xl font-bold mb-8 text-gray-900">What Shamli Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"We worked with World Media NCR for the Kairana by-election campaign. Their wall painting coverage in rural areas was exceptional – they reached every village."</p>
+            <p className="text-gray-700 italic mb-4">&quot;We worked with World Media NCR for the Kairana by-election campaign. Their wall painting coverage in rural areas was exceptional – they reached every village.&quot;</p>
             <p className="font-semibold text-gray-900">– Political Campaign Manager, Kairana</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">"Our educational institute needed hoardings across Shamli. They provided excellent locations and professional installation. Great experience."</p>
+            <p className="text-gray-700 italic mb-4">&quot;Our educational institute needed hoardings across Shamli. They provided excellent locations and professional installation. Great experience.&quot;</p>
             <p className="font-semibold text-gray-900">– Director, Coaching Institute, Shamli</p>
           </div>
         </div>
