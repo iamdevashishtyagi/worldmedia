@@ -257,7 +257,7 @@ export default function CostGuideBlog() {
 
         <div className="bg-blue-50 p-6 rounded-lg my-8">
           <h3 className="text-2xl font-bold mb-3 text-gray-900">Need a Custom Quote?</h3>
-          <p className="mb-4 text-gray-700">Contact us for exact pricing based on your specific requirements. We'll provide a detailed quotation with no obligation.</p>
+          <p className="mb-4 text-gray-700">Contact us for exact pricing based on your specific requirements. We&apos;ll provide a detailed quotation with no obligation.</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700">Get Free Quote</Link>
             <Link href="/services" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50">View All Services</Link>
@@ -275,7 +275,7 @@ export default function CostGuideBlog() {
         <h4 className="text-gray-900">Do these prices include GST?</h4>
         <p className="text-gray-700">Prices mentioned are exclusive of GST (18%). Final invoice will include applicable taxes.</p>
 
-        <h4 className="text-gray-900">What's included in hoarding rental?</h4>
+        <h4 className="text-gray-900">What&apos;s included in hoarding rental?</h4>
         <p className="text-gray-700">Rental includes structure, location access, and permits. Printing and installation are usually extra.</p>
       </div>
 

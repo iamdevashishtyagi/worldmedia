@@ -311,7 +311,7 @@ export default function HoardingAdvertisingPage() {
             },
             {
               q: "How do I book a hoarding in Meerut?",
-              a: "Simply call us at +91 94564 97636, email us at info@worldmediancr.com, or visit our contact page. We'll discuss your requirements, show you available locations with photos and traffic data, provide a customized quote, and handle all permits and installation."
+              a: "Simply call us at +91 94564 97636, email us at worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show you available locations with photos and traffic data, provide a customized quote, and handle all permits and installation."
             },
             {
               q: "Are your hoardings illuminated for night visibility?",

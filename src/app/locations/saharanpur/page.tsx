@@ -299,7 +299,7 @@ export default function SaharanpurLocationPage() {
             },
             {
               q: "How do I book advertising space in Saharanpur?",
-              a: "Call us at +91 94564 97636, email info@worldmediancr.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
+              a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
             }
           ].map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">

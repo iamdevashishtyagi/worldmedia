@@ -65,7 +65,7 @@ export default function WhyChooseUsBlog() {
 
       {/* Introduction */}
       <div className="prose prose-lg max-w-none text-gray-700">
-        <p className="lead text-gray-800">With numerous advertising agencies operating in Meerut and NCR, what makes World Media NCR the preferred choice for businesses? Here's why over 500 clients have trusted us with their outdoor advertising campaigns since 2013.</p>
+        <p className="lead text-gray-800">With numerous advertising agencies operating in Meerut and NCR, what makes World Media NCR the preferred choice for businesses? Here&apos;s why over 500 clients have trusted us with their outdoor advertising campaigns since 2013.</p>
 
         <h2 className="text-gray-900">1. 10+ Years of Industry Experience</h2>
         
@@ -88,7 +88,7 @@ export default function WhyChooseUsBlog() {
           </div>
         </div>
 
-        <p>Since 2013, we've been helping businesses in Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and Delhi NCR achieve their advertising goals. A decade of experience means we understand:</p>
+        <p>Since 2013, we&apos;ve been helping businesses in Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and Delhi NCR achieve their advertising goals. A decade of experience means we understand:</p>
         <ul className="text-gray-700">
           <li>Which locations work best for different business types</li>
           <li>How to navigate local regulations and permits</li>
@@ -140,7 +140,7 @@ export default function WhyChooseUsBlog() {
           />
         </div>
 
-        <p>With over 500 completed projects, we've worked with:</p>
+        <p>With over 500 completed projects, we&apos;ve worked with:</p>
         <ul className="text-gray-700">
           <li>National brands like Ambuja Cement, Ultratech, Apollo Pipes</li>
           <li>Hospitals including Apollo, Metro, Medanta, Yashoda</li>
@@ -212,7 +212,7 @@ export default function WhyChooseUsBlog() {
           <li>Highway authorities (for expressway locations)</li>
           <li>Property owners with valid agreements</li>
         </ul>
-        <p>You can advertise with confidence, knowing your campaign won't face legal issues.</p>
+        <p>You can advertise with confidence, knowing your campaign won&apos;t face legal issues.</p>
 
         <h2 className="text-gray-900">7. Fast Turnaround</h2>
         
@@ -247,7 +247,7 @@ export default function WhyChooseUsBlog() {
         <p>Our business runs on referrals and repeat clients. We prioritize:</p>
         <ul className="text-gray-700">
           <li>Understanding your specific goals and budget</li>
-          <li>Recommending what's best for you, not what's most profitable for us</li>
+          <li>Recommending what&apos;s best for you, not what&apos;s most profitable for us</li>
           <li>Being available whenever you need us</li>
           <li>Addressing issues promptly</li>
           <li>Building long-term relationships, not one-time transactions</li>
@@ -267,11 +267,11 @@ export default function WhyChooseUsBlog() {
 
         <h2 className="text-gray-900">Conclusion</h2>
         <p>Choosing the right advertising partner makes all the difference. With World Media NCR, you get experience, premium locations, end-to-end service, transparent pricing, and a team that genuinely cares about your success.</p>
-        <p>Whether you're a national brand, a local business, or a political candidate, we have the expertise and resources to make your campaign successful.</p>
+        <p>Whether you&apos;re a national brand, a local business, or a political candidate, we have the expertise and resources to make your campaign successful.</p>
 
         <div className="bg-blue-50 p-6 rounded-lg my-8">
           <h3 className="text-2xl font-bold mb-3 text-gray-900">Ready to Work with the Best?</h3>
-          <p className="mb-4 text-gray-700">Contact us today for a free consultation. Let's discuss how we can help you achieve your advertising goals.</p>
+          <p className="mb-4 text-gray-700">Contact us today for a free consultation. Let&apos;s discuss how we can help you achieve your advertising goals.</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700">Get Free Consultation</Link>
             <Link href="/about" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50">Learn More About Us</Link>
@@ -281,7 +281,7 @@ export default function WhyChooseUsBlog() {
         <h3 className="text-gray-900">Frequently Asked Questions</h3>
         
         <h4 className="text-gray-900">How long has World Media NCR been in business?</h4>
-        <p className="text-gray-700">We've been serving clients since 2013 – over 10 years of experience in outdoor advertising.</p>
+        <p className="text-gray-700">We&apos;ve been serving clients since 2013 – over 10 years of experience in outdoor advertising.</p>
 
         <h4 className="text-gray-900">Do you serve areas outside Meerut?</h4>
         <p className="text-gray-700">Yes, we serve Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, Delhi NCR, and other areas. See our locations page for complete coverage.</p>
@@ -290,7 +290,7 @@ export default function WhyChooseUsBlog() {
         <p className="text-gray-700">We offer hoarding advertising, digital wall painting, billboards, vehicle branding, flex printing, LED displays, and political advertising.</p>
 
         <h4 className="text-gray-900">How can I get a quote?</h4>
-        <p className="text-gray-700">Call us at +91 94564 97636, email info@worldmediancr.com, or visit our contact page. We'll respond promptly with a detailed quote.</p>
+        <p className="text-gray-700">Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We&apos;ll respond promptly with a detailed quote.</p>
       </div>
 
       {/* Related Blogs */}

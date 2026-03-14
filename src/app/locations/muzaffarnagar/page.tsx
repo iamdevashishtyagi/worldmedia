@@ -280,7 +280,7 @@ export default function MuzaffarnagarLocationPage() {
             },
             {
               q: "How do I book advertising space in Muzaffarnagar?",
-              a: "Simply call us at +91 94564 97636, email us at info@worldmediancr.com, or visit our contact page. We'll discuss your requirements, show you available locations, provide a quote, and handle everything from permits to installation."
+              a: "Simply call us at +91 94564 97636, email us at worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show you available locations, provide a quote, and handle everything from permits to installation."
             }
           ].map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">

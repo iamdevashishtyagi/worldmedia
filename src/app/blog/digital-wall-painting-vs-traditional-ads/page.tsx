@@ -154,7 +154,7 @@ export default function WallPaintingComparisonBlog() {
           <ul className="space-y-2">
             <li>✓ <strong>Long-term brand building:</strong> If you want your brand visible for years</li>
             <li>✓ <strong>Limited budget:</strong> One-time investment with years of returns</li>
-            <li>✓ <strong>Evergreen message:</strong> Core brand identity that doesn't change often</li>
+            <li>✓ <strong>Evergreen message:</strong> Core brand identity that doesn&apos;t change often</li>
             <li>✓ <strong>Real estate:</strong> Developers promoting ongoing projects</li>
             <li>✓ <strong>Educational institutions:</strong> Schools, colleges with permanent presence</li>
             <li>✓ <strong>Political campaigns:</strong> Long-term party presence in constituencies</li>
@@ -218,7 +218,7 @@ export default function WallPaintingComparisonBlog() {
         <p>High-quality digital wall paintings last 3-5 years with proper installation. They are UV-resistant and weather-proof, maintaining color vibrancy throughout this period.</p>
 
         <h4>Can I change my wall painting message?</h4>
-        <p>Changing a wall painting message requires new printing and reinstallation, which costs almost as much as the original installation. Therefore, wall painting is best for messages that won't change frequently.</p>
+        <p>Changing a wall painting message requires new printing and reinstallation, which costs almost as much as the original installation. Therefore, wall painting is best for messages that won&apos;t change frequently.</p>
 
         <h4>Do you offer both services?</h4>
         <p>Yes, World Media NCR offers both digital wall painting and traditional hoarding advertising. We can help you decide which is best for your needs.</p>

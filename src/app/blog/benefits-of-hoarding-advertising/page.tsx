@@ -90,7 +90,7 @@ export default function BenefitsHoardingBlog() {
         <p>The sheer size of hoardings makes them impossible to ignore. A well-designed hoarding on Roorkee Road creates a lasting impression. Studies show outdoor advertising has higher recall rates than digital ads—people remember what they see during their daily commute.</p>
 
         <h2>3. Cost-Effective Reach</h2>
-        <p>Compare the cost: A hoarding on Muzaffarnagar Highway costs ₹25,000-₹40,000 per month and is seen by 60,000+ people daily. That's over 1.8 million impressions monthly. The cost per thousand impressions (CPM) is among the lowest of any advertising medium—far cheaper than TV, radio, or newspaper.</p>
+        <p>Compare the cost: A hoarding on Muzaffarnagar Highway costs ₹25,000-₹40,000 per month and is seen by 60,000+ people daily. That&apos;s over 1.8 million impressions monthly. The cost per thousand impressions (CPM) is among the lowest of any advertising medium—far cheaper than TV, radio, or newspaper.</p>
 
         <h2>4. Local Targeting at Its Best</h2>
         <div className="relative h-60 my-4 rounded-lg overflow-hidden">
@@ -107,7 +107,7 @@ export default function BenefitsHoardingBlog() {
         <p>Premium hoarding locations signal that your brand is established and trustworthy. When customers see your brand on a massive hoarding at a prime location like Gokalpuri Chowk, it builds credibility. Small businesses can look like major players with strategic hoarding placements.</p>
 
         <h2>6. Complements Digital Marketing</h2>
-        <p>Smart advertisers integrate outdoor with digital. Add your website URL, QR code, or social media handle to your hoarding. Commuters who see your ad may visit your site later. It's an omnichannel approach that multiplies your reach.</p>
+        <p>Smart advertisers integrate outdoor with digital. Add your website URL, QR code, or social media handle to your hoarding. Commuters who see your ad may visit your site later. It&apos;s an omnichannel approach that multiplies your reach.</p>
 
         <h2>7. Creative Freedom</h2>
         <div className="relative h-60 my-4 rounded-lg overflow-hidden">
@@ -118,10 +118,10 @@ export default function BenefitsHoardingBlog() {
             className="object-cover"
           />
         </div>
-        <p>Large format means large ideas. You're not constrained by small screens. Use bold visuals, clever copy, and innovative designs. 3D elements, unique shapes, or interactive features can make your hoarding a talking point.</p>
+        <p>Large format means large ideas. You&apos;re not constrained by small screens. Use bold visuals, clever copy, and innovative designs. 3D elements, unique shapes, or interactive features can make your hoarding a talking point.</p>
 
         <h2>8. No Ad Blockers or Skip Buttons</h2>
-        <p>Commuters can't install ad blockers on their windshields. They can't skip your ad. Hoarding advertising is unskippable, unavoidable, and always seen. In a world where people actively avoid digital ads, outdoor advertising delivers guaranteed visibility.</p>
+        <p>Commuters can&apos;t install ad blockers on their windshields. They can&apos;t skip your ad. Hoarding advertising is unskippable, unavoidable, and always seen. In a world where people actively avoid digital ads, outdoor advertising delivers guaranteed visibility.</p>
 
         <h2>9. Long-Term Impact</h2>
         <p>A hoarding campaign running for 6-12 months creates cumulative impact. Repetition builds memory. Commuters see your message daily for months, and when they need your product or service, your brand comes to mind first.</p>
@@ -130,7 +130,7 @@ export default function BenefitsHoardingBlog() {
         <p>By advertising locally, you show commitment to the Meerut community. Local customers appreciate businesses that invest in their city. It builds goodwill and strengthens your local presence.</p>
 
         <h2>Conclusion</h2>
-        <p>Hoarding advertising remains one of the most powerful tools in a marketer's arsenal. For businesses in Meerut, Muzaffarnagar, Shamli, and NCR, it offers unparalleled visibility, cost-effectiveness, and local reach. Whether you're launching a new product, promoting a sale, or building brand awareness, hoardings deliver results.</p>
+        <p>Hoarding advertising remains one of the most powerful tools in a marketer&apos;s arsenal. For businesses in Meerut, Muzaffarnagar, Shamli, and NCR, it offers unparalleled visibility, cost-effectiveness, and local reach. Whether you&apos;re launching a new product, promoting a sale, or building brand awareness, hoardings deliver results.</p>
 
         <div className="bg-blue-50 p-6 rounded-lg my-8">
           <h3 className="text-2xl font-bold mb-3">Ready to Start Your Hoarding Campaign?</h3>
