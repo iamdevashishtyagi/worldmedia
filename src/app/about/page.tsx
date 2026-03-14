@@ -1,11 +1,44 @@
 // src/app/about/page.tsx
+import { Metadata } from 'next';
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'About Us | Advertising Agency in Meerut | World Media NCR',
+  description: 'Learn about World Media NCR, Meerut\'s premier advertising agency since 2013. Led by Shrikant Tyagi, we specialize in hoarding advertising, digital wall painting, and outdoor media solutions.',
+  keywords: 'about world media ncr, advertising agency meerut about, shrikant tyagi meerut, devashish tyagi meerut, advertising company history, outdoor media experts',
+  alternates: {
+    canonical: 'https://worldmediancr.com/about',
+  },
+};
+
 export default function AboutPage() {
   return (
     <main>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         
-        <h1 className="text-2xl md:text-5xl font-bold mb-8 text-center text-white">
-          World Media NCR – Advertising Agency in Meerut
+        {/* Add schema markup for leadership */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "World Media NCR",
+                "founder": {
+                  "@type": "Person",
+                  "name": "Shrikant Tyagi",
+                  "jobTitle": "Founder & CEO",
+                  "description": "Visionary entrepreneur in outdoor advertising industry"
+                }
+              }
+            })
+          }}
+        />
+
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-white">
+          World Media NCR – Leading Advertising Agency in Meerut Since 2013
         </h1>
 
         <div className="prose prose-lg mx-auto text-white">

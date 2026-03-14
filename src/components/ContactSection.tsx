@@ -67,7 +67,7 @@ export default function ContactSection() {
                     <p className="text-black">
                       Office Opp. GIC, Dharam Palace<br />
                       Begum Bridge Road<br />
-                      Meerut, UP, 250003
+                      Meerut, UP, 250001
                     </p>
                   </div>
                 </div>
