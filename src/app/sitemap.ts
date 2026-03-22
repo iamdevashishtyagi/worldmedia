@@ -55,6 +55,96 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   ]
 
+  const developerLocationPages: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/developer`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/portfolio`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/web-developer-meerut`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/software-developer-meerut`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/website-developer-meerut`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/freelance-web-developer-meerut`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/full-stack-developer-meerut`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/nextjs-developer-meerut`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+  ]
+
+  const developerGenericPages: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/developer/web-developer`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/software-developer`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/freelance-web-developer`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/full-stack-developer`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/developer/nextjs-developer`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+  ]
+
   const servicePages: MetadataRoute.Sitemap = [
     'hoarding-advertising-meerut',
     'digital-wall-painting-meerut',
@@ -99,5 +189,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...mainPages, ...servicePages, ...locationPages, ...blogPages]
+  return [ ...mainPages, ...developerLocationPages, ...developerGenericPages, ...servicePages, ...locationPages, ...blogPages ]
 }
