@@ -159,13 +159,13 @@ export default function FreelanceWebDeveloperPage() {
         <p>Hiring a freelance web developer gives you direct access to a skilled professional without paying agency overhead. You get personalized attention, faster communication, and more flexibility in project execution.</p>
 
         <h4>How do I hire you for my project?</h4>
-        <p>Contact me via the contact page to discuss your project. I'll provide a detailed proposal, timeline, and quote. Once approved, I'll begin development with regular updates throughout the process.</p>
+        <p>Contact me via the contact page to discuss your project. I&apos;ll provide a detailed proposal, timeline, and quote. Once approved, I&apos;ll begin development with regular updates throughout the process.</p>
 
         <h4>Do you work with clients outside India?</h4>
         <p>Yes, I work with clients worldwide. All communication can be done remotely via email, video calls, and project management tools.</p>
 
         <h4>What is your typical turnaround time?</h4>
-        <p>Turnaround depends on project scope. Small websites: 2-3 weeks. Medium websites: 4-6 weeks. Large projects: 8-12 weeks. I'll provide a specific timeline based on your requirements.</p>
+        <p>Turnaround depends on project scope. Small websites: 2-3 weeks. Medium websites: 4-6 weeks. Large projects: 8-12 weeks. I&apos;ll provide a specific timeline based on your requirements.</p>
       </div>
     </main>
   );

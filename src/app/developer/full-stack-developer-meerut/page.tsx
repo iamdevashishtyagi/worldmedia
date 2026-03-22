@@ -178,7 +178,7 @@ export default function FullStackDeveloperPage() {
         <p>Yes, I offer ongoing maintenance and support packages to ensure your application continues to run smoothly with updates and improvements as needed.</p>
 
         <h4 className="text-gray-900">How long does it take to build a full stack application?</h4>
-        <p>Timeline depends on project complexity. Small applications: 2-4 weeks. Medium applications: 1-3 months. Large enterprise applications: 3-6 months. I'll provide a specific timeline based on your requirements.</p>
+        <p>Timeline depends on project complexity. Small applications: 2-4 weeks. Medium applications: 1-3 months. Large enterprise applications: 3-6 months. I&apos;ll provide a specific timeline based on your requirements.</p>
       </div>
     </main>
   );

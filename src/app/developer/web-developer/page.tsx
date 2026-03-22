@@ -167,7 +167,7 @@ export default function WebDeveloperPage() {
         <p>Yes, SEO optimization is a key part of my development process. I implement advanced metadata, schema markup, and performance optimizations to help your website rank well on search engines.</p>
 
         <h4>What is the process for hiring you?</h4>
-        <p>Contact me via the contact page to discuss your project requirements. I'll provide a timeline and quote. Once approved, development begins with regular updates throughout the process.</p>
+        <p>Contact me via the contact page to discuss your project requirements. I&apos;ll provide a timeline and quote. Once approved, development begins with regular updates throughout the process.</p>
       </div>
     </main>
   );

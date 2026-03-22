@@ -86,10 +86,10 @@ export default function WebDeveloperMeerutPage() {
           <h3 className="text-xl font-bold mb-3 text-gray-900">Featured Work: World Media NCR</h3>
           <p>Devashish Tyagi developed and optimized the World Media NCR website, implementing advanced SEO strategies that helped the site rank for competitive keywords including:</p>
           <ul className="mt-2">
-            <li>"advertising agency in Meerut"</li>
-            <li>"hoarding advertising Meerut"</li>
-            <li>"digital wall painting Meerut"</li>
-            <li>"billboard advertising Meerut"</li>
+            <li>&quot;advertising agency in Meerut&quot;</li>
+            <li>&quot;hoarding advertising Meerut&quot;</li>
+            <li>&quot;digital wall painting Meerut&quot;</li>
+            <li>&quot;billboard advertising Meerut&quot;</li>
           </ul>
           <p className="mt-3">The website is built with Next.js 14, features complete SEO optimization, local business schema, and fast loading times.</p>
         </div>

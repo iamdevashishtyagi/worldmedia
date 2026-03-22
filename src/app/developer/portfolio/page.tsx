@@ -85,7 +85,7 @@ export default function DeveloperPortfolioPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">About Devashish Tyagi</h2>
         <div className="prose prose-lg max-w-none text-gray-700">
           <p>Devashish Tyagi is a skilled web developer based in Sardhana, Meerut, specializing in modern web technologies and SEO-optimized website development. With expertise in Next.js, React, and TypeScript, he builds fast, responsive, and search-engine-friendly websites that help businesses establish a strong online presence.</p>
-          <p className="mt-4">Currently, Devashish Tyagi has developed and optimized <strong>World Media NCR</strong> - a leading advertising agency website, implementing advanced SEO strategies to rank for competitive keywords like "advertising agency in Meerut", "hoarding advertising Meerut", and "digital wall painting Meerut".</p>
+          <p className="mt-4">Currently, Devashish Tyagi has developed and optimized <strong>World Media NCR</strong> - a leading advertising agency website, implementing advanced SEO strategies to rank for competitive keywords like &quot;advertising agency in Meerut&quot;, &quot;hoarding advertising Meerut&quot;, and &quot;digital wall painting Meerut&quot;.</p>
         </div>
       </section>
 
