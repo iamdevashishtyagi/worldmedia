@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function CtaSection() {
   return (
-    <section className="w-full pt-15 pb-5 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+    <section className="w-full pt-15 pb-5 bg-gradient-to-r from-slate-950 to-slate-950 text-white">
       <motion.div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" initial={{ opacity: 0, y: 80 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 0.8, ease: "easeOut" }}>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Elevate Your Brand?</h2>
         <p className="text-xl mb-10 max-w-2xl mx-auto">
