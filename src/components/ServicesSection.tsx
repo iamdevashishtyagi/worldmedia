@@ -6,11 +6,13 @@ import { Square, Truck, Circle, Lightbulb, Megaphone, ArrowRight } from "lucide-
 import { motion } from "framer-motion";
 import TiltUnipole from "@/components/TiltUnipole";
 import DashedPath from "@/components/CurvedPath";
+import Link from 'next/link';
 
 const allServices = [
   {
     icon: <Square size={48} className="text-blue-500" />,
     title: "Hoardings & Billboards",
+    path: "/services/hoarding-advertising-meerut",
     description:
       "We design and install high-impact outdoor hoardings and billboards in strategic locations for maximum brand visibility. Our solutions are built to withstand weather conditions while maintaining visual appeal.",
     features: [
@@ -24,6 +26,7 @@ const allServices = [
   {
     icon: <Truck size={48} className="text-purple-500" />,
     title: "Vehicle Branding",
+    path: "/services/vehicle-branding-meerut",
     description:
       "Transform your vehicles into mobile advertisements with our professional vehicle wrapping and branding services. Our designs are durable, eye-catching, and effective at capturing attention on the move.",
     features: [
@@ -37,6 +40,7 @@ const allServices = [
   {
     icon: <Circle size={48} className="text-cyan-500" />,
     title: "Signages & Unipoles",
+    path: "/services/hoarding-advertising-meerut", 
     description:
       "From directional signs to promotional unipoles, we create durable and visually appealing signage solutions that serve both functional and advertising purposes.",
     features: [
@@ -50,6 +54,7 @@ const allServices = [
   {
     icon: <Lightbulb size={48} className="text-yellow-500" />,
     title: "LED Display Boards",
+    path: "/services/led-display-advertising-meerut",
     description:
       "Modern digital advertising solutions with bright, dynamic LED displays. Perfect for time-sensitive promotions, news updates, and engaging visual content.",
     features: [
@@ -63,6 +68,7 @@ const allServices = [
   {
     icon: <Megaphone size={48} className="text-red-500" />,
     title: "Digital Marketing",
+    path: "/services/digital-wall-painting-meerut",
     description:
       "Complement your outdoor advertising with targeted digital campaigns. We help you reach your audience online with strategic digital marketing solutions.",
     features: [
@@ -76,6 +82,7 @@ const allServices = [
   {
     icon: <Megaphone size={48} className="text-red-500" />,
     title: "Next Yours",
+    path: "/services/flex-printing-meerut",
     description:
       "Complement your outdoor advertising with targeted digital campaigns. We help you reach your audience online with strategic digital marketing solutions.",
     features: [
@@ -129,6 +136,15 @@ export default function ServicesSection() {
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-6">
+                    <Link
+                      href={service.path}
+                      className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:gap-3"
+                    >
+                      Learn More
+                      <ArrowRight size={18} />
+                    </Link>
+                  </div>
                 </motion.div>
                 
                 {/* Service Image */}

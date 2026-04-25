@@ -40,7 +40,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Advertising Agency in Meerut | World Media NCR",
-    description: "Leading advertising agency in Meerut offering hoarding, wall painting, and outdoor advertising.",
+    description: "Leading advertising agency in Meerut offering hoarding, digital wall painting, and outdoor advertising.",
     images: ["/images/website/twitter-image.jpg"],
   },
   robots: {

@@ -3,20 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Flex Printing in Meerut | Banner & Hoarding Printing | World Media NCR',
-  description: 'High-quality flex printing services in Meerut for hoardings, banners, posters, and outdoor displays. UV-resistant, weather-proof prints. Fast turnaround for events, promotions, and campaigns. Competitive rates.',
-  keywords: 'flex printing meerut, banner printing meerut, hoarding printing meerut, flex printer near me, outdoor banner printing meerut, digital flex printing, vinyl printing meerut, flex print shop meerut, flex banner price',
+  title: 'Flex Printing in Meerut | High-Quality Banner & Hoarding Printing | World Media NCR',
+  description: 'Professional flex printing services in Meerut for hoardings, banners, posters, and outdoor displays. UV-resistant, weather-proof prints with 1440 DPI resolution. Fast turnaround for events and campaigns. Trusted by 500+ brands.',
+  keywords: 'flex printing meerut, banner printing meerut, hoarding printing meerut, flex printer near me, outdoor banner printing meerut, digital flex printing, vinyl printing meerut, flex print shop meerut, large format printing meerut, flex printing muzaffarnagar',
   alternates: {
     canonical: 'https://worldmediancr.com/services/flex-printing-meerut',
   },
   openGraph: {
-    title: 'Flex Printing in Meerut | World Media NCR',
+    title: 'Flex Printing in Meerut | High-Quality Banner & Hoarding Printing | World Media NCR',
     description: 'Professional flex printing services in Meerut for hoardings, banners, and outdoor displays. High-quality, weather-resistant prints.',
     url: 'https://worldmediancr.com/services/flex-printing-meerut',
     siteName: 'World Media NCR',
     images: [
       {
-        url: '/images/portfolio/flex-printing-sample.jpg',
+        url: '/images/services/Hoarding1.webp',
         width: 1200,
         height: 630,
       },
@@ -28,394 +28,352 @@ export const metadata: Metadata = {
 
 export default function FlexPrintingPage() {
   return (
-    <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
-      {/* Breadcrumb Navigation */}
-      <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3">
-          <li className="inline-flex items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <span className="mx-2 text-gray-400">/</span>
-              <Link href="/services" className="text-gray-700 hover:text-blue-600">Services</Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <span className="mx-2 text-gray-400">/</span>
-              <span className="text-gray-500">Flex Printing Meerut</span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-
+    <main className="bg-white">
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Professional Flex Printing Services in Meerut
-          </h1>
-          <p className="text-lg text-gray-700 mb-4">
-            <strong>World Media NCR</strong> offers high-quality <strong>flex printing in Meerut</strong> for all your outdoor advertising needs. From large-format hoardings to event banners, promotional displays, and retail signage – we deliver crisp, vibrant, and durable prints.
-          </p>
-          <p className="text-lg text-gray-700 mb-4">
-            Using state-of-the-art digital printing technology and premium materials, our flex prints are UV-resistant, weather-proof, and designed to withstand Meerut&apos;s diverse climate conditions. Whether you need a single banner or bulk printing for a campaign, we ensure fast turnaround without compromising on quality.
-          </p>
-          <div className="bg-red-50 p-6 rounded-lg mt-4">
-            <h2 className="text-xl font-bold mb-3">Why Choose Our Flex Printing?</h2>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>High-resolution</strong> 1440 DPI printing</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>UV-resistant & waterproof</strong> materials</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>Multiple size options</strong> – from small banners to large hoardings</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>Fast turnaround</strong> – 24-48 hour delivery</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>Competitive rates</strong> with bulk discounts</span>
-              </li>
-            </ul>
-          </div>
+      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-red-900 text-white">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/services/Hoarding1.webp"
+            alt="Flex printing background"
+            fill
+            className="object-cover"
+          />
         </div>
-        <div className="relative h-96 rounded-xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
-          <div className="text-center p-8">
-            <span className="text-6xl mb-4 block">🖨️</span>
-            <p className="text-gray-500">Flex Printing Image</p>
-            <p className="text-sm text-gray-400">(Add your flex printing photos here)</p>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-2 text-sm text-red-300 mb-4">
+              <Link href="/" className="hover:text-white transition">Home</Link>
+              <span>/</span>
+              <Link href="/services" className="hover:text-white transition">Services</Link>
+              <span>/</span>
+              <span className="text-red-300">Flex Printing</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Flex Printing <span className="text-red-400">in Meerut</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+              High-resolution, weather-resistant flex printing for hoardings, banners, and outdoor displays. 1440 DPI quality with UV-protected inks.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link 
+                href="/contact" 
+                className="bg-red-600 hover:bg-red-700 px-8 py-3 rounded-lg font-semibold transition shadow-lg"
+              >
+                Get a Quote
+              </Link>
+              <a 
+                href="#types" 
+                className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition"
+              >
+                Explore Options
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Types of Flex Printing */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Types of Flex Printing We Offer</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { 
-              type: "Hoarding Flex", 
-              icon: "📺",
-              desc: "Large-format printing for outdoor hoardings and billboards", 
-              material: "Frontlit, backlit, or vinyl",
-              use: "Perfect for highway hoardings and building wraps"
-            },
-            { 
-              type: "Banner Printing", 
-              icon: "🏴",
-              desc: "Standard banners for events, promotions, and displays", 
-              material: "Reinforced vinyl with grommets",
-              use: "Ideal for store promotions, events, and exhibitions"
-            },
-            { 
-              type: "Roll-up Standees", 
-              icon: "📋",
-              desc: "Portable retractable banners for indoor use", 
-              material: "Satin or matte finish with stand",
-              use: "Perfect for trade shows, receptions, and offices"
-            },
-            { 
-              type: "Poster Printing", 
-              icon: "🖼️",
-              desc: "High-quality posters for indoor and outdoor display", 
-              material: "Glossy, matte, or photo paper",
-              use: "Ideal for movie promotions, events, and retail"
-            },
-            { 
-              type: "Vinyl Stickers", 
-              icon: "🏷️",
-              desc: "Custom cut stickers and decals for branding", 
-              material: "Vinyl with adhesive backing",
-              use: "Perfect for vehicle branding, windows, and products"
-            },
-            { 
-              type: "Flex Boards", 
-              icon: "📌",
-              desc: "Rigid boards for permanent installations", 
-              material: "Sunboard, PVC, or acrylic with flex",
-              use: "Ideal for shop signage and direction boards"
-            },
-            { 
-              type: "Mesh Banners", 
-              icon: "🕸️",
-              desc: "Wind-permeable banners for outdoor use", 
-              material: "Perforated mesh vinyl",
-              use: "Perfect for windy locations and balcony wraps"
-            },
-            { 
-              type: "Canvas Printing", 
-              icon: "🎨",
-              desc: "Artistic prints on canvas material", 
-              material: "Textured canvas with frame",
-              use: "Ideal for office decor and art reproductions"
-            },
-          ].map((item, i) => (
-            <div key={i} className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition">
-              <div className="text-4xl mb-3">{item.icon}</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">{item.type}</h3>
-              <p className="text-gray-600 mb-2">{item.desc}</p>
-              <p className="text-sm text-gray-500 mb-1"><span className="font-semibold">Material:</span> {item.material}</p>
-              <p className="text-sm text-gray-500"><span className="font-semibold">Use:</span> {item.use}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Pricing Guide */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Flex Printing Price List</h2>
-        <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
-          <div className="overflow-x-auto mb-8">
-            <table className="min-w-full bg-white border">
-              <thead className="bg-gray-100">
-                <tr>
-                  <th className="py-3 px-4 text-left font-semibold">Print Type</th>
-                  <th className="py-3 px-4 text-left font-semibold">Material</th>
-                  <th className="py-3 px-4 text-left font-semibold">Size Range</th>
-                  <th className="py-3 px-4 text-left font-semibold">Price (per sq ft)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t">
-                  <td className="py-3 px-4 font-medium">Frontlit Flex</td>
-                  <td className="py-3 px-4">Standard 260 GSM</td>
-                  <td className="py-3 px-4">Any size</td>
-                  <td className="py-3 px-4">₹18 - ₹25</td>
-                </tr>
-                <tr className="border-t bg-gray-50">
-                  <td className="py-3 px-4 font-medium">Backlit Flex</td>
-                  <td className="py-3 px-4">Translucent 280 GSM</td>
-                  <td className="py-3 px-4">Any size</td>
-                  <td className="py-3 px-4">₹25 - ₹35</td>
-                </tr>
-                <tr className="border-t">
-                  <td className="py-3 px-4 font-medium">Vinyl Banner</td>
-                  <td className="py-3 px-4">Reinforced 320 GSM</td>
-                  <td className="py-3 px-4">Any size</td>
-                  <td className="py-3 px-4">₹30 - ₹40</td>
-                </tr>
-                <tr className="border-t bg-gray-50">
-                  <td className="py-3 px-4 font-medium">Mesh Banner</td>
-                  <td className="py-3 px-4">Perforated mesh</td>
-                  <td className="py-3 px-4">Any size</td>
-                  <td className="py-3 px-4">₹40 - ₹50</td>
-                </tr>
-                <tr className="border-t">
-                  <td className="py-3 px-4 font-medium">One-way Vision</td>
-                  <td className="py-3 px-4">Perforated vinyl</td>
-                  <td className="py-3 px-4">Any size</td>
-                  <td className="py-3 px-4">₹60 - ₹80</td>
-                </tr>
-                <tr className="border-t bg-gray-50">
-                  <td className="py-3 px-4 font-medium">PVC Banner</td>
-                  <td className="py-3 px-4">Flexible PVC</td>
-                  <td className="py-3 px-4">Any size</td>
-                  <td className="py-3 px-4">₹45 - ₹60</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-3">Additional Services & Costs:</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>Design & artwork:</strong> ₹500 - ₹2,000 (free for bulk orders)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>Grommets/eyelets:</strong> ₹10-20 per piece</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>Pole pockets:</strong> ₹50-100 per banner</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>Lamination:</strong> ₹5-10 per sq ft</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>Installation:</strong> ₹500 - ₹5,000 depending on location</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-red-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Bulk Order Discounts</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>100-500 sq ft:</strong> 5% discount</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>501-1000 sq ft:</strong> 10% discount</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold">✓</span>
-                  <span><strong>1000+ sq ft:</strong> 15% discount</span>
-                </li>
-              </ul>
-              <p className="text-sm text-gray-600 mt-3">Free delivery within Meerut city for orders above ₹5,000</p>
-            </div>
-          </div>
-
-          <div className="bg-red-600 text-white p-6 rounded-lg text-center">
-            <p className="text-xl font-bold mb-2">Need a Quote for Bulk Printing?</p>
-            <p className="text-lg mb-4">Call us for the best rates on large format printing</p>
-            <a href="tel:+919456497636" className="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-              Call +91 94564 97636
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Why Choose Professional Flex Printing?</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { title: "Vibrant Colors", desc: "High-resolution printing with fade-resistant inks ensures your designs look vibrant and professional." },
-            { title: "Weather Resistant", desc: "Our flex materials are UV-treated and waterproof, perfect for Meerut's summer heat and monsoon rains." },
-            { title: "Cost-Effective", desc: "Flex printing offers the best value for large-format advertising compared to other mediums." },
-            { title: "Quick Turnaround", desc: "Most orders are ready within 24-48 hours, helping you meet tight campaign deadlines." },
-            { title: "Custom Sizes", desc: "We print any size – from small A3 posters to massive 40x20 ft hoardings." },
-            { title: "Easy Installation", desc: "Our team can install your flex at any location across Meerut and NCR." },
-          ].map((benefit, i) => (
-            <div key={i} className="border-l-4 border-red-600 pl-4 py-2 bg-white p-5 rounded-r-lg shadow-sm">
-              <h3 className="font-bold text-xl mb-2 text-gray-900">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Common Uses */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Common Uses of Flex Printing</h2>
+      {/* Stats Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "Hoarding & Billboards", "Event Banners", "Shop Signage", "Exhibition Displays",
-            "Political Campaigns", "Festival Promotions", "Product Launches", "Real Estate Ads",
-            "Trade Show Booths", "Retail Store Displays", "Corporate Events", "Wedding Banners",
-            "Educational Events", "Religious Festivals", "Sports Events", "Government Campaigns"
-          ].map((use, i) => (
-            <div key={i} className="bg-gray-100 p-3 rounded-lg text-center font-medium text-gray-800 hover:bg-red-100 transition">
-              {use}
+            { number: "5000+", label: "Projects Completed", icon: "🖨️" },
+            { number: "1000+", label: "Happy Clients", icon: "😊" },
+            { number: "24-48", label: "Hour Turnaround", icon: "⚡" },
+            { number: "100%", label: "Quality Guarantee", icon: "✅" },
+          ].map((stat, i) => (
+            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+              <div className="text-3xl mb-2">{stat.icon}</div>
+              <div className="text-2xl md:text-3xl font-bold text-red-600">{stat.number}</div>
+              <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
-      {/* Our Process */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Flex Printing Process</h2>
-        <div className="grid md:grid-cols-4 gap-4">
-          {[
-            { step: "1. Consultation", desc: "Discuss your requirements, size, quantity, and deadline" },
-            { step: "2. Design", desc: "Create or refine your artwork for print optimization" },
-            { step: "3. Proofing", desc: "Digital proof sent for your approval" },
-            { step: "4. Printing", desc: "High-resolution printing on selected material" },
-            { step: "5. Finishing", desc: "Cutting, hemming, grommets, and quality check" },
-            { step: "6. Packaging", desc: "Carefully rolled and packed for transport" },
-            { step: "7. Delivery", desc: "Free delivery within Meerut (conditions apply)" },
-            { step: "8. Installation", desc: "Professional installation at your location" },
-          ].map((item, i) => (
-            <div key={i} className="bg-gray-50 p-5 rounded-lg text-center border border-gray-100">
-              <div className="text-2xl font-bold text-red-600 mb-2">{item.step}</div>
-              <p className="text-sm text-gray-600">{item.desc}</p>
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        {/* What is Flex Printing */}
+        <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
+          <div>
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">What We Do</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-900">
+              Professional Flex Printing Services in Meerut
+            </h2>
+            <p className="text-gray-600 text-lg mb-4 leading-relaxed">
+              <strong className="text-gray-900">World Media NCR</strong> offers premium <strong className="text-gray-900">flex printing in Meerut</strong> for all your advertising needs. From massive hoardings to event banners, we deliver exceptional print quality that makes your brand stand out.
+            </p>
+            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+              Using state-of-the-art large-format printers and premium materials, our flex prints feature vibrant colors, sharp details, and weather-resistant properties. Whether you need a single banner or bulk printing for a city-wide campaign, we ensure consistent quality and fast delivery.
+            </p>
+            <div className="space-y-3">
+              {[
+                "1440 DPI high-resolution printing",
+                "UV-resistant & waterproof materials",
+                "Indoor & outdoor grade options",
+                "Same-day & express printing available",
+                "Professional design support"
+              ].map((feature, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-red-600 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">{feature}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
-        <div className="space-y-6">
-          {[
-            {
-              q: "What is the turnaround time for flex printing?",
-              a: "Standard orders are delivered within 24-48 hours. For large hoardings (above 500 sq ft), we may need 2-3 days. Urgent orders can be completed in 12-24 hours at an additional cost."
-            },
-            {
-              q: "What file formats do you accept for printing?",
-              a: "We accept all standard formats: JPEG, PNG, PDF, AI, PSD, CDR, and EPS. For best results, we recommend high-resolution files (150-300 DPI) and vector formats for logos and text."
-            },
-            {
-              q: "Do you provide design services if I don't have a design?",
-              a: "Yes, our in-house design team can create professional designs for your flex prints. Charges start from ₹500 for basic designs and are free for bulk orders above ₹5,000."
-            },
-            {
-              q: "What is the difference between frontlit and backlit flex?",
-              a: "Frontlit flex is designed for standard hoardings with front lighting or daytime viewing. Backlit flex is translucent and designed to be lit from behind, creating a glowing effect ideal for light boxes and illuminated signs."
-            },
-            {
-              q: "How long do outdoor flex prints last?",
-              a: "Our outdoor flex prints typically last 6 months to 1 year depending on weather conditions. UV-treated materials resist fading, and proper installation ensures they withstand wind and rain."
-            },
-            {
-              q: "Do you offer installation services?",
-              a: "Yes, we provide professional installation services across Meerut and NCR. Our team can install hoardings, banners, and signage at ground level or heights. Installation charges vary by location and complexity."
-            },
-            {
-              q: "What is the minimum order quantity?",
-              a: "There is no minimum order quantity. We accept orders of all sizes, from single banners to bulk printing for large campaigns."
-            },
-            {
-              q: "Do you deliver outside Meerut?",
-              a: "Yes, we ship flex prints to Muzaffarnagar, Shamli, Saharanpur, Baghpat, Delhi NCR, and other cities. Courier charges apply based on distance and order size."
-            }
-          ].map((faq, i) => (
-            <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Related Services */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Related Advertising Services</h2>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Link href="/services/hoarding-advertising-meerut" className="bg-white p-4 rounded-lg hover:shadow-md transition block">
-            <h3 className="font-semibold text-lg text-gray-900">Hoarding Advertising Meerut</h3>
-            <p className="text-gray-600 text-sm">Premium billboard placements across the city</p>
-          </Link>
-          <Link href="/services/digital-wall-painting-meerut" className="bg-white p-4 rounded-lg hover:shadow-md transition block">
-            <h3 className="font-semibold text-lg text-gray-900">Digital Wall Painting Meerut</h3>
-            <p className="text-gray-600 text-sm">Long-term wall advertisements</p>
-          </Link>
-          <Link href="/services/vehicle-branding-meerut" className="bg-white p-4 rounded-lg hover:shadow-md transition block">
-            <h3 className="font-semibold text-lg text-gray-900">Vehicle Branding Meerut</h3>
-            <p className="text-gray-600 text-sm">Mobile advertising on wheels</p>
-          </Link>
+          </div>
+          <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/images/services/Hoarding1.webp"
+              alt="Large format flex printing for hoardings in Meerut"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
-        <h2 className="text-2xl font-bold mb-6 mt-8 text-gray-900">Our Service Locations</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link href="/locations/meerut" className="text-red-600 hover:underline">Meerut</Link>
-          <Link href="/locations/muzaffarnagar" className="text-red-600 hover:underline">Muzaffarnagar</Link>
-          <Link href="/locations/shamli" className="text-red-600 hover:underline">Shamli</Link>
-          <Link href="/locations/saharanpur" className="text-red-600 hover:underline">Saharanpur</Link>
-          <Link href="/locations/baghpat" className="text-red-600 hover:underline">Baghpat</Link>
-          <Link href="/locations/delhi-ncr" className="text-red-600 hover:underline">Delhi NCR</Link>
-          <Link href="/locations/hapur" className="text-red-600 hover:underline">Hapur</Link>
-          <Link href="/locations/delhi" className="text-red-600 hover:underline">Delhi</Link>
+        {/* Types of Flex Printing */}
+        <div id="types" className="mb-20">
+          <div className="text-center mb-12">
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">Our Services</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+              Types of Flex Printing
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive printing solutions for every advertising need
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { 
+                type: "Hoarding Flex", 
+                icon: "📺",
+                desc: "Large-format printing for outdoor billboards", 
+                features: ["Frontlit & backlit options", "Weather-resistant", "Any size up to 40x20 ft"]
+              },
+              { 
+                type: "Banner Printing", 
+                icon: "🏴",
+                desc: "Standard banners for events & promotions", 
+                features: ["Reinforced vinyl", "Grommets included", "Custom sizes"]
+              },
+              { 
+                type: "Vinyl Stickers", 
+                icon: "🏷️",
+                desc: "Custom cut stickers and decals", 
+                features: ["Indoor & outdoor grade", "Custom shapes", "Vehicle branding ready"]
+              },
+              { 
+                type: "Poster Printing", 
+                icon: "🖼️",
+                desc: "High-quality posters for any purpose", 
+                features: ["Glossy & matte finish", "A-series & custom sizes", "Bulk printing"]
+              },
+              { 
+                type: "Mesh Banners", 
+                icon: "🕸️",
+                desc: "Wind-permeable banners for outdoor use", 
+                features: ["Wind-resistant", "Perfect for balcony wraps", "Long-lasting"]
+              },
+              { 
+                type: "Roll-up Standees", 
+                icon: "📋",
+                desc: "Portable retractable banners", 
+                features: ["Easy to carry", "Tool-free setup", "Professional look"]
+              },
+              { 
+                type: "Sunboard Printing", 
+                icon: "📌",
+                desc: "Rigid boards for permanent displays", 
+                features: ["Durable material", "Shop signage ready", "Indoor/outdoor"]
+              },
+              { 
+                type: "Canvas Printing", 
+                icon: "🎨",
+                desc: "Artistic prints on premium canvas", 
+                features: ["Gallery-quality", "Stretched frames", "Office decor"]
+              }
+            ].map((item, i) => (
+              <div key={i} className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.type}</h3>
+                <p className="text-gray-600 text-sm mb-3">{item.desc}</p>
+                <ul className="space-y-1">
+                  {item.features.map((feature, idx) => (
+                    <li key={idx} className="text-xs text-gray-500 flex items-center gap-1">
+                      <span className="text-red-500">•</span> {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-      </section>
+
+        {/* Applications Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">Applications</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+              Common Uses of Flex Printing
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Versatile printing solutions for businesses, events, and campaigns
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              "Hoarding & Billboards", "Event Banners", "Shop Signage", "Exhibition Displays",
+              "Political Campaigns", "Festival Promotions", "Product Launches", "Real Estate Ads",
+              "Trade Show Booths", "Retail Store Displays", "Corporate Events", "Wedding Banners",
+              "Educational Events", "Sports Events", "Vehicle Branding", "Window Graphics"
+            ].map((use, i) => (
+              <span key={i} className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-red-100 hover:text-red-700 transition cursor-default">
+                {use}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Why Choose Us Section */}
+        <div className="mb-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+          <div className="text-center mb-12">
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">Why Choose Us</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+              Why World Media NCR for Flex Printing?
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              We combine quality, speed, and reliability for all your printing needs
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { 
+                title: "Premium Quality", 
+                icon: "✨",
+                desc: "State-of-the-art printers delivering vibrant, fade-resistant prints with exceptional clarity." 
+              },
+              { 
+                title: "Fast Turnaround", 
+                icon: "⚡",
+                desc: "Most orders completed within 24-48 hours. Express options available for urgent requirements." 
+              },
+              { 
+                title: "Any Size, Any Quantity", 
+                icon: "📏",
+                desc: "From small banners to massive hoardings - we handle projects of any scale." 
+              },
+              { 
+                title: "Expert Design Support", 
+                icon: "🎨",
+                desc: "Professional in-house designers to create or optimize your artwork for print." 
+              },
+              { 
+                title: "Quality Materials", 
+                icon: "🛡️",
+                desc: "Premium UV-resistant, waterproof flex that withstands outdoor conditions." 
+              },
+              { 
+                title: "Pan-India Delivery", 
+                icon: "🚚",
+                desc: "We deliver printed materials across Meerut, NCR, and other cities." 
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div className="text-4xl mb-3">{item.icon}</div>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Our Process */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">Process</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+              Our Flex Printing Process
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Simple, transparent, and efficient workflow from concept to delivery
+            </p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              { step: "01", title: "Share Requirements", desc: "Tell us your size, quantity, and deadline" },
+              { step: "02", title: "Design & Proof", desc: "We create or refine artwork for your approval" },
+              { step: "03", title: "Print Production", desc: "High-resolution printing on premium materials" },
+              { step: "04", title: "Finish & Deliver", desc: "Cutting, finishing, and quality check before dispatch" }
+            ].map((item, i) => (
+              <div key={i} className="text-center">
+                <div className="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  {item.step}
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mb-0">
+          <div className="text-center mb-12">
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">FAQ</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Everything you need to know about flex printing in Meerut
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                q: "What is the turnaround time for flex printing?",
+                a: "Standard orders are completed within 24-48 hours. For large hoardings (500+ sq ft), we may need 2-3 days. Express 12-hour service is available for urgent requirements."
+              },
+              {
+                q: "What file formats do you accept?",
+                a: "We accept JPEG, PNG, PDF, AI, PSD, CDR, and EPS. For best results, we recommend high-resolution files (150-300 DPI) and vector formats for logos."
+              },
+              {
+                q: "Do you provide design services?",
+                a: "Yes, our in-house design team creates professional designs optimized for print. Design support is complementary with bulk orders."
+              },
+              {
+                q: "What's the difference between frontlit and backlit flex?",
+                a: "Frontlit flex is for standard hoardings with front lighting. Backlit flex is translucent, designed for light boxes, creating a glowing effect when illuminated from behind."
+              },
+              {
+                q: "How long do outdoor flex prints last?",
+                a: "Our outdoor flex prints typically last 1-2 years depending on weather conditions. UV-treated materials resist fading and weathering."
+              },
+              {
+                q: "Do you offer installation services?",
+                a: "Yes, our team provides professional installation for hoardings and banners across Meerut and NCR locations."
+              },
+              {
+                q: "Do you deliver outside Meerut?",
+                a: "Yes, we ship flex prints to Muzaffarnagar, Shamli, Saharanpur, Baghpat, Delhi NCR, and other cities across India."
+              },
+              {
+                q: "What is the minimum order quantity?",
+                a: "There is no minimum order. We accept orders of all sizes, from single banners to bulk printing for large campaigns."
+              }
+            ].map((faq, i) => (
+              <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
+                <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
