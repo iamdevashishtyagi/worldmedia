@@ -105,7 +105,7 @@ export default function DeveloperPage() {
                   </svg>
                 </a>
                 <a href="mailto:iamdevashishtyagi@gmail.com" className="bg-transparent border-2 border-white/30 hover:border-white/60 px-8 py-3 rounded-full font-semibold transition-all">
-                  Let's Connect
+                  Let&apos;s Connect
                 </a>
               </div>
             </div>
@@ -166,16 +166,16 @@ export default function DeveloperPage() {
             </h2>
             <div className="space-y-4 text-gray-600">
               <p className="leading-relaxed">
-                I'm <strong className="text-gray-900">Devashish Tyagi</strong>, a passionate full-stack developer who believes that 
-                great web applications are more than just code—they're experiences that connect, engage, and convert.
+                I&apos;m <strong className="text-gray-900">Devashish Tyagi</strong>, a passionate full-stack developer who believes that 
+                great web applications are more than just code—they&apos;re experiences that connect, engage, and convert.
               </p>
               <p className="leading-relaxed">
-                Based in Sardhana, Meerut, I've helped businesses across India establish powerful digital presences. 
+                Based in Sardhana, Meerut, I&apos;ve helped businesses across India establish powerful digital presences. 
                 From local enterprises to national brands, I deliver solutions that combine cutting-edge technology 
                 with strategic SEO implementation.
               </p>
               <p className="leading-relaxed">
-                The <strong>World Media NCR</strong> website you're experiencing is a testament to my commitment to 
+                The <strong>World Media NCR</strong> website you&apos;re experiencing is a testament to my commitment to 
                 excellence—fast, responsive, SEO-optimized, and visually stunning.
               </p>
             </div>
@@ -390,7 +390,7 @@ export default function DeveloperPage() {
             Ready to Build Something <span className="underline decoration-pink-400">Extraordinary</span>?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's collaborate and create a digital experience that sets your business apart.
+            Let&apos;s collaborate and create a digital experience that sets your business apart.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a 
