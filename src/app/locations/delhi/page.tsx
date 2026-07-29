@@ -85,7 +85,8 @@ export default function DelhiLocationPage() {
           </div>
         </div>
         <div className="relative h-96 rounded-xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
-          <div className="text-center p-8">
+          <Image src="/images/portfolio/Muzaffarnagar Meerut Road.webp" alt="Outdoor advertising hoarding by World Media NCR" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
+          <div className="hidden text-center p-8">
             <span className="text-6xl mb-4 block">🇮🇳</span>
             <p className="text-gray-500">Delhi Advertising Image</p>
             <p className="text-sm text-gray-400">(Add Delhi hoarding photos here)</p>

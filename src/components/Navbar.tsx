@@ -87,7 +87,7 @@ export default function Navbar() {
             className={`relative font-semibold transition duration-300 group ${
               isScrolled
                 ? "text-black hover:text-yellow-500"
-                : "text-white hover:text-yellow-400"
+                : "text-black hover:text-yellow-400"
             }`}
           >
             Home
@@ -105,7 +105,7 @@ export default function Navbar() {
               className={`relative font-semibold transition duration-300 group flex items-center gap-1 py-2 ${
                 isScrolled
                   ? "text-black hover:text-yellow-500"
-                  : "text-white hover:text-yellow-400"
+                  : "text-black hover:text-yellow-400"
               }`}
             >
               Services
@@ -148,7 +148,7 @@ export default function Navbar() {
             className={`relative font-semibold transition duration-300 group ${
               isScrolled
                 ? "text-black hover:text-yellow-500"
-                : "text-white hover:text-yellow-400"
+                : "text-black hover:text-yellow-400"
             }`}
           >
             Gallery
@@ -158,7 +158,7 @@ export default function Navbar() {
           <Link
             href="/locations"
             className={`relative font-semibold transition duration-300 group ${
-              isScrolled ? "text-black hover:text-yellow-500" : "text-white hover:text-yellow-400"
+              isScrolled ? "text-black hover:text-yellow-500" : "text-black hover:text-yellow-400"
             }`}
           >
             Locations
@@ -168,7 +168,7 @@ export default function Navbar() {
           <Link
             href="/blog"
             className={`relative font-semibold transition duration-300 group ${
-              isScrolled ? "text-black hover:text-yellow-500" : "text-white hover:text-yellow-400"
+              isScrolled ? "text-black hover:text-yellow-500" : "text-black hover:text-yellow-400"
             }`}
           >
             Blog
@@ -180,7 +180,7 @@ export default function Navbar() {
             className={`relative font-semibold transition duration-300 group ${
               isScrolled
                 ? "text-black hover:text-yellow-500"
-                : "text-white hover:text-yellow-400"
+                : "text-black hover:text-yellow-400"
             }`}
           >
             Clients
@@ -192,7 +192,7 @@ export default function Navbar() {
             className={`relative font-semibold transition duration-300 group ${
               isScrolled
                 ? "text-black hover:text-yellow-500"
-                : "text-white hover:text-yellow-400"
+                : "text-black hover:text-yellow-400"
             }`}
           >
             Contact
