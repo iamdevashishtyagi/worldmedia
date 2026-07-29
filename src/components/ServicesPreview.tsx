@@ -12,24 +12,28 @@ const services = [
     title: "Hoardings & Billboards",
     description:
       "High-impact outdoor advertising solutions for maximum brand visibility.",
+    path: "/services/hoarding-advertising-meerut",
   },
   {
     icon: <Truck size={48} className="text-purple-500" />,
     title: "Vehicle Branding",
     description:
       "Transform your vehicles into mobile advertisements that capture attention.",
+    path: "/services/vehicle-branding-meerut",
   },
   {
     icon: <Circle size={48} className="text-cyan-500" />,
-    title: "Signages & Unipoles",
+    title: "Digital Wall Painting",
     description:
-      "Durable and eye-catching signs for directional and promotional purposes.",
+      "Long-lasting local visibility for brands across key neighbourhoods.",
+    path: "/services/digital-wall-painting-meerut",
   },
   {
     icon: <Lightbulb size={48} className="text-yellow-500" />,
     title: "LED Display Boards",
     description:
       "Dynamic digital displays for modern, engaging advertising content.",
+    path: "/services/led-display-advertising-meerut",
   },
 ];
 
@@ -73,11 +77,14 @@ export default function ServicesPreview() {
               transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
               viewport={{ amount: 0.3 }}
             >
-              <div className="mb-6 p-2 bg-gray-700 rounded-full">
+              <Link href={service.path} className="block h-full w-full">
+              <div className="mb-6 flex justify-center"><span className="p-2 bg-gray-700 rounded-full">
                 {service.icon}
-              </div>
+              </span></div>
               <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
               <p className="text-gray-300 text-sm">{service.description}</p>
+              <span className="mt-4 inline-block text-sm font-semibold text-yellow-400">Learn more →</span>
+              </Link>
             </motion.div>
           ))}
         </div>

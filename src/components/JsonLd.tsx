@@ -6,7 +6,7 @@ export default function JsonLd() {
     "name": "World Media NCR",
     "url": "https://worldmediancr.com",
     "logo": "https://worldmediancr.com/images/website/logo2.png",
-    "image": "https://worldmediancr.com/images/website/hero-bg.jpg",
+    "image": "https://worldmediancr.com/images/website/herobg2.jpg",
     "description": "Leading advertising agency in Meerut offering hoarding advertising, digital wall painting, billboard advertising, and outdoor media solutions.",
     "address": {
       "@type": "PostalAddress",

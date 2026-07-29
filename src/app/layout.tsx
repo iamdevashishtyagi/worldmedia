@@ -5,10 +5,12 @@ import Navbar from "@/components/Navbar";
 import CtaSection from "@/components/CtaSection";
 import { Analytics } from "@vercel/analytics/react";
 import JsonLd from "@/components/JsonLd";
+import SiteFooter from "@/components/SiteFooter";
+import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://worldmediancr.com"),
   title: {
     default: "Advertising Agency in Meerut | Hoarding & Outdoor Advertising | World Media NCR",
@@ -29,7 +31,7 @@ export const metadata = {
     siteName: "World Media NCR",
     images: [
       {
-        url: "/images/website/og-image.jpg",
+        url: "/images/website/herobg2.jpg",
         width: 1200,
         height: 630,
       },
@@ -41,7 +43,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Advertising Agency in Meerut | World Media NCR",
     description: "Leading advertising agency in Meerut offering hoarding, digital wall painting, and outdoor advertising.",
-    images: ["/images/website/twitter-image.jpg"],
+    images: ["/images/website/herobg2.jpg"],
   },
   robots: {
     index: true,
@@ -67,6 +69,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1 w-full pt-16">{children}</main>
         <CtaSection />
+        <SiteFooter />
         <Analytics />
         <JsonLd />
       </body>

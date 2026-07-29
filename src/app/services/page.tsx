@@ -1,6 +1,13 @@
 // src/app/services/page.tsx
 import { Metadata } from 'next';
 import ServicesSection from "@/components/ServicesSection";
+import { FaqJsonLd } from "@/components/SeoJsonLd";
+
+const faqs = [
+  { question: "Which outdoor advertising services does World Media NCR provide?", answer: "World Media NCR provides hoarding and billboard advertising, digital wall painting, vehicle branding, flex printing, LED display advertising and political advertising campaign support." },
+  { question: "How do I get an advertising quote in Meerut?", answer: "Share your campaign objective, preferred area, format and timing with World Media NCR. The team can recommend suitable formats and provide a campaign quotation." },
+  { question: "Which areas does World Media NCR serve?", answer: "World Media NCR serves Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, Delhi and Delhi NCR." },
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Services in Meerut | Hoarding, Wall Painting & Outdoor Ads',
@@ -30,6 +37,11 @@ export default function ServicesPage() {
   return (
     <main>
       <ServicesSection />
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <FaqJsonLd questions={faqs} />
+        <h2 className="text-3xl font-bold text-slate-900">Advertising services FAQs</h2>
+        <div className="mt-6 space-y-6">{faqs.map((faq) => <article key={faq.question}><h3 className="text-xl font-semibold text-slate-900">{faq.question}</h3><p className="mt-2 text-slate-700">{faq.answer}</p></article>)}</div>
+      </section>
     </main>
   );
 }

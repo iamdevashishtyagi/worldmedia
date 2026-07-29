@@ -156,6 +156,26 @@ export default function Navbar() {
           </Link>
 
           <Link
+            href="/locations"
+            className={`relative font-semibold transition duration-300 group ${
+              isScrolled ? "text-black hover:text-yellow-500" : "text-white hover:text-yellow-400"
+            }`}
+          >
+            Locations
+            <span className="absolute left-0 bottom-[-6px] h-[2px] w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+
+          <Link
+            href="/blog"
+            className={`relative font-semibold transition duration-300 group ${
+              isScrolled ? "text-black hover:text-yellow-500" : "text-white hover:text-yellow-400"
+            }`}
+          >
+            Blog
+            <span className="absolute left-0 bottom-[-6px] h-[2px] w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+
+          <Link
             href="/clients"
             className={`relative font-semibold transition duration-300 group ${
               isScrolled
@@ -254,6 +274,12 @@ export default function Navbar() {
             
             <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-yellow-400">
               Gallery
+            </Link>
+            <Link href="/locations" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-yellow-400">
+              Locations
+            </Link>
+            <Link href="/blog" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-yellow-400">
+              Blog
             </Link>
             <Link href="/clients" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-yellow-400">
               Clients

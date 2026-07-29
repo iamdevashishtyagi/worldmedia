@@ -11,7 +11,7 @@ import Link from 'next/link';
 const allServices = [
   {
     icon: <Square size={48} className="text-blue-500" />,
-    title: "Hoardings & Billboards",
+    title: "Hoarding Advertising",
     path: "/services/hoarding-advertising-meerut",
     description:
       "We design and install high-impact outdoor hoardings and billboards in strategic locations for maximum brand visibility. Our solutions are built to withstand weather conditions while maintaining visual appeal.",
@@ -22,6 +22,14 @@ const allServices = [
       "Professional Installation",
     ],
     image: "/images/services/Hoarding1.webp",
+  },
+  {
+    icon: <Square size={48} className="text-indigo-500" />,
+    title: "Billboard Advertising",
+    path: "/services/billboard-advertising-meerut",
+    description: "Reach commuters and local audiences with strategically placed billboard advertising in Meerut and nearby markets.",
+    features: ["High-visibility sites", "Campaign planning", "Professional installation", "Flexible campaign durations"],
+    image: "/images/services/Hoarding3.webp",
   },
   {
     icon: <Truck size={48} className="text-purple-500" />,
@@ -39,15 +47,15 @@ const allServices = [
   },
   {
     icon: <Circle size={48} className="text-cyan-500" />,
-    title: "Signages & Unipoles",
-    path: "/services/hoarding-advertising-meerut", 
+    title: "Digital Wall Painting",
+    path: "/services/digital-wall-painting-meerut",
     description:
-      "From directional signs to promotional unipoles, we create durable and visually appealing signage solutions that serve both functional and advertising purposes.",
+      "Build long-term local visibility through professionally produced digital wall painting campaigns at relevant local sites.",
     features: [
-      "Custom Design",
-      "Durable Materials",
-      "Illuminated Options",
-      "Maintenance Services",
+      "Local market coverage",
+      "Durable paint systems",
+      "Creative production",
+      "Site coordination",
     ],
     image: "/images/services/Hoarding3.webp",
   },
@@ -67,29 +75,29 @@ const allServices = [
   },
   {
     icon: <Megaphone size={48} className="text-red-500" />,
-    title: "Digital Marketing",
-    path: "/services/digital-wall-painting-meerut",
+    title: "Political Advertising",
+    path: "/services/political-advertising-meerut",
     description:
-      "Complement your outdoor advertising with targeted digital campaigns. We help you reach your audience online with strategic digital marketing solutions.",
+      "Plan high-visibility political advertising campaigns with outdoor formats, print production and local placement support.",
     features: [
-      "Social Media Marketing",
-      "Google Ads",
-      "SEO Optimization",
-      "Analytics & Reporting",
+      "Campaign planning",
+      "Local visibility",
+      "Print production",
+      "Installation support",
     ],
     image: "/images/services/Hoarding5.webp",
   },
   {
     icon: <Megaphone size={48} className="text-red-500" />,
-    title: "Next Yours",
+    title: "Flex Printing",
     path: "/services/flex-printing-meerut",
     description:
-      "Complement your outdoor advertising with targeted digital campaigns. We help you reach your audience online with strategic digital marketing solutions.",
+      "High-quality flex printing for outdoor campaigns, retail promotions, events and large-format advertising requirements.",
     features: [
-      "Social Media Marketing",
-      "Google Ads",
-      "SEO Optimization",
-      "Analytics & Reporting",
+      "Large-format printing",
+      "Weather-ready materials",
+      "Custom sizes",
+      "Installation support",
     ],
     image: "/images/services/YoursNextHoarding.webp",
   }
