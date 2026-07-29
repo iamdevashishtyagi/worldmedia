@@ -34,6 +34,13 @@ body {
 .content-page-shell .relative:has(> img) { height: auto !important; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 1rem; background: #e2e8f0; }
 .content-page-shell .relative:has(> img) > img { object-fit: cover; }
 
+@media (min-width: 1024px) {
+  .blog-page > article { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.72fr); column-gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+  .blog-page > article > nav, .blog-page > article > header { grid-column: 1 / -1; }
+  .blog-page > article > .relative { grid-column: 2; grid-row: 3; position: sticky; top: 6.5rem; margin-bottom: 0; }
+  .blog-page > article > .prose { grid-column: 1; grid-row: 3; }
+}
+
 @media (min-width: 1300px) {
   .dashed-path-wrapper {
     display: block !important;

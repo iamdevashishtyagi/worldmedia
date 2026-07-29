@@ -64,7 +64,7 @@ export default function WhyChooseUsBlog() {
       </div>
 
       {/* Introduction */}
-      <div className="prose prose-lg max-w-none text-gray-700">
+      <div className="prose prose-lg prose-stone max-w-none w-full text-gray-700 leading-8">
         <p className="lead text-gray-800">With numerous advertising agencies operating in Meerut and NCR, what makes World Media NCR the preferred choice for businesses? Here&apos;s why over 500 clients have trusted us with their outdoor advertising campaigns since 2013.</p>
 
         <h2 className="text-gray-900">1. 10+ Years of Industry Experience</h2>
@@ -184,7 +184,7 @@ export default function WhyChooseUsBlog() {
         </ul>
         <p>One point of contact, complete accountability, and hassle-free execution.</p>
 
-        <h2 className="text-gray-900">5. Transparent Pricing & No Hidden Costs</h2>
+        <h2 className="text-gray-900">5. Clear Campaign Communication</h2>
         
         <div className="relative w-full h-48 my-6 rounded-lg overflow-hidden">
           <Image
@@ -198,7 +198,7 @@ export default function WhyChooseUsBlog() {
         <p>We believe in complete transparency:</p>
         <ul className="text-gray-700">
           <li>Clear pricing with no hidden charges</li>
-          <li>Detailed quotations breaking down all costs</li>
+          <li>Clear campaign scope, timelines and deliverables</li>
           <li>Flexible payment terms</li>
           <li>Competitive rates – we match or beat any genuine quote</li>
           <li>Discounts for bulk bookings and long-term commitments</li>
@@ -302,7 +302,7 @@ export default function WhyChooseUsBlog() {
             <p className="text-gray-600 text-sm">Why hoardings are essential for your business</p>
           </Link>
           <Link href="/blog/outdoor-advertising-cost-guide-2024" className="block bg-gray-50 p-4 rounded-lg hover:shadow-md transition">
-            <h4 className="font-semibold text-lg mb-2 text-gray-900">Outdoor Advertising Cost Guide 2024</h4>
+            <h4 className="font-semibold text-lg mb-2 text-gray-900">Outdoor Advertising Campaign Planning Guide</h4>
             <p className="text-gray-600 text-sm">Complete pricing breakdown for all media</p>
           </Link>
         </div>
