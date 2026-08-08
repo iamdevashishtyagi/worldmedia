@@ -40,7 +40,7 @@ const technicalStack = [
 const achievements = [
   { number: '100%', label: 'SEO Score', description: 'Perfect Lighthouse scores on all projects' },
   { number: '0.1s', label: 'Load Time', description: 'Average page load speed achieved' },
-  { number: '30+', label: 'Projects', description: 'Successfully delivered worldwide' },
+  { number: '2+', label: 'Years', description: 'Working as professional' },
   { number: '24/7', label: 'Support', description: 'Dedicated post-launch assistance' },
 ];
 
