@@ -206,17 +206,17 @@ export default function Navbar() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span
-            className={`block h-[3px] w-6 bg-white transition ${
+            className={`block h-[3px] w-6 bg-black transition ${
               isMenuOpen ? "rotate-45 translate-y-2" : ""
             }`}
           ></span>
           <span
-            className={`block h-[3px] w-6 bg-white transition ${
+            className={`block h-[3px] w-6 bg-black transition ${
               isMenuOpen ? "opacity-0" : ""
             }`}
           ></span>
           <span
-            className={`block h-[3px] w-6 bg-white transition ${
+            className={`block h-[3px] w-6 bg-black transition ${
               isMenuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></span>
