@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BreadcrumbJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const baghpatFaqs = [
+  {
+    q: "Which is the best advertising agency in Baghpat?",
+    a: "World Media NCR is a leading advertising agency serving Baghpat with 10+ years of experience, premium hoarding locations on Meerut Road and Delhi Road, and extensive rural coverage for wall painting campaigns across the district."
+  },
+  {
+    q: "How much does hoarding advertising cost in Baghpat?",
+    a: "Hoarding costs in Baghpat range from ₹6,000 to ₹20,000 per month depending on location and size. Premium locations on Meerut Road and Delhi Road range from ₹12,000-20,000/month, while other areas start from ₹6,000/month."
+  },
+  {
+    q: "What are the best hoarding locations in Baghpat?",
+    a: "The best hoarding locations in Baghpat include Meerut Road, Delhi Road, Baraut Road, Baghpat Cross, and Bus Stand area. These areas have the highest traffic and visibility."
+  },
+  {
+    q: "Do you provide wall painting in Baraut, Chaprauli, and Khekra?",
+    a: "Yes, we provide extensive wall painting services across Baraut, Chaprauli, Khekra, and all villages in Baghpat district. Rural wall painting is one of our specialties for political and brand campaigns."
+  },
+  {
+    q: "Do you cover all villages in Baghpat district?",
+    a: "Yes, we have teams that cover every village in Baghpat district. We maintain a database of available walls and can execute pan-district campaigns efficiently."
+  },
+  {
+    q: "How do I book advertising space in Baghpat?",
+    a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Agency in Baghpat | Hoarding & Outdoor Ads | World Media NCR',
@@ -29,6 +57,20 @@ export const metadata: Metadata = {
 export default function BaghpatLocationPage() {
   return (
     <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: 'https://worldmediancr.com' },
+          { name: 'Locations', url: 'https://worldmediancr.com/locations' },
+          { name: 'Baghpat', url: 'https://worldmediancr.com/locations/baghpat' },
+        ]}
+      />
+      <FaqJsonLd
+        faqs={baghpatFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Breadcrumb Navigation */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -277,32 +319,7 @@ export default function BaghpatLocationPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          {[
-            {
-              q: "Which is the best advertising agency in Baghpat?",
-              a: "World Media NCR is a leading advertising agency serving Baghpat with 10+ years of experience, premium hoarding locations on Meerut Road and Delhi Road, and extensive rural coverage for wall painting campaigns across the district."
-            },
-            {
-              q: "How much does hoarding advertising cost in Baghpat?",
-              a: "Hoarding costs in Baghpat range from ₹6,000 to ₹20,000 per month depending on location and size. Premium locations on Meerut Road and Delhi Road range from ₹12,000-20,000/month, while other areas start from ₹6,000/month."
-            },
-            {
-              q: "What are the best hoarding locations in Baghpat?",
-              a: "The best hoarding locations in Baghpat include Meerut Road, Delhi Road, Baraut Road, Baghpat Cross, and Bus Stand area. These areas have the highest traffic and visibility."
-            },
-            {
-              q: "Do you provide wall painting in Baraut, Chaprauli, and Khekra?",
-              a: "Yes, we provide extensive wall painting services across Baraut, Chaprauli, Khekra, and all villages in Baghpat district. Rural wall painting is one of our specialties for political and brand campaigns."
-            },
-            {
-              q: "Do you cover all villages in Baghpat district?",
-              a: "Yes, we have teams that cover every village in Baghpat district. We maintain a database of available walls and can execute pan-district campaigns efficiently."
-            },
-            {
-              q: "How do I book advertising space in Baghpat?",
-              a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
-            }
-          ].map((faq, i) => (
+          {baghpatFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
               <p className="text-gray-700">{faq.a}</p>

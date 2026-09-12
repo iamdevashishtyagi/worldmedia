@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BreadcrumbJsonLd, ArticleJsonLd } from '@/components/SeoJsonLd';
 
 export const metadata: Metadata = {
   title: 'Digital Wall Painting vs Traditional Advertising: Which is Better?',
@@ -29,6 +30,21 @@ export const metadata: Metadata = {
 export default function WallPaintingComparisonBlog() {
   return (
     <article className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: 'https://worldmediancr.com' },
+          { name: 'Blog', url: 'https://worldmediancr.com/blog' },
+          { name: 'Digital Wall Painting vs Traditional Ads', url: 'https://worldmediancr.com/blog/digital-wall-painting-vs-traditional-ads' },
+        ]}
+      />
+      <ArticleJsonLd
+        title="Digital Wall Painting vs Traditional Advertising: Which is Better?"
+        description="Compare digital wall painting with traditional advertising methods. Cost analysis, longevity, visibility, and ROI for businesses in Meerut and NCR."
+        url="/blog/digital-wall-painting-vs-traditional-ads"
+        datePublished="2024-03-05"
+        image="/images/portfolio/Meerut Sardhana.webp"
+      />
+
       {/* Breadcrumb */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">

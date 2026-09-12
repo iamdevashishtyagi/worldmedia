@@ -1,6 +1,42 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const hoardingFaqs = [
+  {
+    q: "What are the best hoarding locations in Meerut?",
+    a: "The most effective hoarding locations in Meerut include Delhi Road (100,000+ daily commuters), Roorkee Road (educational hub), Garh Road (commercial district), and Muzaffarnagar Highway (interstate route). Each location offers unique advantages depending on your target audience."
+  },
+  {
+    q: "Do you handle permits for hoarding installation?",
+    a: "Yes, we manage all necessary permissions from municipal authorities and property owners. We ensure every hoarding is legally compliant and approved, so you can advertise without any concerns."
+  },
+  {
+    q: "What is the minimum duration for hoarding advertising?",
+    a: "We offer flexible durations starting from 1 month. However, longer campaigns (6-12 months) secure the best locations and provide better brand recall. We recommend minimum 3 months for effective campaigns."
+  },
+  {
+    q: "Do you have hoardings in Muzaffarnagar, Shamli, and Saharanpur?",
+    a: "Absolutely! We have an extensive hoarding network across Muzaffarnagar (Meerut Road, Roorkee Road), Shamli (Kairana Road, Mandi Samiti), Saharanpur (Chhutmalpur, Shakumbri Devi), Baghpat, and other NCR cities."
+  },
+  {
+    q: "What sizes of hoardings do you offer?",
+    a: "We offer various sizes from 10x10 ft to 40x20 ft hoardings. Common sizes include 20x10 ft, 30x10 ft, and 20x15 ft. Custom sizes are also available based on location and requirements."
+  },
+  {
+    q: "Do you provide illuminated hoardings for night visibility?",
+    a: "Yes, we offer front-lit, back-lit, and LED-lit hoardings for 24/7 visibility. Illuminated hoardings are particularly effective on highways and high-traffic areas."
+  },
+  {
+    q: "Can I book multiple hoardings across different locations?",
+    a: "Yes, we specialize in multi-location campaigns. Whether you need 3 hoardings in different areas of Meerut or a campaign spanning multiple cities, we can manage it all."
+  },
+  {
+    q: "Do you provide design services for hoarding creatives?",
+    a: "Yes, our in-house design team creates compelling hoarding designs optimized for outdoor visibility. We ensure your message is bold, clear, and readable from a distance."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Hoarding Advertising in Meerut | Premium Billboard Outdoor Ads | World Media NCR',
@@ -41,6 +77,20 @@ const hoardingGallery = [
 export default function HoardingAdvertisingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="Hoarding Advertising in Meerut"
+        description="Premium hoarding advertising and billboard placement across Meerut, Delhi-Meerut Expressway, Muzaffarnagar, Shamli, and Western UP."
+        url="https://worldmediancr.com/services/hoarding-advertising-meerut"
+        serviceType="Hoarding and Billboard Advertising"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={hoardingFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -409,40 +459,7 @@ export default function HoardingAdvertisingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "What are the best hoarding locations in Meerut?",
-                a: "The most effective hoarding locations in Meerut include Delhi Road (100,000+ daily commuters), Roorkee Road (educational hub), Garh Road (commercial district), and Muzaffarnagar Highway (interstate route). Each location offers unique advantages depending on your target audience."
-              },
-              {
-                q: "Do you handle permits for hoarding installation?",
-                a: "Yes, we manage all necessary permissions from municipal authorities and property owners. We ensure every hoarding is legally compliant and approved, so you can advertise without any concerns."
-              },
-              {
-                q: "What is the minimum duration for hoarding advertising?",
-                a: "We offer flexible durations starting from 1 month. However, longer campaigns (6-12 months) secure the best locations and provide better brand recall. We recommend minimum 3 months for effective campaigns."
-              },
-              {
-                q: "Do you have hoardings in Muzaffarnagar, Shamli, and Saharanpur?",
-                a: "Absolutely! We have an extensive hoarding network across Muzaffarnagar (Meerut Road, Roorkee Road), Shamli (Kairana Road, Mandi Samiti), Saharanpur (Chhutmalpur, Shakumbri Devi), Baghpat, and other NCR cities."
-              },
-              {
-                q: "What sizes of hoardings do you offer?",
-                a: "We offer various sizes from 10x10 ft to 40x20 ft hoardings. Common sizes include 20x10 ft, 30x10 ft, and 20x15 ft. Custom sizes are also available based on location and requirements."
-              },
-              {
-                q: "Do you provide illuminated hoardings for night visibility?",
-                a: "Yes, we offer front-lit, back-lit, and LED-lit hoardings for 24/7 visibility. Illuminated hoardings are particularly effective on highways and high-traffic areas."
-              },
-              {
-                q: "Can I book multiple hoardings across different locations?",
-                a: "Yes, we specialize in multi-location campaigns. Whether you need 3 hoardings in different areas of Meerut or a campaign spanning multiple cities, we can manage it all."
-              },
-              {
-                q: "Do you provide design services for hoarding creatives?",
-                a: "Yes, our in-house design team creates compelling hoarding designs optimized for outdoor visibility. We ensure your message is bold, clear, and readable from a distance."
-              }
-            ].map((faq, i) => (
+            {hoardingFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaqJsonLd, BreadcrumbJsonLd } from '@/components/SeoJsonLd';
+
+const delhiNcrFaqs = [
+  {
+    question: "Which are the best locations for hoardings in Delhi NCR?",
+    answer: "The best hoarding locations in Delhi NCR include Delhi-Meerut Expressway, Noida Expressway, Dwarka Expressway, NH-48, Eastern and Western Peripheral Highways. For city-specific visibility, MG Road (Gurgaon), Sector 18 (Noida), Raj Nagar (Ghaziabad), and Nehru Place (Delhi) are excellent."
+  },
+  {
+    question: "How much does hoarding advertising cost in Delhi NCR?",
+    answer: "Costs vary widely based on location. Expressway hoardings range from ₹50,000 to ₹1,50,000 per month. City locations range from ₹25,000 to ₹60,000 per month. Premium spots at airports and major intersections can cost more. Contact us for specific quotes."
+  },
+  {
+    question: "Do you provide advertising in all NCR cities?",
+    answer: "Yes, we provide advertising services across all NCR cities including Delhi, Gurgaon, Noida, Greater Noida, Ghaziabad, Faridabad, and all connecting highways and expressways."
+  },
+  {
+    question: "What permits are required for hoardings in NCR?",
+    answer: "Different NCR cities have different authorities (NDMC, MCD, GMDA, Noida Authority, etc.). We handle all necessary permits and ensure your hoarding is legally approved and compliant."
+  },
+  {
+    question: "Do you offer illuminated hoardings?",
+    answer: "Yes, we offer backlit and LED-illuminated hoardings for 24/7 visibility. Illuminated hoardings are particularly effective on expressways and highways."
+  },
+  {
+    question: "How do I book advertising space in Delhi NCR?",
+    answer: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation and permits."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Agency in Delhi NCR | Hoarding & Outdoor Ads | World Media NCR',
@@ -16,9 +44,10 @@ export const metadata: Metadata = {
     siteName: 'World Media NCR',
     images: [
       {
-        url: '/images/portfolio/Delhi Highway Hoarding.webp',
+        url: '/images/portfolio/Muzaffarnagar Shamli Road.webp',
         width: 1200,
         height: 630,
+        alt: 'World Media NCR - Outdoor Advertising in Delhi NCR',
       },
     ],
     locale: 'en_IN',
@@ -29,6 +58,8 @@ export const metadata: Metadata = {
 export default function DelhiNcrLocationPage() {
   return (
     <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Locations", path: "/locations" }, { name: "Delhi NCR" }]} />
+      <FaqJsonLd questions={delhiNcrFaqs} />
       {/* Breadcrumb Navigation */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -86,11 +117,6 @@ export default function DelhiNcrLocationPage() {
         </div>
         <div className="relative h-96 rounded-xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
           <Image src="/images/portfolio/Muzaffarnagar Shamli Road.webp" alt="Outdoor advertising campaign by World Media NCR" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
-          <div className="hidden text-center p-8">
-            <span className="text-6xl mb-4 block">🏙️</span>
-            <p className="text-gray-500">Delhi NCR Advertising Image</p>
-            <p className="text-sm text-gray-400">(Add Delhi NCR hoarding photos here)</p>
-          </div>
         </div>
       </div>
 
@@ -264,30 +290,6 @@ export default function DelhiNcrLocationPage() {
         </div>
       </section>
 
-      {/* About NCR Market */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Delhi NCR</h2>
-        <div className="prose prose-lg max-w-none">
-          <p className="text-gray-700 mb-4">
-            Delhi NCR is India&apos;s largest and most important advertising market, with a population exceeding 46 million. It encompasses Delhi and its satellite cities – Gurgaon, Noida, Ghaziabad, Faridabad – connected by a network of expressways and highways.
-          </p>
-          <p className="text-gray-700 mb-4">
-            <strong>Key facts about Delhi NCR for advertisers:</strong>
-          </p>
-          <ul className="list-disc pl-6 mb-4 text-gray-700">
-            <li><strong>Population:</strong> 46+ million (largest urban agglomeration in India)</li>
-            <li><strong>Vehicle population:</strong> 10+ million vehicles</li>
-            <li><strong>Corporate hub:</strong> Thousands of corporate offices, MNCs, and businesses</li>
-            <li><strong>Airport traffic:</strong> IGI Airport handles 65+ million passengers annually</li>
-            <li><strong>Expressways:</strong> Delhi-Meerut, Noida, Dwarka, Eastern/Western Peripheral</li>
-            <li><strong>Commercial centers:</strong> Multiple malls, commercial districts, and markets</li>
-          </ul>
-          <p className="text-gray-700">
-            Outdoor advertising in Delhi NCR offers unparalleled reach to India&apos;s most affluent and diverse consumer base. Highway hoardings on expressways provide millions of impressions daily, while city locations target specific demographics.
-          </p>
-        </div>
-      </section>
-
       {/* Pricing Guide */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Delhi NCR Advertising Rates (Indicative)</h2>
@@ -350,35 +352,10 @@ export default function DelhiNcrLocationPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          {[
-            {
-              q: "Which are the best locations for hoardings in Delhi NCR?",
-              a: "The best hoarding locations in Delhi NCR include Delhi-Meerut Expressway, Noida Expressway, Dwarka Expressway, NH-48, Eastern and Western Peripheral Highways. For city-specific visibility, MG Road (Gurgaon), Sector 18 (Noida), Raj Nagar (Ghaziabad), and Nehru Place (Delhi) are excellent."
-            },
-            {
-              q: "How much does hoarding advertising cost in Delhi NCR?",
-              a: "Costs vary widely based on location. Expressway hoardings range from ₹50,000 to ₹1,50,000 per month. City locations range from ₹25,000 to ₹60,000 per month. Premium spots at airports and major intersections can cost more. Contact us for specific quotes."
-            },
-            {
-              q: "Do you provide advertising in all NCR cities?",
-              a: "Yes, we provide advertising services across all NCR cities including Delhi, Gurgaon, Noida, Greater Noida, Ghaziabad, Faridabad, and all connecting highways and expressways."
-            },
-            {
-              q: "What permits are required for hoardings in NCR?",
-              a: "Different NCR cities have different authorities (NDMC, MCD, GMDA, Noida Authority, etc.). We handle all necessary permits and ensure your hoarding is legally approved and compliant."
-            },
-            {
-              q: "Do you offer illuminated hoardings?",
-              a: "Yes, we offer backlit and LED-illuminated hoardings for 24/7 visibility. Illuminated hoardings are particularly effective on expressways and highways."
-            },
-            {
-              q: "How do I book advertising space in Delhi NCR?",
-              a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation and permits."
-            }
-          ].map((faq, i) => (
+          {delhiNcrFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.question}</h3>
+              <p className="text-gray-700">{faq.answer}</p>
             </div>
           ))}
         </div>

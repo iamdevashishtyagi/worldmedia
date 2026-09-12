@@ -1,6 +1,42 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const flexFaqs = [
+  {
+    q: "What is the turnaround time for flex printing?",
+    a: "Standard orders are completed within 24-48 hours. For large hoardings (500+ sq ft), we may need 2-3 days. Express 12-hour service is available for urgent requirements."
+  },
+  {
+    q: "What file formats do you accept?",
+    a: "We accept JPEG, PNG, PDF, AI, PSD, CDR, and EPS. For best results, we recommend high-resolution files (150-300 DPI) and vector formats for logos."
+  },
+  {
+    q: "Do you provide design services?",
+    a: "Yes, our in-house design team creates professional designs optimized for print. Design support is complementary with bulk orders."
+  },
+  {
+    q: "What's the difference between frontlit and backlit flex?",
+    a: "Frontlit flex is for standard hoardings with front lighting. Backlit flex is translucent, designed for light boxes, creating a glowing effect when illuminated from behind."
+  },
+  {
+    q: "How long do outdoor flex prints last?",
+    a: "Our outdoor flex prints typically last 1-2 years depending on weather conditions. UV-treated materials resist fading and weathering."
+  },
+  {
+    q: "Do you offer installation services?",
+    a: "Yes, our team provides professional installation for hoardings and banners across Meerut and NCR locations."
+  },
+  {
+    q: "Do you deliver outside Meerut?",
+    a: "Yes, we ship flex prints to Muzaffarnagar, Shamli, Saharanpur, Baghpat, Delhi NCR, and other cities across India."
+  },
+  {
+    q: "What is the minimum order quantity?",
+    a: "There is no minimum order. We accept orders of all sizes, from single banners to bulk printing for large campaigns."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Flex Printing in Meerut | High-Quality Banner & Hoarding Printing | World Media NCR',
@@ -29,6 +65,20 @@ export const metadata: Metadata = {
 export default function FlexPrintingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="Flex Printing in Meerut"
+        description="High-resolution 1440 DPI flex printing, hoarding banners, vinyl boards, and outdoor advertising prints in Meerut."
+        url="https://worldmediancr.com/services/flex-printing-meerut"
+        serviceType="Flex Printing & Large Format Printing"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={flexFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-red-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -332,40 +382,7 @@ export default function FlexPrintingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "What is the turnaround time for flex printing?",
-                a: "Standard orders are completed within 24-48 hours. For large hoardings (500+ sq ft), we may need 2-3 days. Express 12-hour service is available for urgent requirements."
-              },
-              {
-                q: "What file formats do you accept?",
-                a: "We accept JPEG, PNG, PDF, AI, PSD, CDR, and EPS. For best results, we recommend high-resolution files (150-300 DPI) and vector formats for logos."
-              },
-              {
-                q: "Do you provide design services?",
-                a: "Yes, our in-house design team creates professional designs optimized for print. Design support is complementary with bulk orders."
-              },
-              {
-                q: "What's the difference between frontlit and backlit flex?",
-                a: "Frontlit flex is for standard hoardings with front lighting. Backlit flex is translucent, designed for light boxes, creating a glowing effect when illuminated from behind."
-              },
-              {
-                q: "How long do outdoor flex prints last?",
-                a: "Our outdoor flex prints typically last 1-2 years depending on weather conditions. UV-treated materials resist fading and weathering."
-              },
-              {
-                q: "Do you offer installation services?",
-                a: "Yes, our team provides professional installation for hoardings and banners across Meerut and NCR locations."
-              },
-              {
-                q: "Do you deliver outside Meerut?",
-                a: "Yes, we ship flex prints to Muzaffarnagar, Shamli, Saharanpur, Baghpat, Delhi NCR, and other cities across India."
-              },
-              {
-                q: "What is the minimum order quantity?",
-                a: "There is no minimum order. We accept orders of all sizes, from single banners to bulk printing for large campaigns."
-              }
-            ].map((faq, i) => (
+            {flexFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

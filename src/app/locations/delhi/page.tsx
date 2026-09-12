@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaqJsonLd, BreadcrumbJsonLd } from '@/components/SeoJsonLd';
+
+const delhiFaqs = [
+  {
+    question: "Which is the best advertising agency in Delhi?",
+    answer: "World Media NCR is a trusted advertising agency serving Delhi with 10+ years of experience, premium hoarding locations across all zones, and expertise in navigating Delhi's municipal permitting process."
+  },
+  {
+    question: "How much does hoarding advertising cost in Delhi?",
+    answer: "Hoarding costs in Delhi vary significantly based on location. Premium locations like Connaught Place, ITO, and Ring Road can range from ₹75,000 to ₹2,00,000+ per month. Other areas range from ₹30,000 to ₹75,000. Contact us for specific quotes."
+  },
+  {
+    question: "What are the best hoarding locations in Delhi?",
+    answer: "The best hoarding locations in Delhi include Ring Road (multiple points), ITO, Connaught Place, Delhi-Gurgaon Border, DND Flyway approach, and major markets like Rajouri Garden, Lajpat Nagar, and Karol Bagh."
+  },
+  {
+    question: "Do you handle permits for Delhi hoardings?",
+    answer: "Yes, we handle all necessary permits from MCD, NDMC, traffic police, and other authorities. Delhi has strict regulations, and we ensure your hoarding is 100% compliant and legally approved."
+  },
+  {
+    question: "What sizes are available for Delhi hoardings?",
+    answer: "We offer various sizes including 10x10 ft, 15x10 ft, 20x10 ft, 30x10 ft, and 40x10 ft. Size availability depends on location and local regulations."
+  },
+  {
+    question: "How do I book advertising space in Delhi?",
+    answer: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all permits and installation."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Agency in Delhi | Hoarding & Outdoor Ads | World Media NCR',
@@ -16,9 +44,10 @@ export const metadata: Metadata = {
     siteName: 'World Media NCR',
     images: [
       {
-        url: '/images/portfolio/Delhi Highway Hoarding.webp',
+        url: '/images/portfolio/Muzaffarnagar Meerut Road.webp',
         width: 1200,
         height: 630,
+        alt: 'World Media NCR - Outdoor Hoarding Media in Delhi',
       },
     ],
     locale: 'en_IN',
@@ -29,8 +58,11 @@ export const metadata: Metadata = {
 export default function DelhiLocationPage() {
   return (
     <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Locations", path: "/locations" }, { name: "Delhi" }]} />
+      <FaqJsonLd questions={delhiFaqs} />
       {/* Breadcrumb Navigation */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
+
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
             <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>

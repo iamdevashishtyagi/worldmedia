@@ -1,17 +1,19 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Devashish Tyagi | Premium Web Developer & SEO Architect - Meerut',
-  description: 'Devashish Tyagi - Premium web developer from Sardhana, Meerut. Specializing in high-performance Next.js, React, Vue.js, Node.js applications, enterprise-grade SEO, and digital transformation. Available for elite projects.',
-  keywords: 'devashish tyagi, devashish tyagi meerut, devashish tyagi sardhana, premium web developer meerut, next js expert india, react developer, vue js developer, node js developer, express js, freelance web developer uttar pradesh, seo architect, high performance websites, enterprise web development',
+  title: 'Devashish Tyagi | Web Developer & SEO Architect',
+  description: 'Devashish Tyagi - Full-stack developer and SEO specialist.',
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
     canonical: 'https://worldmediancr.com/developer',
   },
   openGraph: {
-    title: 'Devashish Tyagi | Premium Web Developer & SEO Architect',
-    description: 'Building exceptional digital experiences. Expert in Next.js, React, Vue.js, Node.js, and enterprise-grade SEO.',
+    title: 'Devashish Tyagi | Web Developer',
+    description: 'Full-stack developer and SEO specialist.',
     url: 'https://worldmediancr.com/developer',
     siteName: 'World Media NCR',
     images: [
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Devashish Tyagi' }],
   creator: 'Devashish Tyagi',
 };
+
 
 const technicalStack = [
   { category: 'Frontend Frameworks', skills: ['Next.js 14', 'React 18', 'Vue.js 3', 'Nuxt.js'], icon: '⚛️' },

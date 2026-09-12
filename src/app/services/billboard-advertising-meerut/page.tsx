@@ -1,6 +1,42 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const billboardFaqs = [
+  {
+    q: "What's the difference between a hoarding and a billboard?",
+    a: "The terms are often used interchangeably. At World Media NCR, both refer to premium outdoor advertising spaces. We focus on delivering high-impact visual advertising at strategic locations."
+  },
+  {
+    q: "How many people will see my billboard?",
+    a: "Traffic varies by location. Delhi Road sees 100,000+ vehicles daily, Roorkee Road 80,000+, and Garh Road 70,000+. With multiple passengers per vehicle, actual viewership is significantly higher."
+  },
+  {
+    q: "How far in advance should I book a billboard?",
+    a: "For premium locations, we recommend booking 2-4 weeks in advance. During peak seasons (festivals, election periods), 1-2 months advance booking is advisable."
+  },
+  {
+    q: "Do you offer digital billboards with changing messages?",
+    a: "Yes, we offer LED digital billboards at select premium locations where you can display multiple ads in rotation. Contact us for availability."
+  },
+  {
+    q: "Do you have billboards in Muzaffarnagar and other cities?",
+    a: "Absolutely! We have extensive billboard networks across Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, and Delhi NCR."
+  },
+  {
+    q: "What is included in the billboard rental?",
+    a: "The rental includes: billboard structure, prime location access, all government permits, basic illumination (if opted), and professional installation."
+  },
+  {
+    q: "Can I change my advertisement during the contract?",
+    a: "Yes, you can change your creative. Long-term clients get complimentary design change options. Contact us for details."
+  },
+  {
+    q: "Do you provide design services for billboard creatives?",
+    a: "Yes, our in-house design team creates compelling billboard designs optimized for outdoor visibility. We ensure your message is bold, clear, and readable."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Billboard Advertising in Meerut | Premium Outdoor Billboards | World Media NCR',
@@ -41,6 +77,20 @@ const billboardGallery = [
 export default function BillboardAdvertisingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="Billboard Advertising in Meerut"
+        description="Premium billboard advertising at prime highway and city junctions across Meerut, Delhi-Meerut Expressway, and NCR."
+        url="https://worldmediancr.com/services/billboard-advertising-meerut"
+        serviceType="Billboard Advertising"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={billboardFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-purple-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -381,40 +431,7 @@ export default function BillboardAdvertisingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "What's the difference between a hoarding and a billboard?",
-                a: "The terms are often used interchangeably. At World Media NCR, both refer to premium outdoor advertising spaces. We focus on delivering high-impact visual advertising at strategic locations."
-              },
-              {
-                q: "How many people will see my billboard?",
-                a: "Traffic varies by location. Delhi Road sees 100,000+ vehicles daily, Roorkee Road 80,000+, and Garh Road 70,000+. With multiple passengers per vehicle, actual viewership is significantly higher."
-              },
-              {
-                q: "How far in advance should I book a billboard?",
-                a: "For premium locations, we recommend booking 2-4 weeks in advance. During peak seasons (festivals, election periods), 1-2 months advance booking is advisable."
-              },
-              {
-                q: "Do you offer digital billboards with changing messages?",
-                a: "Yes, we offer LED digital billboards at select premium locations where you can display multiple ads in rotation. Contact us for availability."
-              },
-              {
-                q: "Do you have billboards in Muzaffarnagar and other cities?",
-                a: "Absolutely! We have extensive billboard networks across Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, and Delhi NCR."
-              },
-              {
-                q: "What is included in the billboard rental?",
-                a: "The rental includes: billboard structure, prime location access, all government permits, basic illumination (if opted), and professional installation."
-              },
-              {
-                q: "Can I change my advertisement during the contract?",
-                a: "Yes, you can change your creative. Long-term clients get complimentary design change options. Contact us for details."
-              },
-              {
-                q: "Do you provide design services for billboard creatives?",
-                a: "Yes, our in-house design team creates compelling billboard designs optimized for outdoor visibility. We ensure your message is bold, clear, and readable."
-              }
-            ].map((faq, i) => (
+            {billboardFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

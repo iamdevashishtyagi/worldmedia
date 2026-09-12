@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const dwpFaqs = [
+  {
+    q: "How long does digital wall painting last?",
+    a: "Our digital wall paintings are designed for longevity. Using UV-resistant, weather-proof vinyl, they maintain their visual appeal for years with minimal maintenance."
+  },
+  {
+    q: "Do you handle permissions for wall painting?",
+    a: "Yes, we manage all necessary permissions from property owners and municipal authorities, ensuring your advertisement is legally compliant."
+  },
+  {
+    q: "Which locations do you cover?",
+    a: "We provide digital wall painting services across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, and Delhi NCR."
+  },
+  {
+    q: "Can I select specific walls for my ad?",
+    a: "Absolutely. We provide options with photos, traffic data, and visibility analysis. You choose based on your target audience and budget."
+  },
+  {
+    q: "What's the difference from traditional painting?",
+    a: "Digital wall painting uses high-resolution printed vinyl allowing photographic quality, gradients, and fine details. It's superior in quality, consistency, and longevity."
+  },
+  {
+    q: "Can I advertise on multiple walls?",
+    a: "Yes, we can manage multi-location campaigns across different cities with a single point of contact."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Digital Wall Painting in Meerut | Premium Wall Advertising | World Media NCR',
@@ -40,6 +68,20 @@ const dwpGalleryImages = [
 export default function DigitalWallPaintingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="Digital Wall Painting in Meerut"
+        description="High-resolution digital wall painting and wall branding across Meerut, Muzaffarnagar, Shamli, Saharanpur, and Western UP."
+        url="https://worldmediancr.com/services/digital-wall-painting-meerut"
+        serviceType="Digital Wall Painting & Outdoor Branding"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={dwpFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section - Modern Layout */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -316,32 +358,7 @@ export default function DigitalWallPaintingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "How long does digital wall painting last?",
-                a: "Our digital wall paintings are designed for longevity. Using UV-resistant, weather-proof vinyl, they maintain their visual appeal for years with minimal maintenance."
-              },
-              {
-                q: "Do you handle permissions for wall painting?",
-                a: "Yes, we manage all necessary permissions from property owners and municipal authorities, ensuring your advertisement is legally compliant."
-              },
-              {
-                q: "Which locations do you cover?",
-                a: "We provide digital wall painting services across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, and Delhi NCR."
-              },
-              {
-                q: "Can I select specific walls for my ad?",
-                a: "Absolutely. We provide options with photos, traffic data, and visibility analysis. You choose based on your target audience and budget."
-              },
-              {
-                q: "What's the difference from traditional painting?",
-                a: "Digital wall painting uses high-resolution printed vinyl allowing photographic quality, gradients, and fine details. It's superior in quality, consistency, and longevity."
-              },
-              {
-                q: "Can I advertise on multiple walls?",
-                a: "Yes, we can manage multi-location campaigns across different cities with a single point of contact."
-              }
-            ].map((faq, i) => (
+            {dwpFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

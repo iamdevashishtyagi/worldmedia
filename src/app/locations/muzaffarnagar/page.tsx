@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BreadcrumbJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const muzaffarnagarFaqs = [
+  {
+    q: "Which is the best advertising agency in Muzaffarnagar?",
+    a: "World Media NCR is a leading advertising agency serving Muzaffarnagar with 10+ years of experience, premium hoarding locations on all major roads, and a strong track record of successful campaigns for local businesses and political clients."
+  },
+  {
+    q: "How much does hoarding advertising cost in Muzaffarnagar?",
+    a: "Hoarding costs in Muzaffarnagar range from ₹8,000 to ₹35,000 per month depending on location and size. Premium locations on Meerut Road and Roorkee Road range from ₹20,000-35,000/month, while other areas start from ₹8,000/month."
+  },
+  {
+    q: "What are the best hoarding locations in Muzaffarnagar?",
+    a: "The best hoarding locations in Muzaffarnagar include Meerut Road, Roorkee Road, Shamli Road, Delhi Road, New Mandi Chowk, Civil Lines, and Railway Road. These areas have the highest traffic and visibility."
+  },
+  {
+    q: "Do you provide wall painting services in rural Muzaffarnagar areas?",
+    a: "Yes, we provide wall painting services across all rural areas of Muzaffarnagar district including Budhana, Khatauli, Shahpur, Purkazi, Jansath, and all villages. Rural wall painting is highly effective for political and FMCG campaigns."
+  },
+  {
+    q: "Do you cover all assembly constituencies in Muzaffarnagar?",
+    a: "Yes, we provide complete coverage across all assembly constituencies including Muzaffarnagar, Budhana, Charthawal, Khatauli, and Meerapur. We also serve Shamli, Kairana, and Thana Bhawan constituencies."
+  },
+  {
+    q: "How do I book advertising space in Muzaffarnagar?",
+    a: "Simply call us at +91 94564 97636, email us at worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show you available locations, provide a quote, and handle everything from permits to installation."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Agency in Muzaffarnagar | Hoarding & Outdoor Ads | World Media NCR',
@@ -29,6 +57,20 @@ export const metadata: Metadata = {
 export default function MuzaffarnagarLocationPage() {
   return (
     <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: 'https://worldmediancr.com' },
+          { name: 'Locations', url: 'https://worldmediancr.com/locations' },
+          { name: 'Muzaffarnagar', url: 'https://worldmediancr.com/locations/muzaffarnagar' },
+        ]}
+      />
+      <FaqJsonLd
+        faqs={muzaffarnagarFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Breadcrumb Navigation */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -257,32 +299,7 @@ export default function MuzaffarnagarLocationPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          {[
-            {
-              q: "Which is the best advertising agency in Muzaffarnagar?",
-              a: "World Media NCR is a leading advertising agency serving Muzaffarnagar with 10+ years of experience, premium hoarding locations on all major roads, and a strong track record of successful campaigns for local businesses and political clients."
-            },
-            {
-              q: "How much does hoarding advertising cost in Muzaffarnagar?",
-              a: "Hoarding costs in Muzaffarnagar range from ₹8,000 to ₹35,000 per month depending on location and size. Premium locations on Meerut Road and Roorkee Road range from ₹20,000-35,000/month, while other areas start from ₹8,000/month."
-            },
-            {
-              q: "What are the best hoarding locations in Muzaffarnagar?",
-              a: "The best hoarding locations in Muzaffarnagar include Meerut Road, Roorkee Road, Shamli Road, Delhi Road, New Mandi Chowk, Civil Lines, and Railway Road. These areas have the highest traffic and visibility."
-            },
-            {
-              q: "Do you provide wall painting services in rural Muzaffarnagar areas?",
-              a: "Yes, we provide wall painting services across all rural areas of Muzaffarnagar district including Budhana, Khatauli, Shahpur, Purkazi, Jansath, and all villages. Rural wall painting is highly effective for political and FMCG campaigns."
-            },
-            {
-              q: "Do you cover all assembly constituencies in Muzaffarnagar?",
-              a: "Yes, we provide complete coverage across all assembly constituencies including Muzaffarnagar, Budhana, Charthawal, Khatauli, and Meerapur. We also serve Shamli, Kairana, and Thana Bhawan constituencies."
-            },
-            {
-              q: "How do I book advertising space in Muzaffarnagar?",
-              a: "Simply call us at +91 94564 97636, email us at worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show you available locations, provide a quote, and handle everything from permits to installation."
-            }
-          ].map((faq, i) => (
+          {muzaffarnagarFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
               <p className="text-gray-700">{faq.a}</p>

@@ -2,74 +2,71 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
-const featuredClients = [
-  { name: "Metro Corporation", industry: "Real Estate" },
-  { name: "Swift Logistics", industry: "Transportation" },
-  { name: "Urban Retail Group", industry: "Retail" },
-  { name: "Tech Innovations Ltd", industry: "Technology" },
+const premierClients = [
+  { name: "Tata Motors", logo: "/images/clients/tatamotors.png" },
+  { name: "Patanjali", logo: "/images/clients/patanjali.svg" },
+  { name: "UltraTech Cement", logo: "/images/clients/ultratechcement.png" },
+  { name: "Ambuja Cement", logo: "/images/clients/ambujacement.png" },
+  { name: "Apollo Hospitals", logo: "/images/clients/apollohospital.svg" },
+  { name: "Medanta Hospitals", logo: "/images/clients/medantahospitals.png" },
+  { name: "Tanishq Jewellers", logo: "/images/clients/tanishqjwellers.png" },
+  { name: "Reliance Jewels", logo: "/images/clients/reliancejwell.png" },
+  { name: "Apollo Pipes", logo: "/images/clients/apollopipes.png" },
+  { name: "JK Tyres", logo: "/images/clients/jktyres.jpg" },
+  { name: "Coca-Cola", logo: "/images/clients/coke.svg" },
+  { name: "Zee Media", logo: "/images/clients/zeemedia.svg" },
 ];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -60 },
-};
 
 export default function ClientsPreview() {
   return (
-    <section className="w-full py-20 bg-gray-900 text-white">
+    <section className="w-full py-20 bg-slate-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Our Valued Clients
+          <span className="text-yellow-400 font-bold uppercase tracking-wider text-sm">
+            Trusted by India&apos;s Leading Brands
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-2 mb-4">
+            Brands That Trust World Media NCR
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Trusted by leading brands and businesses across various industries
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto mb-8">
+            From multinational corporations to premier healthcare and educational institutions, we power outdoor visibility for India&apos;s most recognized names.
           </p>
           <Link
             href="/clients"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300"
+            className="inline-block bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold py-3 px-8 rounded-xl transition duration-300 shadow-md"
           >
-            View All Clients
+            View All Clients &amp; Testimonials
           </Link>
         </div>
 
-        {/* Clients Grid with animation */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          {featuredClients.map((client, index) => (
+        {/* Real Client Logos Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {premierClients.map((client, index) => (
             <motion.div
               key={index}
-              variants={cardVariants}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-gray-800 p-8 rounded-xl w-full h-40 flex items-center justify-center hover:bg-gray-750 transition-all duration-300 group"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              viewport={{ once: true }}
+              className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center hover:border-yellow-400/50 hover:bg-slate-850 transition duration-300 group aspect-video"
             >
-              <div className="text-center">
-                <h3 className="font-semibold text-lg mb-2 group-hover:text-yellow-400 transition-colors">
-                  {client.name}
-                </h3>
-                <p className="text-gray-400 text-sm">{client.industry}</p>
+              <div className="relative w-full h-12 flex items-center justify-center">
+                <Image
+                  src={client.logo}
+                  alt={`${client.name} - Advertising client of World Media NCR`}
+                  fill
+                  className="object-contain filter brightness-90 contrast-125 group-hover:brightness-100 group-hover:scale-105 transition duration-300"
+                />
               </div>
+              <p className="text-xs text-slate-400 group-hover:text-yellow-400 mt-3 font-medium transition text-center">
+                {client.name}
+              </p>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

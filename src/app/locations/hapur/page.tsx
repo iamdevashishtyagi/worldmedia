@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaqJsonLd, BreadcrumbJsonLd } from '@/components/SeoJsonLd';
+
+const hapurFaqs = [
+  {
+    question: "Which is the best advertising agency in Hapur?",
+    answer: "World Media NCR is a leading advertising agency serving Hapur with 10+ years of experience, premium hoarding locations on Delhi-Meerut Expressway and NH-34, and extensive rural coverage for wall painting campaigns across the district."
+  },
+  {
+    question: "How much does hoarding advertising cost in Hapur?",
+    answer: "Hoarding costs in Hapur range from ₹7,000 to ₹30,000 per month for city locations. Expressway hoardings range from ₹50,000 to ₹1,00,000 per month depending on exact location and visibility."
+  },
+  {
+    question: "What are the best hoarding locations in Hapur?",
+    answer: "The best hoarding locations in Hapur include Delhi-Meerut Expressway (Hapur section), Hapur-Meerut Road, NH-34, Garhmukteshwar Road, and Main Market Chowk. Expressway locations offer maximum visibility to NCR traffic."
+  },
+  {
+    question: "Do you provide wall painting in Garhmukteshwar and Pilkhuwa?",
+    answer: "Yes, we provide extensive wall painting services across Garhmukteshwar, Pilkhuwa, Dhaulana, and all villages in Hapur district. Rural wall painting is highly effective for political and brand campaigns."
+  },
+  {
+    question: "Do you cover all villages in Hapur district?",
+    answer: "Yes, we have teams that cover every village in Hapur district. We maintain a database of available walls and can execute pan-district campaigns efficiently."
+  },
+  {
+    question: "How do I book advertising space in Hapur?",
+    answer: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Agency in Hapur | Hoarding & Outdoor Ads | World Media NCR',
@@ -16,9 +44,10 @@ export const metadata: Metadata = {
     siteName: 'World Media NCR',
     images: [
       {
-        url: '/images/portfolio/Hapur Road Hoarding.webp',
+        url: '/images/portfolio/Meerut Sardhana.webp',
         width: 1200,
         height: 630,
+        alt: 'World Media NCR - Outdoor Hoarding in Hapur',
       },
     ],
     locale: 'en_IN',
@@ -29,6 +58,8 @@ export const metadata: Metadata = {
 export default function HapurLocationPage() {
   return (
     <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Locations", path: "/locations" }, { name: "Hapur" }]} />
+      <FaqJsonLd questions={hapurFaqs} />
       {/* Breadcrumb Navigation */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -86,11 +117,6 @@ export default function HapurLocationPage() {
         </div>
         <div className="relative h-96 rounded-xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
           <Image src="/images/portfolio/Meerut Sardhana.webp" alt="Outdoor advertising hoarding by World Media NCR" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
-          <div className="hidden text-center p-8">
-            <span className="text-6xl mb-4 block">🏭</span>
-            <p className="text-gray-500">Hapur Advertising Image</p>
-            <p className="text-sm text-gray-400">(Add Hapur hoarding photos here)</p>
-          </div>
         </div>
       </div>
 
@@ -271,35 +297,10 @@ export default function HapurLocationPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          {[
-            {
-              q: "Which is the best advertising agency in Hapur?",
-              a: "World Media NCR is a leading advertising agency serving Hapur with 10+ years of experience, premium hoarding locations on Delhi-Meerut Expressway and NH-34, and extensive rural coverage for wall painting campaigns across the district."
-            },
-            {
-              q: "How much does hoarding advertising cost in Hapur?",
-              a: "Hoarding costs in Hapur range from ₹7,000 to ₹30,000 per month for city locations. Expressway hoardings range from ₹50,000 to ₹1,00,000 per month depending on exact location and visibility."
-            },
-            {
-              q: "What are the best hoarding locations in Hapur?",
-              a: "The best hoarding locations in Hapur include Delhi-Meerut Expressway (Hapur section), Hapur-Meerut Road, NH-34, Garhmukteshwar Road, and Main Market Chowk. Expressway locations offer maximum visibility to NCR traffic."
-            },
-            {
-              q: "Do you provide wall painting in Garhmukteshwar and Pilkhuwa?",
-              a: "Yes, we provide extensive wall painting services across Garhmukteshwar, Pilkhuwa, Dhaulana, and all villages in Hapur district. Rural wall painting is highly effective for political and brand campaigns."
-            },
-            {
-              q: "Do you cover all villages in Hapur district?",
-              a: "Yes, we have teams that cover every village in Hapur district. We maintain a database of available walls and can execute pan-district campaigns efficiently."
-            },
-            {
-              q: "How do I book advertising space in Hapur?",
-              a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
-            }
-          ].map((faq, i) => (
+          {hapurFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.question}</h3>
+              <p className="text-gray-700">{faq.answer}</p>
             </div>
           ))}
         </div>

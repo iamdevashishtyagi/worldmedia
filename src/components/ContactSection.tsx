@@ -7,7 +7,6 @@ import { MapPin, Send, Phone, Mail, Clock } from 'lucide-react';
 export default function ContactSection() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', company: '', service: '', message: '' });
   const [loading, setLoading] = useState(false);
-  const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [toast, setToast] = useState<{ message: string; type: 'success' | 'error'; visible: boolean } | null>(null);
   
   const showToast = (message: string, type: 'success' | 'error') => {
@@ -32,11 +31,11 @@ export default function ContactSection() {
         setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' });
       } else {
         showToast("Failed to send. Please try again later.", "error" );
-        console.error("Contact API returned error:");
+        console.error("Contact API returned error:", json);
       }
     } catch (err) {
       showToast("Error sending message. Check console for details.", "error" );
-      console.error("Contact submit error:");
+      console.error("Contact submit error:", err);
     } finally {
       setLoading(false);
       setTimeout(() => setToast(null), 4000);
@@ -167,7 +166,6 @@ export default function ContactSection() {
                 <button type="submit" disabled={loading} className={`w-full bg-blue-950 text-white font-semibold py-4 px-8 rounded-lg transition duration-200 text-lg flex items-center justify-center gap-2 ${loading ? "opacity-70 cursor-wait" : "hover:bg-grey-900 active:scale-95"}`}>
                   {loading ? "Sending..." : "Send Message"} <Send size={20} />
                 </button>
-                {statusMessage && <p className="mt-4 text-center">{statusMessage}</p>}
               </form>
             </div>
           </div>

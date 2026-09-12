@@ -3,56 +3,57 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://worldmediancr.com'
+  const currentDate = new Date('2025-02-01T00:00:00.000Z')
 
   const mainPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/services`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/services`,
-      lastModified: new Date(),
+      url: `${baseUrl}/locations`,
+      lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/gallery`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: 'weekly',
-      priority: 0.9,
+      priority: 0.85,
     },
     {
-      url: `${baseUrl}/clients`,
-      lastModified: new Date(),
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
       changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/developer`,
-      lastModified: new Date(),
+      url: `${baseUrl}/clients`,
+      lastModified: currentDate,
       changeFrequency: 'monthly',
-      priority: 0.5,
-    }
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
   ]
 
   const servicePages: MetadataRoute.Sitemap = [
@@ -65,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'political-advertising-meerut'
   ].map(slug => ({
     url: `${baseUrl}/services/${slug}`,
-    lastModified: new Date(),
+    lastModified: currentDate,
     changeFrequency: 'weekly',
     priority: 0.9,
   }))
@@ -81,9 +82,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'delhi'
   ].map(city => ({
     url: `${baseUrl}/locations/${city}`,
-    lastModified: new Date(),
+    lastModified: currentDate,
     changeFrequency: 'weekly',
-    priority: 0.8,
+    priority: 0.85,
   }))
 
   const blogPages: MetadataRoute.Sitemap = [
@@ -94,10 +95,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'why-choose-world-media-ncr-for-advertising'
   ].map(slug => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+    lastModified: currentDate,
     changeFrequency: 'monthly',
     priority: 0.7,
   }))
 
   return [ ...mainPages, ...servicePages, ...locationPages, ...blogPages ]
-}
+}

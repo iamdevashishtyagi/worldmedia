@@ -67,12 +67,21 @@ export const metadata: Metadata = {
   title: "Advertising Service Areas | Meerut, Delhi NCR & Uttar Pradesh",
   description:
     "Explore World Media NCR outdoor advertising service areas in Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, Delhi and Delhi NCR.",
-  alternates: { canonical: "/locations" },
+  alternates: { canonical: "https://worldmediancr.com/locations" },
   openGraph: {
     title: "World Media NCR Advertising Service Areas",
     description:
       "Outdoor advertising services across Meerut, Delhi NCR and western Uttar Pradesh.",
-    url: "/locations",
+    url: "https://worldmediancr.com/locations",
+    siteName: "World Media NCR",
+    images: [
+      {
+        url: "/images/portfolio/Baghra Bus Stand.webp",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

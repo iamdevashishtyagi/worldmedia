@@ -1,6 +1,42 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const politicalFaqs = [
+  {
+    q: "How early should I start my political advertising campaign?",
+    a: "For major elections, we recommend starting 2-3 months in advance. This allows time for strategic planning, location booking (premium spots get booked early), and phased execution."
+  },
+  {
+    q: "Do you handle campaigns for both parties and independent candidates?",
+    a: "Yes, we work with all political parties and independent candidates. Our services are non-partisan – we provide the same quality and commitment to every client."
+  },
+  {
+    q: "What is the most effective political advertising medium?",
+    a: "A combination works best: hoardings for visibility, wall paintings for rural reach, banners for events, and LED vans for audio-visual impact. We recommend an integrated approach."
+  },
+  {
+    q: "Do you provide design services for campaign materials?",
+    a: "Yes, our creative team specializes in political campaign design – from candidate photos and party symbols to slogans and messaging."
+  },
+  {
+    q: "How do you handle last-minute campaign emergencies?",
+    a: "We maintain 24/7 operations during election season. For urgent requirements, we can print and install within 24-48 hours depending on quantity and location."
+  },
+  {
+    q: "Do you provide coverage in remote villages?",
+    a: "Yes, we have teams that cover all villages across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and surrounding districts."
+  },
+  {
+    q: "What permits are required for political advertising?",
+    a: "We handle all necessary permissions from local authorities, including municipal corporations, panchayats, and election commission guidelines."
+  },
+  {
+    q: "Do you offer complete constituency packages?",
+    a: "Yes, we offer end-to-end constituency packages including location survey, strategic planning, all materials, installation, and campaign support."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Political Advertising in Meerut | Election Campaign Materials | World Media NCR',
@@ -103,6 +139,20 @@ const successFactors = [
 export default function PoliticalAdvertisingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="Political Advertising in Meerut"
+        description="Comprehensive election campaign publicity, political hoardings, wall painting, and rally flex printing across Meerut and Western UP."
+        url="https://worldmediancr.com/services/political-advertising-meerut"
+        serviceType="Political Campaign Advertising & Publicity"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={politicalFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -382,40 +432,7 @@ export default function PoliticalAdvertisingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "How early should I start my political advertising campaign?",
-                a: "For major elections, we recommend starting 2-3 months in advance. This allows time for strategic planning, location booking (premium spots get booked early), and phased execution."
-              },
-              {
-                q: "Do you handle campaigns for both parties and independent candidates?",
-                a: "Yes, we work with all political parties and independent candidates. Our services are non-partisan – we provide the same quality and commitment to every client."
-              },
-              {
-                q: "What is the most effective political advertising medium?",
-                a: "A combination works best: hoardings for visibility, wall paintings for rural reach, banners for events, and LED vans for audio-visual impact. We recommend an integrated approach."
-              },
-              {
-                q: "Do you provide design services for campaign materials?",
-                a: "Yes, our creative team specializes in political campaign design – from candidate photos and party symbols to slogans and messaging."
-              },
-              {
-                q: "How do you handle last-minute campaign emergencies?",
-                a: "We maintain 24/7 operations during election season. For urgent requirements, we can print and install within 24-48 hours depending on quantity and location."
-              },
-              {
-                q: "Do you provide coverage in remote villages?",
-                a: "Yes, we have teams that cover all villages across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and surrounding districts."
-              },
-              {
-                q: "What permits are required for political advertising?",
-                a: "We handle all necessary permissions from local authorities, including municipal corporations, panchayats, and election commission guidelines."
-              },
-              {
-                q: "Do you offer complete constituency packages?",
-                a: "Yes, we offer end-to-end constituency packages including location survey, strategic planning, all materials, installation, and campaign support."
-              }
-            ].map((faq, i) => (
+            {politicalFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

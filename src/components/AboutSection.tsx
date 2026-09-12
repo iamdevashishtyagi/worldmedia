@@ -19,47 +19,43 @@ export default function AboutSection() {
             viewport={{ amount: 0.3 }} // 👈 triggers every time it enters viewport
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              About World Media
+              About World Media NCR
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              With over 10 years of experience in the advertising industry, World Media has
-              established itself as a premier provider of innovative outdoor and digital
-              advertising solutions.
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              Founded in 2013, <strong>World Media NCR</strong> is Meerut&apos;s leading outdoor advertising and hoarding agency. For more than 12 years, we have helped businesses, brands, and institutions establish undeniable market presence across Meerut, Delhi NCR, and Western Uttar Pradesh.
             </p>
-            <p className="text-lg text-gray-600 mb-8">
-              Our team of creative professionals, technical experts, and strategic planners
-              work together to deliver campaigns that not only capture attention but also
-              drive measurable results for our clients.
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Under the visionary leadership of <strong>Shrikant Tyagi</strong>, we manage an extensive portfolio of high-visibility highway unipoles, arterial city hoardings, transit vehicle wraps, and wide-coverage digital wall paintings.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 mb-8">
               {[
-                { num: "500+", label: "Projects Completed" },
-                { num: "100+", label: "Happy Clients" },
-                { num: "10+", label: "Years Experience" },
-                { num: "24/7", label: "Client Support" },
+                { num: "500+", label: "Completed Campaigns" },
+                { num: "100+", label: "Corporate Clients" },
+                { num: "12+", label: "Years Experience" },
+                { num: "100%", label: "Legal Permitted Sites" },
               ].map((item, i) => (
                 <motion.div
                   key={i}
-                  className="text-center"
+                  className="text-center p-3 bg-slate-50 rounded-xl border border-slate-100"
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 40 }}
                   transition={{ duration: 0.6, delay: i * 0.2 }}
                   viewport={{ amount: 0.3 }}
                 >
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{item.num}</div>
-                  <div className="text-gray-600">{item.label}</div>
+                  <div className="text-3xl font-extrabold text-blue-600 mb-1">{item.num}</div>
+                  <div className="text-slate-700 text-sm font-semibold">{item.label}</div>
                 </motion.div>
               ))}
             </div>
 
             <Link
               href="/about"
-              className="inline-block bg-gray-900 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300"
+              className="inline-block bg-slate-900 hover:bg-blue-700 text-white font-semibold py-3.5 px-8 rounded-xl transition duration-300 shadow-md"
             >
-              Learn More About Us
+              Learn More About Our Agency
             </Link>
           </motion.div>
           <motion.div
@@ -72,16 +68,16 @@ export default function AboutSection() {
           >
             <Image
               src='/images/website/profilepic.webp'
-              alt='[Owner Name] - Founder & CEO of World Media'
+              alt='Shrikant Tyagi - Founder & CEO of World Media NCR'
               fill
               className="object-cover rounded-2xl shadow-xl"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-2xl transition-opacity duration-300 flex items-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent rounded-2xl transition-opacity duration-300 flex items-end">
               <div className="p-6 text-white">
                 <h3 className="text-2xl font-bold">Shrikant Tyagi</h3>
-                <p className="text-lg">Founder & CEO</p>
+                <p className="text-yellow-400 font-medium">Founder &amp; CEO, World Media NCR</p>
               </div>
             </div>
           </motion.div>

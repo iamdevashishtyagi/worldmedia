@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/SeoJsonLd';
 
 export const metadata: Metadata = {
   title: 'Best Locations for Hoarding Advertising in Meerut | Top 20 Spots',
@@ -16,9 +17,10 @@ export const metadata: Metadata = {
     siteName: 'World Media NCR',
     images: [
       {
-        url: '/images/portfolio/Delhi Road Hoarding.webp',
+        url: '/images/portfolio/Muzaffarnagar Meerut Road.webp',
         width: 1200,
         height: 630,
+        alt: 'Prime hoarding locations in Meerut',
       },
     ],
     locale: 'en_IN',
@@ -29,6 +31,14 @@ export const metadata: Metadata = {
 export default function BestLocationsBlog() {
   return (
     <article className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Best Locations for Hoardings in Meerut" }]} />
+      <ArticleJsonLd
+        title="Best Locations for Hoarding Advertising in Meerut: Top 20 Spots"
+        description="Complete guide to the best hoarding locations in Meerut. Delhi Road, Roorkee Road, Garh Road, and more."
+        url="/blog/best-locations-for-hoarding-in-meerut"
+        datePublished="2024-03-10"
+        image="/images/portfolio/Muzaffarnagar Meerut Road.webp"
+      />
       {/* Breadcrumb */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -80,7 +90,7 @@ export default function BestLocationsBlog() {
         <strong>Why it&apos;s great:</strong> Delhi Road is the main highway connecting Meerut to Delhi. It carries commuters, business travelers, and transport vehicles throughout the day. This is Meerut&apos;s most premium advertising corridor.<br />
         <strong>Best for:</strong> National brands, real estate, automotive, and businesses targeting upscale audiences.</p>
 
-        <h2>2. Roorkee Road – Student & Commuter Hub</h2>
+        <h2>2. Roorkee Road – Student &amp; Commuter Hub</h2>
         <div className="relative h-60 my-4 rounded-lg overflow-hidden">
           <Image
             src="/images/portfolio/Muzaffarnagar Rorkee Road.webp"
@@ -226,8 +236,8 @@ export default function BestLocationsBlog() {
           <h3 className="text-2xl font-bold mb-3">Need Help Choosing the Perfect Spot?</h3>
           <p className="mb-4">Our team can show you available locations with photos, traffic data, and visibility analysis. Contact us for a free consultation.</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700">Get Free Quote</Link>
-            <Link href="/services/hoarding-advertising-meerut" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50">View Hoarding Services</Link>
+            <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700 font-semibold">Get Free Quote</Link>
+            <Link href="/services/hoarding-advertising-meerut" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50 font-semibold">View Hoarding Services</Link>
           </div>
         </div>
 

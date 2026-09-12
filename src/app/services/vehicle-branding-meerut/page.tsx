@@ -1,6 +1,42 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const vehicleFaqs = [
+  {
+    q: "How long does vehicle branding last?",
+    a: "Professional vinyl wraps typically last 3-5 years with proper care. Our wraps come with a warranty against fading, peeling, and bubbling."
+  },
+  {
+    q: "Will the wrap damage my vehicle's paint?",
+    a: "No, when professionally installed and removed, vinyl wraps actually protect the original paint from UV rays, minor scratches, and stone chips."
+  },
+  {
+    q: "How many people will see my branded vehicle?",
+    a: "A branded vehicle in Meerut can generate 30,000-70,000 daily impressions depending on routes traveled—extremely cost-effective compared to static billboards."
+  },
+  {
+    q: "What's the difference between partial and full wrap?",
+    a: "A partial wrap covers specific areas (30-50% of vehicle). A full wrap covers the entire vehicle exterior. Partial wraps are more budget-friendly."
+  },
+  {
+    q: "How long does installation take?",
+    a: "Cars take 1-2 days, trucks 2-3 days, and buses 3-4 days. We'll provide a specific timeline based on your vehicle type and wrap complexity."
+  },
+  {
+    q: "Do you provide design services?",
+    a: "Yes, our in-house design team creates professional vehicle wrap designs. We provide mockups for approval before printing and installation."
+  },
+  {
+    q: "Do you offer vehicle branding in other cities?",
+    a: "Yes, we serve clients across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, and Delhi NCR."
+  },
+  {
+    q: "Can I brand a personal vehicle?",
+    a: "Absolutely. Many professionals (real estate agents, consultants, service providers) brand their personal vehicles to turn daily commute into marketing."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Vehicle Branding in Meerut | Fleet & Car Wraps | Mobile Advertising | World Media NCR',
@@ -65,6 +101,20 @@ const industries = [
 export default function VehicleBrandingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="Vehicle Branding in Meerut"
+        description="Professional fleet and car vinyl wrap branding services across Meerut, Ghaziabad, Noida, and Western UP."
+        url="https://worldmediancr.com/services/vehicle-branding-meerut"
+        serviceType="Vehicle Branding & Fleet Wraps"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={vehicleFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-amber-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -340,40 +390,7 @@ export default function VehicleBrandingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "How long does vehicle branding last?",
-                a: "Professional vinyl wraps typically last 3-5 years with proper care. Our wraps come with a warranty against fading, peeling, and bubbling."
-              },
-              {
-                q: "Will the wrap damage my vehicle's paint?",
-                a: "No, when professionally installed and removed, vinyl wraps actually protect the original paint from UV rays, minor scratches, and stone chips."
-              },
-              {
-                q: "How many people will see my branded vehicle?",
-                a: "A branded vehicle in Meerut can generate 30,000-70,000 daily impressions depending on routes traveled—extremely cost-effective compared to static billboards."
-              },
-              {
-                q: "What's the difference between partial and full wrap?",
-                a: "A partial wrap covers specific areas (30-50% of vehicle). A full wrap covers the entire vehicle exterior. Partial wraps are more budget-friendly."
-              },
-              {
-                q: "How long does installation take?",
-                a: "Cars take 1-2 days, trucks 2-3 days, and buses 3-4 days. We'll provide a specific timeline based on your vehicle type and wrap complexity."
-              },
-              {
-                q: "Do you provide design services?",
-                a: "Yes, our in-house design team creates professional vehicle wrap designs. We provide mockups for approval before printing and installation."
-              },
-              {
-                q: "Do you offer vehicle branding in other cities?",
-                a: "Yes, we serve clients across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, and Delhi NCR."
-              },
-              {
-                q: "Can I brand a personal vehicle?",
-                a: "Absolutely. Many professionals (real estate agents, consultants, service providers) brand their personal vehicles to turn daily commute into marketing."
-              }
-            ].map((faq, i) => (
+            {vehicleFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

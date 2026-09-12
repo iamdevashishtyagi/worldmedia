@@ -1,6 +1,42 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const ledFaqs = [
+  {
+    q: "What is the minimum duration for LED display advertising?",
+    a: "Minimum duration is typically 1 month for outdoor digital billboards. For special events, we offer weekly and daily packages on mobile LED vans."
+  },
+  {
+    q: "How many times will my ad be shown daily?",
+    a: "On a 10-second slot, your ad typically rotates every 2-3 minutes, resulting in 400-500 displays per day. Total daily impressions can reach 50,000-100,000+ on high-traffic locations."
+  },
+  {
+    q: "Can I change my ad content during the campaign?",
+    a: "Yes, you can update your content remotely at any time. Most packages include free content changes during the campaign period."
+  },
+  {
+    q: "What's the difference between indoor and outdoor LED displays?",
+    a: "Outdoor displays have higher brightness (5000-7000 nits) to combat sunlight and are weatherproof. Indoor displays have finer pixel pitch for closer viewing."
+  },
+  {
+    q: "Do LED displays work in direct sunlight?",
+    a: "Yes, our outdoor LED displays are designed with high-brightness LEDs and auto-brightness adjustment for clear visibility even in direct sunlight."
+  },
+  {
+    q: "Can multiple advertisers share the same display?",
+    a: "Yes, most digital billboards rotate ads from multiple advertisers. Exclusive displays are also available for premium campaigns."
+  },
+  {
+    q: "Do you provide content creation services?",
+    a: "Yes, our creative team can design static ads, animations, and videos for your LED campaigns. Design support is available for all clients."
+  },
+  {
+    q: "Are LED displays available in Muzaffarnagar and other cities?",
+    a: "Yes, we have LED displays across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and Delhi NCR."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'LED Display Advertising in Meerut | Digital Billboards & Screens | World Media NCR',
@@ -86,9 +122,23 @@ const useCases = [
   "Entertainment Events", "Sports Sponsorships", "Charity Campaigns", "Government Ads"
 ];
 
-export default function LEDDisplayPage() {
+export default function LedDisplayAdvertisingPage() {
   return (
     <main className="bg-white">
+      <ServiceDetailJsonLd
+        name="LED Display Advertising in Meerut"
+        description="Dynamic digital billboard and LED video wall advertising across high-traffic intersections in Meerut and Delhi NCR."
+        url="https://worldmediancr.com/services/led-display-advertising-meerut"
+        serviceType="LED Display & Digital Billboard Advertising"
+        areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+      />
+      <FaqJsonLd
+        faqs={ledFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
         <div className="absolute inset-0 opacity-20">
@@ -393,40 +443,7 @@ export default function LEDDisplayPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "What is the minimum duration for LED display advertising?",
-                a: "Minimum duration is typically 1 month for outdoor digital billboards. For special events, we offer weekly and daily packages on mobile LED vans."
-              },
-              {
-                q: "How many times will my ad be shown daily?",
-                a: "On a 10-second slot, your ad typically rotates every 2-3 minutes, resulting in 400-500 displays per day. Total daily impressions can reach 50,000-100,000+ on high-traffic locations."
-              },
-              {
-                q: "Can I change my ad content during the campaign?",
-                a: "Yes, you can update your content remotely at any time. Most packages include free content changes during the campaign period."
-              },
-              {
-                q: "What's the difference between indoor and outdoor LED displays?",
-                a: "Outdoor displays have higher brightness (5000-7000 nits) to combat sunlight and are weatherproof. Indoor displays have finer pixel pitch for closer viewing."
-              },
-              {
-                q: "Do LED displays work in direct sunlight?",
-                a: "Yes, our outdoor LED displays are designed with high-brightness LEDs and auto-brightness adjustment for clear visibility even in direct sunlight."
-              },
-              {
-                q: "Can multiple advertisers share the same display?",
-                a: "Yes, most digital billboards rotate ads from multiple advertisers. Exclusive displays are also available for premium campaigns."
-              },
-              {
-                q: "Do you provide content creation services?",
-                a: "Yes, our creative team can design static ads, animations, and videos for your LED campaigns. Design support is available for all clients."
-              },
-              {
-                q: "Are LED displays available in Muzaffarnagar and other cities?",
-                a: "Yes, we have LED displays across Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and Delhi NCR."
-              }
-            ].map((faq, i) => (
+            {ledFaqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
                 <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>

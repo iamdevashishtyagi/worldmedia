@@ -1,6 +1,34 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BreadcrumbJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
+
+const shamliFaqs = [
+  {
+    q: "Which is the best advertising agency in Shamli?",
+    a: "World Media NCR is a leading advertising agency serving Shamli with 10+ years of experience, premium hoarding locations on Kairana Road and Panipat Road, and extensive rural coverage for wall painting campaigns."
+  },
+  {
+    q: "How much does hoarding advertising cost in Shamli?",
+    a: "Hoarding costs in Shamli range from ₹6,000 to ₹25,000 per month depending on location and size. Premium locations on Kairana Road range from ₹15,000-25,000/month, while other areas start from ₹6,000/month."
+  },
+  {
+    q: "What are the best hoarding locations in Shamli?",
+    a: "The best hoarding locations in Shamli include Kairana Road, Panipat Road, Muzaffarnagar Road, Main Market Chowk, and Mandi Samiti. These areas have the highest traffic and visibility."
+  },
+  {
+    q: "Do you provide wall painting in Kairana and Thana Bhawan?",
+    a: "Yes, we provide extensive wall painting services across Kairana, Thana Bhawan, Jhinjhana, Unn, and all villages in Shamli district. Rural wall painting is one of our specialties."
+  },
+  {
+    q: "Do you cover all villages in Shamli district?",
+    a: "Yes, we have teams that cover every village in Shamli district. We maintain a database of available walls and can execute pan-district campaigns efficiently."
+  },
+  {
+    q: "How do I book advertising space in Shamli?",
+    a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
+  }
+];
 
 export const metadata: Metadata = {
   title: 'Advertising Agency in Shamli | Hoarding & Outdoor Ads | World Media NCR',
@@ -29,6 +57,20 @@ export const metadata: Metadata = {
 export default function ShamliLocationPage() {
   return (
     <main className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: 'https://worldmediancr.com' },
+          { name: 'Locations', url: 'https://worldmediancr.com/locations' },
+          { name: 'Shamli', url: 'https://worldmediancr.com/locations/shamli' },
+        ]}
+      />
+      <FaqJsonLd
+        faqs={shamliFaqs.map((f) => ({
+          question: f.q,
+          answer: f.a,
+        }))}
+      />
+
       {/* Breadcrumb Navigation */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -276,32 +318,7 @@ export default function ShamliLocationPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          {[
-            {
-              q: "Which is the best advertising agency in Shamli?",
-              a: "World Media NCR is a leading advertising agency serving Shamli with 10+ years of experience, premium hoarding locations on Kairana Road and Panipat Road, and extensive rural coverage for wall painting campaigns."
-            },
-            {
-              q: "How much does hoarding advertising cost in Shamli?",
-              a: "Hoarding costs in Shamli range from ₹6,000 to ₹25,000 per month depending on location and size. Premium locations on Kairana Road range from ₹15,000-25,000/month, while other areas start from ₹6,000/month."
-            },
-            {
-              q: "What are the best hoarding locations in Shamli?",
-              a: "The best hoarding locations in Shamli include Kairana Road, Panipat Road, Muzaffarnagar Road, Main Market Chowk, and Mandi Samiti. These areas have the highest traffic and visibility."
-            },
-            {
-              q: "Do you provide wall painting in Kairana and Thana Bhawan?",
-              a: "Yes, we provide extensive wall painting services across Kairana, Thana Bhawan, Jhinjhana, Unn, and all villages in Shamli district. Rural wall painting is one of our specialties."
-            },
-            {
-              q: "Do you cover all villages in Shamli district?",
-              a: "Yes, we have teams that cover every village in Shamli district. We maintain a database of available walls and can execute pan-district campaigns efficiently."
-            },
-            {
-              q: "How do I book advertising space in Shamli?",
-              a: "Call us at +91 94564 97636, email worldmediancr@gmail.com, or visit our contact page. We'll discuss your requirements, show available locations, provide a quote, and handle all installation."
-            }
-          ].map((faq, i) => (
+          {shamliFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
               <p className="text-gray-700">{faq.a}</p>

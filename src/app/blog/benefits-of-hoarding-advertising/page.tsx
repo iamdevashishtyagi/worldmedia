@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BreadcrumbJsonLd, ArticleJsonLd } from '@/components/SeoJsonLd';
 
 export const metadata: Metadata = {
   title: 'Top 10 Benefits of Hoarding Advertising for Businesses in Meerut',
@@ -29,6 +30,21 @@ export const metadata: Metadata = {
 export default function BenefitsHoardingBlog() {
   return (
     <article className="mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: 'https://worldmediancr.com' },
+          { name: 'Blog', url: 'https://worldmediancr.com/blog' },
+          { name: 'Benefits of Hoarding Advertising', url: 'https://worldmediancr.com/blog/benefits-of-hoarding-advertising' },
+        ]}
+      />
+      <ArticleJsonLd
+        title="Top 10 Benefits of Hoarding Advertising for Businesses in Meerut"
+        description="Discover why hoarding advertising remains the most effective outdoor marketing strategy for businesses in Meerut."
+        url="/blog/benefits-of-hoarding-advertising"
+        datePublished="2024-03-15"
+        image="/images/portfolio/Baghra Bus Stand.webp"
+      />
+
       {/* Breadcrumb */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
