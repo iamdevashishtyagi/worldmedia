@@ -75,12 +75,12 @@ export default function BaghpatLocationPage() {
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link>
           </li>
           <li>
             <div className="flex items-center">
               <span className="mx-2 text-gray-400">/</span>
-              <Link href="/locations" className="text-gray-700 hover:text-blue-600">Locations</Link>
+              <Link href="/locations" className="text-gray-700 hover:text-[#0A173E]">Locations</Link>
             </div>
           </li>
           <li aria-current="page">
@@ -93,40 +93,43 @@ export default function BaghpatLocationPage() {
       </nav>
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            NCR Transit Corridor
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
             Advertising Agency in Baghpat – World Media NCR
           </h1>
           <p className="text-lg text-gray-700 mb-4">
-            <strong>World Media NCR</strong> is your trusted <strong>advertising agency in Baghpat</strong>, providing comprehensive outdoor advertising solutions across the district. We help Baghpat businesses, brands, and political candidates reach their target audience through strategic hoarding and wall painting placements.
+            <strong className="text-[#0A173E]">World Media NCR</strong> is your trusted <strong className="text-[#0A173E]">outdoor advertising agency in Baghpat</strong>, providing comprehensive hoarding, billboard, and wall painting solutions across the district. We help businesses, educational institutions, and political candidates connect with urban and rural consumers.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            From <strong>hoarding advertising on Meerut Road</strong> to <strong>digital wall painting in Baraut</strong>, our team knows the Baghpat market thoroughly. We have the largest network of premium advertising locations across the district.
+            From high-visibility <strong className="text-[#0A173E]">hoarding advertising on Meerut Road & Delhi Road</strong> to <strong className="text-[#0A173E]">digital wall painting across Baraut and Khekra</strong>, our network ensures deep demographic penetration.
           </p>
-          <div className="bg-teal-50 p-6 rounded-lg mt-4">
-            <h2 className="text-xl font-bold mb-3">Why Baghpat Businesses Choose Us?</h2>
-            <ul className="space-y-2">
+          <div className="bg-[#F0F8FF] border border-[#D8EAFD] p-6 rounded-2xl mt-4">
+            <h2 className="text-xl font-bold mb-3 text-[#0A173E]">Why Baghpat Businesses Choose Us?</h2>
+            <ul className="space-y-2.5">
               <li className="flex items-start gap-2">
-                <span className="text-teal-600 font-bold">✓</span>
-                <span><strong>10+ years</strong> serving Baghpat and surrounding areas</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">10+ years</strong> executing high-visibility campaigns across Baghpat & Baraut</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-teal-600 font-bold">✓</span>
-                <span><strong>Premium locations</strong> on all major roads and chowks</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Prime monopoly locations</strong> on Meerut-Baghpat highway and major intersections</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-teal-600 font-bold">✓</span>
-                <span><strong>100+ projects</strong> completed for Baghpat clients</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">100+ projects</strong> completed for commercial, agro, and educational clients</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-teal-600 font-bold">✓</span>
-                <span><strong>End-to-end service</strong> – design, printing, installation</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">End-to-end service</strong> – site permissions, weatherproof printing, and structural mounting</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+        <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-[#D8EAFD] bg-gray-100 flex items-center justify-center">
           <Image 
             src="/images/portfolio/Baghra Bus Stand.webp" 
             alt="Advertising agency in Baghpat - World Media NCR hoarding at Baghra Bus Stand"
@@ -139,49 +142,49 @@ export default function BaghpatLocationPage() {
 
       {/* Services in Baghpat */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Advertising Services in Baghpat</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Advertising Services in Baghpat</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/services/hoarding-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Hoarding Advertising Baghpat</h3>
-            <p className="text-gray-600 mb-3">Premium hoarding placements at Meerut Road, Delhi Road, Baraut Road, and major chowks. Sizes from 10x10 to 20x10 ft.</p>
-            <span className="text-teal-600 font-medium">Learn more →</span>
+          <Link href="/services/hoarding-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Hoarding Advertising Baghpat</h3>
+            <p className="text-gray-600 mb-3 text-sm">Premium hoarding placements at Meerut Road, Delhi Road, Baraut Road, and major chowks. Sizes from 10x10 to 20x10 ft.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/digital-wall-painting-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Digital Wall Painting Baghpat</h3>
-            <p className="text-gray-600 mb-3">Cost-effective wall advertisements at high-traffic walls across Baghpat city and all rural areas. 3-5 year durability.</p>
-            <span className="text-teal-600 font-medium">Learn more →</span>
+          <Link href="/services/digital-wall-painting-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Digital Wall Painting Baghpat</h3>
+            <p className="text-gray-600 mb-3 text-sm">Cost-effective wall advertisements at high-traffic walls across Baghpat city and all rural areas. 3-5 year durability.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/billboard-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Billboard Advertising Baghpat</h3>
-            <p className="text-gray-600 mb-3">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
-            <span className="text-teal-600 font-medium">Learn more →</span>
+          <Link href="/services/billboard-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Billboard Advertising Baghpat</h3>
+            <p className="text-gray-600 mb-3 text-sm">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/vehicle-branding-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Vehicle Branding Baghpat</h3>
-            <p className="text-gray-600 mb-3">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, and commercial vehicles.</p>
-            <span className="text-teal-600 font-medium">Learn more →</span>
+          <Link href="/services/vehicle-branding-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Vehicle Branding Baghpat</h3>
+            <p className="text-gray-600 mb-3 text-sm">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, and commercial vehicles.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/flex-printing-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Flex Printing Baghpat</h3>
-            <p className="text-gray-600 mb-3">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround.</p>
-            <span className="text-teal-600 font-medium">Learn more →</span>
+          <Link href="/services/flex-printing-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Flex Printing Baghpat</h3>
+            <p className="text-gray-600 mb-3 text-sm">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/political-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Political Advertising Baghpat</h3>
-            <p className="text-gray-600 mb-3">Complete campaign solutions for Baghpat, Baraut, and Chaprauli constituencies – hoardings, wall paintings, banners.</p>
-            <span className="text-teal-600 font-medium">Learn more →</span>
+          <Link href="/services/political-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Political Advertising Baghpat</h3>
+            <p className="text-gray-600 mb-3 text-sm">Complete campaign solutions for Baghpat, Baraut, and Chaprauli constituencies – hoardings, wall paintings, banners.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
         </div>
       </section>
 
       {/* Prime Advertising Locations */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Prime Advertising Locations in Baghpat</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Prime Advertising Locations in Baghpat</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { name: "Meerut Road", traffic: "50,000+ daily commuters", desc: "Main highway connecting to Meerut. Premium hoarding locations." },
@@ -197,9 +200,9 @@ export default function BaghpatLocationPage() {
             { name: "Aminagar Sarai", traffic: "15,000+ daily", desc: "Important rural market center." },
             { name: "Binauli", traffic: "10,000+ daily", desc: "Town on Baghpat-Meerut route." },
           ].map((location, i) => (
-            <div key={i} className="border rounded-lg p-5 shadow-sm bg-white">
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">{location.name}</h3>
-              <p className="text-teal-600 font-medium text-sm mb-2">{location.traffic}</p>
+            <div key={i} className="border border-[#D8EAFD] rounded-xl p-5 shadow-sm bg-white hover:border-[#0A173E] transition-colors">
+              <h3 className="text-lg font-bold mb-1 text-[#0A173E]">{location.name}</h3>
+              <p className="text-[#0A173E] font-semibold text-sm mb-2">{location.traffic}</p>
               <p className="text-gray-600 text-sm">{location.desc}</p>
             </div>
           ))}
@@ -207,32 +210,32 @@ export default function BaghpatLocationPage() {
       </section>
 
       {/* About Baghpat Market */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Baghpat</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-3xl font-extrabold mb-6 text-[#0A173E]">About Advertising in Baghpat</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 mb-4">
-            Baghpat is an important district in western Uttar Pradesh, known for its agricultural economy and strategic location between Meerut and Delhi. The district has significant rural population, making wall painting particularly effective.
+            Baghpat is a vital district in western Uttar Pradesh, known for its strong agricultural economy and strategic geographic positioning between Meerut and Delhi NCR. The district has a large rural population, making wall painting and highway hoardings exceptionally effective.
           </p>
           <p className="text-gray-700 mb-4">
-            <strong>Key facts about Baghpat for advertisers:</strong>
+            <strong className="text-[#0A173E]">Key facts about Baghpat for advertisers:</strong>
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700">
             <li><strong>Population:</strong> 100,000+ (city) with district population over 1.3 million</li>
-            <li><strong>Agricultural hub:</strong> Major sugarcane and grain producing region</li>
+            <li><strong>Agricultural hub:</strong> Major sugarcane and grain producing belt</li>
             <li><strong>Assembly constituencies:</strong> Baghpat, Baraut, Chaprauli</li>
-            <li><strong>Connectivity:</strong> NH-334B connects to Delhi, Meerut via Gannaur</li>
-            <li><strong>Rural reach:</strong> Hundreds of villages with significant voter population</li>
-            <li><strong>Industrial areas:</strong> Small-scale manufacturing and agro-based industries</li>
+            <li><strong>Connectivity:</strong> NH-334B connects to Delhi, Meerut via Gannaur and Eastern Peripheral Highway</li>
+            <li><strong>Rural reach:</strong> Hundreds of prosperous villages with significant voter population</li>
+            <li><strong>Industrial areas:</strong> Agro-processing and small-scale manufacturing units</li>
           </ul>
           <p className="text-gray-700">
-            Outdoor advertising in Baghpat is particularly effective for real estate, educational institutions, political campaigns, and FMCG brands targeting both urban and rural consumers.
+            Outdoor advertising in Baghpat is particularly effective for real estate projects, universities, political campaigns, and FMCG brands targeting agrarian and commuter populations.
           </p>
         </div>
       </section>
 
       {/* Assembly Constituencies */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Baghpat District Assembly Constituencies</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Baghpat District Assembly Constituencies</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
             "Baghpat", "Baraut", "Chaprauli",
@@ -240,7 +243,7 @@ export default function BaghpatLocationPage() {
             "Pilkhuwa", "Gannaur", "Baghpat Rural",
             "Meerut South (part)", "Muzaffarnagar (part)", "Ghaziabad (part)"
           ].map((constituency, i) => (
-            <div key={i} className="bg-teal-50 p-3 rounded-lg text-center font-medium text-gray-800 border border-teal-200">
+            <div key={i} className="bg-[#F0F8FF] p-3 rounded-xl text-center font-bold text-[#0A173E] border border-[#D8EAFD]">
               {constituency}
             </div>
           ))}
@@ -250,7 +253,7 @@ export default function BaghpatLocationPage() {
 
       {/* Gallery */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Work in Baghpat</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Work in Baghpat</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { name: "Baghra Bus Stand", file: "Baghra Bus Stand.webp" },
@@ -262,21 +265,21 @@ export default function BaghpatLocationPage() {
             { name: "Mirapur Bypass", file: "Mirapur Bypass.webp" },
             { name: "Chutmalpur", file: "Chutmalpur Facing Rorkee (Delhi Rorkee Dehradun Highway).webp" },
           ].map((project, i) => (
-            <div key={i} className="relative h-40 rounded-lg overflow-hidden group">
+            <div key={i} className="relative h-40 rounded-xl overflow-hidden group border border-[#D8EAFD]">
               <Image 
                 src={`/images/portfolio/${project.file}`}
                 alt={`Advertising project at ${project.name} near Baghpat by World Media NCR`}
                 fill
                 className="object-cover group-hover:scale-110 transition duration-300"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-end">
-                <p className="text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition">{project.name}</p>
+              <div className="absolute inset-0 bg-[#0A173E]/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                <p className="text-white font-bold p-3 text-xs">{project.name}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-6">
-          <Link href="/gallery" className="text-teal-600 font-semibold hover:underline">
+          <Link href="/gallery" className="text-[#0A173E] font-bold hover:underline">
             View Full Portfolio →
           </Link>
         </div>
@@ -284,22 +287,22 @@ export default function BaghpatLocationPage() {
 
       {/* Testimonials */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">What Baghpat Clients Say</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">What Baghpat Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;World Media NCR helped us with hoardings in Baghpat and Baraut for our college admission campaign. Great locations and professional team.&quot;</p>
-            <p className="font-semibold text-gray-900">– Educational Institute, Baraut</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;World Media NCR helped us with hoardings in Baghpat and Baraut for our admission campaign. Great locations and a highly responsive team.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Educational Institute, Baraut</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;We needed wall painting across Baghpat rural areas for a government awareness campaign. They covered 50+ villages efficiently. Highly recommended.&quot;</p>
-            <p className="font-semibold text-gray-900">– NGO Coordinator, Baghpat</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;We needed wall painting across Baghpat rural areas for an awareness campaign. They covered 50+ villages efficiently. Highly recommended.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Regional Development Coordinator, Baghpat</p>
           </div>
         </div>
       </section>
 
       {/* Rural Coverage */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Rural Coverage in Baghpat District</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Rural Coverage in Baghpat District</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             "Baraut", "Chaprauli", "Khekra", "Binauli",
@@ -307,7 +310,7 @@ export default function BaghpatLocationPage() {
             "Doghat", "Ramala", "Syana", "Khandrawali",
             "Kakroli", "Malakpur", "Tatiri", "Asara"
           ].map((village, i) => (
-            <div key={i} className="bg-gray-100 p-2 rounded-lg text-center text-sm">
+            <div key={i} className="bg-[#F0F8FF] border border-[#D8EAFD] p-2.5 rounded-lg text-center text-sm font-medium text-gray-800">
               {village}
             </div>
           ))}
@@ -317,28 +320,28 @@ export default function BaghpatLocationPage() {
 
       {/* FAQ Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Frequently Asked Questions</h2>
         <div className="space-y-6">
           {baghpatFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
+              <p className="text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Nearby Locations */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Our Nearby Service Locations</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-2xl font-extrabold mb-6 text-[#0A173E]">Our Nearby Service Locations</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link href="/locations/meerut" className="text-teal-600 hover:underline">Meerut</Link>
-          <Link href="/locations/muzaffarnagar" className="text-teal-600 hover:underline">Muzaffarnagar</Link>
-          <Link href="/locations/shamli" className="text-teal-600 hover:underline">Shamli</Link>
-          <Link href="/locations/saharanpur" className="text-teal-600 hover:underline">Saharanpur</Link>
-          <Link href="/locations/delhi-ncr" className="text-teal-600 hover:underline">Delhi NCR</Link>
-          <Link href="/locations/hapur" className="text-teal-600 hover:underline">Hapur</Link>
-          <Link href="/locations/delhi" className="text-teal-600 hover:underline">Delhi</Link>
+          <Link href="/locations/meerut" className="text-[#0A173E] font-semibold hover:underline">Meerut</Link>
+          <Link href="/locations/muzaffarnagar" className="text-[#0A173E] font-semibold hover:underline">Muzaffarnagar</Link>
+          <Link href="/locations/shamli" className="text-[#0A173E] font-semibold hover:underline">Shamli</Link>
+          <Link href="/locations/saharanpur" className="text-[#0A173E] font-semibold hover:underline">Saharanpur</Link>
+          <Link href="/locations/delhi-ncr" className="text-[#0A173E] font-semibold hover:underline">Delhi NCR</Link>
+          <Link href="/locations/hapur" className="text-[#0A173E] font-semibold hover:underline">Hapur</Link>
+          <Link href="/locations/delhi" className="text-[#0A173E] font-semibold hover:underline">Delhi</Link>
         </div>
       </section>
     </main>

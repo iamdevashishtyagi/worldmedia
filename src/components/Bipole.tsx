@@ -81,7 +81,7 @@ export default function Bipole({
             )}
           </div>
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-500">
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#0A173E] to-[#132456]">
             {children}
             {/* Light overlay effect */}
             {hasLights && isNightMode && (

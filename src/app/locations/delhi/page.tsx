@@ -65,12 +65,12 @@ export default function DelhiLocationPage() {
 
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link>
           </li>
           <li>
             <div className="flex items-center">
               <span className="mx-2 text-gray-400">/</span>
-              <Link href="/locations" className="text-gray-700 hover:text-blue-600">Locations</Link>
+              <Link href="/locations" className="text-gray-700 hover:text-[#0A173E]">Locations</Link>
             </div>
           </li>
           <li aria-current="page">
@@ -83,52 +83,50 @@ export default function DelhiLocationPage() {
       </nav>
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            National Capital Territory
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
             Advertising Agency in Delhi – World Media NCR
           </h1>
           <p className="text-lg text-gray-700 mb-4">
-            <strong>World Media NCR</strong> is your trusted <strong>advertising agency in Delhi</strong>, providing comprehensive outdoor advertising solutions across the capital. We help businesses, brands, and organizations reach their target audience through strategic hoarding and billboard placements across all zones of Delhi.
+            <strong className="text-[#0A173E]">World Media NCR</strong> is your trusted <strong className="text-[#0A173E]">outdoor advertising agency in Delhi</strong>, providing comprehensive hoarding, transit, and billboard advertising solutions across the capital. We connect leading brands with high-spending urban audiences through strategic media placements.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            From <strong>hoarding advertising on Ring Road</strong> to <strong>billboards in Connaught Place</strong>, our team covers all areas of Delhi – North, South, East, West, and Central. We have premium advertising locations on all major roads, flyovers, and commercial districts.
+            From high-impact <strong className="text-[#0A173E]">hoarding advertising on Ring Road & Outer Ring Road</strong> to <strong className="text-[#0A173E]">prime sites in Connaught Place, South Delhi, and arterial corridors</strong>, we cover all MCD and NDMC zones with full regulatory compliance.
           </p>
-          <div className="bg-red-50 p-6 rounded-lg mt-4">
-            <h2 className="text-xl font-bold mb-3">Why Choose Us for Delhi Advertising?</h2>
-            <ul className="space-y-2">
+          <div className="bg-[#F0F8FF] border border-[#D8EAFD] p-6 rounded-2xl mt-4">
+            <h2 className="text-xl font-bold mb-3 text-[#0A173E]">Why Choose Us for Delhi Advertising?</h2>
+            <ul className="space-y-2.5">
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>10+ years</strong> serving Delhi businesses</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">10+ years</strong> executing outdoor campaigns for top national & regional brands</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>Premium locations</strong> across all Delhi zones</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Prime inventory</strong> across South Delhi, Ring Road, ITO, and arterial bypasses</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>All permits handled</strong> – MCD, NDMC, traffic police</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">100% compliant</strong> – all permissions handled with MCD, NDMC, and Traffic Police</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
-                <span><strong>End-to-end service</strong> – design, printing, installation</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Turnkey delivery</strong> – structural fabrication, flex printing, 24/7 illumination</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="relative h-96 rounded-xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
-          <Image src="/images/portfolio/Muzaffarnagar Meerut Road.webp" alt="Outdoor advertising hoarding by World Media NCR" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
-          <div className="hidden text-center p-8">
-            <span className="text-6xl mb-4 block">🇮🇳</span>
-            <p className="text-gray-500">Delhi Advertising Image</p>
-            <p className="text-sm text-gray-400">(Add Delhi hoarding photos here)</p>
-          </div>
+        <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-[#D8EAFD] bg-gray-100 flex items-center justify-center">
+          <Image src="/images/portfolio/Muzaffarnagar Meerut Road.webp" alt="Outdoor advertising hoarding in Delhi by World Media NCR" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
         </div>
       </div>
 
       {/* Delhi Zones Coverage */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Coverage Across Delhi</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Coverage Across Delhi Zones</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { 
@@ -168,11 +166,11 @@ export default function DelhiLocationPage() {
               key: "Government areas, diplomatic enclave"
             },
           ].map((zone, i) => (
-            <div key={i} className="border rounded-lg p-5 shadow-sm bg-white">
-              <h3 className="text-xl font-bold mb-2 text-red-700">{zone.zone}</h3>
-              <p className="text-gray-700 text-sm mb-2"><span className="font-semibold">Areas:</span> {zone.areas}</p>
-              <p className="text-gray-700 text-sm mb-2"><span className="font-semibold">Key roads:</span> {zone.roads}</p>
-              <p className="text-red-600 text-sm">{zone.key}</p>
+            <div key={i} className="border border-[#D8EAFD] rounded-xl p-5 shadow-sm bg-white hover:border-[#0A173E] transition-colors">
+              <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{zone.zone}</h3>
+              <p className="text-gray-700 text-sm mb-2"><span className="font-semibold text-gray-900">Areas:</span> {zone.areas}</p>
+              <p className="text-gray-700 text-sm mb-2"><span className="font-semibold text-gray-900">Key roads:</span> {zone.roads}</p>
+              <p className="text-[#0A173E] font-semibold text-sm">{zone.key}</p>
             </div>
           ))}
         </div>
@@ -180,7 +178,7 @@ export default function DelhiLocationPage() {
 
       {/* Prime Advertising Locations */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Prime Hoarding Locations in Delhi</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Prime Hoarding Locations in Delhi</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { name: "Connaught Place", area: "Central Delhi", traffic: "Ultra-high footfall", desc: "Delhi's premier commercial center" },
@@ -196,9 +194,9 @@ export default function DelhiLocationPage() {
             { name: "Chandni Chowk", area: "Old Delhi", traffic: "Ultra-high footfall", desc: "Historic market" },
             { name: "India Gate", area: "New Delhi", traffic: "Tourist-heavy", desc: "Iconic landmark" },
           ].map((location, i) => (
-            <div key={i} className="border rounded-lg p-5 shadow-sm bg-white">
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">{location.name}</h3>
-              <p className="text-red-600 font-medium text-sm mb-1">{location.area}</p>
+            <div key={i} className="border border-[#D8EAFD] rounded-xl p-5 shadow-sm bg-white hover:border-[#0A173E] transition-colors">
+              <h3 className="text-lg font-bold mb-1 text-[#0A173E]">{location.name}</h3>
+              <p className="text-[#0A173E] font-semibold text-sm mb-1">{location.area}</p>
               <p className="text-gray-700 text-sm mb-2">{location.traffic}</p>
               <p className="text-gray-600 text-sm">{location.desc}</p>
             </div>
@@ -208,55 +206,55 @@ export default function DelhiLocationPage() {
 
       {/* Services in Delhi */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Advertising Services in Delhi</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Advertising Services in Delhi</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/services/hoarding-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Hoarding Advertising Delhi</h3>
-            <p className="text-gray-600 mb-3">Premium hoarding placements across all Delhi zones – Ring Road, Outer Ring Road, commercial districts, and markets.</p>
-            <span className="text-red-600 font-medium">Learn more →</span>
+          <Link href="/services/hoarding-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Hoarding Advertising Delhi</h3>
+            <p className="text-gray-600 mb-3 text-sm">Premium hoarding placements across all Delhi zones – Ring Road, Outer Ring Road, commercial districts, and markets.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/billboard-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Billboard Advertising Delhi</h3>
-            <p className="text-gray-600 mb-3">Large-format billboards at high-traffic locations including ITO, Connaught Place, and Delhi borders.</p>
-            <span className="text-red-600 font-medium">Learn more →</span>
+          <Link href="/services/billboard-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Billboard Advertising Delhi</h3>
+            <p className="text-gray-600 mb-3 text-sm">Large-format billboards at high-traffic locations including ITO, Connaught Place, and Delhi borders.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/led-display-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">LED Display Advertising Delhi</h3>
-            <p className="text-gray-600 mb-3">Dynamic digital billboards with videos and rotating content at premium Delhi locations.</p>
-            <span className="text-red-600 font-medium">Learn more →</span>
+          <Link href="/services/led-display-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">LED Display Advertising Delhi</h3>
+            <p className="text-gray-600 mb-3 text-sm">Dynamic digital billboards with videos and rotating content at premium Delhi locations.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/vehicle-branding-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Vehicle Branding Delhi</h3>
-            <p className="text-gray-600 mb-3">Mobile advertising across Delhi with full fleet branding for maximum reach.</p>
-            <span className="text-red-600 font-medium">Learn more →</span>
+          <Link href="/services/vehicle-branding-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Vehicle Branding Delhi</h3>
+            <p className="text-gray-600 mb-3 text-sm">Mobile advertising across Delhi with full fleet branding for maximum reach.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/flex-printing-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Flex Printing Delhi</h3>
-            <p className="text-gray-600 mb-3">High-quality flex printing for hoardings, banners, and event materials. Fast delivery across Delhi.</p>
-            <span className="text-red-600 font-medium">Learn more →</span>
+          <Link href="/services/flex-printing-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Flex Printing Delhi</h3>
+            <p className="text-gray-600 mb-3 text-sm">High-quality flex printing for hoardings, banners, and event materials. Fast delivery across Delhi.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/political-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Political Advertising Delhi</h3>
-            <p className="text-gray-600 mb-3">Complete campaign solutions for Delhi elections – hoardings, banners, and promotional materials.</p>
-            <span className="text-red-600 font-medium">Learn more →</span>
+          <Link href="/services/political-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Political Advertising Delhi</h3>
+            <p className="text-gray-600 mb-3 text-sm">Complete campaign solutions for Delhi elections – hoardings, banners, and promotional materials.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
         </div>
       </section>
 
       {/* About Delhi Market */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Delhi</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-3xl font-extrabold mb-6 text-[#0A173E]">About Advertising in Delhi</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 mb-4">
             Delhi, the capital of India, is one of the most important advertising markets in the country. With its massive population, high vehicle density, and concentration of businesses, government institutions, and tourists, Delhi offers unparalleled opportunities for outdoor advertising.
           </p>
           <p className="text-gray-700 mb-4">
-            <strong>Key facts about Delhi for advertisers:</strong>
+            <strong className="text-[#0A173E]">Key facts about Delhi for advertisers:</strong>
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700">
             <li><strong>Population:</strong> 20+ million (city) – 2nd largest city in India</li>
@@ -274,46 +272,46 @@ export default function DelhiLocationPage() {
 
       {/* Regulatory Information */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Advertising Regulations in Delhi</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Advertising Regulations in Delhi</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg border">
-            <h3 className="text-xl font-bold mb-4 text-red-700">Key Authorities</h3>
-            <ul className="space-y-3">
+          <div className="bg-white p-6 rounded-2xl border border-[#D8EAFD] shadow-sm">
+            <h3 className="text-xl font-bold mb-4 text-[#0A173E]">Key Authorities</h3>
+            <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">•</span>
+                <span className="text-[#0A173E] font-bold">•</span>
                 <span><strong>MCD</strong> – Municipal Corporation of Delhi (most areas)</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">•</span>
+                <span className="text-[#0A173E] font-bold">•</span>
                 <span><strong>NDMC</strong> – New Delhi Municipal Council (Lutyens&apos; Delhi)</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">•</span>
+                <span className="text-[#0A173E] font-bold">•</span>
                 <span><strong>Delhi Traffic Police</strong> – For locations affecting traffic</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">•</span>
+                <span className="text-[#0A173E] font-bold">•</span>
                 <span><strong>PWD</strong> – For hoardings on PWD roads</span>
               </li>
             </ul>
           </div>
-          <div className="bg-white p-6 rounded-lg border">
-            <h3 className="text-xl font-bold mb-4 text-red-700">Our Services</h3>
-            <ul className="space-y-3">
+          <div className="bg-white p-6 rounded-2xl border border-[#D8EAFD] shadow-sm">
+            <h3 className="text-xl font-bold mb-4 text-[#0A173E]">Our Compliance Guarantee</h3>
+            <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
                 <span>Complete permit handling for all authorities</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
                 <span>Compliance with all Delhi hoarding bylaws</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
                 <span>Regular renewal of permissions</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-600 font-bold">✓</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
                 <span>Hassle-free advertising experience</span>
               </li>
             </ul>
@@ -323,7 +321,7 @@ export default function DelhiLocationPage() {
 
       {/* FAQ Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Frequently Asked Questions</h2>
         <div className="space-y-6">
           {[
             {
@@ -352,24 +350,24 @@ export default function DelhiLocationPage() {
             }
           ].map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
+              <p className="text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Nearby Locations */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Our Other Service Locations</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-2xl font-extrabold mb-6 text-[#0A173E]">Our Other Service Locations</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link href="/locations/meerut" className="text-red-600 hover:underline">Meerut</Link>
-          <Link href="/locations/muzaffarnagar" className="text-red-600 hover:underline">Muzaffarnagar</Link>
-          <Link href="/locations/shamli" className="text-red-600 hover:underline">Shamli</Link>
-          <Link href="/locations/saharanpur" className="text-red-600 hover:underline">Saharanpur</Link>
-          <Link href="/locations/baghpat" className="text-red-600 hover:underline">Baghpat</Link>
-          <Link href="/locations/delhi-ncr" className="text-red-600 hover:underline">Delhi NCR</Link>
-          <Link href="/locations/hapur" className="text-red-600 hover:underline">Hapur</Link>
+          <Link href="/locations/meerut" className="text-[#0A173E] font-semibold hover:underline">Meerut</Link>
+          <Link href="/locations/muzaffarnagar" className="text-[#0A173E] font-semibold hover:underline">Muzaffarnagar</Link>
+          <Link href="/locations/shamli" className="text-[#0A173E] font-semibold hover:underline">Shamli</Link>
+          <Link href="/locations/saharanpur" className="text-[#0A173E] font-semibold hover:underline">Saharanpur</Link>
+          <Link href="/locations/baghpat" className="text-[#0A173E] font-semibold hover:underline">Baghpat</Link>
+          <Link href="/locations/delhi-ncr" className="text-[#0A173E] font-semibold hover:underline">Delhi NCR</Link>
+          <Link href="/locations/hapur" className="text-[#0A173E] font-semibold hover:underline">Hapur</Link>
         </div>
       </section>
     </main>

@@ -92,7 +92,8 @@ export default function HoardingAdvertisingPage() {
       />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-br from-[#0A173E] via-[#0D1C4D] to-[#060E27] text-white">
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/portfolio/Baghra Bus Stand.webp"
@@ -103,29 +104,29 @@ export default function HoardingAdvertisingPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-sm text-blue-300 mb-4">
-              <Link href="/" className="hover:text-white transition">Home</Link>
+            <div className="flex items-center gap-2 text-sm text-blue-200 mb-4">
+              <Link href="/" className="hover:text-[var(--yellow)] transition">Home</Link>
               <span>/</span>
-              <Link href="/services" className="hover:text-white transition">Services</Link>
+              <Link href="/services" className="hover:text-[var(--yellow)] transition">Services</Link>
               <span>/</span>
-              <span className="text-blue-300">Hoarding Advertising</span>
+              <span className="text-[var(--yellow)] font-semibold">Hoarding Advertising</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Hoarding Advertising <span className="text-blue-400">in Meerut</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+              Hoarding Advertising <span className="text-[var(--yellow)]">in Meerut</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
               Premium billboard placements at strategic locations across Meerut, Muzaffarnagar, Shamli & Saharanpur. Maximum visibility for your brand.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/contact" 
-                className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition shadow-lg"
+                className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-3.5 rounded-xl font-extrabold transition shadow-lg hover:scale-105"
               >
                 Book a Hoarding
               </Link>
               <a 
                 href="#locations" 
-                className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition"
+                className="bg-white hover:bg-[#F0F8FF] text-[#0A173E] px-8 py-3.5 rounded-xl font-bold transition shadow-md hover:scale-105"
               >
                 View Locations
               </a>
@@ -143,9 +144,9 @@ export default function HoardingAdvertisingPage() {
             { number: "10+", label: "Years Experience", icon: "⭐" },
             { number: "100%", label: "Permits Handled", icon: "✅" },
           ].map((stat, i) => (
-            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-[#D8EAFD]">
               <div className="text-3xl mb-2">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-bold text-blue-600">{stat.number}</div>
+              <div className="text-2xl md:text-3xl font-extrabold text-[#0A173E]">{stat.number}</div>
               <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
             </div>
           ))}
@@ -158,8 +159,8 @@ export default function HoardingAdvertisingPage() {
         {/* What is Hoarding Advertising */}
         <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
           <div>
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">What We Do</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">What We Do</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-6 text-[#0A173E]">
               Premium Hoarding Advertising Services in Meerut
             </h2>
             <p className="text-gray-600 text-lg mb-4 leading-relaxed">
@@ -177,7 +178,7 @@ export default function HoardingAdvertisingPage() {
                 "End-to-end service from selection to installation"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-[#0A173E] rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -200,8 +201,8 @@ export default function HoardingAdvertisingPage() {
         {/* Prime Locations Section */}
         <div id="locations" className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Locations</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Locations</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Prime Hoarding Locations in Meerut & NCR
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -265,10 +266,10 @@ export default function HoardingAdvertisingPage() {
                 icon: "🏙️"
               }
             ].map((location, i) => (
-              <div key={i} className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div key={i} className="group bg-white border border-[#D8EAFD] rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-4">{location.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{location.name}</h3>
-                <p className="text-blue-600 font-semibold text-sm mb-3">{location.traffic}</p>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{location.name}</h3>
+                <p className="text-[#0A173E] font-semibold text-sm mb-3">{location.traffic}</p>
                 <p className="text-gray-600 text-sm">{location.desc}</p>
               </div>
             ))}
@@ -278,8 +279,8 @@ export default function HoardingAdvertisingPage() {
         {/* Types of Hoardings Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Hoarding Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Hoarding Types</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Types of Hoarding Advertising
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -313,14 +314,14 @@ export default function HoardingAdvertisingPage() {
                 features: ["Custom sizes", "Dominant presence", "Commercial areas"]
               }
             ].map((item, i) => (
-              <div key={i} className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+              <div key={i} className="group bg-white border border-[#D8EAFD] rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.type}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{item.type}</h3>
                 <p className="text-gray-600 text-sm mb-3">{item.desc}</p>
                 <ul className="space-y-1">
                   {item.features.map((feature, idx) => (
                     <li key={idx} className="text-xs text-gray-500 flex items-center gap-1">
-                      <span className="text-blue-500">•</span> {feature}
+                      <span className="text-[#0A173E]">•</span> {feature}
                     </li>
                   ))}
                 </ul>
@@ -332,8 +333,8 @@ export default function HoardingAdvertisingPage() {
         {/* Gallery Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Portfolio</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Portfolio</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Our Hoarding Projects
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -359,17 +360,17 @@ export default function HoardingAdvertisingPage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link href="/gallery" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition">
+            <Link href="/gallery" className="inline-flex items-center gap-2 text-[#0A173E] font-bold hover:text-[var(--navy-light)] transition">
               View Full Portfolio <span>→</span>
             </Link>
           </div>
         </div>
 
         {/* Benefits Section */}
-        <div className="mb-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="mb-20 bg-[#F0F8FF] rounded-2xl p-8 md:p-12 border border-[#D8EAFD]">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Advantages</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Advantages</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Why Choose Hoarding Advertising?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -409,9 +410,9 @@ export default function HoardingAdvertisingPage() {
                 desc: "Add QR codes and social handles to drive online traffic. Perfect for multi-channel campaigns." 
               }
             ].map((benefit, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition">
+              <div key={i} className="bg-white rounded-xl p-6 text-center border border-[#D8EAFD] shadow-xs hover:shadow-md transition">
                 <div className="text-3xl mb-3">{benefit.icon}</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900">{benefit.title}</h3>
+                <h3 className="text-lg font-bold mb-2 text-[#0A173E]">{benefit.title}</h3>
                 <p className="text-gray-600 text-sm">{benefit.desc}</p>
               </div>
             ))}
@@ -421,8 +422,8 @@ export default function HoardingAdvertisingPage() {
         {/* Process Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">How It Works</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">How It Works</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Our Hoarding Advertising Process
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -437,10 +438,10 @@ export default function HoardingAdvertisingPage() {
               { step: "04", title: "Installation & Maintenance", desc: "Professional installation with ongoing maintenance support" }
             ].map((item, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#0A173E] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
@@ -450,8 +451,8 @@ export default function HoardingAdvertisingPage() {
         {/* FAQ Section */}
         <div className="mb-0">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">FAQ</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">FAQ</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -460,8 +461,8 @@ export default function HoardingAdvertisingPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {hoardingFaqs.map((faq, i) => (
-              <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
-                <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
+              <div key={i} className="border border-[#D8EAFD] bg-white rounded-xl p-6 hover:shadow-md transition">
+                <h3 className="text-lg font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>
               </div>
             ))}

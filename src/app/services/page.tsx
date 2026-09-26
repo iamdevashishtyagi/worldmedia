@@ -40,11 +40,11 @@ export default function ServicesPage() {
       <ServicesSection />
       <section className="mx-auto max-w-5xl px-6 py-16">
         <FaqJsonLd questions={faqs} />
-        <h2 className="text-3xl font-bold text-slate-900">Advertising Services FAQs</h2>
+        <h2 className="text-3xl font-bold text-[#0A173E]">Advertising Services FAQs</h2>
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (
-            <article key={faq.question} className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
-              <h3 className="text-xl font-semibold text-slate-900">{faq.question}</h3>
+            <article key={faq.question} className="p-6 bg-[#F0F8FF] rounded-2xl border border-[#D8EAFD]">
+              <h3 className="text-xl font-semibold text-[#0A173E]">{faq.question}</h3>
               <p className="mt-2 text-slate-700 leading-relaxed">{faq.answer}</p>
             </article>
           ))}

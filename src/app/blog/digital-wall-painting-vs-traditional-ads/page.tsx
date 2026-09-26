@@ -64,7 +64,7 @@ export default function WallPaintingComparisonBlog() {
           <span className="mx-2">•</span>
           <span>9 min read</span>
           <span className="mx-2">•</span>
-          <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded">Wall Painting</span>
+          <span className="bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] px-2.5 py-0.5 rounded-full text-xs font-bold">Wall Painting</span>
         </div>
       </header>
 
@@ -216,12 +216,12 @@ export default function WallPaintingComparisonBlog() {
         <p>Digital wall painting is strong for long-term local brand building, while traditional hoardings work well for flexible campaign messages. The right choice depends on your goals, audience and timeline.</p>
         <p>For businesses in Meerut and NCR looking to establish a lasting presence, digital wall painting offers unbeatable value. For dynamic promotions requiring frequent changes, hoardings remain the go-to choice.</p>
 
-        <div className="bg-purple-50 p-6 rounded-lg my-8">
-          <h3 className="text-2xl font-bold mb-3">Need Expert Advice?</h3>
-          <p className="mb-4">Our team can help you choose the right advertising mix for your specific needs. Contact us for a free consultation.</p>
+        <div className="bg-[#F0F8FF] border border-[#D8EAFD] p-6 rounded-2xl my-8">
+          <h3 className="text-2xl font-bold mb-3 text-[#0A173E]">Need Expert Advice?</h3>
+          <p className="mb-4 text-gray-700">Our team can help you choose the right advertising mix for your specific needs. Contact us for a free consultation.</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/contact" className="bg-purple-600 text-white px-6 py-2 rounded-lg text-center hover:bg-purple-700">Get Free Consultation</Link>
-            <Link href="/services/digital-wall-painting-meerut" className="bg-white text-purple-600 border border-purple-600 px-6 py-2 rounded-lg text-center hover:bg-purple-50">Learn About Wall Painting</Link>
+            <Link href="/contact" className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-extrabold px-6 py-2.5 rounded-xl text-center shadow-md transition">Get Free Consultation</Link>
+            <Link href="/services/digital-wall-painting-meerut" className="bg-white text-[#0A173E] border border-[#0A173E] px-6 py-2.5 rounded-xl text-center font-bold hover:bg-[#F0F8FF] transition">Learn About Wall Painting</Link>
           </div>
         </div>
 

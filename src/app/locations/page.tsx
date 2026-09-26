@@ -94,46 +94,63 @@ export const metadata: Metadata = {
 
 export default function LocationsPage() {
   return (
-    <main className="mx-auto max-w-full px-6 py-16 bg-white">
+    <main className="mx-auto max-w-7xl px-6 py-16">
       <BreadcrumbJsonLd
         items={[{ name: "Home", path: "/" }, { name: "Locations" }]}
       />
       <LocationListJsonLd />
       <FaqJsonLd questions={faqs} />
-      <h1 className="text-4xl font-bold text-slate-900">
-        Advertising service areas
-      </h1>
-      <p className="mt-4 max-w-3xl text-lg text-slate-700">
-        World Media NCR plans and delivers outdoor advertising campaigns across
-        Meerut, Delhi NCR and western Uttar Pradesh. Choose an area to see
-        available services and local coverage.
-      </p>
-      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <div className="mb-12">
+        <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+          Regional Coverage
+        </span>
+        <h1 className="text-4xl lg:text-5xl font-extrabold text-[#0A173E] tracking-tight">
+          Advertising Service Areas
+        </h1>
+        <p className="mt-4 max-w-3xl text-lg text-gray-700">
+          World Media NCR plans and delivers premium outdoor advertising campaigns across
+          Meerut, Delhi NCR and western Uttar Pradesh. Choose an area to see
+          available billboard inventory, transit sites, and local market coverage.
+        </p>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {locations.map(([name, description, href]) => (
           <Link
             key={href}
             href={href}
-            className="rounded-xl border border-slate-200 p-6 transition hover:border-yellow-500 hover:shadow-md"
+            className="group block rounded-2xl border border-[#D8EAFD] bg-[#F0F8FF]/60 p-6 transition-all duration-300 hover:bg-white hover:border-[#0A173E] hover:shadow-xl hover:-translate-y-1"
           >
-            <h2 className="text-xl font-bold text-slate-900">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-xs font-bold text-[#854D0E] bg-[#FEF9C3] border border-[#FDE047] px-2.5 py-0.5 rounded-full">
+                Active Prime Zone
+              </span>
+              <span className="text-[#0A173E] group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+            <h2 className="text-xl font-bold text-[#0A173E] group-hover:text-[#0A173E]">
               Advertising in {name}
             </h2>
-            <p className="mt-2 text-slate-600">{description}</p>
-            <span className="mt-4 inline-block font-semibold text-blue-700">
-              Explore {name} →
+            <p className="mt-2 text-sm text-gray-600 leading-relaxed">{description}</p>
+            <span className="mt-4 inline-block font-bold text-sm text-[#0A173E] group-hover:underline">
+              Explore {name} Sites →
             </span>
           </Link>
         ))}
       </div>
-      <section className="mt-16 max-w-4xl">
-        <h2 className="text-3xl font-bold text-slate-900">Service area FAQs</h2>
+
+      <section className="mt-20 max-w-4xl bg-[#F0F8FF] border border-[#D8EAFD] p-8 md:p-10 rounded-2xl">
+        <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+          FAQ
+        </span>
+        <h2 className="text-3xl font-extrabold text-[#0A173E]">Service Area FAQs</h2>
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (
-            <article key={faq.question}>
-              <h3 className="text-xl font-semibold text-slate-900">
+            <article key={faq.question} className="border-b border-[#D8EAFD] pb-6 last:border-0 last:pb-0">
+              <h3 className="text-lg font-bold text-[#0A173E]">
                 {faq.question}
               </h3>
-              <p className="mt-2 text-slate-700">{faq.answer}</p>
+              <p className="mt-2 text-gray-700 leading-relaxed">{faq.answer}</p>
             </article>
           ))}
         </div>

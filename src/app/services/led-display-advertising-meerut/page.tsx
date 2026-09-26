@@ -140,7 +140,7 @@ export default function LedDisplayAdvertisingPage() {
       />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
+      <div className="relative bg-gradient-to-br from-[#0A173E] via-[#0D1C4D] to-[#060E27] text-white">
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/services/Hoarding4.webp"
@@ -151,29 +151,29 @@ export default function LedDisplayAdvertisingPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-sm text-blue-300 mb-4">
-              <Link href="/" className="hover:text-white transition">Home</Link>
+            <div className="flex items-center gap-2 text-sm text-blue-200 mb-4">
+              <Link href="/" className="hover:text-[var(--yellow)] transition">Home</Link>
               <span>/</span>
-              <Link href="/services" className="hover:text-white transition">Services</Link>
+              <Link href="/services" className="hover:text-[var(--yellow)] transition">Services</Link>
               <span>/</span>
-              <span className="text-blue-300">LED Display Advertising</span>
+              <span className="text-[var(--yellow)] font-semibold">LED Display Advertising</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              LED Display <span className="text-blue-400">Advertising in Meerut</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+              LED Display <span className="text-[var(--yellow)]">Advertising in Meerut</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
               Dynamic digital billboards with videos, animations, and instant content updates. The future of outdoor advertising.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/contact" 
-                className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition shadow-lg"
+                className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-3.5 rounded-xl font-extrabold transition shadow-lg hover:scale-105"
               >
                 Book LED Display
               </Link>
               <a 
                 href="#locations" 
-                className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition"
+                className="bg-white hover:bg-[#F0F8FF] text-[#0A173E] px-8 py-3.5 rounded-xl font-bold transition shadow-md hover:scale-105"
               >
                 View Locations
               </a>
@@ -191,9 +191,9 @@ export default function LedDisplayAdvertisingPage() {
             { number: "Instant", label: "Content Updates", icon: "⚡" },
             { number: "100K+", label: "Daily Views", icon: "📊" },
           ].map((stat, i) => (
-            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-[#D8EAFD]">
               <div className="text-3xl mb-2">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-bold text-blue-600">{stat.number}</div>
+              <div className="text-2xl md:text-3xl font-extrabold text-[#0A173E]">{stat.number}</div>
               <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
             </div>
           ))}
@@ -206,8 +206,8 @@ export default function LedDisplayAdvertisingPage() {
         {/* What is LED Display Advertising */}
         <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
           <div>
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">What We Do</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">What We Do</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-6 text-[#0A173E]">
               Professional LED Display Advertising in Meerut
             </h2>
             <p className="text-gray-600 text-lg mb-4 leading-relaxed">
@@ -225,7 +225,7 @@ export default function LedDisplayAdvertisingPage() {
                 "5x higher attention than static displays"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-[#0A173E] rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -247,8 +247,8 @@ export default function LedDisplayAdvertisingPage() {
         {/* Types of LED Displays */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Our Technology</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Our Technology</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Types of LED Displays We Offer
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -257,14 +257,14 @@ export default function LedDisplayAdvertisingPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {ledDisplayTypes.map((item, i) => (
-              <div key={i} className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div key={i} className="group bg-white border border-[#D8EAFD] rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.type}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{item.type}</h3>
                 <p className="text-gray-600 text-sm mb-3">{item.desc}</p>
                 <ul className="space-y-1">
                   {item.features.map((feature, idx) => (
                     <li key={idx} className="text-xs text-gray-500 flex items-center gap-1">
-                      <span className="text-blue-500">•</span> {feature}
+                      <span className="text-[#0A173E]">•</span> {feature}
                     </li>
                   ))}
                 </ul>
@@ -276,8 +276,8 @@ export default function LedDisplayAdvertisingPage() {
         {/* Prime LED Locations */}
         <div id="locations" className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Locations</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Locations</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Premium LED Display Locations
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -286,10 +286,10 @@ export default function LedDisplayAdvertisingPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {ledLocations.map((location, i) => (
-              <div key={i} className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div key={i} className="group bg-white border border-[#D8EAFD] rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-4">{location.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{location.name}</h3>
-                <p className="text-blue-600 font-semibold text-sm mb-3">{location.traffic}</p>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{location.name}</h3>
+                <p className="text-[#0A173E] font-semibold text-sm mb-3">{location.traffic}</p>
                 <p className="text-gray-600 text-sm">{location.desc}</p>
               </div>
             ))}
@@ -297,10 +297,10 @@ export default function LedDisplayAdvertisingPage() {
         </div>
 
         {/* Why Choose LED Section */}
-        <div className="mb-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="mb-20 bg-[#F0F8FF] rounded-2xl p-8 md:p-12 border border-[#D8EAFD]">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Advantages</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Advantages</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Why Choose LED Display Advertising?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -340,9 +340,9 @@ export default function LedDisplayAdvertisingPage() {
                 desc: "Motion graphics and video content create 85%+ higher brand recall than static ads." 
               }
             ].map((benefit, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition">
+              <div key={i} className="bg-white rounded-xl p-6 text-center border border-[#D8EAFD] shadow-xs hover:shadow-md transition">
                 <div className="text-3xl mb-3">{benefit.icon}</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900">{benefit.title}</h3>
+                <h3 className="text-lg font-bold mb-2 text-[#0A173E]">{benefit.title}</h3>
                 <p className="text-gray-600 text-sm">{benefit.desc}</p>
               </div>
             ))}
@@ -352,8 +352,8 @@ export default function LedDisplayAdvertisingPage() {
         {/* Content Specifications */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Technical Specs</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Technical Specs</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Content Specifications
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -361,46 +361,46 @@ export default function LedDisplayAdvertisingPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-[#F0F8FF] rounded-xl p-8 border border-[#D8EAFD]">
               <div className="text-4xl mb-4">🎥</div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Video/Audio Specifications</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#0A173E]">Video/Audio Specifications</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Format:</span>
+                  <span className="font-semibold text-[#0A173E]">Format:</span>
                   <span className="text-gray-600">MP4, AVI, MOV, GIF</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Resolution:</span>
+                  <span className="font-semibold text-[#0A173E]">Resolution:</span>
                   <span className="text-gray-600">1920x1080 (Full HD) recommended</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Duration:</span>
+                  <span className="font-semibold text-[#0A173E]">Duration:</span>
                   <span className="text-gray-600">10-30 seconds per slot</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Audio:</span>
+                  <span className="font-semibold text-[#0A173E]">Audio:</span>
                   <span className="text-gray-600">Optional (available at select locations)</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-[#F0F8FF] rounded-xl p-8 border border-[#D8EAFD]">
               <div className="text-4xl mb-4">🖼️</div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Image Specifications</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#0A173E]">Image Specifications</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Format:</span>
+                  <span className="font-semibold text-[#0A173E]">Format:</span>
                   <span className="text-gray-600">JPG, PNG, PSD, AI</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Resolution:</span>
+                  <span className="font-semibold text-[#0A173E]">Resolution:</span>
                   <span className="text-gray-600">Minimum 150 DPI at actual size</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Color mode:</span>
+                  <span className="font-semibold text-[#0A173E]">Color mode:</span>
                   <span className="text-gray-600">RGB (for digital displays)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold text-blue-600">Duration:</span>
+                  <span className="font-semibold text-[#0A173E]">Duration:</span>
                   <span className="text-gray-600">8-15 seconds per static image</span>
                 </li>
               </ul>
@@ -414,8 +414,8 @@ export default function LedDisplayAdvertisingPage() {
         {/* Best Use Cases */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Applications</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Applications</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Best Use Cases for LED Advertising
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -424,7 +424,7 @@ export default function LedDisplayAdvertisingPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {useCases.map((use, i) => (
-              <span key={i} className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition cursor-default">
+              <span key={i} className="px-4 py-2 bg-[#F0F8FF] text-[#0A173E] border border-[#D8EAFD] rounded-full text-sm font-medium hover:border-[var(--yellow)] transition cursor-default">
                 {use}
               </span>
             ))}
@@ -434,8 +434,8 @@ export default function LedDisplayAdvertisingPage() {
         {/* FAQ Section */}
         <div className="mb-0">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">FAQ</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">FAQ</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -444,8 +444,8 @@ export default function LedDisplayAdvertisingPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {ledFaqs.map((faq, i) => (
-              <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
-                <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
+              <div key={i} className="border border-[#D8EAFD] bg-white rounded-xl p-6 hover:shadow-md transition">
+                <h3 className="text-lg font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>
               </div>
             ))}

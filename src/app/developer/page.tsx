@@ -64,7 +64,7 @@ export default function DeveloperPage() {
       {/* Hero Section - Premium Dark Theme */}
       <div className="relative min-h-screen flex items-center overflow-hidden">
         {/* Abstract Background - Fixed without HTML entities */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A173E] via-[#060E27] to-[#0A173E]">
           <div className="absolute inset-0 opacity-20" 
                style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
           </div>
@@ -72,8 +72,8 @@ export default function DeveloperPage() {
         
         {/* Floating Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
@@ -85,7 +85,7 @@ export default function DeveloperPage() {
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
                 Devashish
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400"> Tyagi</span>
+                <span className="text-[var(--yellow)]"> Tyagi</span>
               </h1>
               <p className="text-xl text-gray-300 mb-3">Full Stack Developer & SEO Architect</p>
               <p className="text-gray-400 mb-2">📍 Sardhana, Meerut • Uttar Pradesh, India</p>
@@ -101,7 +101,7 @@ export default function DeveloperPage() {
                 I build high-performance websites and applications that rank, convert, and leave lasting impressions.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="#work" className="group bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                <a href="#work" className="group bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
                   View Portfolio
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -147,7 +147,7 @@ export default function DeveloperPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {achievements.map((stat, i) => (
             <div key={i} className="bg-white/80 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
-              <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-950 to-blue-950">
+              <div className="text-3xl md:text-4xl font-bold text-[#0A173E]">
                 {stat.number}
               </div>
               <div className="font-semibold text-gray-800 mt-1">{stat.label}</div>
@@ -161,7 +161,7 @@ export default function DeveloperPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-block px-4 py-1 bg-indigo-100 rounded-full text-indigo-700 text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] rounded-full text-sm font-semibold mb-4">
               About Me
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -387,12 +387,12 @@ export default function DeveloperPage() {
 
       {/* Contact Section */}
       <div id="contact" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A173E] via-[#0D1C4D] to-[#060E27]"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Build Something <span className="underline decoration-pink-400">Extraordinary</span>?
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            Ready to Build Something <span className="underline decoration-[var(--yellow)]">Extraordinary</span>?
           </h2>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
             Let&apos;s collaborate and create a digital experience that sets your business apart.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -400,7 +400,7 @@ export default function DeveloperPage() {
               href="https://wa.me/919557423119?text=Hi%20Devashish%2C%20I'm%20interested%20in%20discussing%20a%20web%20development%20project." 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-indigo-600 hover:bg-gray-100 px-10 py-4 rounded-full font-semibold text-lg transition shadow-xl hover:shadow-2xl flex items-center gap-2"
+              className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-10 py-4 rounded-full font-extrabold text-lg transition shadow-xl hover:shadow-2xl flex items-center gap-2"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.298-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>

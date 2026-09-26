@@ -1,7 +1,8 @@
+// src/components/HomeFaqSection.tsx
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown, HelpCircle, PhoneCall } from "lucide-react";
+import { ChevronDown, HelpCircle, PhoneCall, MessageSquare } from "lucide-react";
 import { FaqJsonLd } from "@/components/SeoJsonLd";
 
 export const homeFaqs = [
@@ -39,16 +40,16 @@ export default function HomeFaqSection() {
   };
 
   return (
-    <section className="w-full py-20 bg-slate-50 border-t border-slate-200">
+    <section className="w-full py-20 bg-white border-t border-[#D8EAFD]">
       <FaqJsonLd questions={homeFaqs} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 bg-blue-100 text-blue-900 text-xs font-bold rounded-full uppercase tracking-wider mb-3">
-            <HelpCircle className="w-3.5 h-3.5 text-blue-700" />
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 bg-[#F0F8FF] border border-[#D8EAFD] text-[#0A173E] text-xs font-bold rounded-full uppercase tracking-wider mb-3">
+            <HelpCircle className="w-3.5 h-3.5 text-[#0A173E]" />
             Frequently Asked Questions
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight mb-4">
-            Everything You Need to Know About Advertising in Meerut &amp; NCR
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0A173E] tracking-tight mb-4">
+            Everything You Need to Know About Outdoor Advertising
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             Get straightforward answers about rates, prime locations, campaign durations, and legal permissions.
@@ -61,22 +62,22 @@ export default function HomeFaqSection() {
             return (
               <div
                 key={index}
-                className="border border-slate-200 bg-white rounded-2xl overflow-hidden transition-all duration-200 shadow-sm"
+                className="border border-[#D8EAFD] bg-[#F0F8FF]/40 rounded-2xl overflow-hidden transition-all duration-200 shadow-2xs hover:border-[var(--yellow)] hover:bg-[#F0F8FF]"
               >
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full text-left py-5 px-6 flex items-center justify-between gap-4 font-bold text-slate-900 hover:text-blue-600 transition"
+                  className="w-full text-left py-5 px-6 flex items-center justify-between gap-4 font-bold text-[#0A173E] hover:text-[#CA8A04] transition cursor-pointer"
                   aria-expanded={isOpen}
                 >
                   <span className="text-lg leading-snug">{faq.question}</span>
                   <ChevronDown
                     className={`w-5 h-5 text-slate-500 transition-transform duration-300 flex-shrink-0 ${
-                      isOpen ? "rotate-180 text-blue-600" : ""
+                      isOpen ? "rotate-180 text-[#0A173E]" : ""
                     }`}
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-1 text-slate-700 leading-relaxed text-base border-t border-slate-100">
+                  <div className="px-6 pb-6 pt-1 text-slate-700 leading-relaxed text-base border-t border-[#D8EAFD]/60 bg-white/70">
                     <p>{faq.answer}</p>
                   </div>
                 )}
@@ -85,25 +86,27 @@ export default function HomeFaqSection() {
           })}
         </div>
 
-        <div className="mt-12 bg-yellow-500 rounded-2xl p-8 text-center text-slate-950 shadow-md">
-          <h3 className="text-2xl font-extrabold mb-2">Have a Custom Campaign in Mind?</h3>
-          <p className="text-slate-900 font-medium mb-6">
-            Speak directly with Shrikant Tyagi &amp; the World Media NCR media planning desk today.
+        {/* Custom Campaign Callout - Yellow with Dark Navy & White Buttons */}
+        <div className="mt-12 bg-[var(--yellow)] border border-[#EAB308] rounded-2xl p-8 text-center text-[#0A173E] shadow-md">
+          <h3 className="text-2xl sm:text-3xl font-extrabold mb-2 text-[#0A173E]">Have a Custom Campaign in Mind?</h3>
+          <p className="text-slate-900 font-medium mb-6 max-w-xl mx-auto">
+            Speak directly with Shrikant Tyagi &amp; the World Media NCR media planning desk today for personalized recommendations.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:+919456497636"
-              className="inline-flex items-center gap-2 bg-slate-950 hover:bg-slate-850 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg"
+              className="inline-flex items-center gap-2 bg-[#0A173E] hover:bg-[#132456] text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg hover:scale-105"
             >
-              <PhoneCall className="w-4 h-4 text-yellow-400" />
+              <PhoneCall className="w-4 h-4 text-[var(--yellow)]" />
               <span>Call: +91 94564 97636</span>
             </a>
             <a
               href="https://wa.me/919456497636?text=Hi%20World%20Media%20NCR%2C%20I%20have%20an%20advertising%20inquiry."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-950 font-bold px-8 py-3.5 rounded-xl transition shadow-md"
+              className="inline-flex items-center gap-2 bg-white hover:bg-[#F0F8FF] text-[#0A173E] font-bold px-8 py-3.5 rounded-xl transition shadow-md hover:scale-105"
             >
+              <MessageSquare className="w-4 h-4 text-emerald-600" />
               <span>Chat on WhatsApp</span>
             </a>
           </div>

@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const portfolioItems = [
   { 
@@ -207,48 +208,51 @@ export default function PortfolioGallery() {
   const filteredItems = activeCategory === "All" ? portfolioItems : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full py-16 bg-white border-t border-[#D8EAFD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Portfolio</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Explore our diverse range of successful outdoor advertising projects across Uttar Pradesh</p>
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            Real Sites &amp; Live Campaigns
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#0F172A] tracking-tight">Our Site Portfolio</h1>
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">Explore our verified network of highway unipoles, arterial hoardings, and digital wall paintings across Uttar Pradesh &amp; Delhi NCR.</p>
         </div>
-        <div className="flex justify-center flex-wrap gap-4 mb-12">
+        <div className="flex justify-center flex-wrap gap-3 mb-12">
           {categories.map((category) => (
             <button 
               key={category} 
               onClick={() => setActiveCategory(category)} 
-              className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${ activeCategory === category ? 'bg-blue-600 text-white shadow-lg' : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-700' }`}>
+              className={`px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 cursor-pointer ${ activeCategory === category ? 'bg-[#0A173E] text-white shadow-md' : 'bg-[#F0F8FF] border border-[#D8EAFD] text-slate-700 hover:border-[var(--yellow)] hover:text-[#0A173E]' }`}>
               {category}
             </button>
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item) => (
-            <div key={item.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div className="w-full h-80 relative bg-gray-100">
+            <div key={item.id} className="group relative overflow-hidden rounded-2xl shadow-2xs hover:shadow-xl transition-all duration-300 border border-[#D8EAFD] hover:border-[var(--yellow)] bg-white">
+              <div className="w-full h-72 relative bg-slate-100">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 bg-white">
-                <span className="text-sm text-blue-600 font-semibold">{item.category}</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm mb-2">{item.description}</p>
-                <p className="text-gray-500 text-xs">Location: {item.location}</p>
+                <span className="text-xs font-bold text-[#0A173E] uppercase tracking-wider bg-[#F0F8FF] border border-[#D8EAFD] px-2.5 py-1 rounded-md">{item.category}</span>
+                <h3 className="text-xl font-bold text-[#0A173E] mt-3 mb-2 group-hover:text-[#CA8A04] transition-colors leading-snug">{item.title}</h3>
+                <p className="text-slate-600 text-sm mb-3 leading-relaxed">{item.description}</p>
+                <p className="text-slate-500 text-xs font-medium">📍 {item.location}</p>
               </div>
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <div className="text-center text-white p-6">
-                  <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm mb-4">{item.description}</p>
-                  <p className="text-sm mb-4 text-gray-300">Location: {item.location}</p>
-                  <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-700 transition-colors cursor-pointer">
-                    View Project
-                  </span>
+              <div className="absolute inset-0 bg-[#0A173E]/95 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 p-6 backdrop-blur-2xs">
+                <div className="text-center text-white">
+                  <h3 className="text-2xl font-extrabold mb-2 text-white">{item.title}</h3>
+                  <p className="text-sm mb-3 text-blue-100">{item.description}</p>
+                  <p className="text-xs mb-5 text-[var(--yellow)] font-semibold">📍 {item.location}</p>
+                  <Link href="/contact" className="inline-block bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-extrabold px-6 py-2.5 rounded-full text-sm shadow-md transition-all">
+                    Inquire Site Space →
+                  </Link>
                 </div>
               </div>
             </div>

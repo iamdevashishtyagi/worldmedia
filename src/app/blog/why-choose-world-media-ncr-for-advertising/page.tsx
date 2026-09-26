@@ -48,9 +48,9 @@ export default function WhyChooseUsBlog() {
       {/* Breadcrumb */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
-          <li><Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link></li>
+          <li><Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link></li>
           <li><span className="mx-2 text-gray-400">/</span></li>
-          <li><Link href="/blog" className="text-gray-700 hover:text-blue-600">Blog</Link></li>
+          <li><Link href="/blog" className="text-gray-700 hover:text-[#0A173E]">Blog</Link></li>
           <li><span className="mx-2 text-gray-400">/</span></li>
           <li className="text-gray-500">Why Choose World Media NCR</li>
         </ol>
@@ -58,13 +58,13 @@ export default function WhyChooseUsBlog() {
 
       {/* Header */}
       <header className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Why Choose World Media NCR for Your Advertising Needs?</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#0A173E]">Why Choose World Media NCR for Your Advertising Needs?</h1>
         <div className="flex items-center text-gray-500 text-sm mb-6">
           <span>Published: February 25, 2024</span>
           <span className="mx-2">•</span>
           <span>7 min read</span>
           <span className="mx-2">•</span>
-          <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Company</span>
+          <span className="bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] px-2.5 py-0.5 rounded-full text-xs font-bold">Company</span>
         </div>
       </header>
 
@@ -285,12 +285,12 @@ export default function WhyChooseUsBlog() {
         <p>Choosing the right advertising partner makes all the difference. With World Media NCR, you get experience, premium locations, end-to-end service, transparent pricing, and a team that genuinely cares about your success.</p>
         <p>Whether you&apos;re a national brand, a local business, or a political candidate, we have the expertise and resources to make your campaign successful.</p>
 
-        <div className="bg-blue-50 p-6 rounded-lg my-8">
-          <h3 className="text-2xl font-bold mb-3 text-gray-900">Ready to Work with the Best?</h3>
-          <p className="mb-4 text-gray-700">Contact us today for a free consultation. Let&apos;s discuss how we can help you achieve your advertising goals.</p>
+        <div className="bg-[#0A173E] text-white p-8 rounded-2xl my-8 border border-[#182859]">
+          <h3 className="text-2xl font-bold mb-3 text-white">Ready to Work with the Best?</h3>
+          <p className="mb-6 text-slate-300">Contact us today for a free consultation. Let&apos;s discuss how we can help you achieve your advertising goals.</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700">Get Free Consultation</Link>
-            <Link href="/about" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50">Learn More About Us</Link>
+            <Link href="/contact" className="bg-[var(--yellow)] text-[#0A173E] px-6 py-3 rounded-lg text-center font-bold hover:brightness-105 transition">Get Free Consultation</Link>
+            <Link href="/about" className="bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg text-center font-semibold hover:bg-white/20 transition">Learn More About Us</Link>
           </div>
         </div>
 

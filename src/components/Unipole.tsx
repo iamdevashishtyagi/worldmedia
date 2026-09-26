@@ -34,7 +34,7 @@ export default function Unipole({
             />
           </div>
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-500">
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#0A173E] to-[#132456]">
             {children}
           </div>
         )}

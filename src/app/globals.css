@@ -7,10 +7,12 @@
   --alice-blue: #F0F8FF;
   --paper: #F0F8FF;
   --sand: #FFFFFF;
-  --ink: #0F172A;
+  --ink: #0A173E;
   --muted: #475569;
-  --navy: #0F172A;
-  --royal-blue: #1E40AF;
+  --navy: #0A173E;
+  --navy-dark: #060E27;
+  --navy-light: #132456;
+  --royal-blue: #0A173E;
   --yellow: #FACC15;
   --yellow-hover: #EAB308;
   --yellow-dark: #CA8A04;
@@ -174,7 +176,7 @@ body {
   overflow: hidden;
   background: #ffffff;
   border: 1px solid var(--line);
-  box-shadow: 0 14px 34px rgba(30, 64, 175, 0.08);
+  box-shadow: 0 14px 34px rgba(10, 23, 62, 0.08);
   border-radius: 4px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   text-decoration: none;
@@ -182,7 +184,7 @@ body {
 
 .hero-clean .c-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 22px 42px rgba(30, 64, 175, 0.16);
+  box-shadow: 0 22px 42px rgba(10, 23, 62, 0.16);
 }
 
 .hero-clean .c-item img {
@@ -240,7 +242,7 @@ body {
   border: 2px solid var(--yellow);
   padding: clamp(0.4rem, 1.4vw, 0.65rem) clamp(0.65rem, 2vw, 1.1rem);
   border-radius: 4px;
-  box-shadow: 0 12px 28px rgba(30, 64, 175, 0.16);
+  box-shadow: 0 12px 28px rgba(10, 23, 62, 0.16);
   display: flex;
   flex-direction: column;
   gap: 0.15rem;

@@ -75,12 +75,12 @@ export default function ShamliLocationPage() {
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link>
           </li>
           <li>
             <div className="flex items-center">
               <span className="mx-2 text-gray-400">/</span>
-              <Link href="/locations" className="text-gray-700 hover:text-blue-600">Locations</Link>
+              <Link href="/locations" className="text-gray-700 hover:text-[#0A173E]">Locations</Link>
             </div>
           </li>
           <li aria-current="page">
@@ -93,40 +93,43 @@ export default function ShamliLocationPage() {
       </nav>
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            Western UP District
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
             Advertising Agency in Shamli – World Media NCR
           </h1>
           <p className="text-lg text-gray-700 mb-4">
-            <strong>World Media NCR</strong> is your trusted <strong>advertising agency in Shamli</strong>, providing comprehensive outdoor advertising solutions across the district. We help Shamli businesses, political candidates, and brands reach their target audience through strategic hoarding and wall painting placements.
+            <strong className="text-[#0A173E]">World Media NCR</strong> is your trusted <strong className="text-[#0A173E]">outdoor advertising agency in Shamli</strong>, delivering full-service hoarding, highway billboard, and digital wall painting solutions across the district. We help businesses, retail brands, and campaign leaders establish dominant local presence.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            From <strong>hoarding advertising on Kairana Road</strong> to <strong>digital wall painting in Thana Bhawan</strong>, our team knows the Shamli market thoroughly. We have the largest network of premium advertising locations across the city and all rural areas.
+            From strategic <strong className="text-[#0A173E]">hoarding advertising on Kairana Road & Panipat Road</strong> to <strong className="text-[#0A173E]">wall painting in Thana Bhawan and rural panchayats</strong>, our inventory guarantees unrivaled coverage and impact.
           </p>
-          <div className="bg-purple-50 p-6 rounded-lg mt-4">
-            <h2 className="text-xl font-bold mb-3">Why Shamli Businesses Choose Us?</h2>
-            <ul className="space-y-2">
+          <div className="bg-[#F0F8FF] border border-[#D8EAFD] p-6 rounded-2xl mt-4">
+            <h2 className="text-xl font-bold mb-3 text-[#0A173E]">Why Shamli Businesses Choose Us?</h2>
+            <ul className="space-y-2.5">
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">✓</span>
-                <span><strong>10+ years</strong> serving Shamli and surrounding areas</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">10+ years</strong> executing outdoor and rural campaigns across Shamli district</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">✓</span>
-                <span><strong>Premium locations</strong> on all major roads and chowks</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Prime monopoly locations</strong> on Kairana Road, Panipat Highway, and Mandi Samiti</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">✓</span>
-                <span><strong>100+ projects</strong> completed for Shamli clients</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">100+ projects</strong> completed with high reliability and quick turnarounds</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">✓</span>
-                <span><strong>End-to-end service</strong> – design, printing, installation</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">End-to-end service</strong> – municipal compliance, HD flex printing, field installation</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+        <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-[#D8EAFD] bg-gray-100 flex items-center justify-center">
           <Image 
             src="/images/portfolio/SHAMLI KAIRANA ROAD.webp" 
             alt="Advertising agency in Shamli - World Media NCR hoarding on Kairana Road"
@@ -139,49 +142,49 @@ export default function ShamliLocationPage() {
 
       {/* Services in Shamli */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Advertising Services in Shamli</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Advertising Services in Shamli</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/services/hoarding-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Hoarding Advertising Shamli</h3>
-            <p className="text-gray-600 mb-3">Premium hoarding placements at Kairana Road, Panipat Road, Muzaffarnagar Road, and major chowks. Sizes from 10x10 to 20x10 ft.</p>
-            <span className="text-purple-600 font-medium">Learn more →</span>
+          <Link href="/services/hoarding-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Hoarding Advertising Shamli</h3>
+            <p className="text-gray-600 mb-3 text-sm">Premium hoarding placements at Kairana Road, Panipat Road, Muzaffarnagar Road, and major chowks. Sizes from 10x10 to 20x10 ft.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/digital-wall-painting-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Digital Wall Painting Shamli</h3>
-            <p className="text-gray-600 mb-3">Cost-effective wall advertisements at high-traffic walls across Shamli city and all rural areas. 3-5 year durability.</p>
-            <span className="text-purple-600 font-medium">Learn more →</span>
+          <Link href="/services/digital-wall-painting-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Digital Wall Painting Shamli</h3>
+            <p className="text-gray-600 mb-3 text-sm">Cost-effective wall advertisements at high-traffic walls across Shamli city and all rural areas. 3-5 year durability.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/billboard-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Billboard Advertising Shamli</h3>
-            <p className="text-gray-600 mb-3">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
-            <span className="text-purple-600 font-medium">Learn more →</span>
+          <Link href="/services/billboard-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Billboard Advertising Shamli</h3>
+            <p className="text-gray-600 mb-3 text-sm">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/vehicle-branding-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Vehicle Branding Shamli</h3>
-            <p className="text-gray-600 mb-3">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, and commercial vehicles.</p>
-            <span className="text-purple-600 font-medium">Learn more →</span>
+          <Link href="/services/vehicle-branding-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Vehicle Branding Shamli</h3>
+            <p className="text-gray-600 mb-3 text-sm">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, and commercial vehicles.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/flex-printing-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Flex Printing Shamli</h3>
-            <p className="text-gray-600 mb-3">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround.</p>
-            <span className="text-purple-600 font-medium">Learn more →</span>
+          <Link href="/services/flex-printing-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Flex Printing Shamli</h3>
+            <p className="text-gray-600 mb-3 text-sm">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/political-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Political Advertising Shamli</h3>
-            <p className="text-gray-600 mb-3">Complete campaign solutions for Kairana, Shamli, and Thana Bhawan constituencies – hoardings, wall paintings, banners, flags.</p>
-            <span className="text-purple-600 font-medium">Learn more →</span>
+          <Link href="/services/political-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Political Advertising Shamli</h3>
+            <p className="text-gray-600 mb-3 text-sm">Complete campaign solutions for Kairana, Shamli, and Thana Bhawan constituencies – hoardings, wall paintings, banners, flags.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
         </div>
       </section>
 
       {/* Prime Advertising Locations */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Prime Advertising Locations in Shamli</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Prime Advertising Locations in Shamli</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { name: "Kairana Road", traffic: "50,000+ daily commuters", desc: "Main highway connecting to Kairana. Premium hoarding locations." },
@@ -197,9 +200,9 @@ export default function ShamliLocationPage() {
             { name: "Jhinjhana Road", traffic: "20,000+ daily", desc: "Connecting to Jhinjhana and surrounding villages." },
             { name: "Unn Road", traffic: "15,000+ daily", desc: "Connecting to Unn and rural areas." },
           ].map((location, i) => (
-            <div key={i} className="border rounded-lg p-5 shadow-sm bg-white">
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">{location.name}</h3>
-              <p className="text-purple-600 font-medium text-sm mb-2">{location.traffic}</p>
+            <div key={i} className="border border-[#D8EAFD] rounded-xl p-5 shadow-sm bg-white hover:border-[#0A173E] transition-colors">
+              <h3 className="text-lg font-bold mb-1 text-[#0A173E]">{location.name}</h3>
+              <p className="text-[#0A173E] font-semibold text-sm mb-2">{location.traffic}</p>
               <p className="text-gray-600 text-sm">{location.desc}</p>
             </div>
           ))}
@@ -207,39 +210,39 @@ export default function ShamliLocationPage() {
       </section>
 
       {/* About Shamli Market */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Shamli</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-3xl font-extrabold mb-6 text-[#0A173E]">About Advertising in Shamli</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 mb-4">
-            Shamli is an important district in western Uttar Pradesh, known for its agricultural markets and political significance (Kairana constituency). The district has a mix of urban and rural populations, making it ideal for integrated outdoor advertising campaigns.
+            Shamli is an important agrarian and commercial district in western Uttar Pradesh, known for its busy trading mandis and political prominence (Kairana constituency). The district combines bustling town markets and dense rural tehsils.
           </p>
           <p className="text-gray-700 mb-4">
-            <strong>Key facts about Shamli for advertisers:</strong>
+            <strong className="text-[#0A173E]">Key facts about Shamli for advertisers:</strong>
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700">
             <li><strong>Population:</strong> 150,000+ (city) with district population over 1.2 million</li>
-            <li><strong>Political importance:</strong> Kairana constituency is nationally watched</li>
-            <li><strong>Agricultural hub:</strong> Major mandi for sugarcane and grain trading</li>
+            <li><strong>Political importance:</strong> Nationally recognized Kairana constituency</li>
+            <li><strong>Agricultural hub:</strong> Major trading hub for sugarcane, grains, and jaggery</li>
             <li><strong>Connectivity:</strong> NH-709B connects to Delhi, Panipat, and Muzaffarnagar</li>
             <li><strong>Assembly constituencies:</strong> Shamli, Kairana, and Thana Bhawan</li>
-            <li><strong>Rural reach:</strong> Hundreds of villages with significant voter population</li>
+            <li><strong>Rural reach:</strong> Hundreds of prosperous villages with significant purchasing capacity</li>
           </ul>
           <p className="text-gray-700">
-            Outdoor advertising in Shamli is particularly effective for political campaigns, real estate, educational institutions, and FMCG brands targeting both urban and rural consumers.
+            Outdoor advertising in Shamli is particularly effective for political campaigns, retail launches, coaching institutes, and FMCG brands targeting town centers and rural markets alike.
           </p>
         </div>
       </section>
 
       {/* Assembly Constituencies */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Shamli District Assembly Constituencies</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Shamli District Assembly Constituencies</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
             "Shamli", "Kairana", "Thana Bhawan",
             "Jhinjhana", "Unn", "Gangoh (part)",
             "Nakur (part)", "Budhana (part)", "Shahpur (part)"
           ].map((constituency, i) => (
-            <div key={i} className="bg-purple-50 p-3 rounded-lg text-center font-medium text-gray-800 border border-purple-200">
+            <div key={i} className="bg-[#F0F8FF] p-3 rounded-xl text-center font-bold text-[#0A173E] border border-[#D8EAFD]">
               {constituency}
             </div>
           ))}
@@ -249,7 +252,7 @@ export default function ShamliLocationPage() {
 
       {/* Gallery */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Work in Shamli</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Work in Shamli</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { name: "Shamli Kairana Road", file: "SHAMLI KAIRANA ROAD.webp" },
@@ -261,21 +264,21 @@ export default function ShamliLocationPage() {
             { name: "Shamli Sai Mandir Loni", file: "Shamli Sai Mandir Fc Loni 20x10.webp" },
             { name: "Shamli Sai Mandir Saharanpur", file: "Shamli Sai Mandir Fc Saharanpur 20x10.webp" },
           ].map((project, i) => (
-            <div key={i} className="relative h-40 rounded-lg overflow-hidden group">
+            <div key={i} className="relative h-40 rounded-xl overflow-hidden group border border-[#D8EAFD]">
               <Image 
                 src={`/images/portfolio/${project.file}`}
                 alt={`Advertising project at ${project.name} in Shamli by World Media NCR`}
                 fill
                 className="object-cover group-hover:scale-110 transition duration-300"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-end">
-                <p className="text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition">{project.name}</p>
+              <div className="absolute inset-0 bg-[#0A173E]/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                <p className="text-white font-bold p-3 text-xs">{project.name}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-6">
-          <Link href="/gallery" className="text-purple-600 font-semibold hover:underline">
+          <Link href="/gallery" className="text-[#0A173E] font-bold hover:underline">
             View Full Portfolio →
           </Link>
         </div>
@@ -283,22 +286,22 @@ export default function ShamliLocationPage() {
 
       {/* Testimonials */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">What Shamli Clients Say</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">What Shamli Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;We worked with World Media NCR for the Kairana by-election campaign. Their wall painting coverage in rural areas was exceptional – they reached every village.&quot;</p>
-            <p className="font-semibold text-gray-900">– Political Campaign Manager, Kairana</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;We worked with World Media NCR for the Kairana campaign. Their rural wall painting coverage was exceptional – they reached every village with speed and precision.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Political Campaign Committee, Kairana</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;Our educational institute needed hoardings across Shamli. They provided excellent locations and professional installation. Great experience.&quot;</p>
-            <p className="font-semibold text-gray-900">– Director, Coaching Institute, Shamli</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;Our institute needed hoardings across Shamli. They provided high-footfall locations and professional installation with prompt service.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Educational Institute Founder, Shamli</p>
           </div>
         </div>
       </section>
 
       {/* Rural Coverage */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Rural Coverage in Shamli District</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Rural Coverage in Shamli District</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             "Kairana", "Thana Bhawan", "Jhinjhana", "Unn",
@@ -306,7 +309,7 @@ export default function ShamliLocationPage() {
             "Loni", "Titawi", "Dungar", "Barsana",
             "Kandhla", "Phulana", "Alawalpur", "Bhavanpur"
           ].map((village, i) => (
-            <div key={i} className="bg-gray-100 p-2 rounded-lg text-center text-sm">
+            <div key={i} className="bg-[#F0F8FF] border border-[#D8EAFD] p-2.5 rounded-lg text-center text-sm font-medium text-gray-800">
               {village}
             </div>
           ))}
@@ -316,28 +319,28 @@ export default function ShamliLocationPage() {
 
       {/* FAQ Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Frequently Asked Questions</h2>
         <div className="space-y-6">
           {shamliFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
+              <p className="text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Nearby Locations */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Our Nearby Service Locations</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-2xl font-extrabold mb-6 text-[#0A173E]">Our Nearby Service Locations</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link href="/locations/meerut" className="text-purple-600 hover:underline">Meerut</Link>
-          <Link href="/locations/muzaffarnagar" className="text-purple-600 hover:underline">Muzaffarnagar</Link>
-          <Link href="/locations/saharanpur" className="text-purple-600 hover:underline">Saharanpur</Link>
-          <Link href="/locations/baghpat" className="text-purple-600 hover:underline">Baghpat</Link>
-          <Link href="/locations/delhi-ncr" className="text-purple-600 hover:underline">Delhi NCR</Link>
-          <Link href="/locations/hapur" className="text-purple-600 hover:underline">Hapur</Link>
-          <Link href="/locations/delhi" className="text-purple-600 hover:underline">Delhi</Link>
+          <Link href="/locations/meerut" className="text-[#0A173E] font-semibold hover:underline">Meerut</Link>
+          <Link href="/locations/muzaffarnagar" className="text-[#0A173E] font-semibold hover:underline">Muzaffarnagar</Link>
+          <Link href="/locations/saharanpur" className="text-[#0A173E] font-semibold hover:underline">Saharanpur</Link>
+          <Link href="/locations/baghpat" className="text-[#0A173E] font-semibold hover:underline">Baghpat</Link>
+          <Link href="/locations/delhi-ncr" className="text-[#0A173E] font-semibold hover:underline">Delhi NCR</Link>
+          <Link href="/locations/hapur" className="text-[#0A173E] font-semibold hover:underline">Hapur</Link>
+          <Link href="/locations/delhi" className="text-[#0A173E] font-semibold hover:underline">Delhi</Link>
         </div>
       </section>
     </main>

@@ -50,7 +50,7 @@ export default function AboutPage() {
         {/* Breadcrumb */}
         <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-2 text-slate-500">
-            <li><Link href="/" className="hover:text-blue-600 transition">Home</Link></li>
+            <li><Link href="/" className="hover:text-[#0A173E] transition">Home</Link></li>
             <li><span>/</span></li>
             <li className="text-slate-800 font-medium">About Us</li>
           </ol>
@@ -58,10 +58,10 @@ export default function AboutPage() {
 
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 text-sm font-semibold rounded-full mb-4">
-            Established 2013 • Meerut & Delhi NCR
+          <span className="inline-block px-4 py-1.5 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-4">
+            Established 2013 • Meerut &amp; Delhi NCR
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-950 mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#0A173E] mb-6">
             Meerut&apos;s Leading Outdoor Advertising &amp; Hoarding Agency
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed">
@@ -81,17 +81,17 @@ export default function AboutPage() {
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-6">
+              <div className="absolute inset-0 flex items-end p-6">
                 <div>
                   <p className="text-white font-bold text-2xl">Shrikant Tyagi</p>
-                  <p className="text-yellow-400 font-medium">Founder &amp; CEO, World Media NCR</p>
+                  <p className="text-yellow-500 font-semibold text-sm">Founder &amp; CEO, World Media NCR</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="md:col-span-7 space-y-6 text-slate-700 text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold text-slate-950">
+            <h2 className="text-3xl font-bold text-[#0A173E]">
               Transforming Brands Through Strategic Outdoor Placement
             </h2>
             <p>
@@ -104,10 +104,10 @@ export default function AboutPage() {
               Beyond traditional billboards, we pioneered large-scale <strong>digital wall painting campaigns</strong> spanning hundreds of villages and towns across Western UP, delivering unmatched rural and semi-urban reach for FMCG, educational institutions, real estate, and healthcare leaders.
             </p>
             <div className="pt-4 flex flex-wrap gap-4">
-              <Link href="/contact" className="bg-yellow-500 hover:bg-yellow-600 text-slate-950 font-bold px-8 py-3.5 rounded-xl transition shadow-md">
+              <Link href="/contact" className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-bold px-8 py-3.5 rounded-xl transition shadow-md hover:scale-105">
                 Contact Our Team
               </Link>
-              <Link href="/gallery" className="border-2 border-slate-300 hover:border-slate-900 text-slate-900 font-bold px-8 py-3.5 rounded-xl transition">
+              <Link href="/gallery" className="border-2 border-[#0A173E] text-[#0A173E] hover:bg-[#0A173E] hover:text-white font-bold px-8 py-3.5 rounded-xl transition hover:scale-105">
                 Explore Hoarding Portfolio
               </Link>
             </div>
@@ -116,28 +116,28 @@ export default function AboutPage() {
 
         {/* Key Pillars */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-            <div className="text-3xl font-bold text-blue-600 mb-3">100+</div>
-            <h3 className="text-xl font-bold text-slate-950 mb-2">Prime Hoarding Sites</h3>
+          <div className="p-8 rounded-2xl bg-[#F0F8FF] border border-[#D8EAFD]">
+            <div className="text-3xl font-bold text-[#0A173E] mb-3">100+</div>
+            <h3 className="text-xl font-bold text-[#0A173E] mb-2">Prime Hoarding Sites</h3>
             <p className="text-slate-600">Strategic positions on national highways, expressway interchanges, and primary city market hubs.</p>
           </div>
-          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-            <div className="text-3xl font-bold text-blue-600 mb-3">500+</div>
-            <h3 className="text-xl font-bold text-slate-950 mb-2">Successful Campaigns</h3>
+          <div className="p-8 rounded-2xl bg-[#F0F8FF] border border-[#D8EAFD]">
+            <div className="text-3xl font-bold text-[#0A173E] mb-3">500+</div>
+            <h3 className="text-xl font-bold text-[#0A173E] mb-2">Successful Campaigns</h3>
             <p className="text-slate-600">Trusted by blue-chip leaders like UltraTech, Ambuja, Apollo Hospitals, Tata Motors, and Patanjali.</p>
           </div>
-          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-            <div className="text-3xl font-bold text-blue-600 mb-3">8+ Districts</div>
-            <h3 className="text-xl font-bold text-slate-950 mb-2">Complete NCR &amp; UP Coverage</h3>
+          <div className="p-8 rounded-2xl bg-[#F0F8FF] border border-[#D8EAFD]">
+            <div className="text-3xl font-bold text-[#0A173E] mb-3">8+ Districts</div>
+            <h3 className="text-xl font-bold text-[#0A173E] mb-2">Complete NCR &amp; UP Coverage</h3>
             <p className="text-slate-600">Active media assets in Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, Delhi, and Noida.</p>
           </div>
         </div>
 
-        {/* Services Overview */}
-        <div className="bg-slate-900 text-white rounded-3xl p-8 md:p-12 mb-16">
+        {/* Services Overview - Dark Premium Navy Blue Background */}
+        <div className="bg-[#0A173E] text-white rounded-3xl p-8 md:p-12 mb-16 border border-[#182859] shadow-xl">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold mb-4">Complete Outdoor Advertising Suite</h2>
-            <p className="text-slate-300 text-lg mb-8">
+            <h2 className="text-3xl font-bold mb-4 text-white">Complete Outdoor Advertising Suite</h2>
+            <p className="text-blue-100 text-lg mb-8">
               From creative graphic design and wide-format flex printing to structural mounting and round-the-clock maintenance, we provide end-to-end execution.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -149,8 +149,8 @@ export default function AboutPage() {
                 { name: "High-Resolution Flex Printing", href: "/services/flex-printing-meerut" },
                 { name: "Digital OOH & LED Screens", href: "/services/led-display-advertising-meerut" },
               ].map((svc, i) => (
-                <Link key={i} href={svc.href} className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 font-semibold transition">
-                  <span>→</span>
+                <Link key={i} href={svc.href} className="flex items-center gap-2 text-white hover:text-[var(--yellow)] font-semibold transition">
+                  <span className="text-[var(--yellow)]">→</span>
                   <span>{svc.name}</span>
                 </Link>
               ))}
@@ -160,4 +160,4 @@ export default function AboutPage() {
       </div>
     </main>
   );
-}
+}

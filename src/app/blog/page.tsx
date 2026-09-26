@@ -42,13 +42,13 @@ export default function BlogPage() {
         ]}
       />
       <div className="max-w-3xl">
-        <p className="font-semibold uppercase tracking-[0.18em] text-blue-700">World Media NCR journal</p>
-        <h1 className="mt-3 text-4xl font-bold text-slate-900 md:text-5xl">Advertising Blog &amp; Insights</h1>
+        <p className="font-semibold uppercase tracking-[0.18em] text-[#0A173E]">World Media NCR journal</p>
+        <h1 className="mt-3 text-4xl font-bold text-[#0A173E] md:text-5xl">Advertising Blog &amp; Insights</h1>
         <p className="mt-4 mb-12 text-xl leading-8 text-slate-600">Expert tips, guides, and insights for outdoor advertising in Meerut and NCR.</p>
       </div>
       <div className="grid gap-7 md:grid-cols-2">
         {posts.map((post) => (
-          <article key={post.slug} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+          <article key={post.slug} className="overflow-hidden rounded-2xl border border-[#D8EAFD] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <Link href={`/blog/${post.slug}`} className="block">
               <div className="relative aspect-video">
                 <Image
@@ -62,16 +62,16 @@ export default function BlogPage() {
             </Link>
             <div className="p-6">
               <Link href={`/blog/${post.slug}`}>
-                <h2 className="text-2xl font-semibold text-slate-900 transition hover:text-blue-700">{post.title}</h2>
+                <h2 className="text-2xl font-semibold text-[#0A173E] transition hover:text-[#0A173E]/80">{post.title}</h2>
               </Link>
               <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-slate-500">
                 <span>{post.date}</span>
                 <span>•</span>
                 <span>{post.readTime}</span>
-                <span className="rounded-full bg-blue-100 px-2.5 py-1 font-medium text-blue-800">{post.category}</span>
+                <span className="rounded-full bg-[#FEF9C3] border border-[#FDE047] px-2.5 py-1 text-xs font-semibold text-[#854D0E]">{post.category}</span>
               </div>
               <p className="mt-4 text-slate-700">{post.excerpt}</p>
-              <Link href={`/blog/${post.slug}`} className="mt-5 inline-block font-semibold text-blue-700 hover:underline">
+              <Link href={`/blog/${post.slug}`} className="mt-5 inline-block font-semibold text-[#0A173E] hover:underline">
                 Read article →
               </Link>
             </div>

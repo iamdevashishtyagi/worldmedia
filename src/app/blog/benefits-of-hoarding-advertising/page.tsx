@@ -48,9 +48,9 @@ export default function BenefitsHoardingBlog() {
       {/* Breadcrumb */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
-          <li><Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link></li>
+          <li><Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link></li>
           <li><span className="mx-2 text-gray-400">/</span></li>
-          <li><Link href="/blog" className="text-gray-700 hover:text-blue-600">Blog</Link></li>
+          <li><Link href="/blog" className="text-gray-700 hover:text-[#0A173E]">Blog</Link></li>
           <li><span className="mx-2 text-gray-400">/</span></li>
           <li className="text-gray-500">Benefits of Hoarding Advertising</li>
         </ol>
@@ -58,13 +58,13 @@ export default function BenefitsHoardingBlog() {
 
       {/* Header */}
       <header className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Top 10 Benefits of Hoarding Advertising for Businesses in Meerut</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#0A173E]">Top 10 Benefits of Hoarding Advertising for Businesses in Meerut</h1>
         <div className="flex items-center text-gray-500 text-sm mb-6">
           <span>Published: March 15, 2024</span>
           <span className="mx-2">•</span>
           <span>8 min read</span>
           <span className="mx-2">•</span>
-          <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Hoarding Advertising</span>
+          <span className="bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] px-2.5 py-1 rounded-full font-semibold text-xs">Hoarding Advertising</span>
         </div>
       </header>
 
@@ -148,12 +148,12 @@ export default function BenefitsHoardingBlog() {
         <h2>Conclusion</h2>
         <p>Hoarding advertising remains one of the most powerful tools in a marketer&apos;s arsenal. For businesses in Meerut, Muzaffarnagar, Shamli, and NCR, it offers unparalleled visibility, cost-effectiveness, and local reach. Whether you&apos;re launching a new product, promoting a sale, or building brand awareness, hoardings deliver results.</p>
 
-        <div className="bg-blue-50 p-6 rounded-lg my-8">
-          <h3 className="text-2xl font-bold mb-3">Ready to Start Your Hoarding Campaign?</h3>
-          <p className="mb-4">World Media NCR offers premium hoarding locations across Meerut and NCR. Contact us for a free consultation and quote.</p>
+        <div className="bg-[#0A173E] text-white p-8 rounded-2xl my-8 border border-[#182859]">
+          <h3 className="text-2xl font-bold mb-3 text-white">Ready to Start Your Hoarding Campaign?</h3>
+          <p className="mb-6 text-slate-300">World Media NCR offers premium hoarding locations across Meerut and NCR. Contact us for a free consultation and quote.</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700">Get Free Quote</Link>
-            <Link href="/services/hoarding-advertising-meerut" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50">Learn More</Link>
+            <Link href="/contact" className="bg-[var(--yellow)] text-[#0A173E] px-6 py-3 rounded-lg text-center font-bold hover:brightness-105 transition">Get Free Quote</Link>
+            <Link href="/services/hoarding-advertising-meerut" className="bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg text-center font-semibold hover:bg-white/20 transition">Learn More</Link>
           </div>
         </div>
 

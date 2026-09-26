@@ -75,12 +75,12 @@ export default function SaharanpurLocationPage() {
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link>
           </li>
           <li>
             <div className="flex items-center">
               <span className="mx-2 text-gray-400">/</span>
-              <Link href="/locations" className="text-gray-700 hover:text-blue-600">Locations</Link>
+              <Link href="/locations" className="text-gray-700 hover:text-[#0A173E]">Locations</Link>
             </div>
           </li>
           <li aria-current="page">
@@ -93,40 +93,43 @@ export default function SaharanpurLocationPage() {
       </nav>
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            Northern UP Corridor
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
             Advertising Agency in Saharanpur – World Media NCR
           </h1>
           <p className="text-lg text-gray-700 mb-4">
-            <strong>World Media NCR</strong> is your trusted <strong>advertising agency in Saharanpur</strong>, providing comprehensive outdoor advertising solutions across the district. We help Saharanpur businesses, brands, and political candidates reach their target audience through strategic hoarding and wall painting placements.
+            <strong className="text-[#0A173E]">World Media NCR</strong> is your trusted <strong className="text-[#0A173E]">outdoor advertising agency in Saharanpur</strong>, providing comprehensive outdoor advertising solutions across the district. We help local enterprises, regional brands, and institutions capture consumer attention through strategic hoarding and wall painting placements.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            From <strong>hoarding advertising on Delhi Road</strong> to <strong>digital wall painting in Deoband</strong>, our team knows the Saharanpur market thoroughly. We have the largest network of premium advertising locations across the city and all rural areas.
+            From high-traffic <strong className="text-[#0A173E]">hoarding advertising on Delhi Road & Ambala Road</strong> to <strong className="text-[#0A173E]">digital wall painting in Deoband and Chhutmalpur</strong>, our network guarantees dominant visibility across the Saharanpur corridor.
           </p>
-          <div className="bg-amber-50 p-6 rounded-lg mt-4">
-            <h2 className="text-xl font-bold mb-3">Why Saharanpur Businesses Choose Us?</h2>
-            <ul className="space-y-2">
+          <div className="bg-[#F0F8FF] border border-[#D8EAFD] p-6 rounded-2xl mt-4">
+            <h2 className="text-xl font-bold mb-3 text-[#0A173E]">Why Saharanpur Businesses Choose Us?</h2>
+            <ul className="space-y-2.5">
               <li className="flex items-start gap-2">
-                <span className="text-amber-600 font-bold">✓</span>
-                <span><strong>10+ years</strong> serving Saharanpur and surrounding areas</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">10+ years</strong> driving successful outdoor campaigns across Saharanpur district</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-amber-600 font-bold">✓</span>
-                <span><strong>Premium locations</strong> on all major roads and chowks</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Prime monopoly locations</strong> on Delhi-Dehradun and Ambala highway routes</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-amber-600 font-bold">✓</span>
-                <span><strong>100+ projects</strong> completed for Saharanpur clients</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">100+ projects</strong> delivered for retail, industrial, and institutional clients</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-amber-600 font-bold">✓</span>
-                <span><strong>End-to-end service</strong> – design, printing, installation</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Full lifecycle service</strong> – permissions, high-grade printing, installation</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+        <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-[#D8EAFD] bg-gray-100 flex items-center justify-center">
           <Image 
             src="/images/portfolio/Saharanpur Chhutmalpur.webp" 
             alt="Advertising agency in Saharanpur - World Media NCR hoarding at Chhutmalpur"
@@ -139,49 +142,49 @@ export default function SaharanpurLocationPage() {
 
       {/* Services in Saharanpur */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Advertising Services in Saharanpur</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Advertising Services in Saharanpur</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/services/hoarding-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Hoarding Advertising Saharanpur</h3>
-            <p className="text-gray-600 mb-3">Premium hoarding placements at Delhi Road, Ambala Road, Deoband Road, and major chowks. Sizes from 10x10 to 40x20 ft.</p>
-            <span className="text-amber-600 font-medium">Learn more →</span>
+          <Link href="/services/hoarding-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Hoarding Advertising Saharanpur</h3>
+            <p className="text-gray-600 mb-3 text-sm">Premium hoarding placements at Delhi Road, Ambala Road, Deoband Road, and major chowks. Sizes from 10x10 to 40x20 ft.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/digital-wall-painting-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Digital Wall Painting Saharanpur</h3>
-            <p className="text-gray-600 mb-3">Cost-effective wall advertisements at high-traffic walls across Saharanpur city and all rural areas. 3-5 year durability.</p>
-            <span className="text-amber-600 font-medium">Learn more →</span>
+          <Link href="/services/digital-wall-painting-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Digital Wall Painting Saharanpur</h3>
+            <p className="text-gray-600 mb-3 text-sm">Cost-effective wall advertisements at high-traffic walls across Saharanpur city and all rural areas. 3-5 year durability.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/billboard-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Billboard Advertising Saharanpur</h3>
-            <p className="text-gray-600 mb-3">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
-            <span className="text-amber-600 font-medium">Learn more →</span>
+          <Link href="/services/billboard-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Billboard Advertising Saharanpur</h3>
+            <p className="text-gray-600 mb-3 text-sm">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/vehicle-branding-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Vehicle Branding Saharanpur</h3>
-            <p className="text-gray-600 mb-3">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, and commercial vehicles.</p>
-            <span className="text-amber-600 font-medium">Learn more →</span>
+          <Link href="/services/vehicle-branding-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Vehicle Branding Saharanpur</h3>
+            <p className="text-gray-600 mb-3 text-sm">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, and commercial vehicles.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/flex-printing-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Flex Printing Saharanpur</h3>
-            <p className="text-gray-600 mb-3">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround.</p>
-            <span className="text-amber-600 font-medium">Learn more →</span>
+          <Link href="/services/flex-printing-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Flex Printing Saharanpur</h3>
+            <p className="text-gray-600 mb-3 text-sm">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/political-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Political Advertising Saharanpur</h3>
-            <p className="text-gray-600 mb-3">Complete campaign solutions for Saharanpur, Deoband, Gangoh, and Nakur constituencies – hoardings, wall paintings, banners.</p>
-            <span className="text-amber-600 font-medium">Learn more →</span>
+          <Link href="/services/political-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Political Advertising Saharanpur</h3>
+            <p className="text-gray-600 mb-3 text-sm">Complete campaign solutions for Saharanpur, Deoband, Gangoh, and Nakur constituencies – hoardings, wall paintings, banners.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
         </div>
       </section>
 
       {/* Prime Advertising Locations */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Prime Advertising Locations in Saharanpur</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Prime Advertising Locations in Saharanpur</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { name: "Delhi Road", traffic: "80,000+ daily commuters", desc: "Main highway connecting to Delhi. Premium hoarding locations." },
@@ -197,9 +200,9 @@ export default function SaharanpurLocationPage() {
             { name: "Chhutmalpur", traffic: "25,000+ daily", desc: "Important junction on Delhi-Dehradun highway." },
             { name: "Sarsawa", traffic: "20,000+ daily", desc: "Near industrial area and cantonment." },
           ].map((location, i) => (
-            <div key={i} className="border rounded-lg p-5 shadow-sm bg-white">
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">{location.name}</h3>
-              <p className="text-amber-600 font-medium text-sm mb-2">{location.traffic}</p>
+            <div key={i} className="border border-[#D8EAFD] rounded-xl p-5 shadow-sm bg-white hover:border-[#0A173E] transition-colors">
+              <h3 className="text-lg font-bold mb-1 text-[#0A173E]">{location.name}</h3>
+              <p className="text-[#0A173E] font-semibold text-sm mb-2">{location.traffic}</p>
               <p className="text-gray-600 text-sm">{location.desc}</p>
             </div>
           ))}
@@ -207,39 +210,39 @@ export default function SaharanpurLocationPage() {
       </section>
 
       {/* About Saharanpur Market */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Saharanpur</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-3xl font-extrabold mb-6 text-[#0A173E]">About Advertising in Saharanpur</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 mb-4">
-            Saharanpur is a major city in northern Uttar Pradesh, known for its wood carving industry, agricultural markets, and strategic location on the Delhi-Dehradun highway. It serves as a gateway to Uttarakhand and has significant commercial importance.
+            Saharanpur is a major commercial center in northern Uttar Pradesh, known for its world-famous wood carving industry, thriving agricultural markets, and strategic position on the Delhi-Dehradun highway. It serves as the commercial gateway to Uttarakhand and Himachal Pradesh.
           </p>
           <p className="text-gray-700 mb-4">
-            <strong>Key facts about Saharanpur for advertisers:</strong>
+            <strong className="text-[#0A173E]">Key facts about Saharanpur for advertisers:</strong>
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700">
             <li><strong>Population:</strong> 700,000+ (city) with district population over 3.5 million</li>
-            <li><strong>Industrial hub:</strong> Wood carving, paper, sugar, and manufacturing industries</li>
-            <li><strong>Commercial importance:</strong> Major agricultural market for the region</li>
-            <li><strong>Connectivity:</strong> NH-709B and NH-344 connect to Delhi, Dehradun, Ambala</li>
-            <li><strong>Assembly constituencies:</strong> Saharanpur, Deoband, Gangoh, Nakur</li>
-            <li><strong>Tourist traffic:</strong> Gateway to Haridwar, Rishikesh, and Dehradun</li>
+            <li><strong>Industrial hub:</strong> Wood carving exports, paper mills, sugar, and manufacturing clusters</li>
+            <li><strong>Commercial importance:</strong> Major agricultural mandi for regional produce</li>
+            <li><strong>Connectivity:</strong> NH-709B and NH-344 connect to Delhi, Dehradun, and Ambala</li>
+            <li><strong>Assembly constituencies:</strong> Saharanpur, Deoband, Gangoh, Nakur, Behat</li>
+            <li><strong>Transit traffic:</strong> Heavy tourist corridor to Haridwar, Rishikesh, and Dehradun</li>
           </ul>
           <p className="text-gray-700">
-            Outdoor advertising in Saharanpur reaches a diverse audience – from business travelers and tourists to local consumers and rural populations. Highway hoardings on Delhi Road and Ambala Road offer exceptional visibility.
+            Outdoor advertising in Saharanpur reaches a diverse, high-value demographic – from business owners and tourists to affluent agricultural consumers. Highway hoardings on Delhi Road and Ambala Road offer non-stop visibility.
           </p>
         </div>
       </section>
 
       {/* Assembly Constituencies */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Saharanpur District Assembly Constituencies</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Saharanpur District Assembly Constituencies</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
             "Saharanpur", "Deoband", "Gangoh", "Nakur",
             "Rampur", "Behat", "Sarsawa", "Muzaffarabad",
             "Herbertpur", "Jhabrera", "Chhutmalpur", "Bhagwanpur"
           ].map((constituency, i) => (
-            <div key={i} className="bg-amber-50 p-3 rounded-lg text-center font-medium text-gray-800 border border-amber-200">
+            <div key={i} className="bg-[#F0F8FF] p-3 rounded-xl text-center font-bold text-[#0A173E] border border-[#D8EAFD]">
               {constituency}
             </div>
           ))}
@@ -249,7 +252,7 @@ export default function SaharanpurLocationPage() {
 
       {/* Gallery */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Work in Saharanpur</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Work in Saharanpur</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { name: "Saharanpur Chhutmalpur", file: "Saharanpur Chhutmalpur.webp" },
@@ -261,21 +264,21 @@ export default function SaharanpurLocationPage() {
             { name: "Shamli Alum Saharanpur", file: "Shamli Alum Fc Saharanpur 20x10.webp" },
             { name: "Shamli Sai Mandir Saharanpur", file: "Shamli Sai Mandir Fc Saharanpur 20x10.webp" },
           ].map((project, i) => (
-            <div key={i} className="relative h-40 rounded-lg overflow-hidden group">
+            <div key={i} className="relative h-40 rounded-xl overflow-hidden group border border-[#D8EAFD]">
               <Image 
                 src={`/images/portfolio/${project.file}`}
                 alt={`Advertising project at ${project.name} in Saharanpur by World Media NCR`}
                 fill
                 className="object-cover group-hover:scale-110 transition duration-300"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-end">
-                <p className="text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition">{project.name}</p>
+              <div className="absolute inset-0 bg-[#0A173E]/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                <p className="text-white font-bold p-3 text-xs">{project.name}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-6">
-          <Link href="/gallery" className="text-amber-600 font-semibold hover:underline">
+          <Link href="/gallery" className="text-[#0A173E] font-bold hover:underline">
             View Full Portfolio →
           </Link>
         </div>
@@ -283,22 +286,22 @@ export default function SaharanpurLocationPage() {
 
       {/* Testimonials */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">What Saharanpur Clients Say</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">What Saharanpur Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;We needed hoardings on the Delhi-Dehradun highway for our resort. World Media NCR got us prime locations at Chhutmalpur and Najibabad. Excellent visibility and professional service.&quot;</p>
-            <p className="font-semibold text-gray-900">– Resort Owner, Chhutmalpur</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;We needed hoardings on the Delhi-Dehradun highway for our resort. World Media NCR secured prime locations at Chhutmalpur and Najibabad with superb visibility.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Highway Hospitality Group, Saharanpur</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;For our educational campaign across Saharanpur district, they provided excellent wall painting coverage in rural areas. Very satisfied with their work.&quot;</p>
-            <p className="font-semibold text-gray-900">– NGO Director, Saharanpur</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;For our regional educational campaign across Saharanpur district, they provided excellent rural wall painting coverage with speedy execution.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Educational Institute Director, Saharanpur</p>
           </div>
         </div>
       </section>
 
       {/* Rural Coverage */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Rural Coverage in Saharanpur District</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Rural Coverage in Saharanpur District</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             "Deoband", "Gangoh", "Nakur", "Behat",
@@ -306,7 +309,7 @@ export default function SaharanpurLocationPage() {
             "Herbertpur", "Bhagwanpur", "Muzaffarabad", "Badshahibagh",
             "Titron", "Punwarka", "Nanauta", "Balidhar"
           ].map((village, i) => (
-            <div key={i} className="bg-gray-100 p-2 rounded-lg text-center text-sm">
+            <div key={i} className="bg-[#F0F8FF] border border-[#D8EAFD] p-2.5 rounded-lg text-center text-sm font-medium text-gray-800">
               {village}
             </div>
           ))}
@@ -316,28 +319,28 @@ export default function SaharanpurLocationPage() {
 
       {/* FAQ Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Frequently Asked Questions</h2>
         <div className="space-y-6">
           {saharanpurFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
+              <p className="text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Nearby Locations */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Our Nearby Service Locations</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-2xl font-extrabold mb-6 text-[#0A173E]">Our Nearby Service Locations</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link href="/locations/meerut" className="text-amber-600 hover:underline">Meerut</Link>
-          <Link href="/locations/muzaffarnagar" className="text-amber-600 hover:underline">Muzaffarnagar</Link>
-          <Link href="/locations/shamli" className="text-amber-600 hover:underline">Shamli</Link>
-          <Link href="/locations/baghpat" className="text-amber-600 hover:underline">Baghpat</Link>
-          <Link href="/locations/delhi-ncr" className="text-amber-600 hover:underline">Delhi NCR</Link>
-          <Link href="/locations/hapur" className="text-amber-600 hover:underline">Hapur</Link>
-          <Link href="/locations/delhi" className="text-amber-600 hover:underline">Delhi</Link>
+          <Link href="/locations/meerut" className="text-[#0A173E] font-semibold hover:underline">Meerut</Link>
+          <Link href="/locations/muzaffarnagar" className="text-[#0A173E] font-semibold hover:underline">Muzaffarnagar</Link>
+          <Link href="/locations/shamli" className="text-[#0A173E] font-semibold hover:underline">Shamli</Link>
+          <Link href="/locations/baghpat" className="text-[#0A173E] font-semibold hover:underline">Baghpat</Link>
+          <Link href="/locations/delhi-ncr" className="text-[#0A173E] font-semibold hover:underline">Delhi NCR</Link>
+          <Link href="/locations/hapur" className="text-[#0A173E] font-semibold hover:underline">Hapur</Link>
+          <Link href="/locations/delhi" className="text-[#0A173E] font-semibold hover:underline">Delhi</Link>
         </div>
       </section>
     </main>

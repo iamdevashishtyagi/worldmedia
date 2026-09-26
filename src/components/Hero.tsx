@@ -179,7 +179,7 @@ export default function Hero() {
           {/* Live site caption tag */}
           <div className="mt-14 sm:mt-16 inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm border border-[#D8EAFD] px-3.5 py-1 rounded-full text-xs font-semibold text-slate-700 shadow-xs z-10">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Live Site · Delhi-Meerut Expressway Corridor</span>
+            <span>Prime Commercial Hub · High-Impact Urban LED Display</span>
           </div>
         </div>
       </div>

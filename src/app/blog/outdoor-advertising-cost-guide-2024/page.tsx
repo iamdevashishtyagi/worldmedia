@@ -36,17 +36,17 @@ export default function CampaignPlanningGuide() {
 
       <nav className="mb-8 flex text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center gap-2 text-slate-600">
-          <li><Link href="/" className="hover:text-blue-600">Home</Link></li>
+          <li><Link href="/" className="hover:text-[#0A173E]">Home</Link></li>
           <li>/</li>
-          <li><Link href="/blog" className="hover:text-blue-600">Blog</Link></li>
+          <li><Link href="/blog" className="hover:text-[#0A173E]">Blog</Link></li>
           <li>/</li>
           <li className="text-slate-500">Campaign planning guide</li>
         </ol>
       </nav>
 
       <header className="mb-8">
-        <p className="mb-3 font-semibold uppercase tracking-[0.16em] text-blue-700">Campaign planning</p>
-        <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">How to Plan an Outdoor Advertising Campaign</h1>
+        <p className="mb-3 font-semibold uppercase tracking-[0.16em] text-[#0A173E]">Campaign planning</p>
+        <h1 className="text-4xl font-bold text-[#0A173E] md:text-5xl">How to Plan an Outdoor Advertising Campaign</h1>
         <p className="mt-4 text-slate-600">Published January 5, 2024 · 8 min read</p>
       </header>
 
@@ -90,7 +90,7 @@ export default function CampaignPlanningGuide() {
         <p>Yes. A coordinated mix of formats can reach people at different points in their daily journey when all placements share a clear message and visual identity.</p>
 
         <h3>How can I request a campaign recommendation?</h3>
-        <p><Link href="/contact" className="text-blue-600 hover:underline">Contact World Media NCR</Link> with your audience, preferred areas, timeline and campaign objective. The team can recommend suitable formats and locations.</p>
+        <p><Link href="/contact" className="text-[#0A173E] font-semibold hover:underline">Contact World Media NCR</Link> with your audience, preferred areas, timeline and campaign objective. The team can recommend suitable formats and locations.</p>
       </div>
     </article>
   );

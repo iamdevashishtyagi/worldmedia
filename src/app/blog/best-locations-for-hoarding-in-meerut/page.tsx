@@ -42,9 +42,9 @@ export default function BestLocationsBlog() {
       {/* Breadcrumb */}
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
-          <li><Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link></li>
+          <li><Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link></li>
           <li><span className="mx-2 text-gray-400">/</span></li>
-          <li><Link href="/blog" className="text-gray-700 hover:text-blue-600">Blog</Link></li>
+          <li><Link href="/blog" className="text-gray-700 hover:text-[#0A173E]">Blog</Link></li>
           <li><span className="mx-2 text-gray-400">/</span></li>
           <li className="text-gray-500">Best Hoarding Locations Meerut</li>
         </ol>
@@ -52,13 +52,13 @@ export default function BestLocationsBlog() {
 
       {/* Header */}
       <header className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Best Locations for Hoarding Advertising in Meerut: Top 20 Spots</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#0A173E]">Best Locations for Hoarding Advertising in Meerut: Top 20 Spots</h1>
         <div className="flex items-center text-gray-500 text-sm mb-6">
           <span>Published: March 10, 2024</span>
           <span className="mx-2">•</span>
           <span>10 min read</span>
           <span className="mx-2">•</span>
-          <span className="bg-green-100 text-green-800 px-2 py-1 rounded">Location Guide</span>
+          <span className="bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] px-2.5 py-1 rounded-full font-semibold text-xs">Location Guide</span>
         </div>
       </header>
 
@@ -232,12 +232,12 @@ export default function BestLocationsBlog() {
         <h2>Conclusion</h2>
         <p>Meerut offers diverse hoarding locations to suit every advertising objective. Whether you need mass reach on Delhi Road or targeted visibility in specific markets, the right location makes all the difference. At World Media NCR, we have access to premium hoarding spots across all these locations.</p>
 
-        <div className="bg-blue-50 p-6 rounded-lg my-8">
-          <h3 className="text-2xl font-bold mb-3">Need Help Choosing the Perfect Spot?</h3>
-          <p className="mb-4">Our team can show you available locations with photos, traffic data, and visibility analysis. Contact us for a free consultation.</p>
+        <div className="bg-[#0A173E] text-white p-8 rounded-2xl my-8 border border-[#182859]">
+          <h3 className="text-2xl font-bold mb-3 text-white">Need Help Choosing the Perfect Spot?</h3>
+          <p className="mb-6 text-slate-300">Our team can show you available locations with photos, traffic data, and visibility analysis. Contact us for a free consultation.</p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg text-center hover:bg-blue-700 font-semibold">Get Free Quote</Link>
-            <Link href="/services/hoarding-advertising-meerut" className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded-lg text-center hover:bg-blue-50 font-semibold">View Hoarding Services</Link>
+            <Link href="/contact" className="bg-[var(--yellow)] text-[#0A173E] px-6 py-3 rounded-lg text-center font-bold hover:brightness-105 transition">Get Free Quote</Link>
+            <Link href="/services/hoarding-advertising-meerut" className="bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg text-center font-semibold hover:bg-white/20 transition">View Hoarding Services</Link>
           </div>
         </div>
 

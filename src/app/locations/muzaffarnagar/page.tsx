@@ -75,12 +75,12 @@ export default function MuzaffarnagarLocationPage() {
       <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link href="/" className="text-gray-700 hover:text-[#0A173E]">Home</Link>
           </li>
           <li>
             <div className="flex items-center">
               <span className="mx-2 text-gray-400">/</span>
-              <Link href="/locations" className="text-gray-700 hover:text-blue-600">Locations</Link>
+              <Link href="/locations" className="text-gray-700 hover:text-[#0A173E]">Locations</Link>
             </div>
           </li>
           <li aria-current="page">
@@ -93,40 +93,43 @@ export default function MuzaffarnagarLocationPage() {
       </nav>
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            Western UP Network
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
             Advertising Agency in Muzaffarnagar – World Media NCR
           </h1>
           <p className="text-lg text-gray-700 mb-4">
-            <strong>World Media NCR</strong> is your trusted <strong>advertising agency in Muzaffarnagar</strong>, providing comprehensive outdoor advertising solutions across the district. We help Muzaffarnagar businesses reach their target audience through strategic hoarding, billboard, and wall painting placements.
+            <strong className="text-[#0A173E]">World Media NCR</strong> is your trusted <strong className="text-[#0A173E]">outdoor advertising agency in Muzaffarnagar</strong>, providing comprehensive outdoor advertising solutions across the district. We help local and national brands achieve maximum reach through strategic hoarding, highway billboard, and digital wall painting placements.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            From <strong>hoarding advertising on Meerut Road</strong> to <strong>digital wall painting in New Mandi</strong>, our team knows the Muzaffarnagar market inside out. We have the largest network of premium advertising locations across the city and surrounding areas.
+            From high-visibility <strong className="text-[#0A173E]">hoardings on Meerut Road & Roorkee Road</strong> to <strong className="text-[#0A173E]">wall painting in New Mandi and rural tehsils</strong>, our network delivers superior local visibility and ROI.
           </p>
-          <div className="bg-green-50 p-6 rounded-lg mt-4">
-            <h2 className="text-xl font-bold mb-3">Why Muzaffarnagar Businesses Choose Us?</h2>
-            <ul className="space-y-2">
+          <div className="bg-[#F0F8FF] border border-[#D8EAFD] p-6 rounded-2xl mt-4">
+            <h2 className="text-xl font-bold mb-3 text-[#0A173E]">Why Muzaffarnagar Businesses Choose Us?</h2>
+            <ul className="space-y-2.5">
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✓</span>
-                <span><strong>10+ years</strong> serving Muzaffarnagar businesses</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">10+ years</strong> dominating the outdoor advertising space across Muzaffarnagar</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✓</span>
-                <span><strong>Premium locations</strong> on all major roads and chowks</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">Prime monopoly sites</strong> on Meerut Road, Roorkee Road, and Shamli bypass</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✓</span>
-                <span><strong>100+ projects</strong> completed for Muzaffarnagar clients</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">100+ campaigns</strong> successfully launched across commercial & FMCG sectors</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✓</span>
-                <span><strong>End-to-end service</strong> – design, printing, installation</span>
+                <span className="text-[#0A173E] font-bold">✓</span>
+                <span><strong className="text-[#0A173E]">End-to-end delivery</strong> – permissions, design printing, high-strength mounting</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+        <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-[#D8EAFD] bg-gray-100 flex items-center justify-center">
           <Image 
             src="/images/portfolio/Muzaffarnagar Meerut Road.webp" 
             alt="Advertising agency in Muzaffarnagar - World Media NCR hoarding on Meerut Road"
@@ -139,49 +142,49 @@ export default function MuzaffarnagarLocationPage() {
 
       {/* Services in Muzaffarnagar */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Advertising Services in Muzaffarnagar</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Advertising Services in Muzaffarnagar</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/services/hoarding-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Hoarding Advertising Muzaffarnagar</h3>
-            <p className="text-gray-600 mb-3">Premium hoarding placements at Meerut Road, Roorkee Road, Shamli Road, and major chowks. Sizes from 10x10 to 40x20 ft.</p>
-            <span className="text-green-600 font-medium">Learn more →</span>
+          <Link href="/services/hoarding-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Hoarding Advertising Muzaffarnagar</h3>
+            <p className="text-gray-600 mb-3 text-sm">Premium hoarding placements at Meerut Road, Roorkee Road, Shamli Road, and major chowks. Sizes from 10x10 to 40x20 ft.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/digital-wall-painting-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Digital Wall Painting Muzaffarnagar</h3>
-            <p className="text-gray-600 mb-3">Cost-effective wall advertisements at high-traffic walls across Muzaffarnagar city and rural areas. 3-5 year durability.</p>
-            <span className="text-green-600 font-medium">Learn more →</span>
+          <Link href="/services/digital-wall-painting-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Digital Wall Painting Muzaffarnagar</h3>
+            <p className="text-gray-600 mb-3 text-sm">Cost-effective wall advertisements at high-traffic walls across Muzaffarnagar city and rural areas. 3-5 year durability.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/billboard-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Billboard Advertising Muzaffarnagar</h3>
-            <p className="text-gray-600 mb-3">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
-            <span className="text-green-600 font-medium">Learn more →</span>
+          <Link href="/services/billboard-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Billboard Advertising Muzaffarnagar</h3>
+            <p className="text-gray-600 mb-3 text-sm">Large-format billboards on highways and main roads for maximum visibility. Multiple size options available.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/vehicle-branding-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Vehicle Branding Muzaffarnagar</h3>
-            <p className="text-gray-600 mb-3">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, buses, and commercial vehicles.</p>
-            <span className="text-green-600 font-medium">Learn more →</span>
+          <Link href="/services/vehicle-branding-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Vehicle Branding Muzaffarnagar</h3>
+            <p className="text-gray-600 mb-3 text-sm">Turn your fleet into moving billboards. Full and partial wraps for cars, trucks, buses, and commercial vehicles.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/flex-printing-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Flex Printing Muzaffarnagar</h3>
-            <p className="text-gray-600 mb-3">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround, competitive rates.</p>
-            <span className="text-green-600 font-medium">Learn more →</span>
+          <Link href="/services/flex-printing-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Flex Printing Muzaffarnagar</h3>
+            <p className="text-gray-600 mb-3 text-sm">High-quality flex printing for banners, hoardings, posters, and event materials. Fast turnaround, competitive rates.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
           
-          <Link href="/services/political-advertising-meerut" className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition block">
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Political Advertising Muzaffarnagar</h3>
-            <p className="text-gray-600 mb-3">Complete campaign solutions for elections – hoardings, wall paintings, banners, flags, and more.</p>
-            <span className="text-green-600 font-medium">Learn more →</span>
+          <Link href="/services/political-advertising-meerut" className="bg-[#F0F8FF] border border-[#D8EAFD] rounded-2xl p-6 shadow-sm hover:border-[#0A173E] hover:shadow-lg transition block">
+            <h3 className="text-xl font-bold mb-2 text-[#0A173E]">Political Advertising Muzaffarnagar</h3>
+            <p className="text-gray-600 mb-3 text-sm">Complete campaign solutions for elections – hoardings, wall paintings, banners, flags, and more.</p>
+            <span className="text-[#0A173E] font-bold text-sm">Learn more →</span>
           </Link>
         </div>
       </section>
 
       {/* Prime Advertising Locations */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Prime Advertising Locations in Muzaffarnagar</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Prime Advertising Locations in Muzaffarnagar</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { name: "Meerut Road", traffic: "70,000+ daily commuters", desc: "Main highway connecting to Meerut. Premium hoarding locations." },
@@ -197,9 +200,9 @@ export default function MuzaffarnagarLocationPage() {
             { name: "Bus Stand Area", traffic: "High footfall", desc: "Major transit point with daily commuters." },
             { name: "University Road", traffic: "25,000+ daily", desc: "Near educational institutions." },
           ].map((location, i) => (
-            <div key={i} className="border rounded-lg p-5 shadow-sm bg-white">
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">{location.name}</h3>
-              <p className="text-green-600 font-medium text-sm mb-2">{location.traffic}</p>
+            <div key={i} className="border border-[#D8EAFD] rounded-xl p-5 shadow-sm bg-white hover:border-[#0A173E] transition-colors">
+              <h3 className="text-lg font-bold mb-1 text-[#0A173E]">{location.name}</h3>
+              <p className="text-[#0A173E] font-semibold text-sm mb-2">{location.traffic}</p>
               <p className="text-gray-600 text-sm">{location.desc}</p>
             </div>
           ))}
@@ -207,38 +210,38 @@ export default function MuzaffarnagarLocationPage() {
       </section>
 
       {/* About Muzaffarnagar Market */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">About Advertising in Muzaffarnagar</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-3xl font-extrabold mb-6 text-[#0A173E]">About Advertising in Muzaffarnagar</h2>
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 mb-4">
-            Muzaffarnagar is a major city in western Uttar Pradesh with significant agricultural, industrial, and commercial importance. Its strategic location on the Delhi-Dehradun highway makes it a prime market for outdoor advertising.
+            Muzaffarnagar is a major commercial center in western Uttar Pradesh with significant agricultural, industrial, and trading importance. Its strategic location on the Delhi-Dehradun corridor makes it a high-return market for outdoor media.
           </p>
           <p className="text-gray-700 mb-4">
-            <strong>Key facts about Muzaffarnagar for advertisers:</strong>
+            <strong className="text-[#0A173E]">Key facts about Muzaffarnagar for advertisers:</strong>
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700">
             <li><strong>Population:</strong> 500,000+ (city) with district population over 4 million</li>
-            <li><strong>Commercial hub:</strong> New Mandi is one of the largest agricultural markets in UP</li>
-            <li><strong>Industrial areas:</strong> Sugar, steel, paper, and manufacturing industries</li>
-            <li><strong>Educational institutions:</strong> Multiple colleges and universities</li>
+            <li><strong>Commercial hub:</strong> New Mandi is one of the largest agricultural trading markets in Asia</li>
+            <li><strong>Industrial areas:</strong> Paper mills, steel rolling, sugar manufacturing complexes</li>
+            <li><strong>Educational institutions:</strong> Key medical, engineering, and arts colleges</li>
             <li><strong>Connectivity:</strong> NH-58 connects to Delhi, Meerut, Haridwar, and Dehradun</li>
-            <li><strong>Rural reach:</strong> Surrounded by hundreds of villages with significant voter population</li>
+            <li><strong>Rural reach:</strong> Surrounded by hundreds of prosperous agrarian villages</li>
           </ul>
           <p className="text-gray-700">
-            Outdoor advertising in Muzaffarnagar reaches a diverse audience – from business owners and professionals to students and rural consumers. Strategic hoarding placements on highways and wall paintings in rural areas offer excellent ROI.
+            Outdoor advertising in Muzaffarnagar reaches a diverse audience – from industrial owners and traders to students and high-purchasing rural consumers.
           </p>
         </div>
       </section>
 
       {/* Assembly Constituencies */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Muzaffarnagar Assembly Constituencies We Serve</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Muzaffarnagar Assembly Constituencies We Serve</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
             "Muzaffarnagar", "Budhana", "Charthawal", "Khatauli", "Meerapur",
             "Shamli", "Kairana", "Thana Bhawan", "Nakur", "Gangoh"
           ].map((constituency, i) => (
-            <div key={i} className="bg-green-50 p-3 rounded-lg text-center font-medium text-gray-800 border border-green-200">
+            <div key={i} className="bg-[#F0F8FF] p-3 rounded-xl text-center font-bold text-[#0A173E] border border-[#D8EAFD]">
               {constituency}
             </div>
           ))}
@@ -248,7 +251,7 @@ export default function MuzaffarnagarLocationPage() {
 
       {/* Gallery */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Work in Muzaffarnagar</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Our Work in Muzaffarnagar</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { name: "Muzaffarnagar Meerut Road", file: "Muzaffarnagar Meerut Road.webp" },
@@ -260,21 +263,21 @@ export default function MuzaffarnagarLocationPage() {
             { name: "Chutmalpur", file: "Chutmalpur Facing Rorkee (Delhi Rorkee Dehradun Highway).webp" },
             { name: "Mirapur Bypass", file: "Mirapur Bypass.webp" },
           ].map((project, i) => (
-            <div key={i} className="relative h-40 rounded-lg overflow-hidden group">
+            <div key={i} className="relative h-40 rounded-xl overflow-hidden group border border-[#D8EAFD]">
               <Image 
                 src={`/images/portfolio/${project.file}`}
                 alt={`Advertising project at ${project.name} in Muzaffarnagar by World Media NCR`}
                 fill
                 className="object-cover group-hover:scale-110 transition duration-300"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-end">
-                <p className="text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition">{project.name}</p>
+              <div className="absolute inset-0 bg-[#0A173E]/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                <p className="text-white font-bold p-3 text-xs">{project.name}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-6">
-          <Link href="/gallery" className="text-green-600 font-semibold hover:underline">
+          <Link href="/gallery" className="text-[#0A173E] font-bold hover:underline">
             View Full Portfolio →
           </Link>
         </div>
@@ -282,43 +285,43 @@ export default function MuzaffarnagarLocationPage() {
 
       {/* Testimonials */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">What Muzaffarnagar Clients Say</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">What Muzaffarnagar Clients Say</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;World Media NCR has been our advertising partner for multiple election campaigns in Muzaffarnagar. Their hoarding locations are strategic and their team delivers on time.&quot;</p>
-            <p className="font-semibold text-gray-900">– Political Leader, Muzaffarnagar</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;World Media NCR has been our advertising partner for multiple campaigns in Muzaffarnagar. Their hoarding locations on Meerut Road gave us massive brand visibility.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Prominent Retail Enterprise, Muzaffarnagar</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <p className="text-gray-700 italic mb-4">&quot;We needed wall painting across rural Muzaffarnagar for our product launch. They covered 50+ villages efficiently and the quality was excellent.&quot;</p>
-            <p className="font-semibold text-gray-900">– FMCG Distributor, Muzaffarnagar</p>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+            <p className="text-gray-700 italic mb-4">&quot;We needed wall painting across rural Muzaffarnagar for our distributor launch. They covered 50+ tehsils efficiently with flawless quality.&quot;</p>
+            <p className="font-bold text-[#0A173E]">– Regional Agro-Chemicals Distributor, Muzaffarnagar</p>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-extrabold mb-8 text-[#0A173E]">Frequently Asked Questions</h2>
         <div className="space-y-6">
           {muzaffarnagarFaqs.map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{faq.q}</h3>
-              <p className="text-gray-700">{faq.a}</p>
+              <h3 className="text-xl font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
+              <p className="text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Nearby Locations */}
-      <section className="mb-16 bg-gray-50 p-8 rounded-2xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Our Nearby Service Locations</h2>
+      <section className="mb-16 bg-[#F0F8FF] border border-[#D8EAFD] p-8 rounded-2xl">
+        <h2 className="text-2xl font-extrabold mb-6 text-[#0A173E]">Our Nearby Service Locations</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link href="/locations/meerut" className="text-green-600 hover:underline">Meerut</Link>
-          <Link href="/locations/shamli" className="text-green-600 hover:underline">Shamli</Link>
-          <Link href="/locations/saharanpur" className="text-green-600 hover:underline">Saharanpur</Link>
-          <Link href="/locations/baghpat" className="text-green-600 hover:underline">Baghpat</Link>
-          <Link href="/locations/delhi-ncr" className="text-green-600 hover:underline">Delhi NCR</Link>
-          <Link href="/locations/hapur" className="text-green-600 hover:underline">Hapur</Link>
-          <Link href="/locations/delhi" className="text-green-600 hover:underline">Delhi</Link>
+          <Link href="/locations/meerut" className="text-[#0A173E] font-semibold hover:underline">Meerut</Link>
+          <Link href="/locations/shamli" className="text-[#0A173E] font-semibold hover:underline">Shamli</Link>
+          <Link href="/locations/saharanpur" className="text-[#0A173E] font-semibold hover:underline">Saharanpur</Link>
+          <Link href="/locations/baghpat" className="text-[#0A173E] font-semibold hover:underline">Baghpat</Link>
+          <Link href="/locations/delhi-ncr" className="text-[#0A173E] font-semibold hover:underline">Delhi NCR</Link>
+          <Link href="/locations/hapur" className="text-[#0A173E] font-semibold hover:underline">Hapur</Link>
+          <Link href="/locations/delhi" className="text-[#0A173E] font-semibold hover:underline">Delhi</Link>
         </div>
       </section>
     </main>

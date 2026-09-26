@@ -116,7 +116,7 @@ export default function VehicleBrandingPage() {
       />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-amber-900 text-white">
+      <div className="relative bg-gradient-to-br from-[#0A173E] via-[#0D1C4D] to-[#060E27] text-white">
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/services/toWEBP/vb2.webp"
@@ -127,29 +127,29 @@ export default function VehicleBrandingPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-sm text-amber-300 mb-4">
-              <Link href="/" className="hover:text-white transition">Home</Link>
+            <div className="flex items-center gap-2 text-sm text-blue-200 mb-4">
+              <Link href="/" className="hover:text-[var(--yellow)] transition">Home</Link>
               <span>/</span>
-              <Link href="/services" className="hover:text-white transition">Services</Link>
+              <Link href="/services" className="hover:text-[var(--yellow)] transition">Services</Link>
               <span>/</span>
-              <span className="text-amber-300">Vehicle Branding</span>
+              <span className="text-[var(--yellow)] font-semibold">Vehicle Branding</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Vehicle Branding <span className="text-amber-400">in Meerut</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+              Vehicle Branding <span className="text-[var(--yellow)]">in Meerut</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
               Transform your fleet into moving billboards. Professional vinyl wraps for cars, trucks, buses, and commercial vehicles.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/contact" 
-                className="bg-amber-600 hover:bg-amber-700 px-8 py-3 rounded-lg font-semibold transition shadow-lg"
+                className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-3.5 rounded-xl font-extrabold transition shadow-lg hover:scale-105"
               >
                 Get a Quote
               </Link>
               <a 
                 href="#types" 
-                className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition"
+                className="bg-white hover:bg-[#F0F8FF] text-[#0A173E] px-8 py-3.5 rounded-xl font-bold transition shadow-md hover:scale-105"
               >
                 Explore Options
               </a>
@@ -167,9 +167,9 @@ export default function VehicleBrandingPage() {
             { number: "50K+", label: "Daily Impressions", icon: "👁️" },
             { number: "100%", label: "Paint Protection", icon: "🛡️" },
           ].map((stat, i) => (
-            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+            <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center border border-[#D8EAFD]">
               <div className="text-3xl mb-2">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-bold text-amber-600">{stat.number}</div>
+              <div className="text-2xl md:text-3xl font-extrabold text-[#0A173E]">{stat.number}</div>
               <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
             </div>
           ))}
@@ -182,8 +182,8 @@ export default function VehicleBrandingPage() {
         {/* What is Vehicle Branding */}
         <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
           <div>
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">What We Do</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">What We Do</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-6 text-[#0A173E]">
               Professional Vehicle Branding Services in Meerut
             </h2>
             <p className="text-gray-600 text-lg mb-4 leading-relaxed">
@@ -201,7 +201,7 @@ export default function VehicleBrandingPage() {
                 "Easy removal without damage"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-5 h-5 bg-amber-600 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-[#0A173E] rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -214,7 +214,7 @@ export default function VehicleBrandingPage() {
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl bg-gray-100 flex items-center justify-center">
             <Image
               src="/images/services/toWEBP/vb2.webp"
-              alt="Hoarding advertising at prime location in Meerut"
+              alt="Vehicle branding at prime location in Meerut"
               fill
               className="object-cover"
             />
@@ -224,8 +224,8 @@ export default function VehicleBrandingPage() {
         {/* Types of Vehicle Branding */}
         <div id="types" className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Our Services</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Types of Vehicle Branding We Offer
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -234,14 +234,14 @@ export default function VehicleBrandingPage() {
           </div>
           <div className="grid md:grid-cols-4 gap-6">
             {vehicleTypes.map((item, i) => (
-              <div key={i} className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div key={i} className="group bg-white border border-[#D8EAFD] rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.type}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{item.type}</h3>
                 <p className="text-gray-600 text-sm mb-3">{item.desc}</p>
                 <ul className="space-y-1">
                   {item.features.map((feature, idx) => (
                     <li key={idx} className="text-xs text-gray-500 flex items-center gap-1">
-                      <span className="text-amber-500">•</span> {feature}
+                      <span className="text-[#0A173E]">•</span> {feature}
                     </li>
                   ))}
                 </ul>
@@ -251,10 +251,10 @@ export default function VehicleBrandingPage() {
         </div>
 
         {/* Benefits Section */}
-        <div className="mb-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="mb-20 bg-[#F0F8FF] rounded-2xl p-8 md:p-12 border border-[#D8EAFD]">
           <div className="text-center mb-12">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">Advantages</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Advantages</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Why Choose Vehicle Branding?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -294,9 +294,9 @@ export default function VehicleBrandingPage() {
                 desc: "Maintain brand consistency across your entire fleet for maximum recognition." 
               }
             ].map((benefit, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition">
+              <div key={i} className="bg-white rounded-xl p-6 text-center border border-[#D8EAFD] shadow-xs hover:shadow-md transition">
                 <div className="text-3xl mb-3">{benefit.icon}</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900">{benefit.title}</h3>
+                <h3 className="text-lg font-bold mb-2 text-[#0A173E]">{benefit.title}</h3>
                 <p className="text-gray-600 text-sm">{benefit.desc}</p>
               </div>
             ))}
@@ -306,8 +306,8 @@ export default function VehicleBrandingPage() {
         {/* Our Process */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">Process</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Process</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Our Vehicle Branding Process
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -322,10 +322,10 @@ export default function VehicleBrandingPage() {
               { step: "04", title: "Installation", desc: "Professional application by trained installers" }
             ].map((item, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#0A173E] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#0A173E]">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
@@ -335,8 +335,8 @@ export default function VehicleBrandingPage() {
         {/* Industries Served */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">Industries</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Industries</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Who Uses Vehicle Branding?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -345,7 +345,7 @@ export default function VehicleBrandingPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {industries.map((industry, i) => (
-              <span key={i} className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-amber-100 hover:text-amber-700 transition cursor-default">
+              <span key={i} className="px-4 py-2 bg-[#F0F8FF] text-[#0A173E] border border-[#D8EAFD] rounded-full text-sm font-medium hover:border-[var(--yellow)] transition cursor-default">
                 {industry}
               </span>
             ))}
@@ -353,9 +353,9 @@ export default function VehicleBrandingPage() {
         </div>
 
         {/* Installation Timeline */}
-        <div className="mb-20 bg-amber-50 rounded-2xl p-8 md:p-12">
+        <div className="mb-20 bg-[#F0F8FF] rounded-2xl p-8 md:p-12 border border-[#D8EAFD]">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#0A173E]">
               Installation Timeline
             </h2>
             <p className="text-gray-600 mt-2">
@@ -369,10 +369,10 @@ export default function VehicleBrandingPage() {
               { vehicle: "Buses", time: "3-4 days", icon: "🚌" },
               { vehicle: "Fleet", time: "Custom schedule", icon: "🚐" }
             ].map((item, i) => (
-              <div key={i} className="text-center bg-white rounded-xl p-5 shadow-sm">
+              <div key={i} className="text-center bg-white rounded-xl p-5 shadow-xs border border-[#D8EAFD]">
                 <div className="text-4xl mb-2">{item.icon}</div>
-                <h3 className="font-bold text-gray-900">{item.vehicle}</h3>
-                <p className="text-amber-600 font-semibold mt-1">{item.time}</p>
+                <h3 className="font-bold text-[#0A173E]">{item.vehicle}</h3>
+                <p className="text-[#0A173E] font-extrabold mt-1">{item.time}</p>
               </div>
             ))}
           </div>
@@ -381,8 +381,8 @@ export default function VehicleBrandingPage() {
         {/* FAQ Section */}
         <div className="mb-0">
           <div className="text-center mb-12">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">FAQ</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-gray-900">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">FAQ</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-4 text-[#0A173E]">
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -391,8 +391,8 @@ export default function VehicleBrandingPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {vehicleFaqs.map((faq, i) => (
-              <div key={i} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
-                <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
+              <div key={i} className="border border-[#D8EAFD] bg-white rounded-xl p-6 hover:shadow-md transition">
+                <h3 className="text-lg font-bold mb-3 text-[#0A173E]">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>
               </div>
             ))}

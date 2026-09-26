@@ -49,28 +49,32 @@ const testimonials = [
 
 export default function ClientsSection() {
   return (
-    <section className="w-full py-10 bg-gray-50 relative overflow-hidden">
+    <section className="w-full py-16 bg-[#F0F8FF] border-t border-[#D8EAFD] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-12">
-          <div className="flex items-center justify-center space-x-2 text-black">
-            {/* <span className="text-2xl">🤝</span> */}
-            <h2 className="text-3xl font-bold">Our Clients</h2>
-          </div>
+          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            Portfolio of Trust
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0A173E]">Our Esteemed Clients</h1>
+          <p className="mt-3 text-slate-600 max-w-2xl mx-auto text-base">Over 100+ prestigious regional and national brands rely on World Media NCR for high-impact outdoor visibility.</p>
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
           {allClientLogos.map((logo, idx) => (
-            <motion.div key={idx} whileHover={{ scale: 1.05 }} className="flex justify-center items-center p-4 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 h-28">
-          <Image src={`/images/clients/${logo}`} alt={logo} width={200} height={100} className="object-contain w-auto h-16 sm:h-20" quality={100} onError={(e) => {(e.target as HTMLImageElement).src = "/images/clients/placeholder.png"; }}/>
+            <motion.div key={idx} whileHover={{ scale: 1.05 }} className="flex justify-center items-center p-4 bg-white rounded-xl shadow-2xs border border-[#D8EAFD] hover:border-[var(--yellow)] hover:shadow-md transition-all duration-300 h-28">
+              <Image src={`/images/clients/${logo}`} alt={logo} width={200} height={100} className="object-contain w-auto h-16 sm:h-20" quality={100} onError={(e) => {(e.target as HTMLImageElement).src = "/images/clients/placeholder.png"; }}/>
             </motion.div>
           ))}
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="mt-32">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">TESTIMONIALS</h2>
-          <div className="hidden md:grid md:grid-cols-3 gap-8">
+        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="mt-24">
+          <div className="text-center mb-10">
+            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Verified Feedback</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0A173E] mt-1">Client Testimonials</h2>
+          </div>
+          <div className="hidden md:grid md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
-              <motion.div key={i} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300" whileHover={{ y: -4 }}>
-                <p className="text-gray-700 italic mb-4">“{t.message}”</p>
-                <p className="text-gray-900 font-semibold text-right">- {t.name}</p>
+              <motion.div key={i} className="bg-white p-7 rounded-2xl shadow-2xs hover:shadow-lg transition-all duration-300 border border-[#D8EAFD] hover:border-[var(--yellow)]" whileHover={{ y: -4 }}>
+                <p className="text-slate-700 italic mb-5 leading-relaxed text-sm">“{t.message}”</p>
+                <p className="text-[#0A173E] font-bold text-right text-sm">- {t.name}</p>
               </motion.div>
             ))}
           </div>
@@ -78,9 +82,9 @@ export default function ClientsSection() {
             <Swiper spaceBetween={16} slidesPerView={1} loop={true} autoplay={{ delay: 3000, disableOnInteraction: false }} modules={[Autoplay, Pagination]} pagination={{ clickable: true }}>
               {testimonials.map((t, i) => (
                 <SwiperSlide key={i}>
-                  <motion.div className="bg-white p-6 rounded-2xl shadow-lg">
-                    <p className="text-gray-700 italic mb-4">“{t.message}”</p>
-                    <p className="text-gray-900 font-semibold text-right">- {t.name}</p>
+                  <motion.div className="bg-white p-6 rounded-2xl shadow-sm border border-[#D8EAFD]">
+                    <p className="text-slate-700 italic mb-4 text-sm">“{t.message}”</p>
+                    <p className="text-[#0A173E] font-bold text-right text-sm">- {t.name}</p>
                   </motion.div>
                 </SwiperSlide>
               ))}

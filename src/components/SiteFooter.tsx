@@ -23,11 +23,11 @@ const locations = [
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-slate-950 px-6 pt-16 pb-24 md:pb-12 text-sm text-slate-300 border-t border-slate-800">
+    <footer className="bg-slate-950 px-6 pt-16 pb-4 md:pb-2 text-sm text-slate-300 border-t border-slate-800">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
         <div>
           <p className="text-xl font-bold text-white tracking-wide">World Media NCR</p>
-          <p className="mt-1 text-xs font-medium text-blue-400 uppercase tracking-wider">
+          <p className="mt-1 text-xs font-medium text-yellow-400 uppercase tracking-wider">
             Outdoor Advertising Solutions • Est. 2013
           </p>
           <p className="mt-4 leading-relaxed text-slate-400">
@@ -100,9 +100,9 @@ export default function SiteFooter() {
         </nav>
       </div>
 
-      <div className="mx-auto max-w-7xl mt-12 pt-8 border-t border-blue-700/60 flex flex-col sm:flex-row justify-between items-center text-xs text-blue-200/80 gap-4">
+      <div className="mx-auto max-w-7xl mt-12 pt-8 border-t border-[#182859] flex flex-col sm:flex-row justify-between items-center text-xs text-slate-300 gap-4">
         <p>© {new Date().getFullYear()} World Media NCR. All rights reserved. Founded & Operated by Shrikant Tyagi.</p>
-        <p className="text-blue-200/80">
+        <p className="text-slate-300">
           Premier Outdoor Advertising Agency in Meerut, Delhi-Meerut Expressway & Western Uttar Pradesh.
         </p>
       </div>
