@@ -103,7 +103,7 @@ export default function PrimeLocationsSection() {
                   <span className="font-bold text-slate-700">Ideal For:</span> {item.bestFor}
                 </p>
                 <Link
-                  href="/contact"
+                  href={`/contact?location=${encodeURIComponent(item.corridor)}&requirement=${encodeURIComponent(`Inquiry regarding billboard & hoarding availability along ${item.corridor}. Please share prime sites and rates.`)}`}
                   className="inline-flex items-center justify-center gap-1.5 w-full text-center bg-white hover:bg-[var(--yellow)] hover:text-[#0A173E] text-[#0A173E] font-bold py-2.5 px-4 rounded-xl border border-[#D8EAFD] hover:border-[var(--yellow)] transition text-sm shadow-2xs"
                 >
                   <span>Check Availability &amp; Rates</span>

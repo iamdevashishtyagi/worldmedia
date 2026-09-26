@@ -152,13 +152,13 @@ export default async function LocationDynamicPage({ params }: Props) {
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-4 items-center">
                 <Link
-                  href="/contact"
+                  href={`/contact?location=${encodeURIComponent(location.name)}`}
                   className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-4 rounded-xl font-extrabold transition shadow-lg hover:scale-105"
                 >
                   Reserve Sites in {location.name}
                 </Link>
                 <a
-                  href="https://wa.me/919456497636?text=Hi%20World%20Media%20NCR%2C%20I%20want%20to%20inquire%20about%20advertising%20in%20"
+                  href={`https://wa.me/919456497636?text=Hi%20World%20Media%20NCR%2C%20I%20want%20to%20inquire%20about%20advertising%20in%20${encodeURIComponent(location.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/10 hover:bg-white/20 text-white border border-white/25 px-8 py-4 rounded-xl font-bold transition backdrop-blur-sm"
@@ -366,7 +366,7 @@ export default async function LocationDynamicPage({ params }: Props) {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href={`/contact?location=${encodeURIComponent(location.name)}`}
               className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-10 py-4 rounded-xl font-extrabold text-lg transition shadow-xl hover:scale-105"
             >
               Check Available Sites

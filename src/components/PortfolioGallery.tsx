@@ -247,7 +247,10 @@ export default function PortfolioGallery() {
                   <h3 className="text-2xl font-extrabold mb-2 text-white">{item.title}</h3>
                   <p className="text-sm mb-3 text-blue-100">{item.description}</p>
                   <p className="text-xs mb-5 text-[var(--yellow)] font-semibold">📍 {item.location}</p>
-                  <Link href="/contact" className="inline-block bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-extrabold px-6 py-2.5 rounded-full text-sm shadow-md transition-all">
+                  <Link
+                    href={`/contact?service=${encodeURIComponent(item.category || "Highway Unipoles & Hoardings")}&location=${encodeURIComponent(item.location)}&requirement=${encodeURIComponent(`I would like to inquire about billboard space for "${item.title}" in ${item.location}.`)}`}
+                    className="inline-block bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-extrabold px-6 py-2.5 rounded-full text-sm shadow-md transition-all"
+                  >
                     Inquire Site Space →
                   </Link>
                 </div>

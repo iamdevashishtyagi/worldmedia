@@ -135,7 +135,10 @@ export default function PortfolioPreview() {
                   <span className="text-[#0A173E] font-bold text-xs bg-[#F0F8FF] border border-[#D8EAFD] px-2.5 py-1 rounded-md">
                     Verified Location
                   </span>
-                  <Link href="/contact" className="text-[#0A173E] hover:text-[#CA8A04] font-bold inline-flex items-center gap-1 transition-colors">
+                  <Link
+                    href={`/contact?service=${encodeURIComponent(project.category || "Highway Unipoles & Hoardings")}&requirement=${encodeURIComponent(`I saw your verified installation "${project.title}" (${project.location}) and would like to inquire about similar advertising spaces.`)}`}
+                    className="text-[#0A173E] hover:text-[#CA8A04] font-bold inline-flex items-center gap-1 transition-colors"
+                  >
                     <span>Inquire Space</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>

@@ -205,7 +205,7 @@ export default async function BlogPostDynamicPage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href={`/contact?topic=${encodeURIComponent(post.title)}&requirement=${encodeURIComponent(`I read your article "${post.title}" and would like to discuss outdoor advertising solutions for my brand.`)}`}
               className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-3.5 rounded-xl font-extrabold transition shadow-lg hover:scale-105"
             >
               Get Free Consultation

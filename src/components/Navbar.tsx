@@ -2,13 +2,26 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { servicesData } from "@/data/services";
 import { locationsData } from "@/data/locations";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Track the user's current browsing page in sessionStorage so the contact form can auto-fill context
+  useEffect(() => {
+    if (pathname && !pathname.startsWith("/contact") && typeof window !== "undefined") {
+      try {
+        sessionStorage.setItem("wm_last_visited_path", pathname);
+      } catch {
+        // Ignore sessionStorage restrictions if cookies/storage blocked
+      }
+    }
+  }, [pathname]);
   
   // Services dropdown state & refs
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);

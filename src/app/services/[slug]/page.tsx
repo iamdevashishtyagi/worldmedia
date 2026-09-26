@@ -231,13 +231,13 @@ export default async function ServiceDynamicPage({ params }: Props) {
 
             <div className="flex flex-wrap gap-4 items-center">
               <Link
-                href="/contact"
+                href={`/contact?service=${encodeURIComponent(service.name)}`}
                 className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-4 rounded-xl font-extrabold transition shadow-lg hover:scale-105"
               >
                 Inquire &amp; Reserve Sites
               </Link>
               <a
-                href="https://wa.me/919456497636?text=Hi%20World%20Media%20NCR%2C%20I%20am%20interested%20in%20"
+                href={`https://wa.me/919456497636?text=Hi%20World%20Media%20NCR%2C%20I%20am%20interested%20in%20${encodeURIComponent(service.name)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 text-white border border-white/25 px-8 py-4 rounded-xl font-bold transition backdrop-blur-sm"
@@ -497,7 +497,7 @@ export default async function ServiceDynamicPage({ params }: Props) {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href={`/contact?service=${encodeURIComponent(service.name)}`}
               className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-10 py-4 rounded-xl font-extrabold text-lg transition shadow-xl hover:scale-105"
             >
               Get Free Site Quote

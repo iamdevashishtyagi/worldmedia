@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Layout,
   Server,
@@ -22,6 +23,7 @@ import {
   Atom,
   FileCode2,
   Zap,
+  Send,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -321,12 +323,12 @@ export default function DeveloperPage() {
                     />
                   </svg>
                 </a>
-                <a
-                  href="mailto:iamdevashishtyagi@gmail.com"
+                <Link
+                  href="/contact?service=Website%20Development"
                   className="bg-transparent border-2 border-white/30 hover:border-white/60 px-8 py-3 rounded-full font-semibold transition-all text-white"
                 >
-                  Let&apos;s Connect
-                </a>
+                  Book Web Consultation
+                </Link>
               </div>
             </div>
 
@@ -711,11 +713,18 @@ export default function DeveloperPage() {
             Hire Devashish Tyagi — Meerut&apos;s leading web developer &amp; SEO architect. Let&apos;s create a digital platform that outranks and converts.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/contact?service=Website%20Development"
+              className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-10 py-4 rounded-full font-extrabold text-lg transition shadow-xl hover:shadow-2xl flex items-center gap-2"
+            >
+              <Send className="w-5 h-5" />
+              <span>Send Project Inquiry</span>
+            </Link>
             <a
               href="https://wa.me/919557423119?text=Hi%20Devashish%2C%20I'm%20interested%20in%20discussing%20a%20web%20development%20project."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-10 py-4 rounded-full font-extrabold text-lg transition shadow-xl hover:shadow-2xl flex items-center gap-2"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-extrabold text-lg transition shadow-xl hover:shadow-2xl flex items-center gap-2"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.298-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -725,7 +734,7 @@ export default function DeveloperPage() {
             </a>
             <a
               href="mailto:iamdevashishtyagi@gmail.com"
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-10 py-4 rounded-full font-semibold text-lg transition flex items-center gap-2"
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-semibold text-lg transition flex items-center gap-2"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -735,7 +744,7 @@ export default function DeveloperPage() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              iamdevashishtyagi@gmail.com
+              Email Directly
             </a>
           </div>
           <p className="text-white/80 text-sm mt-8 flex items-center justify-center gap-1.5">

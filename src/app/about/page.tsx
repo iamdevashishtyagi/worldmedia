@@ -101,7 +101,10 @@ export default function AboutPage() {
               Beyond traditional billboards, we pioneered large-scale <strong>digital wall painting campaigns</strong> spanning hundreds of villages and towns across Western UP, delivering unmatched rural and semi-urban reach for FMCG, educational institutions, real estate, and healthcare leaders.
             </p>
             <div className="pt-4 flex flex-wrap gap-4">
-              <Link href="/contact" className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-bold px-8 py-3.5 rounded-xl transition shadow-md hover:scale-105">
+              <Link
+                href="/contact?source=About%20World%20Media&requirement=I%20would%20like%20to%20learn%20more%20about%20partnering%20with%20World%20Media%20NCR%20for%20our%20upcoming%20advertising%20campaign."
+                className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] font-bold px-8 py-3.5 rounded-xl transition shadow-md hover:scale-105"
+              >
                 Contact Our Team
               </Link>
               <Link href="/gallery" className="border-2 border-[#0A173E] text-[#0A173E] hover:bg-[#0A173E] hover:text-white font-bold px-8 py-3.5 rounded-xl transition hover:scale-105">
