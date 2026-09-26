@@ -1,25 +1,9 @@
 import Link from "next/link";
+import { servicesData } from "@/data/services";
+import { locationsData } from "@/data/locations";
 
-const services = [
-  ["Hoarding Advertising in Meerut", "/services/hoarding-advertising-meerut"],
-  ["Billboard Advertising in Meerut", "/services/billboard-advertising-meerut"],
-  ["Digital Wall Painting in Meerut", "/services/digital-wall-painting-meerut"],
-  ["Vehicle Branding in Meerut", "/services/vehicle-branding-meerut"],
-  ["Flex Printing in Meerut", "/services/flex-printing-meerut"],
-  ["LED Display Advertising", "/services/led-display-advertising-meerut"],
-  ["Political Campaign Advertising", "/services/political-advertising-meerut"],
-] as const;
-
-const locations = [
-  ["Meerut (Head Office)", "/locations/meerut"],
-  ["Delhi NCR", "/locations/delhi-ncr"],
-  ["Delhi Highway & OOH", "/locations/delhi"],
-  ["Muzaffarnagar", "/locations/muzaffarnagar"],
-  ["Shamli", "/locations/shamli"],
-  ["Saharanpur", "/locations/saharanpur"],
-  ["Baghpat & Baraut", "/locations/baghpat"],
-  ["Hapur", "/locations/hapur"],
-] as const;
+const services = servicesData.map((s) => [s.name, `/services/${s.slug}`] as const);
+const locations = locationsData.map((l) => [l.name, `/locations/${l.slug}`] as const);
 
 export default function SiteFooter() {
   return (

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { servicesData } from "@/data/services";
+import { locationsData } from "@/data/locations";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,29 +37,22 @@ export default function Navbar() {
     };
   }, []);
 
-  // Service links for dropdown
+  // Dynamic Service links derived automatically from servicesData
   const services = [
     { name: "All Services", path: "/services" },
-    { name: "Hoarding Advertising", path: "/services/hoarding-advertising-meerut" },
-    { name: "Billboard Advertising", path: "/services/billboard-advertising-meerut" },
-    { name: "Digital Wall Painting", path: "/services/digital-wall-painting-meerut" },
-    { name: "Vehicle Branding", path: "/services/vehicle-branding-meerut" },
-    { name: "Flex Printing", path: "/services/flex-printing-meerut" },
-    { name: "LED Display Advertising", path: "/services/led-display-advertising-meerut" },
-    { name: "Political Advertising", path: "/services/political-advertising-meerut" },
+    ...servicesData.map((s) => ({
+      name: s.name,
+      path: `/services/${s.slug}`,
+    })),
   ];
 
-  // Location links for dropdown
+  // Dynamic Location links derived automatically from locationsData
   const locations = [
     { name: "All Locations", path: "/locations" },
-    { name: "Meerut", path: "/locations/meerut" },
-    { name: "Delhi NCR", path: "/locations/delhi-ncr" },
-    { name: "Delhi", path: "/locations/delhi" },
-    { name: "Muzaffarnagar", path: "/locations/muzaffarnagar" },
-    { name: "Shamli", path: "/locations/shamli" },
-    { name: "Saharanpur", path: "/locations/saharanpur" },
-    { name: "Baghpat", path: "/locations/baghpat" },
-    { name: "Hapur", path: "/locations/hapur" },
+    ...locationsData.map((l) => ({
+      name: l.name,
+      path: `/locations/${l.slug}`,
+    })),
   ];
 
   // Handlers for Services dropdown transition

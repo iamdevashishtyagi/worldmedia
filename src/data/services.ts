@@ -39,6 +39,7 @@ export interface ServiceItem {
   heroHeadlineHighlight: string;
   heroSubheadline: string;
   heroImage: string;
+  previewImage?: string;
 
   // Stats
   stats: ServiceStat[];
@@ -104,6 +105,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut & NCR",
     heroSubheadline: "Premium billboard placements at strategic highway corridors and arterial intersections across Meerut, Muzaffarnagar, Shamli & Saharanpur. Engineered for 24/7 unmissable brand visibility.",
     heroImage: "/images/portfolio/Baghra Bus Stand.webp",
+    previewImage: "/images/services/Hoarding1.webp",
 
     stats: [
       { value: "100+", label: "Prime Sites", sublabel: "Arterials & Highways" },
@@ -245,6 +247,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut & Western UP",
     heroSubheadline: "Hyper-localized, long-lasting wall advertising that reaches consumers right at their doorsteps. High-definition photographic prints mounted seamlessly on prime urban and rural walls.",
     heroImage: "/images/toWEBP/dwp19.webp",
+    previewImage: "/images/services/Hoarding3.webp",
 
     stats: [
       { value: "500+", label: "Completed Projects", sublabel: "Urban & Rural UP" },
@@ -375,6 +378,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut & Highway Corridors",
     heroSubheadline: "Towering highway unipoles and sky-scraping arterial billboards engineered for massive scale, prestige, and dominant market positioning across Meerut and Delhi NCR.",
     heroImage: "/images/portfolio/Muzaffarnagar Meerut Road.webp",
+    previewImage: "/images/services/Hoarding3.webp",
 
     stats: [
       { value: "40+ Ft", label: "Tower Heights", sublabel: "Unobstructed Views" },
@@ -479,6 +483,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut & NCR",
     heroSubheadline: "Dynamic, motion-driven digital outdoor screens positioned at Meerut's highest footfall intersections and premium shopping hubs. Bring your brand to life with vibrant video and animated creatives.",
     heroImage: "/images/website/herobg2.jpg",
+    previewImage: "/images/services/Hoarding4.webp",
 
     stats: [
       { value: "4K UHD", label: "Ultra Crisp Resolution", sublabel: "P4/P6 High Density" },
@@ -575,6 +580,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut & NCR",
     heroSubheadline: "Turn commercial fleets, city buses, and auto-rickshaws into high-frequency mobile billboards that navigate every neighborhood, market lane, and transit artery.",
     heroImage: "/images/website/herobg2.jpg",
+    previewImage: "/images/services/Hoarding2.webp",
 
     stats: [
       { value: "500+", label: "Branded Vehicles", sublabel: "Active On Transit" },
@@ -671,6 +677,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut",
     heroSubheadline: "State-of-the-art industrial flex printing with true 1440 DPI resolution, weather-proof outdoor inks, and lightning-fast turnaround times for hoardings, banners, and back-lit displays.",
     heroImage: "/images/website/herobg2.jpg",
+    previewImage: "/images/services/YoursNextHoarding.webp",
 
     stats: [
       { value: "1440 DPI", label: "Ultra Crisp Print", sublabel: "Photographic Quality" },
@@ -768,6 +775,7 @@ export const servicesData: ServiceItem[] = [
     heroHeadlineHighlight: "in Meerut & Western UP",
     heroSubheadline: "Dominant constituency-wide visibility for leaders, parties, and candidates across Lok Sabha, Vidhan Sabha, and local elections. Unmatched saturation on highways, village crossroads, and city centers.",
     heroImage: "/images/portfolio/Meerut Sardhana.webp",
+    previewImage: "/images/services/Hoarding5.webp",
 
     stats: [
       { value: "50+ Elections", label: "Campaigns Executed", sublabel: "Vidhan & Lok Sabha" },

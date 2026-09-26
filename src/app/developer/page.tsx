@@ -88,7 +88,7 @@ export default function DeveloperPage() {
                 <span className="text-[var(--yellow)]"> Tyagi</span>
               </h1>
               <p className="text-xl text-gray-300 mb-3">Full Stack Developer & SEO Architect</p>
-              <p className="text-gray-400 mb-2">📍 Sardhana, Meerut • Uttar Pradesh, India</p>
+              <p className="text-gray-400 mb-2">📍Meerut • Uttar Pradesh, India</p>
               <div className="flex flex-wrap gap-3 mb-8">
                 {expertiseTags.map((tag, i) => (
                   <span key={i} className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-sm text-gray-300 border border-white/20">
@@ -107,7 +107,7 @@ export default function DeveloperPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
-                <a href="mailto:iamdevashishtyagi@gmail.com" className="bg-transparent border-2 border-white/30 hover:border-white/60 px-8 py-3 rounded-full font-semibold transition-all">
+                <a href="mailto:iamdevashishtyagi@gmail.com" className="bg-transparent border-2 border-white/30 hover:border-white/60 px-8 py-3 rounded-full font-semibold transition-all text-white">
                   Let&apos;s Connect
                 </a>
               </div>
@@ -170,7 +170,7 @@ export default function DeveloperPage() {
                 great web applications are more than just code—they&apos;re experiences that connect, engage, and convert.
               </p>
               <p className="leading-relaxed">
-                Based in Sardhana, Meerut, I&apos;ve helped businesses across India establish powerful digital presences. 
+                Based in Meerut, I&apos;ve helped businesses across India establish powerful digital presences. 
                 From local enterprises to national brands, I deliver solutions that combine cutting-edge technology 
                 with strategic SEO implementation.
               </p>
@@ -343,7 +343,7 @@ export default function DeveloperPage() {
             { title: "Lightning Fast", desc: "Sub-second load times guaranteed", icon: "⚡" },
             { title: "Modern Tech Stack", desc: "React, Vue, Node, Express, Next.js", icon: "⚛️" },
             { title: "Pixel Perfect", desc: "Meticulous attention to details", icon: "✨" },
-            { title: "Local Expertise", desc: "Based in Sardhana, Meerut", icon: "📍" },
+            { title: "Local Expertise", desc: "Based in Meerut", icon: "📍" },
             { title: "Quality Assured", desc: "Rigorous testing across all devices", icon: "✅" },
             { title: "Post-Launch Care", desc: "Dedicated ongoing support", icon: "🛡️" },
           ].map((item, i) => (
@@ -407,17 +407,15 @@ export default function DeveloperPage() {
             </a>
             <a 
               href="mailto:iamdevashishtyagi@gmail.com" 
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-10 py-4 rounded-full font-semibold text-lg transition"
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-10 py-4 rounded-full font-semibold text-lg transition flex items-center gap-2"
             >
-              <div>
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg><p>iamdevashishtyagi@gmail.com</p>
-              </div>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>iamdevashishtyagi@gmail.com
             </a>
           </div>
           <p className="text-white/60 text-sm mt-8">
-            📍 Based in Sardhana, Meerut • Available worldwide for remote projects
+            📍 Based in Meerut • Available worldwide for remote projects
           </p>
         </div>
       </div>

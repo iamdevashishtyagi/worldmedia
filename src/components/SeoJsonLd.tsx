@@ -27,20 +27,20 @@ export function BreadcrumbJsonLd({ items }: { items: Crumb[] }) {
   );
 }
 
+import { servicesData } from "@/data/services";
+import { locationsData } from "@/data/locations";
+
 export function ServiceCatalogJsonLd() {
-  const services: Array<[string, string]> = [
-    ["Hoarding Advertising in Meerut", "/services/hoarding-advertising-meerut"], ["Billboard Advertising in Meerut", "/services/billboard-advertising-meerut"], ["Digital Wall Painting in Meerut", "/services/digital-wall-painting-meerut"], ["Vehicle Branding in Meerut", "/services/vehicle-branding-meerut"], ["Flex Printing in Meerut", "/services/flex-printing-meerut"], ["LED Display Advertising in Meerut", "/services/led-display-advertising-meerut"], ["Political Advertising in Meerut", "/services/political-advertising-meerut"],
-  ];
   const value = {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
     name: "World Media NCR advertising services",
-    itemListElement: services.map(([name, path]) => ({
+    itemListElement: servicesData.map((service) => ({
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name,
-        url: `${siteUrl}${path}`,
+        name: service.name,
+        url: `${siteUrl}/services/${service.slug}`,
         provider: { "@type": "AdvertisingAgency", name: "World Media NCR", url: siteUrl },
       },
     })),
@@ -49,8 +49,21 @@ export function ServiceCatalogJsonLd() {
 }
 
 export function LocationListJsonLd() {
-  const locations = ["meerut", "muzaffarnagar", "shamli", "saharanpur", "baghpat", "hapur", "delhi", "delhi-ncr"];
-  return <Script value={{ "@context": "https://schema.org", "@type": "ItemList", name: "World Media NCR service areas", itemListElement: locations.map((slug, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteUrl}/locations/${slug}` })) }} />;
+  return (
+    <Script
+      value={{
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "World Media NCR service areas",
+        itemListElement: locationsData.map((loc, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: loc.name,
+          url: `${siteUrl}/locations/${loc.slug}`,
+        })),
+      }}
+    />
+  );
 }
 
 export function FaqJsonLd({

@@ -2,106 +2,75 @@
 "use client";
 
 import React from "react";
-import { Square, Truck, Circle, Lightbulb, Megaphone, ArrowRight } from "lucide-react";
+import {
+  MapPin,
+  Lightbulb,
+  ShieldCheck,
+  Settings2,
+  Eye,
+  Camera,
+  Palette,
+  CircleDollarSign,
+  Compass,
+  SunMedium,
+  Clock,
+  Layers,
+  Maximize2,
+  Milestone,
+  Building2,
+  Film,
+  Zap,
+  Truck,
+  Printer,
+  Vote,
+  Scale,
+  Target,
+  Square,
+  ArrowRight,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import TiltUnipole from "@/components/TiltUnipole";
 import DashedPath from "@/components/CurvedPath";
 import Link from 'next/link';
+import { servicesData } from "@/data/services";
 
-const allServices = [
-  {
-    icon: <Square size={44} className="text-[#0A173E]" />,
-    title: "Hoarding Advertising",
-    path: "/services/hoarding-advertising-meerut",
-    description:
-      "We design and install high-impact outdoor hoardings and billboards in strategic locations for maximum brand visibility. Our solutions are built to withstand weather conditions while maintaining visual appeal.",
-    features: [
-      "Strategic Location Analysis",
-      "Weather-resistant Materials",
-      "High-quality Printing",
-      "Professional Installation",
-    ],
-    image: "/images/services/Hoarding1.webp",
-  },
-  {
-    icon: <Square size={44} className="text-[#0A173E]" />,
-    title: "Billboard Advertising",
-    path: "/services/billboard-advertising-meerut",
-    description: "Reach commuters and local audiences with strategically placed billboard advertising in Meerut and nearby markets.",
-    features: ["High-visibility sites", "Campaign planning", "Professional installation", "Flexible campaign durations"],
-    image: "/images/services/Hoarding3.webp",
-  },
-  {
-    icon: <Truck size={44} className="text-[#0A173E]" />,
-    title: "Vehicle Branding",
-    path: "/services/vehicle-branding-meerut",
-    description:
-      "Transform your vehicles into mobile advertisements with our professional vehicle wrapping and branding services. Our designs are durable, eye-catching, and effective at capturing attention on the move.",
-    features: [
-      "Full/Partial Wraps",
-      "Durable Vinyl Materials",
-      "Professional Design",
-      "Precision Installation",
-    ],
-    image: "/images/services/Hoarding2.webp",
-  },
-  {
-    icon: <Circle size={44} className="text-[#0A173E]" />,
-    title: "Digital Wall Painting",
-    path: "/services/digital-wall-painting-meerut",
-    description:
-      "Build long-term local visibility through professionally produced digital wall painting campaigns at relevant local sites.",
-    features: [
-      "Local market coverage",
-      "Durable paint systems",
-      "Creative production",
-      "Site coordination",
-    ],
-    image: "/images/services/Hoarding3.webp",
-  },
-  {
-    icon: <Lightbulb size={44} className="text-[#CA8A04]" />,
-    title: "LED Display Boards",
-    path: "/services/led-display-advertising-meerut",
-    description:
-      "Modern digital advertising solutions with bright, dynamic LED displays. Perfect for time-sensitive promotions, news updates, and engaging visual content.",
-    features: [
-      "High Brightness",
-      "Remote Content Management",
-      "Energy Efficient",
-      "Weather Proof",
-    ],
-    image: "/images/services/Hoarding4.webp",
-  },
-  {
-    icon: <Megaphone size={44} className="text-[#0A173E]" />,
-    title: "Political Advertising",
-    path: "/services/political-advertising-meerut",
-    description:
-      "Plan high-visibility political advertising campaigns with outdoor formats, print production and local placement support.",
-    features: [
-      "Campaign planning",
-      "Local visibility",
-      "Print production",
-      "Installation support",
-    ],
-    image: "/images/services/Hoarding5.webp",
-  },
-  {
-    icon: <Megaphone size={44} className="text-[#CA8A04]" />,
-    title: "Flex Printing",
-    path: "/services/flex-printing-meerut",
-    description:
-      "High-quality flex printing for outdoor campaigns, retail promotions, events and large-format advertising requirements.",
-    features: [
-      "Large-format printing",
-      "Weather-ready materials",
-      "Custom sizes",
-      "Installation support",
-    ],
-    image: "/images/services/YoursNextHoarding.webp",
+function getServiceIcon(iconKey?: string) {
+  const props = { size: 40, className: "text-[#0A173E]" };
+  switch (iconKey) {
+    case "map-pin": return <MapPin {...props} />;
+    case "lightbulb": return <Lightbulb {...props} />;
+    case "shield": return <ShieldCheck {...props} />;
+    case "settings": return <Settings2 {...props} />;
+    case "eye": return <Eye {...props} />;
+    case "camera": return <Camera {...props} />;
+    case "palette": return <Palette {...props} />;
+    case "dollar-sign": return <CircleDollarSign {...props} />;
+    case "compass": return <Compass {...props} />;
+    case "sun": return <SunMedium {...props} />;
+    case "clock": return <Clock {...props} />;
+    case "layers": return <Layers {...props} />;
+    case "maximize": return <Maximize2 {...props} />;
+    case "milestone": return <Milestone {...props} />;
+    case "building": return <Building2 {...props} />;
+    case "film": return <Film {...props} />;
+    case "zap": return <Zap {...props} />;
+    case "truck": return <Truck {...props} />;
+    case "printer": return <Printer {...props} />;
+    case "vote": return <Vote {...props} />;
+    case "scale": return <Scale {...props} />;
+    case "target": return <Target {...props} />;
+    default: return <Square {...props} />;
   }
-];
+}
+
+const allServices = servicesData.map((service) => ({
+  icon: getServiceIcon(service.features[0]?.icon),
+  title: service.name,
+  path: `/services/${service.slug}`,
+  description: service.heroSubheadline,
+  features: service.features.slice(0, 4).map((f) => f.title),
+  image: service.previewImage || service.heroImage || service.ogImage,
+}));
 
 export default function ServicesSection() {
   return (

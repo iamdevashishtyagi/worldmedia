@@ -1,4 +1,6 @@
-// src/components/JsonLd.tsx
+import { servicesData } from "@/data/services";
+import { locationsData } from "@/data/locations";
+
 export default function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
@@ -70,86 +72,24 @@ export default function JsonLd() {
       "https://www.instagram.com/worldmediancr"
     ],
     "areaServed": [
-      { "@type": "City", "name": "Meerut" },
-      { "@type": "City", "name": "Muzaffarnagar" },
-      { "@type": "City", "name": "Shamli" },
-      { "@type": "City", "name": "Saharanpur" },
-      { "@type": "City", "name": "Baghpat" },
-      { "@type": "City", "name": "Hapur" },
-      { "@type": "City", "name": "Ghaziabad" },
-      { "@type": "City", "name": "Noida" },
-      { "@type": "City", "name": "Delhi" },
-      { "@type": "State", "name": "Delhi NCR" },
-      { "@type": "State", "name": "Uttar Pradesh" }
+      ...locationsData.map((loc) => ({
+        "@type": loc.slug.includes("ncr") ? "State" : "City",
+        "name": loc.name,
+      })),
+      { "@type": "State", "name": "Uttar Pradesh" },
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Outdoor Advertising Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Hoarding Advertising in Meerut & NCR",
-            "url": "https://worldmediancr.com/services/hoarding-advertising-meerut",
-            "description": "Strategic outdoor billboard and unipole placements on Delhi-Meerut Expressway, Roorkee Road, and key commercial routes."
-          }
+      "itemListElement": servicesData.map((service) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": service.name,
+          "url": `https://worldmediancr.com/services/${service.slug}`,
+          "description": service.metaDescription,
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Digital Wall Painting in Meerut & UP",
-            "url": "https://worldmediancr.com/services/digital-wall-painting-meerut",
-            "description": "Long-lasting, high-coverage wall painting advertising across urban towns and rural districts in Western UP."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Billboard Advertising in Meerut",
-            "url": "https://worldmediancr.com/services/billboard-advertising-meerut",
-            "description": "Large format highway and arterial road billboards with high-impact commuter visibility."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Vehicle Branding in Meerut",
-            "url": "https://worldmediancr.com/services/vehicle-branding-meerut",
-            "description": "Auto, bus, cab, and delivery fleet wraps for dynamic citywide brand exposure."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Flex Printing in Meerut",
-            "url": "https://worldmediancr.com/services/flex-printing-meerut",
-            "description": "High-definition weather-resistant flex and vinyl printing for commercial promotions and events."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "LED Display Advertising in Meerut",
-            "url": "https://worldmediancr.com/services/led-display-advertising-meerut",
-            "description": "Digital out-of-home (DOOH) screens in prime retail and commercial junctions."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Political Advertising in Meerut",
-            "url": "https://worldmediancr.com/services/political-advertising-meerut",
-            "description": "Election visibility campaigns, constituency coverage, unipoles, and wall media across Western UP."
-          }
-        }
-      ]
+      })),
     }
   };
 
