@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/SeoJsonLd";
+import { blogPostsData } from "@/data/blogs";
 
 export const metadata: Metadata = {
   title: "Advertising Blog | Outdoor Marketing Tips & Insights | World Media NCR",
@@ -24,56 +25,73 @@ export const metadata: Metadata = {
   },
 };
 
-const posts = [
-  { slug: "benefits-of-hoarding-advertising", title: "Top 10 Benefits of Hoarding Advertising for Local Businesses", excerpt: "Discover why hoarding advertising remains an effective way to strengthen local brand visibility.", date: "January 15, 2024", readTime: "5 min read", category: "Hoarding Advertising", image: "/images/portfolio/Baghra Bus Stand.webp" },
-  { slug: "digital-wall-painting-vs-traditional-ads", title: "Digital Wall Painting vs Traditional Advertising: Which is Better?", excerpt: "Compare longevity, visibility and campaign flexibility when choosing a local outdoor advertising format.", date: "January 10, 2024", readTime: "7 min read", category: "Wall Painting", image: "/images/toWEBP/dwp36.webp" },
-  { slug: "outdoor-advertising-cost-guide-2024", title: "How to Plan an Outdoor Advertising Campaign", excerpt: "A practical guide to selecting formats, locations, creative and installation timelines.", date: "January 5, 2024", readTime: "8 min read", category: "Campaign Planning", image: "/images/portfolio/Muzaffarnagar Rorkee Road.webp" },
-  { slug: "best-locations-for-hoarding-in-meerut", title: "Best Locations for Hoarding Advertising in Meerut", excerpt: "Explore the factors that make a location valuable for a high-visibility outdoor campaign.", date: "December 28, 2023", readTime: "6 min read", category: "Location Guide", image: "/images/portfolio/Meerut Sardhana.webp" },
-  { slug: "why-choose-world-media-ncr-for-advertising", title: "Why Choose World Media NCR for Advertising in Meerut & NCR", excerpt: "Learn about our planning, site knowledge and campaign production support for local advertisers.", date: "February 25, 2024", readTime: "7 min read", category: "Company", image: "/images/portfolio/Muzaffarnagar Shamli Road.webp" },
-];
-
 export default function BlogPage() {
   return (
-    <main className="py-8">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white">
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "https://worldmediancr.com" },
           { name: "Blog", url: "https://worldmediancr.com/blog" },
         ]}
       />
-      <div className="max-w-3xl">
-        <p className="font-semibold uppercase tracking-[0.18em] text-[#0A173E]">World Media NCR journal</p>
-        <h1 className="mt-3 text-4xl font-bold text-[#0A173E] md:text-5xl">Advertising Blog &amp; Insights</h1>
-        <p className="mt-4 mb-12 text-xl leading-8 text-slate-600">Expert tips, guides, and insights for outdoor advertising in Meerut and NCR.</p>
+
+      {/* Header section - wide, modern, strictly NO yellow tag line above heading */}
+      <div className="max-w-4xl mb-14">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0A173E] tracking-tight">
+          Outdoor Advertising Insights &amp; Guides
+        </h1>
+        <p className="mt-4 text-lg sm:text-xl text-slate-600 leading-relaxed">
+          In-depth strategies, cost benchmarks, municipal compliance guidelines, and execution frameworks for hoardings, digital wall painting, and transit media across Meerut &amp; NCR.
+        </p>
       </div>
-      <div className="grid gap-7 md:grid-cols-2">
-        {posts.map((post) => (
-          <article key={post.slug} className="overflow-hidden rounded-2xl border border-[#D8EAFD] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <Link href={`/blog/${post.slug}`} className="block">
-              <div className="relative aspect-video">
+
+      {/* Spacious 3-column Grid across full 7xl container */}
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {blogPostsData.map((post) => (
+          <article
+            key={post.slug}
+            className="group flex flex-col overflow-hidden rounded-3xl border border-[#D8EAFD] bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#0A173E] hover:shadow-xl"
+          >
+            <Link href={`/blog/${post.slug}`} className="block overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                 <Image
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </Link>
-            <div className="p-6">
-              <Link href={`/blog/${post.slug}`}>
-                <h2 className="text-2xl font-semibold text-[#0A173E] transition hover:text-[#0A173E]/80">{post.title}</h2>
-              </Link>
-              <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-slate-500">
-                <span>{post.date}</span>
+
+            <div className="flex flex-1 flex-col p-6 sm:p-7">
+              <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-3">
+                <span className="rounded-full bg-[#F0F8FF] border border-[#D8EAFD] px-3 py-1 font-bold text-[#0A173E]">
+                  {post.category}
+                </span>
                 <span>•</span>
                 <span>{post.readTime}</span>
-                <span className="rounded-full bg-[#FEF9C3] border border-[#FDE047] px-2.5 py-1 text-xs font-semibold text-[#854D0E]">{post.category}</span>
               </div>
-              <p className="mt-4 text-slate-700">{post.excerpt}</p>
-              <Link href={`/blog/${post.slug}`} className="mt-5 inline-block font-semibold text-[#0A173E] hover:underline">
-                Read article →
+
+              <Link href={`/blog/${post.slug}`} className="group-hover:text-blue-900 transition">
+                <h2 className="text-xl font-bold text-[#0A173E] leading-snug line-clamp-2">
+                  {post.title}
+                </h2>
               </Link>
+
+              <p className="mt-3 text-sm text-slate-600 leading-relaxed line-clamp-3 flex-1">
+                {post.excerpt}
+              </p>
+
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span className="text-xs text-slate-400 font-medium">{post.date}</span>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="inline-flex items-center gap-1.5 text-sm font-extrabold text-[#0A173E] group-hover:translate-x-1 transition-transform"
+                >
+                  Read Article <span aria-hidden="true">→</span>
+                </Link>
+              </div>
             </div>
           </article>
         ))}

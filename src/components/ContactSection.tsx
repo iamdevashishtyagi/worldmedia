@@ -52,9 +52,6 @@ export default function ContactSection() {
       <section className="w-full py-20 bg-[#F0F8FF] border-t border-[#D8EAFD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
-              Direct Contact Desk
-            </span>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#0A173E] tracking-tight">Get In Touch</h1>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">Ready to transform your advertising? Contact us for a free site availability audit and competitive quote.</p>
           </div>

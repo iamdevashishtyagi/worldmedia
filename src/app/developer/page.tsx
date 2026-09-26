@@ -161,9 +161,6 @@ export default function DeveloperPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-block px-4 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] rounded-full text-sm font-semibold mb-4">
-              About Me
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Crafting Digital Excellence from <span className="text-indigo-900">Meerut</span>
             </h2>

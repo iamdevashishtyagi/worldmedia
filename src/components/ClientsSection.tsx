@@ -52,9 +52,6 @@ export default function ClientsSection() {
     <section className="w-full py-16 bg-[#F0F8FF] border-t border-[#D8EAFD] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-12">
-          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
-            Portfolio of Trust
-          </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0A173E]">Our Esteemed Clients</h1>
           <p className="mt-3 text-slate-600 max-w-2xl mx-auto text-base">Over 100+ prestigious regional and national brands rely on World Media NCR for high-impact outdoor visibility.</p>
         </motion.div>
@@ -67,7 +64,6 @@ export default function ClientsSection() {
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="mt-24">
           <div className="text-center mb-10">
-            <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">Verified Feedback</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0A173E] mt-1">Client Testimonials</h2>
           </div>
           <div className="hidden md:grid md:grid-cols-3 gap-6">

@@ -102,9 +102,6 @@ export default function LocationsPage() {
       <FaqJsonLd questions={faqs} />
       
       <div className="mb-12">
-        <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
-          Regional Coverage
-        </span>
         <h1 className="text-4xl lg:text-5xl font-extrabold text-[#0A173E] tracking-tight">
           Advertising Service Areas
         </h1>
@@ -140,9 +137,6 @@ export default function LocationsPage() {
       </div>
 
       <section className="mt-20 max-w-4xl bg-[#F0F8FF] border border-[#D8EAFD] p-8 md:p-10 rounded-2xl">
-        <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
-          FAQ
-        </span>
         <h2 className="text-3xl font-extrabold text-[#0A173E]">Service Area FAQs</h2>
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (

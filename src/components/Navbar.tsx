@@ -7,11 +7,16 @@ import Image from "next/image";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
   
-  // Add timeout ref for dropdown closing
-  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  // Services dropdown state & refs
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const servicesDropdownRef = useRef<HTMLDivElement>(null);
+  const servicesCloseTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Locations dropdown state & refs
+  const [isLocationsDropdownOpen, setIsLocationsDropdownOpen] = useState(false);
+  const locationsDropdownRef = useRef<HTMLDivElement>(null);
+  const locationsCloseTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +26,11 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      if (closeTimeoutRef.current) {
-        clearTimeout(closeTimeoutRef.current);
+      if (servicesCloseTimeoutRef.current) {
+        clearTimeout(servicesCloseTimeoutRef.current);
+      }
+      if (locationsCloseTimeoutRef.current) {
+        clearTimeout(locationsCloseTimeoutRef.current);
       }
     };
   }, []);
@@ -39,18 +47,46 @@ export default function Navbar() {
     { name: "Political Advertising", path: "/services/political-advertising-meerut" },
   ];
 
-  // Handlers for smooth dropdown transition
-  const handleMouseEnter = () => {
-    if (closeTimeoutRef.current) {
-      clearTimeout(closeTimeoutRef.current);
-      closeTimeoutRef.current = null;
+  // Location links for dropdown
+  const locations = [
+    { name: "All Locations", path: "/locations" },
+    { name: "Meerut", path: "/locations/meerut" },
+    { name: "Delhi NCR", path: "/locations/delhi-ncr" },
+    { name: "Delhi", path: "/locations/delhi" },
+    { name: "Muzaffarnagar", path: "/locations/muzaffarnagar" },
+    { name: "Shamli", path: "/locations/shamli" },
+    { name: "Saharanpur", path: "/locations/saharanpur" },
+    { name: "Baghpat", path: "/locations/baghpat" },
+    { name: "Hapur", path: "/locations/hapur" },
+  ];
+
+  // Handlers for Services dropdown transition
+  const handleServicesMouseEnter = () => {
+    if (servicesCloseTimeoutRef.current) {
+      clearTimeout(servicesCloseTimeoutRef.current);
+      servicesCloseTimeoutRef.current = null;
     }
     setIsServicesDropdownOpen(true);
   };
 
-  const handleMouseLeave = () => {
-    closeTimeoutRef.current = setTimeout(() => {
+  const handleServicesMouseLeave = () => {
+    servicesCloseTimeoutRef.current = setTimeout(() => {
       setIsServicesDropdownOpen(false);
+    }, 150);
+  };
+
+  // Handlers for Locations dropdown transition
+  const handleLocationsMouseEnter = () => {
+    if (locationsCloseTimeoutRef.current) {
+      clearTimeout(locationsCloseTimeoutRef.current);
+      locationsCloseTimeoutRef.current = null;
+    }
+    setIsLocationsDropdownOpen(true);
+  };
+
+  const handleLocationsMouseLeave = () => {
+    locationsCloseTimeoutRef.current = setTimeout(() => {
+      setIsLocationsDropdownOpen(false);
     }, 150);
   };
 
@@ -85,7 +121,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-7 lg:gap-9">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           <Link
             href="/"
             className="relative font-semibold text-slate-800 hover:text-[#0A173E] transition duration-200 group text-sm"
@@ -96,10 +132,10 @@ export default function Navbar() {
 
           {/* Services Dropdown */}
           <div
-            ref={dropdownRef}
+            ref={servicesDropdownRef}
             className="relative"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleServicesMouseEnter}
+            onMouseLeave={handleServicesMouseLeave}
           >
             <button
               className="relative font-semibold text-slate-800 hover:text-[#0A173E] transition duration-200 group flex items-center gap-1 py-1 text-sm cursor-pointer"
@@ -139,19 +175,56 @@ export default function Navbar() {
             )}
           </div>
 
+          {/* Locations Dropdown */}
+          <div
+            ref={locationsDropdownRef}
+            className="relative"
+            onMouseEnter={handleLocationsMouseEnter}
+            onMouseLeave={handleLocationsMouseLeave}
+          >
+            <button
+              className="relative font-semibold text-slate-800 hover:text-[#0A173E] transition duration-200 group flex items-center gap-1 py-1 text-sm cursor-pointer"
+            >
+              Locations
+              <svg
+                className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                  isLocationsDropdownOpen ? "rotate-180 text-[#0A173E]" : "text-slate-500"
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+              </svg>
+              <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-[var(--yellow)] transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            
+            {/* Dropdown Menu - Clean white & Alice Blue theme */}
+            {isLocationsDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl py-2 z-50 border border-[#D8EAFD] animate-in fade-in slide-in-from-top-1 duration-200">
+                {locations.map((loc, index) => (
+                  <Link
+                    key={index}
+                    href={loc.path}
+                    className={`block px-4 py-2.5 text-xs sm:text-sm transition-colors duration-200 ${
+                      loc.name === "All Locations" 
+                        ? "text-[#0A173E] font-bold border-b border-[#D8EAFD] mb-1 hover:bg-[#F0F8FF] hover:text-[#CA8A04]" 
+                        : "text-slate-700 font-medium hover:bg-[#F0F8FF] hover:text-[#0A173E]"
+                    }`}
+                    onClick={() => setIsLocationsDropdownOpen(false)}
+                  >
+                    {loc.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <Link
             href="/gallery"
             className="relative font-semibold text-slate-800 hover:text-[#0A173E] transition duration-200 group text-sm"
           >
             Gallery
-            <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-[var(--yellow)] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-
-          <Link
-            href="/locations"
-            className="relative font-semibold text-slate-800 hover:text-[#0A173E] transition duration-200 group text-sm"
-          >
-            Locations
             <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-[var(--yellow)] transition-all duration-300 group-hover:w-full"></span>
           </Link>
 
@@ -212,7 +285,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu with Services Submenu */}
+      {/* Mobile Menu with Services & Locations Submenus */}
       {isMenuOpen && (
         <div className="md:hidden bg-[#0A173E] text-white mt-3 p-6 shadow-2xl border-t border-[#182859]">
           <div className="flex flex-col gap-4 text-base">
@@ -221,10 +294,10 @@ export default function Navbar() {
             </Link>
             
             {/* Mobile Services Dropdown */}
-            <div className="border-t border-b border-[#182859] py-2">
+            <div className="border-t border-[#182859] pt-2">
               <button
                 onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                className="text-white hover:text-[var(--yellow)] w-full text-left flex justify-between items-center font-semibold cursor-pointer"
+                className="text-white hover:text-[var(--yellow)] w-full text-left flex justify-between items-center font-semibold cursor-pointer py-1"
               >
                 Services
                 <svg
@@ -239,7 +312,7 @@ export default function Navbar() {
                 </svg>
               </button>
               {isServicesDropdownOpen && (
-                <div className="ml-3 mt-2.5 space-y-2 border-l-2 border-[#182859] pl-3">
+                <div className="ml-3 mt-2 space-y-2 border-l-2 border-[#182859] pl-3">
                   {services.map((service, index) => (
                     <Link
                       key={index}
@@ -260,12 +333,50 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
+            {/* Mobile Locations Dropdown */}
+            <div className="border-t border-b border-[#182859] py-2">
+              <button
+                onClick={() => setIsLocationsDropdownOpen(!isLocationsDropdownOpen)}
+                className="text-white hover:text-[var(--yellow)] w-full text-left flex justify-between items-center font-semibold cursor-pointer py-1"
+              >
+                Locations
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    isLocationsDropdownOpen ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {isLocationsDropdownOpen && (
+                <div className="ml-3 mt-2 space-y-2 border-l-2 border-[#182859] pl-3">
+                  {locations.map((loc, index) => (
+                    <Link
+                      key={index}
+                      href={loc.path}
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                        setIsLocationsDropdownOpen(false);
+                      }}
+                      className={`block py-1 text-sm ${
+                        loc.name === "All Locations"
+                          ? "text-[var(--yellow)] font-bold"
+                          : "text-blue-100 hover:text-[var(--yellow)]"
+                      }`}
+                    >
+                      {loc.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             
             <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-[var(--yellow)] font-semibold transition py-1">
               Gallery
-            </Link>
-            <Link href="/locations" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-[var(--yellow)] font-semibold transition py-1">
-              Locations
             </Link>
             <Link href="/blog" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-[var(--yellow)] font-semibold transition py-1">
               Blog

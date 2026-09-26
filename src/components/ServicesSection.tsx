@@ -109,9 +109,6 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 md:mb-24">
         {/* Section Header */}
         <motion.div className="text-center mb-12 md:mb-16" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.7, ease: "easeOut" }} >
-          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
-            High-Impact Outdoor Infrastructure
-          </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-[#0A173E] tracking-tight">Our Advertising Services</h1>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">Comprehensive advertising solutions tailored to meet your business objectives and maximize brand exposure across Meerut, NCR, and Western UP</p>
         </motion.div>

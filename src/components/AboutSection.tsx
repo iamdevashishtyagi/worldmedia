@@ -4,7 +4,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -19,10 +19,6 @@ export default function AboutSection() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ amount: 0.3 }}
           >
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold rounded-full uppercase tracking-wider mb-4">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#854D0E]" />
-              Estd. 2013 · Meerut Headquarters
-            </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
               About World Media NCR
             </h2>

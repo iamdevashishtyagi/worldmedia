@@ -58,9 +58,6 @@ export default function AboutPage() {
 
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-4">
-            Established 2013 • Meerut &amp; Delhi NCR
-          </span>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#0A173E] mb-6">
             Meerut&apos;s Leading Outdoor Advertising &amp; Hoarding Agency
           </h1>

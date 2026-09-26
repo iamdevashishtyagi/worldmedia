@@ -3,7 +3,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { MapPin, Navigation, Eye, CheckCircle2, ArrowRight } from "lucide-react";
+import { MapPin, Eye, CheckCircle2, ArrowRight } from "lucide-react";
 
 const primeCorridors = [
   {
@@ -61,10 +61,6 @@ export default function PrimeLocationsSection() {
     <section className="w-full py-20 bg-white border-t border-[#D8EAFD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold rounded-full uppercase tracking-wider mb-3">
-            <Navigation className="w-3.5 h-3.5 text-[#854D0E]" />
-            Prime Outdoor Advertising Corridors
-          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0A173E] tracking-tight mb-4">
             Strategic Hoarding Sites Across Meerut &amp; NCR
           </h2>

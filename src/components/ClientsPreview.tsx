@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Award, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const premierClients = [
   { name: "Tata Motors", logo: "/images/clients/tatamotors.png" },
@@ -26,10 +26,6 @@ export default function ClientsPreview() {
     <section className="w-full py-20 bg-white border-t border-[#D8EAFD] text-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold rounded-full uppercase tracking-wider mb-3">
-            <Award className="w-3.5 h-3.5 text-[#854D0E]" />
-            Trusted by India&apos;s Leading Brands
-          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0A173E] tracking-tight mt-2 mb-4">
             Brands That Trust World Media NCR
           </h2>

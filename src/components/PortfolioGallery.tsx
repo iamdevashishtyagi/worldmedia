@@ -211,10 +211,7 @@ export default function PortfolioGallery() {
     <section className="w-full py-16 bg-white border-t border-[#D8EAFD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-3.5 py-1 bg-[#FEF9C3] text-[#854D0E] border border-[#FDE047] text-xs font-bold uppercase tracking-wider rounded-full mb-3">
-            Real Sites &amp; Live Campaigns
-          </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#0F172A] tracking-tight">Our Site Portfolio</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#0A173E] tracking-tight">Our Site Portfolio</h1>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">Explore our verified network of highway unipoles, arterial hoardings, and digital wall paintings across Uttar Pradesh &amp; Delhi NCR.</p>
         </div>
         <div className="flex justify-center flex-wrap gap-3 mb-12">
