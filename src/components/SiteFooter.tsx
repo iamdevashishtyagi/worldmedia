@@ -91,8 +91,8 @@ export default function SiteFooter() {
         </p>
       </div>
       <div className="mx-auto max-w-7xl mt-6 text-center text-xs md:text-sm opacity-80">
-        <Link href="https://iamdevashishtyagi.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition duration-300">
-          🚀 <span>Developed by</span> <strong>Devashish Tyagi</strong>
+        <Link href="/developer" className="hover:text-yellow-400 transition duration-300 text-slate-300">
+          🚀 <span>Engineered by</span> <strong className="text-white hover:text-yellow-400">Devashish Tyagi</strong> <span className="text-slate-400 font-normal">• Best Web Developer in Meerut</span>
         </Link>
       </div>
     </footer>

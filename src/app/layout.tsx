@@ -20,21 +20,33 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://worldmediancr.com"),
   title: {
-    default: "Advertising Agency in Meerut | Hoarding & Outdoor Advertising | World Media NCR",
-    template: "%s | World Media NCR",
+    default: "Best Advertising Agency in Meerut | Top Hoarding & Billboard Company | World Media NCR",
+    template: "%s | Best Advertising Agency in Meerut | World Media NCR",
   },
-  description: "World Media NCR is Meerut's premier outdoor advertising agency since 2013. Specializing in billboard & hoarding advertising, digital wall painting, transit branding, and unipoles across Meerut, Delhi NCR, and Western UP.",
+  description: "Looking for the best advertising agency in Meerut? World Media NCR is the #1 outdoor advertising and hoarding company since 2013. Specializing in prime highway billboards, Delhi-Meerut Expressway unipoles, digital wall painting, vehicle branding, and transit ads. Call +91-9456497636 for best rates.",
   keywords: [
+    "best advertising agency in meerut",
+    "top advertising agency in meerut",
     "advertising agency in meerut",
+    "best hoarding advertising meerut",
+    "top billboard company meerut",
+    "best outdoor advertising company meerut",
     "hoarding advertising meerut",
     "billboard advertising meerut",
     "digital wall painting meerut",
     "outdoor advertising meerut",
     "advertising agency delhi ncr",
+    "top advertising agency delhi ncr",
+    "best advertising agency near me",
+    "hoarding rates in meerut",
+    "delhi meerut expressway hoarding",
     "unipole advertising meerut expressway",
     "vehicle branding meerut",
     "flex printing meerut",
-    "led display advertising meerut"
+    "led display advertising meerut",
+    "hoarding board in meerut",
+    "best outdoor media company western up",
+    "ooh advertising agency meerut"
   ],
   authors: [{ name: "World Media NCR" }],
   creator: "World Media NCR",
@@ -44,8 +56,8 @@ export const metadata: Metadata = {
     apple: "/images/website/logo2.png",
   },
   openGraph: {
-    title: "Advertising Agency in Meerut | Hoarding & Outdoor Advertising | World Media NCR",
-    description: "Leading outdoor advertising agency in Meerut offering premium hoardings, billboards, digital wall painting, and transit media across Meerut & NCR.",
+    title: "Best Advertising Agency in Meerut | Top Hoarding & Billboard Company | World Media NCR",
+    description: "World Media NCR is Meerut's premier outdoor advertising agency since 2013. Prime highway hoardings, unipoles, digital wall painting, and transit media across Meerut & Delhi NCR.",
     url: "https://worldmediancr.com",
     siteName: "World Media NCR",
     images: [
@@ -53,7 +65,7 @@ export const metadata: Metadata = {
         url: "/images/website/herobg2.jpg",
         width: 1200,
         height: 630,
-        alt: "World Media NCR - Outdoor Advertising Agency Meerut",
+        alt: "World Media NCR - Best Outdoor Advertising Agency in Meerut",
       },
     ],
     locale: "en_IN",
@@ -61,7 +73,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advertising Agency in Meerut | World Media NCR",
+    title: "Best Advertising Agency in Meerut | World Media NCR",
     description: "Premier outdoor advertising, hoardings, unipoles and digital wall painting in Meerut & Delhi NCR.",
     images: ["/images/website/herobg2.jpg"],
   },
@@ -75,6 +87,12 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  other: {
+    "geo.region": "IN-UP",
+    "geo.placename": "Meerut",
+    "geo.position": "28.988531;77.706077",
+    "ICBM": "28.988531, 77.706077",
   },
 };
 

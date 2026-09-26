@@ -4,15 +4,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Us | Premier Advertising Agency in Meerut | World Media NCR',
-  description: 'World Media NCR has been Meerut\'s leading outdoor advertising agency since 2013. Led by Shrikant Tyagi, we manage 100+ premium highway hoardings, digital wall painting, and transit media across Meerut, Delhi NCR & Western UP.',
-  keywords: 'about world media ncr, advertising agency meerut about, shrikant tyagi meerut, outdoor advertising company meerut history, hoarding contractors UP',
+  title: 'About Us | Best Advertising Agency in Meerut | World Media NCR',
+  description: 'World Media NCR is recognized as the best advertising agency in Meerut since 2013. Founded by Shrikant Tyagi, managing 100+ prime highway hoardings, billboards, and digital wall painting networks across Meerut, Delhi NCR & Western UP.',
+  keywords: 'best advertising agency in meerut, about world media ncr, top advertising company meerut, shrikant tyagi meerut, outdoor advertising company meerut history, hoarding contractors UP, billboard agency meerut',
   alternates: {
     canonical: 'https://worldmediancr.com/about',
   },
   openGraph: {
-    title: 'About World Media NCR | Leading Advertising Agency in Meerut',
-    description: 'Learn about World Media NCR, Meerut\'s premier outdoor advertising agency since 2013 led by Shrikant Tyagi.',
+    title: 'About World Media NCR | Best Advertising Agency in Meerut',
+    description: 'Learn about World Media NCR, recognized as the best advertising agency in Meerut since 2013 led by Shrikant Tyagi.',
     url: 'https://worldmediancr.com/about',
     images: [{ url: '/images/website/profilepic.webp', width: 800, height: 800, alt: 'Shrikant Tyagi - Founder World Media NCR' }],
   }

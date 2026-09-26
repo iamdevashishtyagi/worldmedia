@@ -22,14 +22,24 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Advertising Service Areas | Meerut, Delhi NCR & Uttar Pradesh",
+  title: "Best Advertising Service Areas | Top Hoardings in Meerut & Delhi NCR",
   description:
-    "Explore World Media NCR outdoor advertising service areas in Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, Delhi and Delhi NCR.",
+    "Explore premier outdoor advertising service areas by World Media NCR. Top highway hoardings, billboards, and wall painting in Meerut, Delhi NCR, Muzaffarnagar, Shamli, Saharanpur, Baghpat, and Hapur.",
+  keywords: [
+    "best advertising agency in meerut",
+    "top outdoor advertising delhi ncr",
+    "advertising agency in muzaffarnagar",
+    "hoarding advertising shamli",
+    "billboard advertising saharanpur",
+    "best outdoor media service areas",
+    "advertising agency baghpat",
+    "hoarding company hapur",
+  ],
   alternates: { canonical: "https://worldmediancr.com/locations" },
   openGraph: {
-    title: "World Media NCR Advertising Service Areas",
+    title: "Best Advertising Service Areas | Top Hoardings in Meerut & Delhi NCR",
     description:
-      "Outdoor advertising services across Meerut, Delhi NCR and western Uttar Pradesh.",
+      "Outdoor advertising networks across Meerut, Delhi NCR and Western Uttar Pradesh by World Media NCR.",
     url: "https://worldmediancr.com/locations",
     siteName: "World Media NCR",
     images: [
@@ -37,6 +47,7 @@ export const metadata: Metadata = {
         url: "/images/portfolio/Baghra Bus Stand.webp",
         width: 1200,
         height: 630,
+        alt: "World Media NCR - Outdoor Advertising Service Areas",
       },
     ],
     locale: "en_IN",
@@ -44,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "World Media NCR Advertising Service Areas",
+    title: "Best Advertising Service Areas | World Media NCR",
     description:
       "Outdoor advertising services across Meerut, Delhi NCR and western Uttar Pradesh.",
   },

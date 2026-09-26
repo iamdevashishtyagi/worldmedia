@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocationBySlug, getAllLocationSlugs } from '@/data/locations';
-import { FaqJsonLd, BreadcrumbJsonLd } from '@/components/SeoJsonLd';
+import { FaqJsonLd, BreadcrumbJsonLd, LocationBusinessJsonLd } from '@/components/SeoJsonLd';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -69,6 +69,13 @@ export default async function LocationDynamicPage({ params }: Props) {
   return (
     <main className="bg-white">
       {/* Local Schema & Breadcrumb Schema */}
+      <LocationBusinessJsonLd
+        name={location.name}
+        url={location.canonical}
+        description={location.metaDescription}
+        cityName={location.name}
+        image={location.ogImage}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', url: 'https://worldmediancr.com' },

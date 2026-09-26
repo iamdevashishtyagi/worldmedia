@@ -73,12 +73,12 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1>
-            Premier outdoor advertising in <em>Meerut &amp; Delhi NCR</em>.
+            Best advertising agency in <em>Meerut &amp; Delhi NCR</em>.
           </h1>
 
           {/* Lead Paragraph */}
           <p className="lead">
-            Prime highway hoardings, arterial unipoles, LED displays, and digital wall painting across
+            Recognized as the top outdoor advertising company since 2013. Prime highway hoardings, arterial unipoles, LED displays, and digital wall painting across
             the Delhi-Meerut Expressway and Western UP — 100% legal, certified, and engineered for maximum brand recall.
           </p>
 

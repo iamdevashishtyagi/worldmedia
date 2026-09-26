@@ -179,3 +179,60 @@ export function ServiceDetailJsonLd({
   );
 }
 
+export function LocationBusinessJsonLd({
+  name,
+  url,
+  description,
+  cityName,
+  image,
+}: {
+  name: string;
+  url: string;
+  description: string;
+  cityName: string;
+  image?: string;
+}) {
+  return (
+    <Script
+      value={{
+        "@context": "https://schema.org",
+        "@type": ["AdvertisingAgency", "LocalBusiness"],
+        name: name ? `World Media NCR - Best Advertising Agency in ${cityName}` : `World Media NCR - Best Advertising Agency in ${cityName}`,
+        alternateName: [
+          `Best Advertising Agency in ${cityName}`,
+          `Top Advertising Agency in ${cityName}`,
+          `Best Hoarding Company ${cityName}`,
+          `Top Billboard Agency ${cityName}`,
+        ],
+        url: url.startsWith("http") ? url : `${siteUrl}${url}`,
+        description,
+        telephone: "+91-9456497636",
+        image: image ? (image.startsWith("http") ? image : `${siteUrl}${image}`) : `${siteUrl}/images/website/herobg2.jpg`,
+        priceRange: "₹₹ - ₹₹₹₹",
+        areaServed: {
+          "@type": cityName.toLowerCase().includes("ncr") ? "State" : "City",
+          name: cityName,
+        },
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: cityName,
+          addressRegion: "Uttar Pradesh",
+          addressCountry: "IN",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "128",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        parentOrganization: {
+          "@type": "AdvertisingAgency",
+          name: "World Media NCR",
+          url: siteUrl,
+        },
+      }}
+    />
+  );
+}
+

@@ -20,10 +20,10 @@ export default function AboutSection() {
             viewport={{ amount: 0.3 }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#0A173E] tracking-tight">
-              About World Media NCR
+              Best Advertising Agency in Meerut
             </h2>
             <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-              Founded in 2013, <strong>World Media NCR</strong> is Meerut&apos;s leading outdoor advertising and hoarding agency. For more than 12 years, we have helped businesses, brands, and institutions establish undeniable market presence across Meerut, Delhi NCR, and Western Uttar Pradesh.
+              Founded in 2013, <strong>World Media NCR</strong> is widely recognized as the best advertising agency in Meerut and the top outdoor hoarding company across Western UP. For more than 12 years, we have helped businesses, brands, and institutions establish undeniable market presence across Meerut, Delhi NCR, and Western Uttar Pradesh.
             </p>
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
               Under the visionary leadership of <strong>Shrikant Tyagi</strong>, we manage an extensive portfolio of high-visibility highway unipoles, arterial city hoardings, transit vehicle wraps, and wide-coverage digital wall paintings.

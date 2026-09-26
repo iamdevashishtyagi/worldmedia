@@ -10,14 +10,29 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Advertising Services in Meerut | Hoarding, Wall Painting & Outdoor Ads',
-  description: 'Complete outdoor advertising services in Meerut including highway hoarding advertising, digital wall painting, billboard advertising, vehicle branding, flex printing, and LED display screens. 12+ years experience.',
-  keywords: 'advertising services meerut, outdoor advertising services, hoarding services meerut, digital wall painting meerut, billboard advertising meerut, vehicle branding meerut, flex printing meerut, led display advertising meerut',
+  title: 'Best Advertising Services in Meerut | Top Hoarding, Billboard & Wall Painting Company',
+  description: 'Explore the best outdoor advertising services in Meerut by World Media NCR. Premium highway hoarding advertising, digital wall painting, billboard unipoles, vehicle branding, flex printing, and LED video displays. Call +91-9456497636.',
+  keywords: [
+    'best advertising services meerut',
+    'top advertising agency meerut',
+    'best hoarding services in meerut',
+    'top billboard company meerut',
+    'best outdoor advertising company meerut',
+    'advertising services meerut',
+    'outdoor advertising services',
+    'hoarding services meerut',
+    'digital wall painting meerut',
+    'billboard advertising meerut',
+    'vehicle branding meerut',
+    'flex printing meerut',
+    'led display advertising meerut',
+    'hoarding rates in meerut'
+  ],
   alternates: {
     canonical: 'https://worldmediancr.com/services',
   },
   openGraph: {
-    title: 'Advertising Services in Meerut | World Media NCR',
+    title: 'Best Advertising Services in Meerut | Top Hoarding & Billboard Agency | World Media NCR',
     description: 'Complete outdoor advertising services in Meerut & NCR. Hoarding, wall painting, billboard, vehicle branding.',
     url: 'https://worldmediancr.com/services',
     siteName: 'World Media NCR',
@@ -26,7 +41,7 @@ export const metadata: Metadata = {
         url: '/images/website/herobg2.jpg',
         width: 1200,
         height: 630,
-        alt: 'World Media NCR - Outdoor Advertising Services in Meerut',
+        alt: 'World Media NCR - Best Outdoor Advertising Services in Meerut',
       },
     ],
     locale: 'en_IN',

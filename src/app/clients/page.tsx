@@ -3,14 +3,14 @@ import ClientsSection from "@/components/ClientsSection";
 import { BreadcrumbJsonLd } from "@/components/SeoJsonLd";
 
 export const metadata: Metadata = {
-  title: 'Our Clients | Trusted Advertising Partners in Meerut | World Media NCR',
-  description: 'Leading brands and businesses that trust World Media NCR for their outdoor advertising needs in Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat & NCR.',
-  keywords: 'advertising clients meerut, hoarding clients, wall painting customers, outdoor advertising partners, brands in meerut',
+  title: 'Our Clients | Trusted by 500+ Top Brands | World Media NCR',
+  description: 'See why 500+ top brands trust World Media NCR — the best advertising agency in Meerut. Major campaign partners include UltraTech, Ambuja, Apollo Hospitals, Tata Motors, and Patanjali.',
+  keywords: 'best advertising agency in meerut clients, hoarding clients meerut, wall painting customers, outdoor advertising partners, brands in meerut, corporate billboard clients',
   alternates: {
     canonical: 'https://worldmediancr.com/clients',
   },
   openGraph: {
-    title: 'Our Clients & Partners | World Media NCR',
+    title: 'Our Clients & Brand Partners | Best Advertising Agency in Meerut | World Media NCR',
     description: 'Trusted by Tata Motors, Patanjali, UltraTech, Ambuja, Apollo, Medanta, and 500+ top brands across Meerut and NCR.',
     url: 'https://worldmediancr.com/clients',
     siteName: 'World Media NCR',
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
         url: '/images/portfolio/Baghra Bus Stand.webp',
         width: 1200,
         height: 630,
+        alt: 'World Media NCR - Best Advertising Agency in Meerut Client Network',
       },
     ],
     locale: 'en_IN',

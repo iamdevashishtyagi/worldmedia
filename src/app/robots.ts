@@ -1,5 +1,5 @@
 // src/app/robots.ts
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,20 +7,20 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/developer/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/api/', '/developer/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'Googlebot-Image',
         allow: ['/images/', '/'],
         disallow: ['/api/'],
-      }
+      },
     ],
     sitemap: 'https://worldmediancr.com/sitemap.xml',
     host: 'https://worldmediancr.com',
-  }
+  };
 }

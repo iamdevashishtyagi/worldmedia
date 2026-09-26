@@ -5,11 +5,19 @@ import { BreadcrumbJsonLd } from "@/components/SeoJsonLd";
 import { blogPostsData } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Advertising Blog | Outdoor Marketing Tips & Insights | World Media NCR",
-  description: "Expert insights on outdoor advertising, hoarding marketing, digital wall painting, and brand promotion strategies for businesses in Meerut and NCR.",
+  title: "Outdoor Advertising Blog & Rate Guides | World Media NCR",
+  description: "Expert insights, campaign planning guides, hoarding rates, and outdoor advertising strategies across Meerut, Delhi NCR, and Western Uttar Pradesh by World Media NCR.",
+  keywords: [
+    "outdoor advertising blog",
+    "hoarding rates guide meerut",
+    "best advertising agency in meerut insights",
+    "digital wall painting guide",
+    "billboard advertising strategy",
+    "outdoor advertising tips UP"
+  ],
   alternates: { canonical: "https://worldmediancr.com/blog" },
   openGraph: {
-    title: "Advertising Blog & Insights | World Media NCR",
+    title: "Outdoor Advertising Blog & Rate Guides | World Media NCR",
     description: "Expert tips, guides, and insights for outdoor advertising, hoardings, and billboards in Meerut and NCR.",
     url: "https://worldmediancr.com/blog",
     siteName: "World Media NCR",
@@ -18,6 +26,7 @@ export const metadata: Metadata = {
         url: "/images/portfolio/Baghra Bus Stand.webp",
         width: 1200,
         height: 630,
+        alt: "World Media NCR - Outdoor Advertising Blog & Insights",
       },
     ],
     locale: "en_IN",
