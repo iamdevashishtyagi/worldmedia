@@ -100,9 +100,9 @@ export default function SiteFooter() {
         </nav>
       </div>
 
-      <div className="mx-auto max-w-7xl mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <div className="mx-auto max-w-7xl mt-12 pt-8 border-t border-blue-700/60 flex flex-col sm:flex-row justify-between items-center text-xs text-blue-200/80 gap-4">
         <p>© {new Date().getFullYear()} World Media NCR. All rights reserved. Founded & Operated by Shrikant Tyagi.</p>
-        <p className="text-slate-500">
+        <p className="text-blue-200/80">
           Premier Outdoor Advertising Agency in Meerut, Delhi-Meerut Expressway & Western Uttar Pradesh.
         </p>
       </div>
