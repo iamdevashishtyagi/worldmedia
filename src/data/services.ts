@@ -25,6 +25,7 @@ export interface ServiceGalleryImage {
 
 export interface ServiceItem {
   slug: string;
+  category?: string; // optional: which parent category this belongs to
   name: string;
   metaTitle: string;
   metaDescription: string;
@@ -886,4 +887,12 @@ export function getServiceBySlug(slug: string): ServiceItem | undefined {
 
 export function getAllServiceSlugs(): string[] {
   return servicesData.map((service) => service.slug);
+}
+
+// Returns slugs with category for redirect support in the new nested routing
+export function getAllServiceSlugsWithCategory(): { slug: string; category: string }[] {
+  return servicesData.map((service) => ({
+    slug: service.slug,
+    category: service.category || "outdoor-advertising",
+  }));
 }

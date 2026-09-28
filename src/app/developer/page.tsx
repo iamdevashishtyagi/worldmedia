@@ -597,8 +597,42 @@ export default function DeveloperPage() {
           </div>
         </div>
       </div>
+      {/* Quick Links to Web Development Service Pages */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-gradient-to-br from-[#0A173E] to-[#0D1C4D] rounded-3xl p-8 md:p-12 border border-[#182859]">
+          <div className="text-center mb-8">
+            <p className="text-[var(--yellow)] font-bold text-xs uppercase tracking-widest mb-2">Web Development Services</p>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-white">Explore My Development Services</h2>
+            <p className="text-slate-400 text-sm mt-2">Click to view detailed pages with pricing, process & FAQs</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Business Website', href: '/services/development/business-website-development', desc: 'SEO-optimized, fast-loading business sites', badge: 'Popular' },
+              { name: 'Portfolio Website', href: '/services/development/portfolio-website-development', desc: 'Stunning portfolios that win clients' },
+              { name: 'E-Commerce Store', href: '/services/development/ecommerce-website-development', desc: 'Full-featured online stores with payments', badge: 'High Demand' },
+              { name: 'Web Software / ERP', href: '/services/development/web-software-development', desc: 'Custom management systems & web apps' },
+            ].map((svc) => (
+              <Link
+                key={svc.href}
+                href={svc.href}
+                className="group relative bg-white/10 hover:bg-white/20 border border-white/15 hover:border-[var(--yellow)]/50 rounded-2xl p-5 transition-all duration-200 flex flex-col"
+              >
+                {svc.badge && (
+                  <span className="absolute top-3 right-3 text-[9px] font-extrabold bg-[var(--yellow)] text-[#0A173E] px-2 py-0.5 rounded-full">{svc.badge}</span>
+                )}
+                <h3 className="text-white font-extrabold text-sm mb-1.5">{svc.name}</h3>
+                <p className="text-slate-400 text-xs leading-relaxed flex-grow">{svc.desc}</p>
+                <div className="mt-3 flex items-center gap-1 text-[var(--yellow)] text-xs font-bold">
+                  View Details <Rocket className="w-3 h-3 ml-0.5 group-hover:translate-x-0.5 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Why Choose Me Section */}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#0A173E] mb-4">
