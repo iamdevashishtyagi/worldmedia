@@ -31,50 +31,6 @@ export default function SiteFooter() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-1 bg-gradient-to-r from-transparent via-[var(--yellow)]/60 to-transparent" />
 
       {/* Top CTA / Consultation Strip */}
-      <div className="border-b border-[#14234B] bg-gradient-to-b from-[#081230] to-[#050B1E]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 bg-gradient-to-r from-[#0A173E] via-[#0E1F52] to-[#0A173E] p-6 sm:p-8 rounded-2xl border border-[#1A2D66] shadow-xl">
-            <div className="text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--yellow)]/10 text-[var(--yellow)] text-xs font-semibold uppercase tracking-wider mb-2">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>360° Advertising & Tech Agency</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-                Ready to Grow Your Brand in Meerut & Delhi NCR?
-              </h3>
-              <p className="text-slate-400 text-sm mt-1 max-w-2xl">
-                From prime highway hoardings & digital wall branding to high-converting websites and ROI-driven Meta ads — let’s build your campaign.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
-              <a
-                href="https://wa.me/919456497636?text=Hi%20World%20Media%20NCR,%20I%20want%20to%20inquire%20about%20your%20services."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-emerald-950/40"
-              >
-                <MessageSquare className="w-4 h-4" />
-                <span>WhatsApp Us</span>
-              </a>
-              <a
-                href="tel:+919456497636"
-                className="inline-flex items-center gap-2 bg-[#F5A623] hover:bg-[#e09415] text-[#0A173E] font-black text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-yellow-950/30"
-              >
-                <Phone className="w-4 h-4" />
-                <span>+91 94564 97636</span>
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-5 py-3 rounded-xl transition border border-white/15"
-              >
-                <span>Get Free Quote</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Main 5-Column Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -200,11 +156,6 @@ export default function SiteFooter() {
                     className="text-slate-400 hover:text-white transition flex items-center justify-between group"
                   >
                     <span className="group-hover:translate-x-0.5 transition-transform">{s.name}</span>
-                    {s.badge && (
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 font-semibold scale-90">
-                        {s.badge}
-                      </span>
-                    )}
                   </Link>
                 </li>
               ))}
@@ -393,7 +344,7 @@ export default function SiteFooter() {
       <div className="bg-[#030712] border-t border-[#0F1C3F] py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p className="text-center md:text-left">
-            © {new Date().getFullYear()} <strong className="text-white">World Media NCR</strong>. All rights reserved. Directed by <span className="text-slate-300 font-semibold">Shrikant Tyagi</span>.
+            © {new Date().getFullYear()} <strong className="text-white">World Media NCR</strong>. All rights reserved.
           </p>
 
           <p className="text-center text-slate-400 text-[11px] sm:text-xs">
@@ -404,7 +355,7 @@ export default function SiteFooter() {
           <div className="text-center md:text-right">
             <Link
               href="/developer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#081230] border border-[#162758] hover:border-[var(--yellow)]/50 text-slate-300 hover:text-[var(--yellow)] transition duration-300 group shadow-sm"
+              className="inline-flex items-center gap-1 py-1.5 rounded-lg border border-[#162758] hover:border-[var(--yellow)]/50 text-slate-300 hover:text-[var(--yellow)] transition duration-300 group shadow-sm"
             >
               <span>🚀</span>
               <span>Engineered by</span>
