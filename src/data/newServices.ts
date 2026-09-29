@@ -72,10 +72,13 @@ export const newServicesData: NewServiceItem[] = [
     slug: "business-website-development",
     name: "Business Website Development",
     tagline: "Professional websites that rank on Google & convert visitors",
-    metaTitle: "Best Business Website Development in Meerut | World Media NCR",
+    metaTitle: "Best Web Development Company in Meerut | Top Business Websites | World Media NCR",
     metaDescription:
-      "World Media NCR builds high-performance business websites in Meerut that rank on Google and convert visitors into customers. Custom design, SEO architecture, fast loading, mobile-first. Call +91-9456497636.",
+      "Looking for the best web development company in Meerut? World Media NCR builds high-performance business websites engineered for Google #1 rankings, rapid speeds & conversions. Call +91-9456497636.",
     keywords: [
+      "best web development company in meerut",
+      "best web development agency in meerut",
+      "top website development company meerut",
       "business website development meerut",
       "best website developer in meerut",
       "professional website design meerut",
@@ -350,10 +353,11 @@ export const newServicesData: NewServiceItem[] = [
     slug: "ecommerce-website-development",
     name: "E-Commerce Website Development",
     tagline: "Full-featured online stores that sell 24/7",
-    metaTitle: "Best E-Commerce Website Development in Meerut | World Media NCR",
+    metaTitle: "Best E-Commerce Website Development in Meerut | Top Online Store Agency | World Media NCR",
     metaDescription:
-      "Build a powerful online store in Meerut with World Media NCR. Full-featured e-commerce websites with product management, payment gateways, mobile optimization & SEO. Start selling online today. Call +91-9456497636.",
+      "Looking for the best e-commerce website development company in Meerut? World Media NCR builds high-converting online stores, Shopify & custom Next.js eCommerce with payment gateways. Call +91-9456497636.",
     keywords: [
+      "best ecommerce website development company meerut",
       "ecommerce website development meerut",
       "online store development meerut",
       "best ecommerce developer meerut",

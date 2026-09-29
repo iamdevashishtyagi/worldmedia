@@ -19,7 +19,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/clients`, lastModified: currentDate, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${baseUrl}/contact`, lastModified: currentDate, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified: currentDate, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/developer`, lastModified: currentDate, changeFrequency: 'weekly', priority: 0.85 },
+    {
+      url: `${baseUrl}/developer`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+      images: [
+        `${baseUrl}/images/developer/Devashish-Tyagi.webp`,
+        `${baseUrl}/images/developer/devashishtyagi.webp`,
+        `${baseUrl}/images/developer/Devashish%20Tyagi.webp`,
+      ],
+    },
   ];
 
   // Legacy flat outdoor service pages

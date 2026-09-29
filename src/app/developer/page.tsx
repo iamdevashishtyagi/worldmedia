@@ -27,25 +27,33 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Devashish Tyagi | Best Web Developer in Meerut & SEO Architect',
+  title: 'Devashish Tyagi | Best Web Developer in Meerut, Full Stack Engineer & SEO Architect',
   description:
-    'Devashish Tyagi is recognized as the best web developer in Meerut & full-stack SEO architect. Specializing in high-performance Next.js, React, Node.js applications, and top Google rankings. Hire the top website developer in Meerut.',
+    'Devashish Tyagi is recognized as the best web developer in Meerut & top full-stack SEO engineer. Specializing in high-performance Next.js, React, Node.js applications, and #1 Google rankings. Hire Devashish Tyagi for premier website development in Meerut & Delhi NCR.',
   keywords: [
     'Devashish Tyagi',
     'Devashish',
+    'Devashish Tyagi Meerut',
     'Devashish Tyagi web developer',
+    'Devashish Tyagi developer',
+    'Devashish developer',
+    'best developer in meerut',
     'best web developer in meerut',
     'best website developer in meerut',
     'top web developer meerut',
+    'top developer meerut',
     'freelance web developer meerut',
     'full stack developer meerut',
+    'software engineer devashish tyagi',
+    'devashish tyagi portfolio',
+    'best web developer meerut up',
     'website designer in meerut',
     'seo expert meerut',
     'nextjs developer meerut',
     'react developer meerut',
-    'devashish tyagi portfolio',
-    'web development services meerut',
     'hire web developer meerut',
+    'best developer page',
+    'lead web architect meerut',
   ],
   robots: {
     index: true,
@@ -62,17 +70,23 @@ export const metadata: Metadata = {
     canonical: 'https://worldmediancr.com/developer',
   },
   openGraph: {
-    title: 'Devashish Tyagi | Best Web Developer in Meerut & SEO Architect',
+    title: 'Devashish Tyagi | Best Web Developer in Meerut & Full Stack Architect',
     description:
-      'Devashish Tyagi is the premier full-stack web developer and SEO specialist in Meerut. Building lightning-fast Next.js web applications with 100% SEO scores.',
+      'Devashish Tyagi is recognized as the best web developer and SEO engineer in Meerut. High-performance Next.js web applications with 100% SEO scores.',
     url: 'https://worldmediancr.com/developer',
     siteName: 'World Media NCR',
     images: [
       {
-        url: '/images/developer/Devashish Tyagi.webp',
+        url: 'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp',
         width: 1200,
         height: 630,
         alt: 'Devashish Tyagi - Best Web Developer in Meerut',
+      },
+      {
+        url: 'https://worldmediancr.com/images/developer/devashishtyagi.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Devashish Tyagi - Full Stack Software Engineer Meerut',
       },
     ],
     locale: 'en_IN',
@@ -83,7 +97,7 @@ export const metadata: Metadata = {
     title: 'Devashish Tyagi | Best Web Developer in Meerut',
     description:
       'Full Stack Web Developer & SEO Architect building ultra-fast web applications in Meerut.',
-    images: ['/images/developer/Devashish Tyagi.webp'],
+    images: ['https://worldmediancr.com/images/developer/Devashish-Tyagi.webp'],
   },
   authors: [{ name: 'Devashish Tyagi' }],
   creator: 'Devashish Tyagi',
@@ -96,15 +110,36 @@ const personSchema = {
   name: 'Devashish Tyagi',
   alternateName: [
     'Devashish',
-    'Devashish Tyagi Developer',
+    'Devashish Tyagi',
     'Devashish Tyagi Meerut',
+    'Devashish Developer',
+    'Devashish Tyagi Web Developer',
     'Best Web Developer in Meerut',
+    'Best Developer Meerut',
+    'Top Developer in Meerut',
   ],
-  jobTitle: 'Full Stack Developer & SEO Architect',
+  jobTitle: 'Best Web Developer in Meerut & Full Stack SEO Architect',
   description:
-    'Devashish Tyagi is a full stack web developer and SEO architect in Meerut, Uttar Pradesh, specializing in Next.js, React, Node.js, and search engine dominance.',
+    'Devashish Tyagi is recognized as the best web developer and SEO architect in Meerut, Uttar Pradesh, specializing in Next.js, React, Node.js, and Google search dominance.',
   url: 'https://worldmediancr.com/developer',
-  image: 'https://worldmediancr.com/images/developer/Devashish Tyagi.webp',
+  image: [
+    'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp',
+    'https://worldmediancr.com/images/developer/devashishtyagi.webp',
+    'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp',
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'World Media NCR',
+    url: 'https://worldmediancr.com',
+  },
+  hasOccupation: {
+    '@type': 'Occupation',
+    name: 'Full Stack Web Developer & Software Engineer',
+    occupationLocation: {
+      '@type': 'City',
+      name: 'Meerut',
+    },
+  },
   email: 'iamdevashishtyagi@gmail.com',
   telephone: '+91-9557423119',
   address: {
@@ -128,6 +163,8 @@ const personSchema = {
     'Search Engine Optimization (SEO)',
     'Core Web Vitals',
     'Website Design Meerut',
+    'Web Architecture',
+    'E-Commerce Development',
   ],
   areaServed: [
     { '@type': 'City', name: 'Meerut' },
@@ -136,6 +173,77 @@ const personSchema = {
     { '@type': 'Country', name: 'India' },
   ],
   priceRange: '₹₹ - ₹₹₹',
+};
+
+// ImageObject schemas specifically for Google Images indexing
+const imageSchemas = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Devashish Tyagi - Photos and Work',
+  itemListElement: [
+    {
+      '@type': 'ImageObject',
+      '@id': 'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp#image',
+      position: 1,
+      name: 'Devashish Tyagi - Best Web Developer in Meerut',
+      url: 'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp',
+      contentUrl: 'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp',
+      caption: 'Devashish Tyagi - Best Web Developer and SEO Architect in Meerut Uttar Pradesh',
+      description: 'Portrait photo of Devashish Tyagi, leading full-stack web developer and SEO engineer in Meerut and Delhi NCR.',
+      author: {
+        '@type': 'Person',
+        name: 'Devashish Tyagi',
+      },
+      representativeOfPage: true,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': 'https://worldmediancr.com/images/developer/devashishtyagi.webp#image',
+      position: 2,
+      name: 'Devashish Tyagi - Software Engineer & Web Architect',
+      url: 'https://worldmediancr.com/images/developer/devashishtyagi.webp',
+      contentUrl: 'https://worldmediancr.com/images/developer/devashishtyagi.webp',
+      caption: 'Devashish Tyagi developing high-performance web applications and enterprise platforms',
+      description: 'Devashish Tyagi working on World Media NCR production architecture, full stack engineering, and SEO optimization in Meerut.',
+      author: {
+        '@type': 'Person',
+        name: 'Devashish Tyagi',
+      },
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': 'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp#image',
+      position: 3,
+      name: 'Devashish Tyagi Profile Portrait',
+      url: 'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp',
+      contentUrl: 'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp',
+      caption: 'Devashish Tyagi - Full Stack Developer & SEO Consultant in Meerut',
+      description: 'Profile avatar of Devashish Tyagi, top web developer in Meerut.',
+      author: {
+        '@type': 'Person',
+        name: 'Devashish Tyagi',
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://worldmediancr.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Best Web Developer in Meerut - Devashish Tyagi',
+      item: 'https://worldmediancr.com/developer',
+    },
+  ],
 };
 
 const faqSchema = {
@@ -236,14 +344,22 @@ const expertiseTags = [
 export default function DeveloperPage() {
   return (
     <main className="bg-white mt-[-16]">
-      {/* Rich Structured Data for Google Knowledge Graph & Featured Snippets */}
+      {/* Rich Structured Data for Google Knowledge Graph, Google Images & Featured Snippets */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageSchemas) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero Section - Premium Dark Theme */}
@@ -336,15 +452,25 @@ export default function DeveloperPage() {
             <div className="relative flex justify-center">
               <div className="relative">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600/40 via-yellow-500/20 to-blue-600/40 blur-2xl opacity-60 animate-pulse"></div>
-                <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                <figure
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                  className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl"
+                >
                   <Image
-                    src="/images/developer/Devashish Tyagi.webp"
-                    alt="Devashish Tyagi - Best Web Developer and SEO Architect in Meerut"
+                    src="/images/developer/Devashish-Tyagi.webp"
+                    alt="Devashish Tyagi - Best Web Developer, Full Stack Engineer & SEO Architect in Meerut"
+                    title="Devashish Tyagi - Best Web Developer in Meerut"
                     fill
                     className="object-cover"
                     priority
+                    sizes="(max-width: 768px) 320px, 384px"
+                    itemProp="contentUrl"
                   />
-                </div>
+                  <figcaption className="sr-only">
+                    Devashish Tyagi - Best Web Developer, Full Stack Engineer &amp; SEO Architect in Meerut Uttar Pradesh
+                  </figcaption>
+                </figure>
                 <div className="absolute bottom-8 right-8 bg-green-500 rounded-full p-2 border-4 border-[#0A173E]">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
                 </div>
@@ -414,16 +540,25 @@ export default function DeveloperPage() {
           </div>
 
           <div className="relative">
-            <div className="relative max-w-sm mx-auto h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+            <figure
+              itemScope
+              itemType="https://schema.org/ImageObject"
+              className="relative max-w-sm mx-auto h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
+            >
               <Image
                 src="/images/developer/Devashish-Tyagi.webp"
-                alt="Devashish Tyagi - Full Stack Web Developer and SEO Consultant in Meerut"
+                alt="Devashish Tyagi - Best Web Developer and Technical SEO Consultant in Meerut Uttar Pradesh"
+                title="Devashish Tyagi - Best Website Developer Meerut"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                itemProp="contentUrl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+              <figcaption className="sr-only">
+                Devashish Tyagi - Premier Full Stack Web Developer and SEO Consultant in Meerut
+              </figcaption>
+            </figure>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-100 rounded-full -z-10"></div>
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-100 rounded-full -z-10"></div>
           </div>
@@ -489,14 +624,24 @@ export default function DeveloperPage() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="relative max-w-sm mx-auto h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+            <figure
+              itemScope
+              itemType="https://schema.org/ImageObject"
+              className="relative max-w-sm mx-auto h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
+            >
               <Image
                 src="/images/developer/devashishtyagi.webp"
-                alt="Devashish Tyagi - Web Development Project World Media NCR"
+                alt="Devashish Tyagi - Full Stack Web Developer Engineering World Media NCR Website"
+                title="Devashish Tyagi - Full Stack Web Developer &amp; Software Engineer"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                itemProp="contentUrl"
               />
-            </div>
+              <figcaption className="sr-only">
+                Devashish Tyagi - Lead Full Stack Engineer and Web Architect of World Media NCR
+              </figcaption>
+            </figure>
           </div>
 
           <div className="order-1 lg:order-2">

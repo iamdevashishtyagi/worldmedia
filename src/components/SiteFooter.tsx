@@ -353,14 +353,15 @@ export default function SiteFooter() {
           <div className="text-center md:text-right">
             <Link
               href="/developer"
-              className="inline-flex items-center gap-1 py-1.5 rounded-lg border border-[#162758] hover:border-[var(--yellow)]/50 text-slate-300 hover:text-[var(--yellow)] transition duration-300 group shadow-sm"
+              title="Devashish Tyagi - Best Web Developer in Meerut"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-[#162758] hover:border-[var(--yellow)]/50 text-slate-300 hover:text-[var(--yellow)] transition duration-300 group shadow-sm bg-[#081230]"
             >
               <span>🚀</span>
               <span>Engineered by</span>
               <strong className="text-white group-hover:text-[var(--yellow)] transition font-bold">
                 Devashish Tyagi
               </strong>
-              <span className="text-slate-400 hidden sm:inline">• Full Stack Web Developer</span>
+              <span className="text-slate-400 hidden sm:inline">• Best Web Developer in Meerut</span>
             </Link>
           </div>
         </div>

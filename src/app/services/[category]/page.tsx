@@ -74,22 +74,66 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (cat) {
     const metaTitles: Record<string, string> = {
-      'outdoor-advertising': 'Best Outdoor Advertising in Meerut | Hoardings, Billboard & OOH | World Media NCR',
-      'development': 'Best Website Development in Meerut | Business, E-Commerce & Web Software | World Media NCR',
-      'designing': 'Best Graphic Design Services in Meerut | Logo, UI/UX & Social Media Design | World Media NCR',
-      'digital-advertising': 'Best Digital Advertising in Meerut | Meta Ads, YouTube & AI Videos | World Media NCR',
+      'outdoor-advertising': 'Best Outdoor Advertising in Meerut | Top Hoarding, Billboard & OOH Company | World Media NCR',
+      'development': 'Best Web Development Company in Meerut | Top Website Design & Software Agency | World Media NCR',
+      'designing': 'Best Graphic Design Company in Meerut | Top Logo Design & UI/UX Agency | World Media NCR',
+      'digital-advertising': 'Best Digital Advertising Agency in Meerut | Top Meta Ads, YouTube & AI Videos | World Media NCR',
     };
     const metaDescs: Record<string, string> = {
-      'outdoor-advertising': 'World Media NCR — Meerut\'s top outdoor advertising agency. Highway hoardings, digital wall painting, billboard gantries, vehicle branding, LED screens & political campaigns. Call +91-9456497636.',
-      'development': 'Professional website development services in Meerut — business websites, portfolio websites, e-commerce stores, and custom web software. Built for SEO, speed & conversions. Call +91-9456497636.',
-      'designing': 'Creative design services in Meerut — logo design, brand identity, website UI/UX, and social media graphics. Make your brand unforgettable. Call +91-9456497636.',
-      'digital-advertising': 'Digital advertising services in Meerut — Meta Ads (Facebook & Instagram), YouTube video ads, and AI-generated business videos. Grow your brand online. Call +91-9456497636.',
+      'outdoor-advertising': 'Looking for the best outdoor advertising in Meerut? World Media NCR provides prime highway hoardings, digital wall painting, billboard unipoles, vehicle branding & LED displays. Call +91-9456497636.',
+      'development': 'Looking for the best web development company in Meerut? World Media NCR builds high-performance business websites, e-commerce stores, portfolio websites & custom web softwares engineered for #1 Google rankings. Call +91-9456497636.',
+      'designing': 'Best graphic design company in Meerut. Creative logo design, brand identity systems, high-converting website UI/UX, and viral social media creatives. Call +91-9456497636 for top designers.',
+      'digital-advertising': 'Best digital advertising agency in Meerut. High-ROI Meta Ads (Facebook & Instagram), YouTube video ads, AI-generated business videos, and performance marketing in Meerut & Delhi NCR. Call +91-9456497636.',
+    };
+
+    const topKeywords: Record<string, string[]> = {
+      'development': [
+        'best web development company in meerut',
+        'best web development agency in meerut',
+        'top website development company meerut',
+        'web development company meerut',
+        'best website developer in meerut',
+        'website designing company in meerut',
+        'top web developer meerut',
+        'web development agency meerut',
+        'ecommerce website development meerut',
+        'business website development meerut',
+        'custom web software development meerut',
+        'hire web developer meerut',
+        'best website development company near me',
+      ],
+      'outdoor-advertising': [
+        'best outdoor advertising in meerut',
+        'top advertising agency meerut',
+        'best hoarding services in meerut',
+        'top billboard company meerut',
+        'digital wall painting meerut',
+        'hoarding rates in meerut',
+        'highway hoarding advertising meerut',
+        'vehicle branding meerut',
+      ],
+      'designing': [
+        'best graphic design company in meerut',
+        'best logo designer in meerut',
+        'top logo design agency meerut',
+        'website ui ux design meerut',
+        'graphic design services meerut',
+        'social media post design meerut',
+      ],
+      'digital-advertising': [
+        'best digital advertising agency in meerut',
+        'top meta ads agency meerut',
+        'facebook ads management meerut',
+        'instagram marketing agency meerut',
+        'youtube video advertising meerut',
+        'ai business video creation meerut',
+      ],
     };
 
     return {
       title: metaTitles[category] || `${cat.name} Services | World Media NCR`,
       description: metaDescs[category] || cat.description,
-      keywords: cat.services.flatMap((s) => s.keywords).join(', '),
+      keywords: [...(topKeywords[category] || []), ...cat.services.flatMap((s) => s.keywords)].join(', '),
       alternates: {
         canonical: `https://worldmediancr.com/services/${category}`,
       },
