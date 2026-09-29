@@ -165,6 +165,13 @@ export const heroBackgroundIcons: PhysicsIconItem[] = [
     size: 90,
   },
   {
+    id: "bg-google-ads",
+    icon: "logos:google-ads",
+    shape: "circle",
+    radius: 45,
+    size: 90,
+  },
+  {
     id: "bg-meta",
     icon: "logos:meta-icon",
     shape: "circle",
@@ -178,6 +185,13 @@ export const heroBackgroundIcons: PhysicsIconItem[] = [
     radius: 45,
     size: 90,
   },
+  {
+    id: "bg-analytics",
+    icon: "logos:google-analytics",
+    shape: "circle",
+    radius: 45,
+    size: 90,
+  }
 ];
 
 // Big pure developer tech icons for developer page hero section:

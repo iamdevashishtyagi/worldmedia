@@ -287,10 +287,13 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(0.35rem, 1.4vw, 0.65rem);
-  padding: clamp(0.68rem, 1.8vw, 0.88rem) clamp(1rem, 2.2vw, 1.5rem);
-  font: 700 clamp(0.68rem, 1.6vw, 0.78rem) var(--sans);
-  letter-spacing: clamp(0.06em, 0.3vw, 0.11em);
+  gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   border: 1px solid var(--yellow);
   background: var(--yellow);
@@ -328,8 +331,8 @@ body {
 
 .hero-clean .btn .icon {
   display: inline-block;
-  width: clamp(13px, 2vw, 16px);
-  height: clamp(13px, 2vw, 16px);
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
   transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.3, 1.2);
 }

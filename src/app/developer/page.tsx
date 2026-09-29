@@ -344,7 +344,7 @@ const expertiseTags = [
 
 export default function DeveloperPage() {
   return (
-    <main className="bg-white mt-[-16]">
+    <div className="bg-white">
       {/* Rich Structured Data for Google Knowledge Graph, Google Images & Featured Snippets */}
       <script
         type="application/ld+json"
@@ -363,8 +363,8 @@ export default function DeveloperPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero Section - Light Clean Developer Theme matching browser viewport */}
-      <div className="relative min-h-[calc(100dvh-4rem)] lg:h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] flex items-start lg:items-center justify-center overflow-hidden pt-6 pb-12 sm:pt-8 lg:py-0 border-b border-[#D8EAFD] bg-[var(--alice-blue)]">
+      {/* Hero Section - Matching Hero-Clean Viewport Exact Sizing */}
+      <section className="hero-clean lg:h-[calc(100dvh-4rem)] lg:min-h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] flex flex-col justify-center relative overflow-hidden box-border">
         {/* Light Elegant Developer Tech Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#EDF5FD] via-[#F8FAFC] to-[#EDF5FD]">
           {/* Subtle Clean Grid Pattern */}
@@ -395,7 +395,7 @@ export default function DeveloperPage() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-8 lg:pt-0 lg:pb-4 z-10 pointer-events-none w-full lg:-mt-8 xl:-mt-12">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-8 lg:pt-0 lg:pb-4 z-10 pointer-events-none w-full lg:-mt-6 xl:-mt-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
             <div className="pointer-events-auto">
               <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full px-3.5 py-1 sm:px-4 sm:py-1.5 mb-3 border border-[#D8EAFD] shadow-2xs">
@@ -468,7 +468,7 @@ export default function DeveloperPage() {
                 <figure
                   itemScope
                   itemType="https://schema.org/ImageObject"
-                  className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl"
+                  className="relative w-68 h-68 sm:w-80 sm:h-80 md:w-92 md:h-92 lg:w-[395px] lg:h-[395px] xl:w-[415px] xl:h-[415px] rounded-full overflow-hidden border-4 border-white shadow-2xl"
                 >
                   <Image
                     src="/images/developer/Devashish Tyagi.webp"
@@ -477,21 +477,21 @@ export default function DeveloperPage() {
                     fill
                     className="object-cover"
                     priority
-                    sizes="(max-width: 768px) 280px, 384px"
+                    sizes="(max-width: 640px) 272px, (max-width: 1024px) 380px, 415px"
                     itemProp="contentUrl"
                   />
                   <figcaption className="sr-only">
                     Devashish Tyagi - Full-Stack Web Architect &amp; Software Systems Engineer in Meerut Uttar Pradesh
                   </figcaption>
                 </figure>
-                <div className="absolute bottom-6 right-6 bg-emerald-500 rounded-full p-2 border-4 border-white shadow-lg">
+                <div className="absolute bottom-6 right-6 sm:bottom-7 sm:right-7 lg:bottom-8 lg:right-8 bg-emerald-500 rounded-full p-2 sm:p-2.5 border-4 border-white shadow-lg">
                   <div className="w-2.5 h-2.5 bg-emerald-200 rounded-full animate-ping"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* About Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -920,6 +920,6 @@ export default function DeveloperPage() {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

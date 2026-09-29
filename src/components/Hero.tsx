@@ -115,12 +115,12 @@ export default function Hero() {
 
           {/* Action Row */}
           <div className="row">
-            <Link href="/locations" className="btn">
+            <Link href="/locations" className="btn text-xs font-bold py-2.5 px-4">
               <span>Explore Locations</span>
               <ArrowRightIcon />
             </Link>
 
-            <Link href="/contact" className="btn ghost">
+            <Link href="/contact" className="btn ghost text-xs font-bold py-2.5 px-4">
               <span>Request a Quote</span>
               <QuoteIcon />
             </Link>
@@ -129,7 +129,7 @@ export default function Hero() {
               href="https://wa.me/919456497636?text=Hi%20World%20Media%20NCR%2C%20I%20want%20to%20inquire%20about%20hoardings%20and%20advertising%20locations."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn ghost"
+              className="btn ghost text-xs font-bold py-2.5 px-4"
               title="Chat on WhatsApp"
             >
               <span>WhatsApp</span>
