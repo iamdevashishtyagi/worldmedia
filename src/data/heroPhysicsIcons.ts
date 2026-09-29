@@ -191,7 +191,59 @@ export const heroBackgroundIcons: PhysicsIconItem[] = [
     shape: "circle",
     radius: 45,
     size: 90,
-  }
+  },
+  {
+    id: "bg-nextjs",
+    icon: "devicon:nextjs",
+    shape: "circle",
+    radius: 45,
+    size: 90,
+  },
+  {
+    id: "bg-react",
+    icon: "devicon:react",
+    shape: "circle",
+    radius: 45,
+    size: 90,
+  },
+  {
+    id: "bg-canva",
+    icon: "devicon:canva",
+    shape: "circle",
+    radius: 45,
+    size: 90,
+  },
+  {
+    id: "bg-premiere",
+    icon: "devicon:premierepro",
+    shape: "square",
+    width: 90,
+    height: 90,
+    size: 90,
+  },
+  {
+    id: "bg-aftereffects",
+    icon: "skill-icons:aftereffects",
+    shape: "square",
+    width: 90,
+    height: 90,
+    size: 90,
+  },
+  {
+    id: "bg-photoshop",
+    icon: "devicon:photoshop",
+    shape: "square",
+    width: 90,
+    height: 90,
+    size: 90,
+  },
+  {
+    id: "bg-figma",
+    icon: "devicon:figma",
+    shape: "circle",
+    radius: 45,
+    size: 90,
+  },
 ];
 
 // Big pure developer tech icons for developer page hero section:
