@@ -1,0 +1,618 @@
+"use client";
+
+import React, { useEffect, useRef, useState, useCallback } from "react";
+import Matter from "matter-js";
+import { Icon } from "@iconify/react";
+
+export interface PhysicsIconItem {
+  id: string;
+  icon: string;
+  label?: string; // If provided, renders as small capsule/pill with label
+  shape?: "pure" | "circle" | "square" | "rectangle" | "pill";
+  size?: number; // Size of icon in px
+  radius?: number; // Physics body radius in px for circular items
+  width?: number; // Width of container in px for square/rectangle
+  height?: number; // Height of container in px for square/rectangle
+  color?: string;
+  bg?: string;
+  borderColor?: string;
+  className?: string;
+}
+
+export interface PhysicsIconsProps {
+  items: PhysicsIconItem[];
+  gravity?: number;
+  bounce?: number;
+  friction?: number;
+  frictionAir?: number;
+  className?: string;
+  itemClassName?: string;
+  throwPower?: number;
+  disabled?: boolean;
+  showHint?: boolean;
+  hintText?: string;
+}
+
+export default function PhysicsIcons({
+  items,
+  gravity = 1,
+  bounce = 0.68,
+  friction = 0.08,
+  frictionAir = 0.016,
+  className = "",
+  itemClassName = "",
+  throwPower = 1.15,
+  disabled = false,
+  showHint = false,
+  hintText = "Interactive · Drag & Toss",
+}: PhysicsIconsProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+  const [mounted, setMounted] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+
+  // Matter.js references
+  const engineRef = useRef<Matter.Engine | null>(null);
+  const runnerRef = useRef<Matter.Runner | null>(null);
+  const bodiesRef = useRef<Map<string, Matter.Body>>(new Map());
+  const wallsRef = useRef<{
+    left: Matter.Body;
+    right: Matter.Body;
+    bottom: Matter.Body;
+  } | null>(null);
+
+  // Drag interaction state
+  const dragRef = useRef<{
+    id: string;
+    body: Matter.Body;
+    pointerId: number;
+    offsetX: number;
+    offsetY: number;
+    history: { x: number; y: number; time: number }[];
+  } | null>(null);
+
+  // Reduced motion detection
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== "undefined") {
+      const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+      setReducedMotion(mediaQuery.matches);
+
+      const handleChange = (e: MediaQueryListEvent) => {
+        setReducedMotion(e.matches);
+      };
+      mediaQuery.addEventListener("change", handleChange);
+      return () => mediaQuery.removeEventListener("change", handleChange);
+    }
+  }, []);
+
+  // Main Matter.js initialization and lifecycle
+  useEffect(() => {
+    if (!mounted || reducedMotion || disabled || !containerRef.current) return;
+
+    const container = containerRef.current;
+    const width = container.clientWidth || 450;
+    const height = container.clientHeight || 450;
+
+    // Create Matter.js Engine
+    const engine = Matter.Engine.create({
+      gravity: {
+        x: 0,
+        y: gravity * 0.95,
+        scale: 0.001,
+      },
+    });
+    engineRef.current = engine;
+
+    const world = engine.world;
+    const WALL_THICKNESS = 140;
+    const WALL_SPAN = Math.max(3000, width + 1000);
+
+    // Create boundary walls:
+    // Left and right walls extend high above the container to allow high throws
+    // Top is deliberately left open so icons can fly up and return naturally
+    const bottomWall = Matter.Bodies.rectangle(
+      width / 2,
+      height + WALL_THICKNESS / 2,
+      WALL_SPAN,
+      WALL_THICKNESS,
+      {
+        isStatic: true,
+        restitution: bounce,
+        friction,
+        label: "wall-bottom",
+      }
+    );
+
+    const leftWall = Matter.Bodies.rectangle(
+      -WALL_THICKNESS / 2,
+      height / 2 - 500,
+      WALL_THICKNESS,
+      height + 1600,
+      {
+        isStatic: true,
+        restitution: bounce,
+        friction,
+        label: "wall-left",
+      }
+    );
+
+    const rightWall = Matter.Bodies.rectangle(
+      width + WALL_THICKNESS / 2,
+      height / 2 - 500,
+      WALL_THICKNESS,
+      height + 1600,
+      {
+        isStatic: true,
+        restitution: bounce,
+        friction,
+        label: "wall-right",
+      }
+    );
+
+    wallsRef.current = { left: leftWall, right: rightWall, bottom: bottomWall };
+    Matter.Composite.add(world, [bottomWall, leftWall, rightWall]);
+
+    // Create physics bodies based on shape (pure square, rectangle, circle, or small pill)
+    const bodies = new Map<string, Matter.Body>();
+    const cols = Math.max(2, Math.floor(width / 130));
+
+    items.forEach((item, index) => {
+      const shape = item.shape || (item.label ? "pill" : "circle");
+      const isPill = shape === "pill" && !!item.label;
+      const el = itemRefs.current.get(item.id);
+
+      let itemW = 78;
+      let itemH = 78;
+      let body: Matter.Body;
+
+      // Distribute spawn positions horizontally across upper area
+      const col = index % cols;
+      const row = Math.floor(index / cols);
+      const spacingX = (width - 40) / Math.max(1, cols);
+      const spawnX = Math.max(
+        45,
+        Math.min(
+          width - 45,
+          25 + col * spacingX + (Math.random() - 0.5) * 20
+        )
+      );
+      const spawnY = -35 - row * 60 + (Math.random() - 0.5) * 15;
+
+      if (isPill) {
+        // Small tech pills with slightly rounded corners (chamfered capsule)
+        itemW = el?.offsetWidth || 112;
+        itemH = el?.offsetHeight || 36;
+        body = Matter.Bodies.rectangle(spawnX, spawnY, itemW, itemH, {
+          chamfer: { radius: Math.min(itemW, itemH) / 2 },
+          restitution: bounce,
+          friction,
+          frictionAir,
+          density: 0.002,
+          angle: (Math.random() - 0.5) * 0.35,
+          label: `icon-${item.id}`,
+        });
+      } else if (shape === "circle") {
+        // Pure circle icon
+        const radius = item.radius || (item.size ? Math.round(item.size / 2) : 39);
+        itemW = radius * 2;
+        itemH = radius * 2;
+        body = Matter.Bodies.circle(spawnX, spawnY, radius, {
+          restitution: bounce,
+          friction,
+          frictionAir,
+          density: 0.0025,
+          angle: (Math.random() - 0.5) * 0.5,
+          label: `icon-${item.id}`,
+        });
+      } else if (shape === "square") {
+        // Pure square icon (Instagram, Facebook, LinkedIn)
+        const size = item.width || item.height || item.size || 78;
+        itemW = size;
+        itemH = size;
+        body = Matter.Bodies.rectangle(spawnX, spawnY, size, size, {
+          chamfer: { radius: 18 },
+          restitution: bounce,
+          friction,
+          frictionAir,
+          density: 0.0025,
+          angle: (Math.random() - 0.5) * 0.4,
+          label: `icon-${item.id}`,
+        });
+      } else if (shape === "rectangle") {
+        // Pure rectangle icon (YouTube)
+        itemW = item.width || 92;
+        itemH = item.height || 64;
+        body = Matter.Bodies.rectangle(spawnX, spawnY, itemW, itemH, {
+          chamfer: { radius: 16 },
+          restitution: bounce,
+          friction,
+          frictionAir,
+          density: 0.0025,
+          angle: (Math.random() - 0.5) * 0.35,
+          label: `icon-${item.id}`,
+        });
+      } else {
+        // Fallback pure circle
+        const radius = 39;
+        body = Matter.Bodies.circle(spawnX, spawnY, radius, {
+          restitution: bounce,
+          friction,
+          frictionAir,
+          density: 0.0025,
+          label: `icon-${item.id}`,
+        });
+      }
+
+      // Subtle initial velocity to give natural scatter
+      Matter.Body.setVelocity(body, {
+        x: (Math.random() - 0.5) * 1.8,
+        y: Math.random() * 2 + 1.2,
+      });
+
+      bodies.set(item.id, body);
+    });
+
+    bodiesRef.current = bodies;
+    Matter.Composite.add(world, Array.from(bodies.values()));
+
+    // High performance render loop: direct DOM transform updates (Zero React setState)
+    let isFirstUpdate = true;
+    const afterUpdateHandler = () => {
+      bodies.forEach((body, id) => {
+        // If this body is currently being dragged, pointermove controls it directly
+        if (dragRef.current?.id === id) return;
+
+        const el = itemRefs.current.get(id);
+        if (!el) return;
+
+        const { x, y } = body.position;
+        const angle = body.angle;
+
+        // Apply hardware-accelerated 3D transform centered at (x, y)
+        el.style.transform = `translate3d(${x}px, ${y}px, 0px) translate(-50%, -50%) rotate(${angle}rad)`;
+
+        if (isFirstUpdate) {
+          el.style.opacity = "1";
+        }
+
+        // Safeguard: if an icon somehow escapes far below the floor, gently respawn
+        if (y > height + 250) {
+          Matter.Body.setPosition(body, {
+            x: Math.max(50, Math.min(width - 50, x)),
+            y: 30,
+          });
+          Matter.Body.setVelocity(body, { x: 0, y: 1 });
+        }
+      });
+      isFirstUpdate = false;
+    };
+
+    Matter.Events.on(engine, "afterUpdate", afterUpdateHandler);
+
+    // Start physics runner
+    const runner = Matter.Runner.create();
+    runnerRef.current = runner;
+    Matter.Runner.run(runner, engine);
+
+    // Responsive ResizeObserver to adapt boundary walls dynamically
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const newWidth = entry.contentRect.width;
+        const newHeight = entry.contentRect.height;
+        if (newWidth <= 50 || newHeight <= 50) continue;
+
+        if (wallsRef.current) {
+          Matter.Body.setPosition(wallsRef.current.bottom, {
+            x: newWidth / 2,
+            y: newHeight + WALL_THICKNESS / 2,
+          });
+          Matter.Body.setPosition(wallsRef.current.left, {
+            x: -WALL_THICKNESS / 2,
+            y: newHeight / 2 - 500,
+          });
+          Matter.Body.setPosition(wallsRef.current.right, {
+            x: newWidth + WALL_THICKNESS / 2,
+            y: newHeight / 2 - 500,
+          });
+        }
+
+        // Clamp bodies horizontally to updated width
+        bodies.forEach((body) => {
+          if (body.position.x > newWidth - 30) {
+            Matter.Body.setPosition(body, {
+              x: newWidth - 40,
+              y: body.position.y,
+            });
+          }
+        });
+      }
+    });
+
+    resizeObserver.observe(container);
+
+    // Cleanup on unmount
+    return () => {
+      resizeObserver.disconnect();
+      Matter.Events.off(engine, "afterUpdate", afterUpdateHandler);
+      Matter.Runner.stop(runner);
+      Matter.Engine.clear(engine);
+      Matter.Composite.clear(world, false, true);
+      engineRef.current = null;
+      runnerRef.current = null;
+      bodiesRef.current.clear();
+      wallsRef.current = null;
+    };
+  }, [mounted, reducedMotion, disabled, gravity, bounce, friction, frictionAir, items]);
+
+  // Pointer event handlers for grabbing, dragging & throwing with zero jump
+  const handlePointerDown = useCallback(
+    (e: React.PointerEvent<HTMLDivElement>, id: string) => {
+      if (disabled || reducedMotion || !containerRef.current) return;
+
+      const body = bodiesRef.current.get(id);
+      if (!body) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const targetEl = e.currentTarget;
+      targetEl.setPointerCapture(e.pointerId);
+
+      const rect = containerRef.current.getBoundingClientRect();
+      const pointerX = e.clientX - rect.left;
+      const pointerY = e.clientY - rect.top;
+
+      dragRef.current = {
+        id,
+        body,
+        pointerId: e.pointerId,
+        offsetX: pointerX - body.position.x,
+        offsetY: pointerY - body.position.y,
+        history: [{ x: pointerX, y: pointerY, time: performance.now() }],
+      };
+
+      setHasInteracted(true);
+
+      // Freeze physics forces during grab
+      Matter.Body.setVelocity(body, { x: 0, y: 0 });
+      Matter.Body.setAngularVelocity(body, 0);
+      Matter.Body.setStatic(body, true);
+    },
+    [disabled, reducedMotion]
+  );
+
+  const handlePointerMove = useCallback(
+    (e: React.PointerEvent<HTMLDivElement>) => {
+      const drag = dragRef.current;
+      if (!drag || !containerRef.current) return;
+
+      e.preventDefault();
+      const rect = containerRef.current.getBoundingClientRect();
+      const pointerX = e.clientX - rect.left;
+      const pointerY = e.clientY - rect.top;
+
+      const newX = pointerX - drag.offsetX;
+      const newY = pointerY - drag.offsetY;
+
+      Matter.Body.setPosition(drag.body, { x: newX, y: newY });
+
+      // Synchronously update DOM transform to guarantee 100% smooth, latency-free tracking
+      const el = itemRefs.current.get(drag.id);
+      if (el) {
+        el.style.transform = `translate3d(${newX}px, ${newY}px, 0px) translate(-50%, -50%) rotate(${drag.body.angle}rad)`;
+      }
+
+      // Track pointer velocity history
+      const now = performance.now();
+      drag.history.push({ x: pointerX, y: pointerY, time: now });
+      drag.history = drag.history.filter((p) => now - p.time <= 120);
+    },
+    []
+  );
+
+  const handlePointerUpOrCancel = useCallback(
+    (e: React.PointerEvent<HTMLDivElement>) => {
+      const drag = dragRef.current;
+      if (!drag) return;
+
+      try {
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      } catch {}
+
+      // Unfreeze body to restore normal gravity & physics
+      Matter.Body.setStatic(drag.body, false);
+
+      // Compute throw velocity from recent pointer trajectory
+      if (drag.history.length >= 2) {
+        const first = drag.history[0];
+        const last = drag.history[drag.history.length - 1];
+        const dt = Math.max(1, last.time - first.time);
+
+        // Convert velocity to px/frame (~16ms)
+        let vx = ((last.x - first.x) / dt) * 16 * throwPower;
+        let vy = ((last.y - first.y) / dt) * 16 * throwPower;
+
+        // Sensible limits to prevent tunneling through walls
+        const maxVelocity = 28;
+        vx = Math.max(-maxVelocity, Math.min(maxVelocity, vx));
+        vy = Math.max(-maxVelocity, Math.min(maxVelocity, vy));
+
+        // If drag was very small (a simple click/tap), give it a playful pop!
+        if (Math.abs(vx) < 1.2 && Math.abs(vy) < 1.2) {
+          vx = (Math.random() - 0.5) * 5;
+          vy = -(Math.random() * 6 + 7);
+        }
+
+        Matter.Body.setVelocity(drag.body, { x: vx, y: vy });
+        Matter.Body.setAngularVelocity(drag.body, (vx / 20) * 0.12);
+      } else {
+        // Fallback quick tap pop
+        Matter.Body.setVelocity(drag.body, {
+          x: (Math.random() - 0.5) * 5,
+          y: -(Math.random() * 6 + 7),
+        });
+        Matter.Body.setAngularVelocity(drag.body, (Math.random() - 0.5) * 0.1);
+      }
+
+      dragRef.current = null;
+    },
+    [throwPower]
+  );
+
+  // Keyboard accessibility: space or enter triggers an upward pop
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLDivElement>, id: string) => {
+      if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        const body = bodiesRef.current.get(id);
+        if (body) {
+          Matter.Body.setVelocity(body, {
+            x: (Math.random() - 0.5) * 6,
+            y: -10,
+          });
+          Matter.Body.setAngularVelocity(body, (Math.random() - 0.5) * 0.15);
+        }
+      }
+    },
+    []
+  );
+
+  // Accessible fallback when prefers-reduced-motion is active
+  if (reducedMotion) {
+    return (
+      <div
+        className={`flex flex-wrap items-center justify-center gap-4 p-3 ${className}`}
+        aria-label="Technology and digital capabilities"
+      >
+        {items.map((item) => {
+          const shape = item.shape || (item.label ? "pill" : "circle");
+          const isPill = shape === "pill" && !!item.label;
+
+          return isPill ? (
+            <div
+              key={item.id}
+              className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 border border-[#D8EAFD] shadow-2xs text-slate-800 text-xs font-semibold ${itemClassName} ${item.className || ""}`}
+              style={{ borderColor: item.borderColor }}
+            >
+              <Icon
+                icon={item.icon}
+                width={item.size || 18}
+                height={item.size || 18}
+                aria-hidden="true"
+              />
+              <span>{item.label}</span>
+            </div>
+          ) : (
+            <div
+              key={item.id}
+              className="flex items-center justify-center p-1 drop-shadow-md"
+              title={item.label || item.id}
+            >
+              <Icon
+                icon={item.icon}
+                width={item.size || 72}
+                height={item.height || item.size || 72}
+                aria-hidden="true"
+              />
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      ref={containerRef}
+      className={`relative w-full h-full overflow-visible pointer-events-none select-none ${className}`}
+      aria-label="Interactive floating technology icons. Drag and toss them around!"
+    >
+      {/* Optional subtle hint badge */}
+      {showHint && !hasInteracted && (
+        <div className="absolute top-2 right-2 sm:right-4 z-30 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/85 backdrop-blur-xs border border-slate-200/80 text-[0.65rem] font-bold text-slate-600 shadow-2xs pointer-events-none transition-opacity duration-300">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>{hintText}</span>
+        </div>
+      )}
+
+      {items.map((item) => {
+        const shape = item.shape || (item.label ? "pill" : "circle");
+        const isPill = shape === "pill" && !!item.label;
+        const radius = item.radius || (item.size ? Math.round(item.size / 2) : 39);
+        const w = shape === "circle" ? radius * 2 : item.width || item.size || 78;
+        const h = shape === "circle" ? radius * 2 : item.height || item.size || 78;
+
+        return (
+          <div
+            key={item.id}
+            ref={(el) => {
+              if (el) {
+                itemRefs.current.set(item.id, el);
+              } else {
+                itemRefs.current.delete(item.id);
+              }
+            }}
+            onPointerDown={(e) => handlePointerDown(e, item.id)}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUpOrCancel}
+            onPointerCancel={handlePointerUpOrCancel}
+            onKeyDown={(e) => handleKeyDown(e, item.id)}
+            tabIndex={0}
+            role="button"
+            aria-label={`${item.label || item.id} icon. Drag or press Space to toss.`}
+            className={`absolute top-0 left-0 pointer-events-auto cursor-grab active:cursor-grabbing will-change-transform touch-none select-none opacity-0 ${
+              isPill
+                ? "inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-[#D8EAFD] shadow-xs hover:shadow-md transition-shadow"
+                : "flex items-center justify-center bg-transparent border-0 outline-none p-0"
+            } ${itemClassName} ${item.className || ""}`}
+            style={
+              isPill
+                ? {
+                    borderColor: item.borderColor || "rgba(216, 234, 253, 0.9)",
+                    boxShadow:
+                      "0 2px 8px -1px rgba(15, 23, 42, 0.08), 0 1px 3px -1px rgba(15, 23, 42, 0.04)",
+                  }
+                : {
+                    width: `${w}px`,
+                    height: `${h}px`,
+                  }
+            }
+          >
+            {isPill ? (
+              <>
+                <div
+                  className="flex items-center justify-center rounded-full p-0.5 shrink-0 pointer-events-none"
+                  style={{ backgroundColor: item.bg || "transparent" }}
+                >
+                  <Icon
+                    icon={item.icon}
+                    width={item.size || 18}
+                    height={item.size || 18}
+                    className="shrink-0"
+                    aria-hidden="true"
+                  />
+                </div>
+                <span className="text-[0.7rem] sm:text-xs font-semibold text-slate-800 whitespace-nowrap tracking-tight pointer-events-none">
+                  {item.label}
+                </span>
+              </>
+            ) : (
+              /* Pure Icon: No boundary, no filling box, slightly bigger with crisp drop-shadow */
+              <div className="flex items-center justify-center w-full h-full pointer-events-none">
+                <Icon
+                  icon={item.icon}
+                  width={item.width || item.size || 78}
+                  height={item.height || item.size || 78}
+                  className="shrink-0 filter drop-shadow-[0_12px_22px_rgba(15,23,42,0.18)] select-none pointer-events-none"
+                  aria-hidden="true"
+                />
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}

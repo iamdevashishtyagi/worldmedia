@@ -3,6 +3,8 @@
 
 import Link from "next/link";
 import TiltUnipole from "@/components/TiltUnipole";
+import PhysicsIcons from "@/components/physics/PhysicsIcons";
+import { heroPhysicsItems, heroBackgroundIcons } from "@/data/heroPhysicsIcons";
 
 function ArrowRightIcon({ className = "icon icon-arrow-right" }: { className?: string }) {
   return (
@@ -59,10 +61,24 @@ const serviceTags = [
 
 export default function Hero() {
   return (
-    <section className="hero-clean">
-      <div className="wrap">
+    <section className="hero-clean lg:h-[calc(100dvh-4rem)] lg:min-h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] flex flex-col justify-center relative overflow-hidden">
+      {/* Full-Hero Background: Big Interactive Physics Icons (Pure Icons) */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <PhysicsIcons
+          items={heroBackgroundIcons}
+          gravity={0.88}
+          bounce={0.72}
+          friction={0.06}
+          frictionAir={0.014}
+          throwPower={1.25}
+          className="w-full h-full"
+        />
+      </div>
+
+      {/* Foreground Hero Content - Headline, CTAs, Proofs, Unipole & Tech pills */}
+      <div className="wrap relative z-10 pointer-events-none w-full">
         {/* Left Column: Focused, Tightly Spaced & High-Impact Content */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center pointer-events-auto">
           {/* Eyebrow badge */}
           <div className="mb-2">
             <span className="eyebrow">
@@ -151,11 +167,22 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column: Hero Section Pole showing hero-bg.png */}
-        <div className="relative flex flex-col items-center justify-center pt-2 pb-16 sm:pb-20 w-full">
+        {/* Right Column: Hero Section Pole showing hero-bg.png + Interactive Physics Tech Icons */}
+        <div className="relative flex flex-col items-center justify-center pt-1 pb-4 sm:pb-6 lg:pb-2 w-full min-h-[380px] sm:min-h-[420px] lg:min-h-[440px] pointer-events-auto">
+          {/* Interactive Physics Icons overlay */}
+          <div className="absolute inset-0 z-20 pointer-events-none overflow-visible">
+            <PhysicsIcons
+              items={heroPhysicsItems}
+              gravity={1}
+              bounce={0.68}
+              showHint={true}
+              hintText="Drag & Toss Tech"
+            />
+          </div>
+
           <Link
             href="/locations"
-            className="w-full max-w-md md:max-w-lg lg:max-w-xl group block cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[430px] xl:max-w-[470px] group block cursor-pointer transition-transform duration-300 hover:scale-[1.02] relative z-10"
             title="Click to view prime hoarding locations"
           >
             {/* Direct display of hero-bg.png inside the pole component */}
@@ -167,7 +194,7 @@ export default function Hero() {
           </Link>
 
           {/* Floating Stamp Badge on the Hoarding Pole */}
-          <div className="absolute right-2 sm:right-6 bottom-4 sm:bottom-6 bg-white border-2 border-[var(--yellow)] px-3.5 py-1.5 rounded shadow-lg flex flex-col gap-0.5 z-20 pointer-events-none">
+          <div className="absolute right-2 sm:right-6 bottom-3 sm:bottom-4 bg-white border-2 border-[var(--yellow)] px-3.5 py-1.5 rounded shadow-lg flex flex-col gap-0.5 z-20 pointer-events-none">
             <span className="text-[0.62rem] font-bold uppercase tracking-wider text-[#CA8A04]">
               Direct Ownership
             </span>
@@ -177,7 +204,7 @@ export default function Hero() {
           </div>
 
           {/* Live site caption tag */}
-          <div className="mt-14 sm:mt-16 inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm border border-[#D8EAFD] px-3.5 py-1 rounded-full text-xs font-semibold text-slate-700 shadow-xs z-10">
+          <div className="mt-4 sm:mt-5 lg:mt-3 inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm border border-[#D8EAFD] px-3.5 py-1 rounded-full text-xs font-semibold text-slate-700 shadow-xs z-10">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span>Prime Commercial Hub · High-Impact Urban LED Display</span>
           </div>
