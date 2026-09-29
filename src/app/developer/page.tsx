@@ -29,9 +29,9 @@ import PhysicsIcons from '@/components/physics/PhysicsIcons';
 import { developerPhysicsIcons } from '@/data/heroPhysicsIcons';
 
 export const metadata: Metadata = {
-  title: 'Devashish Tyagi | Best Web Developer in Meerut, Full Stack Engineer & SEO Architect',
+  title: 'Devashish Tyagi | Full-Stack Web Architect & Technical SEO Consultant | Meerut',
   description:
-    'Devashish Tyagi is recognized as the best web developer in Meerut & top full-stack SEO engineer. Specializing in high-performance Next.js, React, Node.js applications, and #1 Google rankings. Hire Devashish Tyagi for premier website development in Meerut & Delhi NCR.',
+    'Devashish Tyagi is a senior full-stack software engineer and technical SEO architect based in Meerut, delivering high-performance Next.js web applications, resilient backend architectures, and top-tier Google search visibility across Delhi NCR.',
   keywords: [
     'Devashish Tyagi',
     'Devashish',
@@ -72,17 +72,23 @@ export const metadata: Metadata = {
     canonical: 'https://worldmediancr.com/developer',
   },
   openGraph: {
-    title: 'Devashish Tyagi | Best Web Developer in Meerut & Full Stack Architect',
+    title: 'Devashish Tyagi | Full-Stack Web Architect & Software Engineer',
     description:
-      'Devashish Tyagi is recognized as the best web developer and SEO engineer in Meerut. High-performance Next.js web applications with 100% SEO scores.',
+      'Engineering high-performance Next.js web platforms, resilient backend architectures, and search-optimized digital systems in Meerut & Delhi NCR.',
     url: 'https://worldmediancr.com/developer',
     siteName: 'World Media NCR',
     images: [
       {
+        url: 'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Devashish Tyagi - Full-Stack Web Architect & Software Engineer',
+      },
+      {
         url: 'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp',
         width: 1200,
         height: 630,
-        alt: 'Devashish Tyagi - Best Web Developer in Meerut',
+        alt: 'Devashish Tyagi - Technical SEO Architect Meerut',
       },
       {
         url: 'https://worldmediancr.com/images/developer/devashishtyagi.webp',
@@ -96,10 +102,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Devashish Tyagi | Best Web Developer in Meerut',
+    title: 'Devashish Tyagi | Full-Stack Web Architect & Technical SEO Consultant',
     description:
-      'Full Stack Web Developer & SEO Architect building ultra-fast web applications in Meerut.',
-    images: ['https://worldmediancr.com/images/developer/Devashish-Tyagi.webp'],
+      'Engineering ultra-fast Next.js web platforms and scalable digital systems in Meerut & Delhi NCR.',
+    images: ['https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp'],
   },
   authors: [{ name: 'Devashish Tyagi' }],
   creator: 'Devashish Tyagi',
@@ -120,14 +126,14 @@ const personSchema = {
     'Best Developer Meerut',
     'Top Developer in Meerut',
   ],
-  jobTitle: 'Best Web Developer in Meerut & Full Stack SEO Architect',
+  jobTitle: 'Lead Full-Stack Web Architect & Technical SEO Consultant',
   description:
-    'Devashish Tyagi is recognized as the best web developer and SEO architect in Meerut, Uttar Pradesh, specializing in Next.js, React, Node.js, and Google search dominance.',
+    'Devashish Tyagi is a senior full-stack software engineer and technical SEO architect based in Meerut, Uttar Pradesh, specializing in Next.js, React, Node.js, distributed architectures, and organic search discoverability.',
   url: 'https://worldmediancr.com/developer',
   image: [
+    'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp',
     'https://worldmediancr.com/images/developer/Devashish-Tyagi.webp',
     'https://worldmediancr.com/images/developer/devashishtyagi.webp',
-    'https://worldmediancr.com/images/developer/Devashish%20Tyagi.webp',
   ],
   worksFor: {
     '@type': 'Organization',
@@ -242,7 +248,7 @@ const breadcrumbSchema = {
     {
       '@type': 'ListItem',
       position: 2,
-      name: 'Best Web Developer in Meerut - Devashish Tyagi',
+      name: 'Devashish Tyagi - Full-Stack Web Architect',
       item: 'https://worldmediancr.com/developer',
     },
   ],
@@ -257,31 +263,31 @@ const faqSchema = {
       name: 'Who is Devashish Tyagi?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Devashish Tyagi is a premier full-stack web developer and SEO architect based in Meerut, Uttar Pradesh, India. He builds high-performance Next.js, React, and Node.js applications engineered for maximum speed, responsiveness, and Google search dominance.',
+        text: 'Devashish Tyagi is a senior full-stack software engineer and technical SEO architect based in Meerut, Uttar Pradesh, India. He engineers high-performance Next.js, React, Node.js, and TypeScript web platforms designed for speed, resilience, and top Google rankings.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Who is the best web developer in Meerut?',
+      name: 'What sets Devashish Tyagi web engineering apart in Meerut & Delhi NCR?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Devashish Tyagi is widely recognized as the best web developer in Meerut. With proven expertise in full-stack JavaScript, 98+ PageSpeed optimization, and technical SEO architecture, he delivers custom website solutions that outrank competition.',
+        text: 'Devashish combines full-stack systems engineering with rigorous technical SEO architecture. Rather than relying on generic templates, every platform is custom-built with Next.js 15, strict TypeScript, modular REST APIs, and automated JSON-LD schemas—consistently achieving 95+ PageSpeed scores and sustainable organic search rankings.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What web development services does Devashish Tyagi provide in Meerut?',
+      name: 'What web engineering and development services does Devashish Tyagi provide?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Devashish Tyagi provides custom website development (Next.js, React), enterprise web applications, REST API engineering (Node.js, Express), technical SEO architecture, Core Web Vitals optimization, and end-to-end digital solutions.',
+        text: 'Devashish Tyagi provides custom enterprise web applications (Next.js, React), scalable backend APIs (Node.js, Express, databases), technical SEO architecture, Core Web Vitals optimization, and end-to-end digital engineering.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How to contact or hire Devashish Tyagi for a website project?',
+      name: 'How can teams or clients consult or hire Devashish Tyagi?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can reach Devashish Tyagi directly via WhatsApp at +91 95574 23119 or email at iamdevashishtyagi@gmail.com for freelance projects, corporate web development, or technical consultation.',
+        text: 'You can reach Devashish Tyagi directly via WhatsApp at +91 95574 23119 or email at iamdevashishtyagi@gmail.com for engineering consultations, freelance builds, or enterprise contracts.',
       },
     },
   ],
@@ -291,22 +297,22 @@ const developerFaqs = [
   {
     question: 'Who is Devashish Tyagi?',
     answer:
-      'Devashish Tyagi is a top-rated full-stack web developer and SEO architect based in Meerut, Uttar Pradesh, India. He specializes in engineering high-speed Next.js, React, Node.js, and TypeScript web applications designed for conversion and search engine dominance.',
+      'Devashish Tyagi is a senior full-stack software engineer and technical SEO architect based in Meerut, Uttar Pradesh, India. He specializes in designing and building scalable Next.js, React, Node.js, and TypeScript web platforms with performance-first architectures and enterprise search discoverability.',
   },
   {
-    question: 'Who is the best web developer in Meerut?',
+    question: 'What sets Devashish Tyagi\'s web engineering apart in Meerut & Delhi NCR?',
     answer:
-      'Devashish Tyagi is widely recognized as the best web developer in Meerut. He delivers production-grade web platforms with 98+ Google PageSpeed scores, robust schema markup, modern responsive UI/UX, and proven #1 ranking SEO structures.',
+      'Devashish combines enterprise software engineering standards with deep technical SEO architecture. Rather than using generic templates, every digital platform is custom-built with Next.js 15, strict TypeScript, modular APIs, and automated structured data schemas—consistently achieving 95+ PageSpeed scores, zero layout shifts, and top organic search discoverability.',
   },
   {
-    question: 'What web development services does Devashish Tyagi offer?',
+    question: 'What development services does Devashish Tyagi offer?',
     answer:
-      'Services include custom business website development, full-stack web applications, eCommerce solutions, RESTful API architecture, Core Web Vitals optimization, Google Search Console indexing, and end-to-end technical SEO.',
+      'Services include custom enterprise web applications, high-converting digital platforms, eCommerce architectures, RESTful API development, Core Web Vitals optimization, Google Search Console indexing, and end-to-end technical SEO engineering.',
   },
   {
-    question: 'How can I hire Devashish Tyagi for my project?',
+    question: 'How can I discuss a technical project with Devashish Tyagi?',
     answer:
-      'You can reach out directly via WhatsApp at +91 95574 23119 or email at iamdevashishtyagi@gmail.com to discuss project blueprints, timelines, and tailored web development packages.',
+      'You can reach out directly via WhatsApp at +91 95574 23119 or email at iamdevashishtyagi@gmail.com to discuss architecture blueprints, timelines, and tailored web engineering packages.',
   },
 ];
 
@@ -320,20 +326,20 @@ const technicalStack = [
 ];
 
 const philosophy = [
-  { quote: 'Code is poetry. Performance is art. SEO is science.', icon: Sparkles },
-  { quote: "I don't just build websites. I build digital experiences that convert.", icon: Target },
-  { quote: 'Every line of code serves a purpose. Every pixel has a reason.', icon: CheckCircle2 },
+  { quote: 'Architecture determines longevity. Systems should be modular, clean, and strictly typed.', icon: Boxes },
+  { quote: 'Performance is a core product feature. Sub-second responsiveness directly drives engagement and conversions.', icon: Zap },
+  { quote: 'Technical SEO is engineered at the root—semantic HTML, automated schema graphs, and zero layout shift.', icon: SearchCheck },
 ];
 
 const expertiseTags = [
-  'Best Web Developer in Meerut',
-  'Next.js Expert',
-  'React Specialist',
-  'Vue.js Developer',
-  'Node.js Backend',
-  'SEO Architect',
-  'TypeScript',
-  'Full Stack Developer',
+  'Full-Stack Web Architecture',
+  'Next.js 15 & React',
+  'TypeScript Engineering',
+  'Node.js & Microservices',
+  'Technical SEO & Core Web Vitals',
+  'Distributed Databases',
+  'High-Performance UI/UX',
+  'Cloud Infrastructure',
 ];
 
 export default function DeveloperPage() {
@@ -394,7 +400,7 @@ export default function DeveloperPage() {
             <div className="pointer-events-auto">
               <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full px-4 py-1.5 mb-4 border border-[#D8EAFD] shadow-2xs">
                 <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-                <span className="text-xs sm:text-sm text-slate-800 font-semibold tracking-tight">Best Web Developer &amp; SEO Architect in Meerut</span>
+                <span className="text-xs sm:text-sm text-slate-800 font-semibold tracking-tight">Full-Stack Web Architect &amp; Technical Systems Engineer</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-2 leading-tight tracking-tight">
@@ -403,7 +409,7 @@ export default function DeveloperPage() {
               </h1>
 
               <h2 className="text-base sm:text-lg md:text-xl text-slate-700 font-bold mb-3 tracking-tight">
-                Best Web Developer in Meerut &amp; Full Stack SEO Architect
+                Full-Stack Software Engineer &amp; Technical SEO Architect
               </h2>
 
               <p className="text-slate-600 mb-4 flex items-center gap-1.5 text-xs sm:text-sm font-medium">
@@ -423,7 +429,7 @@ export default function DeveloperPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 max-w-lg">
-                Looking for the best web developer in Meerut? I build ultra-high-performance websites and web applications engineered to rank #1 on Google, convert visitors into loyal clients, and scale effortlessly.
+                Engineering high-performance web applications, scalable backend systems, and search-optimized digital platforms. Transforming complex requirements into fast, resilient digital products engineered for long-term growth.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -431,7 +437,7 @@ export default function DeveloperPage() {
                   href="#work"
                   className="group bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0F172A] px-7 py-3 rounded-full font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-2"
                 >
-                  <span>View Portfolio</span>
+                  <span>Explore Architecture</span>
                   <svg
                     className="w-4 h-4 group-hover:translate-x-1 transition"
                     fill="none"
@@ -450,7 +456,7 @@ export default function DeveloperPage() {
                   href="/contact?service=Website%20Development"
                   className="bg-white border-2 border-slate-300 hover:border-slate-800 text-slate-800 px-7 py-3 rounded-full font-semibold transition-all shadow-2xs"
                 >
-                  Book Web Consultation
+                  Discuss a Project
                 </Link>
               </div>
             </div>
@@ -465,9 +471,9 @@ export default function DeveloperPage() {
                   className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl"
                 >
                   <Image
-                    src="/images/developer/Devashish-Tyagi.webp"
-                    alt="Devashish Tyagi - Best Web Developer, Full Stack Engineer & SEO Architect in Meerut"
-                    title="Devashish Tyagi - Best Web Developer in Meerut"
+                    src="/images/developer/Devashish Tyagi.webp"
+                    alt="Devashish Tyagi - Full-Stack Web Architect & Technical SEO Consultant in Meerut"
+                    title="Devashish Tyagi - Full-Stack Software Engineer"
                     fill
                     className="object-cover"
                     priority
@@ -475,7 +481,7 @@ export default function DeveloperPage() {
                     itemProp="contentUrl"
                   />
                   <figcaption className="sr-only">
-                    Devashish Tyagi - Best Web Developer, Full Stack Engineer &amp; SEO Architect in Meerut Uttar Pradesh
+                    Devashish Tyagi - Full-Stack Web Architect &amp; Software Systems Engineer in Meerut Uttar Pradesh
                   </figcaption>
                 </figure>
                 <div className="absolute bottom-6 right-6 bg-emerald-500 rounded-full p-2 border-4 border-white shadow-lg">
@@ -492,17 +498,17 @@ export default function DeveloperPage() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#0A173E] mb-6">
-              Crafting Digital Excellence as Meerut&apos;s Top Web Developer
+              Engineering High-Performance Web Platforms &amp; Scalable Systems
             </h2>
             <div className="space-y-4 text-gray-600">
               <p className="leading-relaxed">
-                I&apos;m <strong className="text-gray-900">Devashish Tyagi</strong>, recognized as the best web developer in Meerut. I believe that extraordinary web applications are much more than just lines of code—they are high-converting digital storefronts that engage users, build trust, and dominate Google search results.
+                I&apos;m <strong className="text-gray-900">Devashish Tyagi</strong>, a full-stack software engineer and technical web architect based in Meerut, Uttar Pradesh. I design and build mission-critical web applications that balance robust system architecture, clean modular code, and high search engine discoverability.
               </p>
               <p className="leading-relaxed">
-                Based in Meerut and serving clients across Delhi NCR and India, I deliver solutions that merge bleeding-edge Next.js, React, and Node.js frameworks with tactical technical SEO to guarantee superior page speeds, high rankings, and seamless user experiences.
+                Serving enterprises, fast-growing brands, and organizations across Meerut, Delhi NCR, and globally, my approach integrates modern frontend technologies like Next.js 15 and React with scalable Node.js backend services and rigorous technical SEO protocols.
               </p>
               <p className="leading-relaxed">
-                The <strong>World Media NCR</strong> outdoor advertising platform you are experiencing is built by me from the ground up—lightning-fast, 100% SEO-optimized, mobile-first, and engineered for peak organic search visibility.
+                The entire <strong>World Media NCR</strong> outdoor media ecosystem you are exploring is engineered from the ground up by me—featuring static site generation, sub-second TTFB, rich schema graph data, and zero layout shift across every viewport.
               </p>
             </div>
 
@@ -529,8 +535,8 @@ export default function DeveloperPage() {
             >
               <Image
                 src="/images/developer/Devashish-Tyagi.webp"
-                alt="Devashish Tyagi - Best Web Developer and Technical SEO Consultant in Meerut Uttar Pradesh"
-                title="Devashish Tyagi - Best Website Developer Meerut"
+                alt="Devashish Tyagi - Full-Stack Web Architect and Technical SEO Consultant in Meerut Uttar Pradesh"
+                title="Devashish Tyagi - Software Engineer & Systems Architect"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -538,7 +544,7 @@ export default function DeveloperPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
               <figcaption className="sr-only">
-                Devashish Tyagi - Premier Full Stack Web Developer and SEO Consultant in Meerut
+                Devashish Tyagi - Full Stack Web Architect and Technical SEO Consultant in Meerut
               </figcaption>
             </figure>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-100 rounded-full -z-10"></div>
@@ -763,22 +769,22 @@ export default function DeveloperPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#0A173E] mb-4">
-            Why Choose Devashish Tyagi for Web Development?
+            Engineering Principles &amp; Technical Standards
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Combining engineering precision with aggressive search engine optimization for tangible business growth.
+            Combining software engineering precision with deep technical SEO for scalable, resilient digital infrastructure.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { title: 'Full Stack Expertise', desc: 'From database to UI - I handle it all', icon: Rocket },
-            { title: 'SEO-First Development', desc: 'Every line of code is SEO optimized', icon: Target },
-            { title: 'Lightning Fast', desc: 'Sub-second load times guaranteed', icon: Zap },
-            { title: 'Modern Tech Stack', desc: 'Next.js, React, Node, Express, TypeScript', icon: Boxes },
-            { title: 'Pixel Perfect UI', desc: 'Meticulous attention to typography and spacing', icon: Sparkles },
-            { title: 'Local Meerut Base', desc: 'Based in Meerut with global delivery capabilities', icon: MapPin },
-            { title: 'Quality Assured', desc: 'Rigorous testing across all devices and browsers', icon: CheckCircle2 },
-            { title: 'Post-Launch Care', desc: 'Dedicated ongoing support & maintenance', icon: ShieldCheck },
+            { title: 'Full Stack Architecture', desc: 'End-to-end engineering from data models to UI', icon: Rocket },
+            { title: 'Technical SEO by Design', desc: 'Structured data graphs, semantic tags & Core Web Vitals', icon: Target },
+            { title: 'Sub-Second Performance', desc: 'Edge caching and optimized asset delivery', icon: Zap },
+            { title: 'Modern Production Stack', desc: 'Next.js 15, TypeScript, Node.js & modern CSS', icon: Boxes },
+            { title: 'Clean Modular Code', desc: 'Scalable architecture with strict typing and maintainability', icon: Sparkles },
+            { title: 'Regional & Global Delivery', desc: 'Based in Meerut, delivering solutions worldwide', icon: MapPin },
+            { title: 'Quality & Test Rigor', desc: 'Thorough validation across browsers and viewports', icon: CheckCircle2 },
+            { title: 'Post-Deployment Care', desc: 'Proactive monitoring, security & performance tuning', icon: ShieldCheck },
           ].map((item, i) => {
             const Icon = item.icon;
             return (
@@ -808,7 +814,7 @@ export default function DeveloperPage() {
               Web Development in Meerut: FAQs
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-base">
-              Clear answers regarding developer background, tech stacks, and how Devashish Tyagi delivers #1 Google rankings.
+              Clear answers regarding engineering background, modern tech stacks, and how Devashish Tyagi builds search-dominant web platforms.
             </p>
           </div>
 
@@ -871,7 +877,7 @@ export default function DeveloperPage() {
             Ready to Build Something <span className="underline decoration-[var(--yellow)]">Extraordinary</span>?
           </h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Hire Devashish Tyagi — Meerut&apos;s leading web developer &amp; SEO architect. Let&apos;s create a digital platform that outranks and converts.
+            Collaborate with Devashish Tyagi — full-stack web architect &amp; technical SEO engineer. Let&apos;s engineer a high-performance digital platform that scales and ranks.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
