@@ -4,7 +4,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  MessageSquare,
   ArrowRight,
   Code2,
   Megaphone,
@@ -13,7 +12,6 @@ import {
   Clock,
   ShieldCheck,
   Award,
-  Sparkles,
   ExternalLink,
 } from 'lucide-react';
 import { serviceCategories } from '@/data/serviceCategories';

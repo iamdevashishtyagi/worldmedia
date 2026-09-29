@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: "World Media NCR",
     images: [
       {
-        url: "/images/website/herobg2.jpg",
+        url: "/images/website/hero-bg.png",
         width: 1200,
         height: 630,
         alt: "World Media NCR - Best Outdoor Advertising Agency in Meerut",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Advertising Agency in Meerut | World Media NCR",
     description: "Premier outdoor advertising, hoardings, unipoles and digital wall painting in Meerut & Delhi NCR.",
-    images: ["/images/website/herobg2.jpg"],
+    images: ["/images/website/hero-bg.png"],
   },
   robots: {
     index: true,

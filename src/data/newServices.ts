@@ -90,7 +90,7 @@ export const newServicesData: NewServiceItem[] = [
       "google ranking website meerut",
     ],
     canonical: "https://worldmediancr.com/services/development/business-website-development",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Business Website Development",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -246,7 +246,7 @@ export const newServicesData: NewServiceItem[] = [
       "best portfolio website designer meerut",
     ],
     canonical: "https://worldmediancr.com/services/development/portfolio-website-development",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Portfolio Website Development",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -367,7 +367,7 @@ export const newServicesData: NewServiceItem[] = [
       "best online store developer meerut",
     ],
     canonical: "https://worldmediancr.com/services/development/ecommerce-website-development",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "E-Commerce Website Development",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -487,7 +487,7 @@ export const newServicesData: NewServiceItem[] = [
       "software development company meerut",
     ],
     canonical: "https://worldmediancr.com/services/development/web-software-development",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Custom Web Software Development",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -601,7 +601,7 @@ export const newServicesData: NewServiceItem[] = [
       "brand guidelines design meerut",
     ],
     canonical: "https://worldmediancr.com/services/designing/logo-design-meerut",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Logo and Brand Identity Design",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -710,7 +710,7 @@ export const newServicesData: NewServiceItem[] = [
       "website redesign meerut",
     ],
     canonical: "https://worldmediancr.com/services/designing/website-ui-ux-design",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Website UI/UX Design",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -810,7 +810,7 @@ export const newServicesData: NewServiceItem[] = [
       "digital marketing design meerut",
     ],
     canonical: "https://worldmediancr.com/services/designing/social-media-design",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Social Media Graphic Design",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -915,7 +915,7 @@ export const newServicesData: NewServiceItem[] = [
       "social media ads meerut",
     ],
     canonical: "https://worldmediancr.com/services/digital-advertising/meta-ads-management",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Meta Ads Management",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -1024,7 +1024,7 @@ export const newServicesData: NewServiceItem[] = [
       "youtube ad agency meerut",
     ],
     canonical: "https://worldmediancr.com/services/digital-advertising/youtube-video-advertising",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "YouTube Video Advertising",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 
@@ -1129,7 +1129,7 @@ export const newServicesData: NewServiceItem[] = [
       "social media video meerut",
     ],
     canonical: "https://worldmediancr.com/services/digital-advertising/ai-business-videos",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "AI Business Video Production",
     areaServed: "Meerut, Delhi NCR & Western Uttar Pradesh",
 

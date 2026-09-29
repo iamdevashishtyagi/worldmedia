@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "World Media NCR",
     images: [
       {
-        url: "/images/website/herobg2.jpg",
+        url: "/images/website/hero-bg.png",
         width: 1200,
         height: 630,
         alt: "World Media NCR - Best Advertising Agency in Meerut & Delhi NCR",

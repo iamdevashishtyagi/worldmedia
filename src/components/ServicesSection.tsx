@@ -66,7 +66,7 @@ function getServiceIcon(iconKey?: string) {
 const allServices = servicesData.map((service) => ({
   icon: getServiceIcon(service.features[0]?.icon),
   title: service.name,
-  path: `/services/${service.slug}`,
+  path: `/services/outdoor-advertising/${service.slug}`,
   description: service.heroSubheadline,
   features: service.features.slice(0, 4).map((f) => f.title),
   image: service.previewImage || service.heroImage || service.ogImage,

@@ -11,9 +11,25 @@ import {
 } from 'lucide-react';
 import { serviceCategories, getCategoryBySlug, getAllCategorySlugs } from '@/data/serviceCategories';
 import { newServicesData } from '@/data/newServices';
-import { servicesData, getServiceBySlug, getAllServiceSlugs } from '@/data/services';
-import { BreadcrumbJsonLd, ServiceDetailJsonLd } from '@/components/SeoJsonLd';
+import { getServiceBySlug, getAllServiceSlugs } from '@/data/services';
+import { BreadcrumbJsonLd, ServiceDetailJsonLd, FaqJsonLd } from '@/components/SeoJsonLd';
 import OutdoorServiceDetail from '@/components/OutdoorServiceDetail';
+import ServicesSection from '@/components/ServicesSection';
+
+const outdoorFaqs = [
+  {
+    question: "Which outdoor advertising services does World Media NCR provide?",
+    answer: "World Media NCR provides hoarding and billboard advertising, digital wall painting, vehicle branding, flex printing, LED display advertising and political advertising campaign support across Meerut, Delhi NCR, and Western UP.",
+  },
+  {
+    question: "How do I get an advertising quote in Meerut?",
+    answer: "Share your campaign objective, preferred area, format and timing with World Media NCR via call or WhatsApp at +91-9456497636. Our team provides transparent rate cards, site photos, and rapid site reservations.",
+  },
+  {
+    question: "Which areas does World Media NCR serve?",
+    answer: "World Media NCR serves Meerut, Muzaffarnagar, Shamli, Saharanpur, Baghpat, Hapur, Ghaziabad, Noida, Delhi and Delhi NCR.",
+  },
+];
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -139,28 +155,86 @@ export default async function CategoryLandingPage({ params }: Props) {
     notFound();
   }
 
-  // Get services — outdoor-advertising uses existing servicesData, others use newServicesData
-  const isOutdoor = category === 'outdoor-advertising';
+  // If it's outdoor advertising, render the original outdoor services main page with alternate unipoles!
+  if (category === 'outdoor-advertising') {
+    return (
+      <main className="bg-white">
+        <BreadcrumbJsonLd
+          items={[
+            { name: 'Home', url: 'https://worldmediancr.com' },
+            { name: 'Services', url: 'https://worldmediancr.com/services' },
+            { name: 'Outdoor Advertising', url: 'https://worldmediancr.com/services/outdoor-advertising' },
+          ]}
+        />
+        <ServiceDetailJsonLd
+          name="Best Outdoor Advertising Services in Meerut"
+          description="Explore the best outdoor advertising services in Meerut by World Media NCR. Premium highway hoarding advertising, digital wall painting, billboard unipoles, vehicle branding, flex printing, and LED video displays."
+          url="https://worldmediancr.com/services/outdoor-advertising"
+          serviceType="Outdoor Advertising & OOH Media"
+          areaServed="Meerut, Delhi NCR & Western Uttar Pradesh"
+        />
 
-  const serviceLinks = isOutdoor
-    ? servicesData.map((s) => ({
-        slug: s.slug,
-        name: s.name,
-        shortDesc: s.overviewSubheading || s.heroSubheadline,
-        icon: s.features[0]?.icon || 'Billboard',
-        badge: undefined as string | undefined,
-        href: `/services/${category}/${s.slug}`,
-      }))
-    : newServicesData
-        .filter((s) => s.category === category)
-        .map((s) => ({
-          slug: s.slug,
-          name: s.name,
-          shortDesc: s.tagline,
-          icon: cat.services.find((cs) => cs.slug === s.slug)?.icon || 'Sparkles',
-          badge: cat.services.find((cs) => cs.slug === s.slug)?.badge,
-          href: `/services/${category}/${s.slug}`,
-        }));
+        {/* Clean Breadcrumb Navigation Bar */}
+        <div className="bg-[#F0F8FF] border-b border-[#D8EAFD] py-3.5 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs sm:text-sm text-slate-500">
+            <Link href="/" className="hover:text-[#0A173E] transition">Home</Link>
+            <span>/</span>
+            <Link href="/services" className="hover:text-[#0A173E] transition">Services</Link>
+            <span>/</span>
+            <span className="text-[#0A173E] font-bold">Outdoor Advertising</span>
+          </div>
+        </div>
+
+        {/* The Original ServicesSection with Alternate Position Unipoles */}
+        <ServicesSection />
+
+        {/* Advertising Services FAQs */}
+        <section className="mx-auto max-w-5xl px-6 py-16">
+          <FaqJsonLd questions={outdoorFaqs} />
+          <h2 className="text-3xl font-bold text-[#0A173E]">Advertising Services FAQs</h2>
+          <div className="mt-6 space-y-6">
+            {outdoorFaqs.map((faq) => (
+              <article key={faq.question} className="p-6 bg-[#F0F8FF] rounded-2xl border border-[#D8EAFD]">
+                <h3 className="text-xl font-semibold text-[#0A173E]">{faq.question}</h3>
+                <p className="mt-2 text-slate-700 leading-relaxed">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* Call to Action Section */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+          <div className="bg-gradient-to-br from-[#0A173E] via-[#0D1C4D] to-[#060E27] text-white rounded-3xl p-8 sm:p-12 border border-[#182859] shadow-2xl text-center">
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Book Prime Outdoor Sites in Meerut & NCR</h2>
+            <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+              Get instant site availability, transparent rate cards, and rapid booking from Meerut&apos;s leading outdoor media owners.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/contact?service=Hoarding%20Advertising" className="bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-10 py-4 rounded-xl font-extrabold text-lg transition shadow-xl hover:scale-105 flex items-center gap-2">
+                Inquire Outdoor Media <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a href="https://wa.me/919456497636?text=Hi%20World%20Media%20NCR,%20I%20want%20to%20inquire%20about%20outdoor%20advertising%20sites." target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white border border-white/25 px-10 py-4 rounded-xl font-bold text-lg transition flex items-center gap-2">
+                <MessageSquare className="w-5 h-5" />
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
+  // For other categories (Development, Designing, Digital Advertising):
+  const serviceLinks = newServicesData
+    .filter((s) => s.category === category)
+    .map((s) => ({
+      slug: s.slug,
+      name: s.name,
+      shortDesc: s.tagline,
+      icon: cat.services.find((cs) => cs.slug === s.slug)?.icon || 'Sparkles',
+      badge: cat.services.find((cs) => cs.slug === s.slug)?.badge,
+      href: `/services/${category}/${s.slug}`,
+    }));
 
   const otherCategories = serviceCategories.filter((c) => c.slug !== category);
 

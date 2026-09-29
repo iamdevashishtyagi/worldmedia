@@ -17,7 +17,7 @@ export default function JsonLd() {
     ],
     "url": "https://worldmediancr.com",
     "logo": "https://worldmediancr.com/images/website/logo2.png",
-    "image": "https://worldmediancr.com/images/website/herobg2.jpg",
+    "image": "https://worldmediancr.com/images/website/hero-bg.png",
     "description": "World Media NCR is widely recognized as the best advertising agency in Meerut and top outdoor media company since 2013, offering premium highway hoardings, digital wall painting, unipoles, billboards, vehicle branding, and DOOH media across Meerut, Delhi NCR, and Western UP.",
     "foundingDate": "2013",
     "founder": {

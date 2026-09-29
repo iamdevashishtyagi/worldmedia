@@ -495,14 +495,14 @@ export const servicesData: ServiceItem[] = [
       "digital out of home advertising meerut"
     ],
     canonical: "https://worldmediancr.com/services/led-display-advertising-meerut",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Digital OOH & LED Video Billboard Advertising",
     areaServed: "Meerut & Delhi NCR",
 
     heroHeadline: "LED Display Advertising",
     heroHeadlineHighlight: "in Meerut & NCR",
     heroSubheadline: "Dynamic, motion-driven digital outdoor screens positioned at Meerut's highest footfall intersections and premium shopping hubs. Bring your brand to life with vibrant video and animated creatives.",
-    heroImage: "/images/website/herobg2.jpg",
+    heroImage: "/images/website/hero-bg.png",
     previewImage: "/images/services/Hoarding4.webp",
 
     stats: [
@@ -596,14 +596,14 @@ export const servicesData: ServiceItem[] = [
       "fleet branding western up"
     ],
     canonical: "https://worldmediancr.com/services/vehicle-branding-meerut",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Transit Media & Vehicle Fleet Branding",
     areaServed: "Meerut, Delhi NCR, Muzaffarnagar, Western UP",
 
     heroHeadline: "Vehicle Branding",
     heroHeadlineHighlight: "in Meerut & NCR",
     heroSubheadline: "Turn commercial fleets, city buses, and auto-rickshaws into high-frequency mobile billboards that navigate every neighborhood, market lane, and transit artery.",
-    heroImage: "/images/website/herobg2.jpg",
+    heroImage: "/images/website/hero-bg.png",
     previewImage: "/images/services/Hoarding2.webp",
 
     stats: [
@@ -697,14 +697,14 @@ export const servicesData: ServiceItem[] = [
       "vinyl printing meerut"
     ],
     canonical: "https://worldmediancr.com/services/flex-printing-meerut",
-    ogImage: "/images/website/herobg2.jpg",
+    ogImage: "/images/website/hero-bg.png",
     serviceType: "Wide Format Flex & Banner Printing Services",
     areaServed: "Meerut, Western UP & Delhi NCR",
 
     heroHeadline: "Wide-Format Flex Printing",
     heroHeadlineHighlight: "in Meerut",
     heroSubheadline: "State-of-the-art industrial flex printing with true 1440 DPI resolution, weather-proof outdoor inks, and lightning-fast turnaround times for hoardings, banners, and back-lit displays.",
-    heroImage: "/images/website/herobg2.jpg",
+    heroImage: "/images/website/hero-bg.png",
     previewImage: "/images/services/YoursNextHoarding.webp",
 
     stats: [

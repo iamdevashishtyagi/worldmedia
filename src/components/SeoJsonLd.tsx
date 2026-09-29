@@ -207,7 +207,7 @@ export function LocationBusinessJsonLd({
         url: url.startsWith("http") ? url : `${siteUrl}${url}`,
         description,
         telephone: "+91-9456497636",
-        image: image ? (image.startsWith("http") ? image : `${siteUrl}${image}`) : `${siteUrl}/images/website/herobg2.jpg`,
+        image: image ? (image.startsWith("http") ? image : `${siteUrl}${image}`) : `${siteUrl}/images/website/hero-bg.png`,
         priceRange: "₹₹ - ₹₹₹₹",
         areaServed: {
           "@type": cityName.toLowerCase().includes("ncr") ? "State" : "City",
