@@ -364,7 +364,7 @@ export default function DeveloperPage() {
       />
 
       {/* Hero Section - Light Clean Developer Theme matching browser viewport */}
-      <div className="relative min-h-[calc(100dvh-4rem)] lg:h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] flex items-center justify-center overflow-hidden py-10 lg:py-0 border-b border-[#D8EAFD] bg-[var(--alice-blue)]">
+      <div className="relative min-h-[calc(100dvh-4rem)] lg:h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] flex items-start lg:items-center justify-center overflow-hidden pt-6 pb-12 sm:pt-8 lg:py-0 border-b border-[#D8EAFD] bg-[var(--alice-blue)]">
         {/* Light Elegant Developer Tech Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#EDF5FD] via-[#F8FAFC] to-[#EDF5FD]">
           {/* Subtle Clean Grid Pattern */}
@@ -395,40 +395,40 @@ export default function DeveloperPage() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-4 z-10 pointer-events-none w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-8 lg:pt-0 lg:pb-4 z-10 pointer-events-none w-full lg:-mt-8 xl:-mt-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
             <div className="pointer-events-auto">
-              <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full px-4 py-1.5 mb-4 border border-[#D8EAFD] shadow-2xs">
+              <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full px-3.5 py-1 sm:px-4 sm:py-1.5 mb-3 border border-[#D8EAFD] shadow-2xs">
                 <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
                 <span className="text-xs sm:text-sm text-slate-800 font-semibold tracking-tight">Full-Stack Web Architect &amp; Technical Systems Engineer</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-2 leading-tight tracking-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-[#0F172A] mb-2 leading-tight tracking-tight">
                 Devashish
                 <span className="text-[#CA8A04]"> Tyagi</span>
               </h1>
 
-              <h2 className="text-base sm:text-lg md:text-xl text-slate-700 font-bold mb-3 tracking-tight">
+              <h2 className="text-base sm:text-lg md:text-xl text-slate-700 font-bold mb-2.5 tracking-tight">
                 Full-Stack Software Engineer &amp; Technical SEO Architect
               </h2>
 
-              <p className="text-slate-600 mb-4 flex items-center gap-1.5 text-xs sm:text-sm font-medium">
+              <p className="text-slate-600 mb-3.5 flex items-center gap-1.5 text-xs sm:text-sm font-medium">
                 <MapPin className="w-4 h-4 text-yellow-600 shrink-0" />
                 <span>Meerut • Delhi NCR • Uttar Pradesh, India</span>
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-5">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                 {expertiseTags.map((tag, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-white/95 rounded-full text-xs font-semibold text-slate-700 border border-[#D8EAFD] shadow-2xs hover:border-[var(--yellow)] transition-colors"
+                    className="px-2.5 py-1 sm:px-3 sm:py-1 bg-white/95 rounded-full text-xs font-semibold text-slate-700 border border-[#D8EAFD] shadow-2xs hover:border-[var(--yellow)] transition-colors"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 max-w-lg">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-5 max-w-lg">
                 Engineering high-performance web applications, scalable backend systems, and search-optimized digital platforms. Transforming complex requirements into fast, resilient digital products engineered for long-term growth.
               </p>
 
