@@ -168,7 +168,7 @@ export default function Hero() {
         </div>
 
         {/* Right Column: Hero Section Pole showing hero-bg.png + Interactive Physics Tech Icons */}
-        <div className="relative flex flex-col items-center justify-center pt-1 pb-4 sm:pb-6 lg:pb-2 w-full min-h-[380px] sm:min-h-[420px] lg:min-h-[440px] pointer-events-auto">
+        <div className="relative flex flex-col items-center justify-start pt-0 pb-4 sm:pb-6 lg:pb-2 w-full min-h-[420px] sm:min-h-[460px] lg:min-h-[490px] pointer-events-auto">
           {/* Interactive Physics Icons overlay */}
           <div className="absolute inset-0 z-20 pointer-events-none overflow-visible">
             <PhysicsIcons
@@ -182,7 +182,7 @@ export default function Hero() {
 
           <Link
             href="/locations"
-            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[430px] xl:max-w-[470px] group block cursor-pointer transition-transform duration-300 hover:scale-[1.02] relative z-10"
+            className="w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl group block cursor-pointer transition-transform duration-300 hover:scale-[1.02] relative z-10 mt-0"
             title="Click to view prime hoarding locations"
           >
             {/* Direct display of hero-bg.png inside the pole component */}

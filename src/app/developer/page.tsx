@@ -25,6 +25,8 @@ import {
   Zap,
   Send,
 } from 'lucide-react';
+import PhysicsIcons from '@/components/physics/PhysicsIcons';
+import { developerPhysicsIcons } from '@/data/heroPhysicsIcons';
 
 export const metadata: Metadata = {
   title: 'Devashish Tyagi | Best Web Developer in Meerut, Full Stack Engineer & SEO Architect',
@@ -317,13 +319,6 @@ const technicalStack = [
   { category: 'Tools & DevOps', skills: ['Git / GitHub', 'Vercel', 'Netlify', 'Docker', 'VS Code', 'Figma'], icon: Terminal },
 ];
 
-const achievements = [
-  { number: '100%', label: 'SEO Score', description: 'Perfect Lighthouse scores on all projects' },
-  { number: '0.1s', label: 'Load Time', description: 'Average page load speed achieved' },
-  { number: '2+', label: 'Years', description: 'Working as professional' },
-  { number: '24/7', label: 'Support', description: 'Dedicated post-launch assistance' },
-];
-
 const philosophy = [
   { quote: 'Code is poetry. Performance is art. SEO is science.', icon: Sparkles },
   { quote: "I don't just build websites. I build digital experiences that convert.", icon: Target },
@@ -362,71 +357,83 @@ export default function DeveloperPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero Section - Premium Dark Theme */}
-      <div className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Abstract Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A173E] via-[#060E27] to-[#0A173E]">
+      {/* Hero Section - Light Clean Developer Theme matching browser viewport */}
+      <div className="relative min-h-[calc(100dvh-4rem)] lg:h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] flex items-center justify-center overflow-hidden py-10 lg:py-0 border-b border-[#D8EAFD] bg-[var(--alice-blue)]">
+        {/* Light Elegant Developer Tech Background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#EDF5FD] via-[#F8FAFC] to-[#EDF5FD]">
+          {/* Subtle Clean Grid Pattern */}
           <div
-            className="absolute inset-0 opacity-20"
+            className="absolute inset-0 opacity-[0.25]"
             style={{
               backgroundImage:
-                'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 1px)',
-              backgroundSize: '40px 40px',
+                'linear-gradient(to right, rgba(15,23,42,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(15,23,42,0.06) 1px, transparent 1px)',
+              backgroundSize: '44px 44px',
             }}
           ></div>
+          {/* Soft Ambient Light Glows */}
+          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-300/20 rounded-full filter blur-[100px] pointer-events-none"></div>
+          <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-yellow-300/15 rounded-full filter blur-[100px] pointer-events-none"></div>
+          <div className="absolute top-10 right-1/3 w-80 h-80 bg-emerald-300/15 rounded-full filter blur-[120px] pointer-events-none"></div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+        {/* Big Interactive Developer Physics Icons (Pure Icons) */}
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <PhysicsIcons
+            items={developerPhysicsIcons}
+            gravity={0.88}
+            bounce={0.72}
+            friction={0.06}
+            frictionAir={0.014}
+            throwPower={1.25}
+            className="w-full h-full"
+          />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/20">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                <span className="text-sm text-white/90 font-medium">Best Web Developer &amp; SEO Architect in Meerut</span>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-4 z-10 pointer-events-none w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="pointer-events-auto">
+              <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full px-4 py-1.5 mb-4 border border-[#D8EAFD] shadow-2xs">
+                <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                <span className="text-xs sm:text-sm text-slate-800 font-semibold tracking-tight">Best Web Developer &amp; SEO Architect in Meerut</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-2 leading-tight tracking-tight">
                 Devashish
-                <span className="text-[var(--yellow)]"> Tyagi</span>
+                <span className="text-[#CA8A04]"> Tyagi</span>
               </h1>
 
-              <h2 className="text-xl sm:text-2xl text-slate-200 font-bold mb-3 tracking-wide">
+              <h2 className="text-base sm:text-lg md:text-xl text-slate-700 font-bold mb-3 tracking-tight">
                 Best Web Developer in Meerut &amp; Full Stack SEO Architect
               </h2>
 
-              <p className="text-gray-300 mb-4 flex items-center gap-1.5 text-sm sm:text-base">
-                <MapPin className="w-4 h-4 text-[var(--yellow)] shrink-0" />
+              <p className="text-slate-600 mb-4 flex items-center gap-1.5 text-xs sm:text-sm font-medium">
+                <MapPin className="w-4 h-4 text-yellow-600 shrink-0" />
                 <span>Meerut • Delhi NCR • Uttar Pradesh, India</span>
               </p>
 
-              <div className="flex flex-wrap gap-2.5 mb-8">
+              <div className="flex flex-wrap gap-2 mb-5">
                 {expertiseTags.map((tag, i) => (
                   <span
                     key={i}
-                    className="px-3.5 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs sm:text-sm text-gray-200 border border-white/20 font-medium"
+                    className="px-3 py-1 bg-white/95 rounded-full text-xs font-semibold text-slate-700 border border-[#D8EAFD] shadow-2xs hover:border-[var(--yellow)] transition-colors"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-lg">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 max-w-lg">
                 Looking for the best web developer in Meerut? I build ultra-high-performance websites and web applications engineered to rank #1 on Google, convert visitors into loyal clients, and scale effortlessly.
               </p>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3">
                 <a
                   href="#work"
-                  className="group bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0A173E] px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="group bg-[var(--yellow)] hover:bg-[var(--yellow-hover)] text-[#0F172A] px-7 py-3 rounded-full font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-2"
                 >
-                  View Portfolio
+                  <span>View Portfolio</span>
                   <svg
-                    className="w-5 h-5 group-hover:translate-x-1 transition"
+                    className="w-4 h-4 group-hover:translate-x-1 transition"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -441,7 +448,7 @@ export default function DeveloperPage() {
                 </a>
                 <Link
                   href="/contact?service=Website%20Development"
-                  className="bg-transparent border-2 border-white/30 hover:border-white/60 px-8 py-3 rounded-full font-semibold transition-all text-white"
+                  className="bg-white border-2 border-slate-300 hover:border-slate-800 text-slate-800 px-7 py-3 rounded-full font-semibold transition-all shadow-2xs"
                 >
                   Book Web Consultation
                 </Link>
@@ -449,13 +456,13 @@ export default function DeveloperPage() {
             </div>
 
             {/* Profile Image Container */}
-            <div className="relative flex justify-center">
+            <div className="relative flex justify-center pointer-events-auto">
               <div className="relative">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600/40 via-yellow-500/20 to-blue-600/40 blur-2xl opacity-60 animate-pulse"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/30 via-yellow-400/20 to-blue-400/30 blur-2xl opacity-70 animate-pulse"></div>
                 <figure
                   itemScope
                   itemType="https://schema.org/ImageObject"
-                  className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl"
+                  className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl"
                 >
                   <Image
                     src="/images/developer/Devashish-Tyagi.webp"
@@ -464,44 +471,19 @@ export default function DeveloperPage() {
                     fill
                     className="object-cover"
                     priority
-                    sizes="(max-width: 768px) 320px, 384px"
+                    sizes="(max-width: 768px) 280px, 384px"
                     itemProp="contentUrl"
                   />
                   <figcaption className="sr-only">
                     Devashish Tyagi - Best Web Developer, Full Stack Engineer &amp; SEO Architect in Meerut Uttar Pradesh
                   </figcaption>
                 </figure>
-                <div className="absolute bottom-8 right-8 bg-green-500 rounded-full p-2 border-4 border-[#0A173E]">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
+                <div className="absolute bottom-6 right-6 bg-emerald-500 rounded-full p-2 border-4 border-white shadow-lg">
+                  <div className="w-2.5 h-2.5 bg-emerald-200 rounded-full animate-ping"></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-2 bg-white/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Achievement Stats */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {achievements.map((stat, i) => (
-            <div
-              key={i}
-              className="bg-white/90 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-[#D8EAFD] hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div className="text-3xl md:text-4xl font-extrabold text-[#0A173E]">
-                {stat.number}
-              </div>
-              <div className="font-semibold text-gray-800 mt-1">{stat.label}</div>
-              <div className="text-xs text-gray-500 mt-1">{stat.description}</div>
-            </div>
-          ))}
         </div>
       </div>
 

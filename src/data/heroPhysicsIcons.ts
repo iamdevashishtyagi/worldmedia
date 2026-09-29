@@ -116,67 +116,136 @@ export const heroPhysicsItems: PhysicsIconItem[] = [
   },
 ];
 
-// Big pure brand icons for full-hero background:
-// Pure icon only (no boundary, no filling box, slightly bigger size ~78px-92px)
+// Big pure brand icons for main hero section background (slightly increased in size ~90px):
+// Pure icon only (no boundary, no filling box)
 export const heroBackgroundIcons: PhysicsIconItem[] = [
   {
     id: "bg-instagram",
     icon: "skill-icons:instagram",
     shape: "square",
-    width: 78,
-    height: 78,
-    size: 78,
+    width: 90,
+    height: 90,
+    size: 90,
   },
   {
     id: "bg-facebook",
     icon: "devicon:facebook",
     shape: "square",
-    width: 78,
-    height: 78,
-    size: 78,
+    width: 90,
+    height: 90,
+    size: 90,
   },
   {
     id: "bg-linkedin",
     icon: "devicon:linkedin",
     shape: "square",
-    width: 78,
-    height: 78,
-    size: 78,
+    width: 90,
+    height: 90,
+    size: 90,
   },
   {
     id: "bg-youtube",
     icon: "logos:youtube-icon",
     shape: "rectangle",
-    width: 92,
-    height: 64,
-    size: 64,
+    width: 106,
+    height: 74,
+    size: 74,
   },
   {
     id: "bg-website",
     icon: "flat-color-icons:globe",
     shape: "circle",
-    radius: 39,
-    size: 78,
+    radius: 45,
+    size: 90,
   },
   {
     id: "bg-google",
     icon: "logos:google-icon",
     shape: "circle",
-    radius: 39,
-    size: 78,
+    radius: 45,
+    size: 90,
   },
   {
     id: "bg-meta",
     icon: "logos:meta-icon",
     shape: "circle",
-    radius: 39,
-    size: 78,
+    radius: 45,
+    size: 90,
   },
   {
     id: "bg-whatsapp",
     icon: "logos:whatsapp-icon",
     shape: "circle",
-    radius: 39,
-    size: 78,
+    radius: 45,
+    size: 90,
+  },
+];
+
+// Big pure developer tech icons for developer page hero section:
+// Pure tech icons (Next.js, React, TypeScript, Python, Node.js, Docker, GitHub, Tailwind, Figma)
+export const developerPhysicsIcons: PhysicsIconItem[] = [
+  {
+    id: "dev-nextjs",
+    icon: "devicon:nextjs",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-react",
+    icon: "devicon:react",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-typescript",
+    icon: "devicon:typescript",
+    shape: "square",
+    width: 86,
+    height: 86,
+    size: 86,
+  },
+  {
+    id: "dev-nodejs",
+    icon: "devicon:nodejs",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-python",
+    icon: "devicon:python",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-tailwindcss",
+    icon: "devicon:tailwindcss",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-docker",
+    icon: "devicon:docker",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-github",
+    icon: "logos:github-icon",
+    shape: "circle",
+    radius: 44,
+    size: 88,
+  },
+  {
+    id: "dev-figma",
+    icon: "devicon:figma",
+    shape: "circle",
+    radius: 44,
+    size: 88,
   },
 ];
